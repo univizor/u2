@@ -1,0 +1,14 @@
+Django==1.9.5
+argparse==1.2.1
+beautifulsoup4==4.4.1
+boto3==1.3.0
+botocore==1.4.8
+bs4==0.0.1
+docutils==0.12
+futures==3.0.5
+jmespath==0.9.0
+python-dateutil==2.5.2
+requests==2.9.1
+six==1.10.0
+slugify==0.0.1
+wsgiref==0.1.2

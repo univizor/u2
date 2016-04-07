@@ -154,6 +154,11 @@ LOGGING = {
             'level': 'DEBUG',
             'propagate': False,
         },
+        'boto': {
+            'handlers': ['console'],
+            'level': 'INFO',
+            'propagate': False,
+        },
         '': {
             'handlers': ['console'],
             'level': 'DEBUG',

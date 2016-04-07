@@ -9,11 +9,11 @@ import bs4
 from slugify import slugify
 
 DL_DIR = '/tmp/'
-from statuses import *
+from document.states import *
 
 def download_file(url):
 	if url.endswith(".mpg"):
-		return False
+		return (STATE_PERM_FAIL, None)
 	r = requests.get(url, stream=True)
 	try:
 		#print r.headers
@@ -21,11 +21,10 @@ def download_file(url):
 						 r.headers['Content-Disposition'])[0].split('=')[1].split('.')[-1]
 	except:
 		print('Failed url:', url)
-		return False
-	local_file = tempfile.NamedTemporaryFile()#(DL_DIR + self.get_filename(ext))
-	#with open(local_filename, 'wb') as f:
+		return (STATE_TEMP_FAIL, None)
+	local_file = tempfile.NamedTemporaryFile()
 	local_file.write(r.content)
-	return local_file
+	return (STATE_OK, local_file)
 
 def get_url_list(y, url_base):
 	url_list = set()
@@ -69,17 +68,18 @@ def download_page(thesis_url, d):
 		row_header = row.select('th')[0].get_text()
 		if 'Item Type:' in row_header or 'Tip vnosa:' in row_header or 'Vrsta dela:' in row_header:
 			row_content = row.select('td')[0].get_text()
-			if 'Thesis' not in row_content and 'Delo' not in row_content and 'olsko delo' not in row_content:
+			if 'Thesis' not in row_content and 'Delo' not in row_content and 'sko delo' not in row_content:
 				break # lets break
 		if 'ne besede:' in row_header or 'Keywords:' in row_header:
 			d['keywords'] = [
 				elt.encode('utf-8') for elt in row.select('td')[0].get_text().split(', ')
 			]
 	if not pdfurl:
-		return (STATUS_PERM_FAIL, None)
-	local_file = download_file(pdfurl)
-	if not local_file:
-		return (STATUS_TEMP_FAIL, None)
-	return (STATUS_OK, local_file)
-
+		return (STATE_PERM_FAIL, None)
+	(download_status, file) = download_file(pdfurl)
+	if download_status == STATE_OK:
+		return (STATE_OK, file)
+	else:
+		return (download_status, file)
+	
 	

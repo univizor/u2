@@ -15,7 +15,7 @@ import datetime
 YEARS = range(2003, datetime.date.today().year)
 from django.utils import timezone
 
-from statuses import *
+from document.states import *
 import eprints
 from document.models import Document
 
@@ -30,30 +30,34 @@ def extract_all():
 		logger.info("Scrapping year " + str(year))
 		for thesis_url in eprints.get_url_list(year, URL_BASE):
 			d = Document()
+			dups = d.agent_get_existing(AGENT_NAME, AGENT_VERSION, thesis_url)
+			if dups:
+			        continue
+                        # to do - Handle IN-PROGRESS dups that are now explicitely not included in agent_get_existing()
+			#	d.agent_state = STATE_DUP
+			#	d.agent_dup = dups[0]
+			#	logger.info("Duplicate found %s - %s" % (thesis_url, dups[0]))
+			#	d.save()
+			#	continue
 			d.agent_name = AGENT_NAME
 			d.agent_version = AGENT_VERSION
 			d.agent_repository_url = thesis_url
 			d.agent_date = timezone.now()
-			dups = d.agent_get_existing()
-			if dups:
-				d.agent_state = STATUS_DUP
-				d.agent_dup = dups[0]
-				logger.info("Duplicate found %s - %s" % (thesis_url, dups[0]))
-				d.save()
-				continue
-			d.status = STATUS_IN_PROGRESS
+			d.status = STATE_IN_PROGRESS
 			d.save()
 			d.json = copy.copy(JSON_TEMPLATE)
-			(status, local_file) = eprints.download_page(thesis_url, d.json)
-			if status == STATUS_PERM_FAIL:
-				d.status = STATUS_PERM_FAIL
+			(status, file) = eprints.download_page(thesis_url, d.json)
+			if status == STATE_PERM_FAIL:
+				d.status = STATE_PERM_FAIL
 				logger.info("Permanent fail %s" % thesis_url)
 				d.save()
 				continue
                         d.agent_json_data = json.dumps(d.json)
-			logger.info("Success: %s" % (thesis_url))
-			print d.agent_name, d.agent_version, d.agent_repository_url
-			d.agent_state = STATUS_OK
+			d.agent_upload_pdf_file(file)
+#			d.download_pdf_file_name()
+			logger.info("Success: %s %s %s %s" % (d.agent_name, d.agent_version, d.agent_repository_url, thesis_url))
+			d.agent_state = STATE_OK
+			file.close()
 			d.save()
 
 
