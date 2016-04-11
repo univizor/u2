@@ -53,8 +53,7 @@ def extract_all():
 				d.save()
 				continue
                         d.agent_json_data = json.dumps(d.json)
-			d.agent_upload_pdf_file(file)
-#			d.download_pdf_file_name()
+			d.upload_pdf_file(file)
 			logger.info("Success: %s %s %s %s" % (d.agent_name, d.agent_version, d.agent_repository_url, thesis_url))
 			d.agent_state = STATE_OK
 			file.close()

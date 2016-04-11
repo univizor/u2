@@ -90,6 +90,12 @@ class Document(models.Model):
 		
         def get_s3_pdf_file_name(self):
                 return self.get_s3_dir() + "/input.pdf"
+
+        def get_s3_pdf2txt_file_name(self):
+                return self.get_s3_dir() + "/raw.txt"
+
+        def get_s3_cleantxt_file_name(self):
+                return self.get_s3_dir() + "/clean.txt"
 		
 	def get_local_dir(self):
 		return settings.LOCAL_TMP +"/" + self.get_s3_dir()
@@ -99,6 +105,9 @@ class Document(models.Model):
 
         def get_local_pdf2txt_file_name(self):
                 return self.get_local_dir() + "/raw.txt"        
+
+        def get_local_cleantxt_file_name(self):
+                return self.get_local_dir() + "/clean.txt"        
 
         def make_local_dir(self):
 		local_dir = self.get_local_dir()
@@ -117,7 +126,7 @@ class Document(models.Model):
 			logger.info("Found existing entry %s %s %s" % (agent_name, agent_version, agent_repository_url))
 		return results
 
-	def agent_upload_pdf_file(self, file):
+	def upload_pdf_file(self, file):
 		bucket = awslib.get_s3_bucket()
 		file_name = self.get_s3_pdf_file_name()
 		key = bucket.new_key(file_name)
@@ -126,16 +135,22 @@ class Document(models.Model):
 		key.set_contents_from_file(file)
 		
 		# now also save into tmp local dir
-		file.seek(0)
-		
+		file.seek(0)		
 		self.make_local_dir()
 		destfile = open(self.get_local_pdf_file_name(), "w+")
 		shutil.copyfileobj(file, destfile)
 		
 
+	def upload_pdf2txt(self):
+		bucket = awslib.get_s3_bucket()
+		file_name = self.get_local_pdf2txt_file_name()
+		key = bucket.new_key(self.get_local_pdf2txt_file_name())
+		logger.info("Uploading to s3: %s" % file_name)	
+		key.set_contents_from_filename(file_name)
+		
+
 	def download_to_local_pdf(self):
-		# downloads the file and makes it locally reachable
-		# if the cached version already exists, so much better
+		# downloads the file and makes it locally reachable, if the cached version already exists, so much better
 		# returns file name
 		self.make_local_dir()
 		local_file_name = self.get_local_pdf_file_name()
@@ -144,7 +159,18 @@ class Document(models.Model):
 			awslib.s3_to_local_file(self.get_s3_pdf_file_name(), local_file_name)
 		else:
 			logger.debug("File already cached locally %s" % local_file_name)	
+		return local_file_name
 
+	def download_to_local_pdf2txt(self):
+		# downloads the file and makes it locally reachable, if the cached version already exists, so much better
+		# returns file name
+		self.make_local_dir()
+		local_file_name = self.get_local_pdf2txt_file_name()
+		if not os.path.exists(local_file_name):
+			logger.debug("Downloading to local cache %s" % local_file_name)	
+			awslib.s3_to_local_file(self.get_s3_pdf2txt_file_name(), local_file_name)
+		else:
+			logger.debug("File already cached locally %s" % local_file_name)	
 		return local_file_name
 		
         def save(self, *args, **kwargs):
