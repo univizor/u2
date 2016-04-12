@@ -1,0 +1,1929 @@
+Univerza v Ljubljani
+ˇunalniˇ
+Fakulteta za rac
+stvo in informatiko
+
+Matej Broˇziˇc
+
+Optiˇ
+cno branje univerzalnega
+plaˇ
+cilnega naloga
+DIPLOMSKO DELO
+ˇ
+ˇ
+VISOKOSOLSKI
+STROKOVNI STUDIJSKI
+PROGRAM PRVE
+ˇ
+ˇ
+STOPNJE RACUNALNI
+STVO
+IN INFORMATIKA
+
+Mentor: viˇs. pred. dr. Borut Batagelj
+Ljubljana 2013
+
+Rezultati diplomskega dela so intelektualna lastnina avtorja in Fakultete za raˇcunalniˇstvo in informatiko Univerze v Ljubljani. Za objavljanje ali izkoriˇsˇcanje
+rezultatov diplomskega dela je potrebno pisno soglasje avtorja, Fakultete za raˇcunalniˇstvo in informatiko ter mentorja.
+
+Besedilo je oblikovano z urejevalnikom besedil LATEX.
+
+Izjava o avtorstvu diplomskega dela
+
+Spodaj podpisani Matej Broˇziˇc, z vpisno ˇstevilko 63070250, sem avtor diplomskega dela z naslovom:
+Optiˇcno branje univerzalnega plaˇcilnega naloga
+
+S svojim podpisom zagotavljam, da:
+• sem diplomsko delo izdelal samostojno pod mentorstvom viˇs. pred. dr.
+Boruta Batagelja,
+• so elektronska oblika diplomskega dela, naslov (slov., angl.), povzetek
+(slov., angl.) ter kljuˇcne besede (slov., angl.) identiˇcni s tiskano obliko
+diplomskega dela,
+• soglaˇsam z javno objavo elektronske oblike diplomskega dela v zbirki
+”Dela FRI”.
+
+V Ljubljani, dne 25. junija 2013
+
+Podpis avtorja:
+
+Zahvaljujem se viˇs. pred. dr. Borutu Batagelju, za vso strokovno pomoˇc,
+nasvete, mentorstvo in vodenje pri izdelavi in pisanju diplomske naloge.
+Hvala starˇsem, bratu in Sabini, ki so mi pomagali skozi ˇstudij in me
+spodbujali vsa leta.
+Zahvaljujem se tudi Luki Godniˇcu, ki mi je pomagal in svetoval pri izdelavi programskega dela diplomske naloge in ostalim sodelavcem za pomoˇc pri
+testiranju.
+
+Kazalo
+Povzetek
+Abstract
+1 Uvod
+2 Obdelava slike in branje vsebine
+
+1
+11
+
+2.1
+
+Sivinska slika . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+
+2.2
+
+Svetlobni filter . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+
+2.3
+
+Detekcija robov . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+
+2.4
+
+Dilatacija in erozija . . . . . . . . . . . . . . . . . . . . . . . . 22
+
+2.5
+
+Iskanje in detekcija kvadratkov
+
+2.6
+
+Rotacija slike . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+
+2.7
+
+Razpoznava besedila (OCR) . . . . . . . . . . . . . . . . . . . 38
+
+3 Testiranje in rezultati
+
+. . . . . . . . . . . . . . . . . 24
+
+45
+
+3.1
+
+Testiranje zaznave poloˇzaja univerzalnega plaˇcilnega naloga . . 47
+
+3.2
+
+Testiranje rotacije slik . . . . . . . . . . . . . . . . . . . . . . 47
+
+3.3
+
+Testiranje raˇcunanja pozicije polj . . . . . . . . . . . . . . . . 48
+
+3.4
+
+Testiranje branja vsebine . . . . . . . . . . . . . . . . . . . . . 48
+
+3.5
+
+Optimizacija testiranja . . . . . . . . . . . . . . . . . . . . . . 49
+
+3.6
+
+Rezultati testiranja . . . . . . . . . . . . . . . . . . . . . . . . 51
+
+4 Zakljuˇ
+cek
+4.1
+
+57
+
+Nadaljnje delo . . . . . . . . . . . . . . . . . . . . . . . . . . . 58
+
+KAZALO
+Literatura
+
+61
+
+Slike
+1.1
+
+Primer strojno izpolnjenega univerzalnega plaˇcilnega naloga,
+z oznaˇcenimi obmoˇcji, ki nas zanimajo za obdelavo. . . . . . .
+
+1.2
+
+3
+
+Aplikacija Nove KBM za skeniranje univerzalnega plaˇcilnega
+naloga. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+5
+
+1.3
+
+Postopek algoritma za zaznavanje registrskih tablic avtomobilov.
+
+9
+
+2.1
+
+Sivinska slika univerzalnega plaˇcilnega naloga. . . . . . . . . . 13
+
+2.2
+
+Slike, dobljene po uporabi svetlobnega filtra z razliˇcnimi povpreˇcnimi vrednostmi. . . . . . . . . . . . . . . . . . . . . . . . 15
+
+2.3
+
+Rezultat detekcije robov. . . . . . . . . . . . . . . . . . . . . . 15
+
+2.4
+
+Primer Cannyjevega detektorja robov. . . . . . . . . . . . . . 18
+
+2.5
+
+Slike, dobljene z uporabo Cannyjevega detektorja robov v
+naˇsem sistemu. . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+
+2.6
+
+Dilatacija in erozija. . . . . . . . . . . . . . . . . . . . . . . . 23
+
+2.7
+
+Slike robov po dilataciji in eroziji. . . . . . . . . . . . . . . . . 23
+
+2.8
+
+Testna slika podana metodi cvFindContours(). . . . . . . . . 25
+
+2.9
+
+Prikaz razliˇcnih vrednosti parametra mode v metodi cvFindContours(),
+glede na vhodno sliko, prikazano na sliki 2.8. . . . . . . . . . . 27
+
+2.10 Primer konveksnosti in nekonveksnosti. . . . . . . . . . . . . . 30
+2.11 Obrisi, ki jih dobimo po prvem filtriranju. . . . . . . . . . . . 31
+2.12 Obrisi, ki nam ostanejo po uporabi drugega filtra. . . . . . . . 32
+2.13 Pravokotni trikotnik, dobljen s pomoˇcjo razdalj med toˇckama.
+
+33
+
+2.14 Rezultat rotacije slike. . . . . . . . . . . . . . . . . . . . . . . 34
+
+SLIKE
+2.15 Zaznano polje, ki vsebuje kodo namena.
+
+. . . . . . . . . . . . 35
+
+2.16 Zaznano polje, ki vsebuje Namen/rok plaˇcila.
+
+. . . . . . . . . 36
+
+2.17 Zaznano polje, ki vsebuje Znesek. . . . . . . . . . . . . . . . . 36
+2.18 Zaznano polje, ki vsebuje IBAN. . . . . . . . . . . . . . . . . . 36
+2.19 Zaznano polje, ki vsebuje Referenco. . . . . . . . . . . . . . . 37
+2.20 Zaznana OCR-vrstica. . . . . . . . . . . . . . . . . . . . . . . 37
+2.21 Model, ki predstavlja HSV barvni prostor. . . . . . . . . . . . 38
+2.22 Zaznana polja, pripravljena na OCR-branje. . . . . . . . . . . 39
+2.23 Branje polja Referenca s sistemom Tesseract. . . . . . . . . . . 42
+2.24 Urejevalnik jBoxText Editor z vnesenim besedilom in rezultat
+generiranja slike in okvirjev. . . . . . . . . . . . . . . . . . . . 43
+2.25 Slika formata TIFF, ki jo uporabimo za uˇcenje Tesseracta pisave OCR-A1 EUROBANKING. . . . . . . . . . . . . . . . . 44
+2.26 Slika pisave OCR-A1 EUROBANKING z oznaˇcenimi okvirji. . 44
+3.1
+
+Spletna kamera in stojalo za zajem slike univerzalnega plaˇcilnega
+naloga. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 46
+
+3.2
+
+Nalog z oznaˇcenimi centri kvadratkov in ogliˇsˇci polj ter tekstovna datoteka z vrednostmi toˇck in vsebino v poljih. . . . . . 50
+
+3.3
+
+Slika z zaznanimi ˇstirimi kvadratki. . . . . . . . . . . . . . . . 52
+
+3.4
+
+Razliˇcni naˇcini rotacije slike. . . . . . . . . . . . . . . . . . . . 53
+
+3.5
+
+Primer slike, z veliko ˇsuma, kjer sistem ne zna prebrati vsebine
+OCR vrstice. . . . . . . . . . . . . . . . . . . . . . . . . . . . 54
+
+4.1
+
+Povezava med podatki v vrstici OCR in ostalimi polji. . . . . . 59
+
+Tabele
+3.1
+
+Rezultati branja vsebine iz polj univerzalnega plaˇcilnega naloga. 55
+
+3.2
+
+Rezultati branja vsebine iz polj univerzalnega plaˇcilnega naloga po optimizaciji. . . . . . . . . . . . . . . . . . . . . . . . 56
+
+Povzetek
+Dandanes je plaˇcevanje z univerzalnim plaˇcilnim nalogom zelo pogosto. Z
+njim se lahko plaˇcuje v bankah, na poˇstah, na nekaterih bencinskih servisih
+in tudi na blagajnah nekaterih trgovin. Uporabniki spletnih in mobilnih bank
+lahko plaˇcujejo tudi od doma preko spleta ali pa s pametnim telefonom. Za
+izvrˇsitev plaˇcila univerzalnega plaˇcilnega naloga je potrebno iz njega prebrati
+podatke in jih vnesti v obrazec oziroma program za delo s plaˇcilnimi nalogi.
+Uporabniki spletnih in mobilnih bank in tudi zaposleni v bankah ˇse danes to
+poˇcnejo roˇcno, tako da podatke pretipkajo v program (razen ponekod, kjer
+imajo na voljo ˇcitalnike). To je seveda kar zamudno opravilo. Glavni cilj
+bank je, da komitentom ˇcim bolj olajˇsajo delo, zato smo se v sodelovanju
+z Banko Koper odloˇcili razviti sistem, ki bi omogoˇcal enostavno plaˇcevanje
+poloˇznice s slikanjem le-te, sistem pa bi nato s slike prebral podatke in jih
+posredoval programu za delo z univerzalnimi plaˇcilnimi nalogi. Ta sistem je
+obravnavan v diplomskem delu.
+V uvodu diplomskega dela predstavimo univerzalni plaˇcilni nalog in pregledamo ˇze obstojeˇce podobne sisteme ter nekatere na kratko predstavimo.
+Sledi predstavitev razvoja sistema in tehnologij ter metod, uporabljenih pri
+razvoju. Tukaj je predstavljen naˇcin in postopek predprocesiranja slike, s
+katerim najdemo polja, v katerih so podatki, ki nas zanimajo. Nato pa je
+predstavljeno ˇse branje podatkov iz najdenih polj. Na koncu se delo posveti
+ˇse predstavitvi rezultatov, dobljenih z opisanim sistemom, ter nadaljnjim
+planom dela in izboljˇsav.
+
+TABELE
+Kljuˇ
+cne besede:
+Univerzalni plaˇcilni nalog, optiˇcno razpoznavanje znakov, predprocesiranje
+slike, raˇcunalniˇski vid, detekcija robov
+
+Abstract
+Paying bills with the universal payment order is very common in these days.
+It is used to pay bills in banks, post offices or at home, with the use of web
+banks and mobile banks on smart phones. To use the universal payment
+order in payment, it is necessary to read the data from it and enter the
+data in program for work with orders. The users of web and mobile banks
+and bank employees mostly do the data entering manually, by typing every
+character with their hands, which can be quite time-consuming task. Because
+the main goal of every bank is to simplify things for its costumers, we decided
+in cooperation with Banka Koper, to develop a system which would enable
+simple use of payment order. The system would be able to read the universal
+payment order data from its image and fill in the program for work with
+orders, so there would be no need of manually filing the data. This system
+is presented in this thesis.
+In the first part of the thesis we present the universal payment order and
+look trough some of the existing similar systems and present some of them.
+In the second part the development of the system and used technologies and
+methods are presented. In this part, the preprocessing of the image, used to
+find the fields we are interested in is presented. The optical character recognition of the data inside these fields is also presented in this part. The last
+part of the thesis looks over results that the system gives us and the future
+planned work and improvements.
+
+TABELE
+Key words:
+universal payment order, optical character recognition, image preprocessing,
+computer vision, edge detection
+
+Poglavje 1
+Uvod
+V diplomski nalogi so predstavljena razliˇcne programske obdelave slike in
+optiˇcno razpoznavanje znakov v sliki, ki so nato uporabljeni v sistemu za
+optiˇcno razpoznavo in branje slike univerzalnega plaˇcilnega naloga. Prva
+vpraˇsanja, ki smo si ji zadali, so bila, kaj sploh je univerzalni plaˇcilni nalog,
+kakˇsen je njegov tehniˇcni standard in ali obstaja ˇze kakˇsna reˇsitev za branje
+le-tega ali kakˇsnega drugega obrazca nasploh.
+Uporaba univerzalnega plaˇcilnega naloga se je zaˇcela s priˇcetkom novembra leta 2010. Takrat so banke priˇcele uvajati ta nov obrazec in iz uporabe
+umikati obstojeˇce obrazce. V okviru teh prilagoditev so banke sprejele tudi
+tehniˇcni standard novega univerzalnega plaˇcilnega naloga [1].
+Uporablja se za naslednje storitve [2]:
+• negotovinska plaˇcila,
+• gotovinska plaˇcila,
+• pologe gotovine,
+• dvige gotovine.
+
+1
+
+2
+
+POGLAVJE 1. UVOD
+V tehniˇcni dokumentaciji univerzalnega plaˇcilnega naloga [3] je doloˇceno,
+
+da se obrazec izpolnjuje na dva naˇcina.
+• Roˇcno izpolnjevanje, z velikimi tiskanimi ˇcrkami, kjer se v posamezna
+okenca v poljih vpiˇse ena ˇcrka oziroma ˇstevilka. Obvezna je uporaba
+pisal s temno barvo (ˇcrna, modra), vsebina vseh polj pa mora biti
+poravnana levo, razen znesek, ki je poravnan desno.
+• Strojno izpolnjevanje, s predpisano neproporcionalno pisavo Courier
+New 12 CPI, skladno s tehniˇcnim standardom. Pri strojnem izpolnjevanju, ˇcrk oziroma ˇstevilk ni potrebno vpisovati toˇcno v okenca, biti
+morajo le v pravem polju. Znesek in datum sta formatirana.
+V diplomski nalogi bomo obravnavali le strojno izpolnjene univerzalne
+plaˇcilne naloge.
+Naprej je v tehniˇcni dokumentaciji doloˇceno, da je univerzalni plaˇcilni
+nalog ˇsirok 210 milimetrov in visok 101.6 milimetrov, po ˇsirini pa je razdeljen
+na talon, ˇsirine 60 milimetrov in nalog za plaˇcilo, ˇsirine 150 milimetrov. Talon
+je namenjen stranki in nas njegova vsebina ne zanima, zato smo se poglobili le
+v nalog za plaˇcilo. Slika 1.1 je slika celotnega univerzalnega plaˇcilnega naloga,
+z oznaˇcenim nalogom za plaˇcilo in vsemi polji, ki nas zanimajo. Nalog za
+plaˇcilo je po viˇsini razdeljen na 3 vodoravne predele.
+• Zgornji predel, ki vsebuje polja o plaˇcniku in je visok 39 milimetrov. V
+tem delu nas izmed vseh polj zanimata le polji koda namena in namen
+plaˇcila.
+• Srednji predel, ki vsebuje polja o prejemniku in je visok 37.5 milimetrov.
+V tem predelu se nahajajo polja:
+– znesek,
+– datum plaˇcila,
+– bic banke prejemnika,
+– iban,
+
+3
+– izjava,
+– referenca,
+– ime in naslov.
+Izmed teh polj nas za obdelavo zanimajo znesek, iban in referenca.
+• Spodnji predel, imenovan tudi vrstica OCR, ki je namenjen optiˇcnem
+zapisu podatkov. Vrstica OCR je doloˇcena v skladu s standardi iso,
+znaki pa morajo biti tiskani v ˇcrni barvi in pisavi OCR-A1 EUROBANKING.
+Ta del smo v naˇsem sistemu uporabili kot preverbo za testiranje prebranih
+podatkov, saj v njem najdemo veˇcino podatkov, zapisanih v srednjem delu.
+Na nalogu za plaˇcilo opazimo tudi 3 ˇcrne kvadratke, ki so namenjeni ravno
+procesiranju slike.
+
+Slika 1.1: Primer strojno izpolnjenega univerzalnega plaˇcilnega naloga, z
+oznaˇcenimi obmoˇcji, ki nas zanimajo za obdelavo.
+
+Za opravljanje storitev z univerzalnim plaˇcilnim nalogom, kot je na primer
+plaˇcevanje, je seveda iz njega potrebno prebrati podatke. Podobno kot za izpolnjevanje univerzalnega plaˇcilnega naloga, tudi za branje le-tega obstajata
+roˇcni in strojni naˇcin branja.
+
+4
+
+POGLAVJE 1. UVOD
+Roˇcni naˇcin branja univerzalnega plaˇcilnega naloga je zelo zamudno opra-
+
+vilo, saj mora bralec (zaposleni na banki, poˇsti, uporabnik spletne banke ...),
+prebrati vse podatke in jih prepisati v program, ki je temu namenjen. Ponekod, v veˇcjih banˇcnih poslovalnicah, je ˇstevilo plaˇcevanj in ostalih storitev
+izvedenih z univerzalnim plaˇcilnim nalogom, zelo veliko in je prepisovanje
+vseh teh nalogov za zaposlene naporno.
+Zato se je tudi pojavila ˇzelja po strojnem branju plaˇcilnih nalogov, kjer
+uporabnik le slika oziroma univerzalni plaˇcilni nalog vstavi v ˇcitalnik, to
+sliko nato obdela raˇcunalnik in uporabniku vrne vse potrebne podatke. Program, ki obdela to sliko, mora torej biti sposoben sprejeti sliko, jo obdelati,
+prebrati pravilne podatke in jih podati na voljo uporabniku. Posebne naprave (UPN-ˇcitalniki) s programom, ki zna prebrati podatke univerzalnega
+plaˇcilnega naloga, ˇze obstajajo, vendar kot vhodni podatek dobijo skenirano
+sliko, ki je vedno isto osvetljena, je lepo poravnana in je na njej le univerzalni
+plaˇcilni nalog, brez kakrˇsnegakoli ozadja, oziroma drugih stvari. Ti ˇcitalniki
+delujejo tako, da se omejijo le na spodnji predel (OCR-vrstico) univerzalnega
+plaˇcilnega naloga in iz njega preberejo podatke. Na podoben naˇcin delujejo
+tudi ˇcitalniki za branje loterijskih listkov [20].
+
+5
+V raziskavi smo zasledili, da je podoben sistem, ki zna prebrati podatke
+iz univerzalnega plaˇcilnega naloga in jih servirati uporabniku, ˇze na voljo.
+Nova Kreditna Banka Maribor je v juniju 2012 predstavila svojo mobilno
+banko, imenovano mBank@Net [4], ki med drugim omogoˇca tudi skeniranje
+plaˇcilnih nalogov in s tem enostavno plaˇcevanje poloˇznic.
+Uporabniki preprosto skenirajo OCR-vrstico na univerzalnem plaˇcilnem
+nalogu, aplikacija pa podatke samodejno prenese v obrazec plaˇcilnega naloga.
+Kako aplikacija zgleda, je prikazano na sliki 1.2.
+
+Slika 1.2: Aplikacija Nove KBM za skeniranje univerzalnega plaˇcilnega naloga.
+
+Bistvena razlika med njihovim sistemom in sistemom, ki ga razvijamo,
+je v tem, da se oni osredotoˇcijo le na polje znotraj univerzalnega plaˇcilnega
+naloga, ki vsebuje OCR-zapis, medtem ko bo naˇs sistem prejel celotno sliko
+plaˇcilnega naloga. Druga velika razlika je ta, da njihova aplikacija deluje
+tako, da OCR-polje skenira in ne slika. Mobilno napravo z aplikacijo je
+potrebno drˇzati nad tem poljem v poloˇzaju, doloˇcenem z rdeˇco ˇcrto, dokler
+se ne preberejo vsi znaki, ki so v polju. Naˇs sistem pa bo deloval tako,
+da bo uporabnik le slikal plaˇcilni nalog, sliko pa bo nato obdelal program.
+
+6
+
+POGLAVJE 1. UVOD
+
+Tretja bistvena razlika pa je v namenu sistema. Namen njihovega sistema
+je omogoˇciti uporabnikom mobilne banke laˇzje plaˇcevanje poloˇznic. Poleg
+mobilne aplikacije, ki zna prebrati univerzalni plaˇcilni nalog, je cilj naˇsega
+sistema izpolnitev ˇse treh dodatnih nalog.
+• Uporaba sistema v aplikaciji spletne banke, v kateri bi s pomoˇcjo spletne kamere slikal plaˇcilni nalog.
+• Uporaba kamere na bankomatih, s pomoˇcjo katere bi uporabnik lahko
+uporabil za slikanje plaˇcilnega naloga in ga tako plaˇcal.
+• Zaposlenim na blagajnah v poslovalnicah banke bi omogoˇcili strojno
+branje univerzalnega plaˇcilnega naloga, tako da bi jim dodali okence s
+steklom, pod katerim bi bila kamera in na katerega bi nalog le poloˇzili
+in s pritiskom na doloˇcen gumb v njihovi aplikaciji sproˇzili kamero, ki
+bi nalog slikala, slika pa bi se poslala v obdelavo sistemu.
+Glede na doloˇcene cilje je naˇs problem veliko zahtevnejˇsi kot problem
+razvijalcev Nove KBM pri razvoju njihove aplikacije za branje univerzalnega plaˇcilnega naloga in razvijalcev sistema loterijskega ˇcitalnika. Vhodne
+slike, ki jih bo dobival naˇs sistem, so lahko razliˇcno zasukane, osvetlitev dveh
+razliˇcnih slik se lahko bistveno razlikuje na slikah, pa so poleg univerzalnega
+plaˇcilnega naloga, lahko ˇse razliˇcna ozadja. Na primer, pri slikanju s spletno
+kamero in na bankomatu se lahko pojavijo delˇcki prstov in rok.
+
+7
+Po mojem mnenju so se s podobnimi problemi iskanja doloˇcenega polja na
+sliki in branja njegove vsebine spopadli raziskovalci univerze Calgary, ko so
+razvijali algoritme za razpoznavanje registrske tablice avtomobilov [5]. Raziskave so se lotili zaradi interesa in povpraˇsevanja po sistemih ”slika-radar”.
+Tako kot v naˇsem primeru, je tudi pri njih vhodna slika lahko vedno drugaˇce
+osvetljena in zasukana, ozadje pa vedno drugo. Razpoznavanja registrske
+tablice so se lotili v veˇc korakih, predstavljenih v nadaljevanju:
+• Predprocesiranje originalne slike: originalno RGB-sliko so najprej pretvorili v sivinsko. V drugem koraku so na sivinski sliki uporabili mediana filter (angl. median filter), velikosti 5x5, za odstranitev ˇsuma v
+sliki ob ohranitvi ostrine slike. Sliˇcica (a), na sliki 1.3, prikazuje primer
+slike, pretvorjene v sivinsko sliko in z odstranjenim ˇsumom.
+• Detekcija robov: po predprocesiranju slike so poiskali robove s pomoˇcjo
+Shen-Castanovega detektorja robov. Slika robov (angl. edge image)
+pripomore pri iskanju pravokotnikov v sliki.
+• Lociranje znakov: naslednji korak algoritma je iskanje regij slike, na katerih je veˇcja verjetnost, da se nahajajo znaki. Na predprocesirani sliki
+je najprej izvedeno upragovanje (angl. threshold), da sliko spremenijo
+v binarno obliko. To je najpreprostejˇsa oblika segmentacije oziroma
+procesa razcepitve digitalne slike v veˇc segmentov, s katero poenostavimo predstavitev slike. Po upragovanju sta na sliki izvedeni ˇse binarna
+dilatacija (angl. dilatation) in erozija (angl. erosion), s katerima loˇcijo
+med seboj regije v ospredju. Po tem postopku so najdene vse povezane
+regije v binarni sliki. Iz teh regij so izraˇcunani mejni okvirji (angl. bounding boxes). Vsi mejni okvirji z atributi, ki presegajo doloˇcene meje,
+so nato izbrisani. Izbrisani so tudi vsi okvirji, ki ne pripadajo nizom
+ˇ ni najden nobeden okvir, ki ne pripada nizu vsaj
+vsaj treh znakov. Ce
+treh znakov, je ta meja zmanjˇsana na dva znaka. Kot rezultat nam
+ostanejo mejni okvirji, ki so zelo dobri kandidati za znake z registrske
+tablice.
+
+8
+
+POGLAVJE 1. UVOD
+• Izvedba generiˇcnega algoritma: zadnji korak v njihovi reˇsitvi je generiˇcni algoritem. Ta algoritem, kot vhodni parameter dobi sliko robov
+in mnoˇzico mejnih okvirjev kandidatov znakov. Rezultat je osnovan na
+vsebini slike kotov in lastnostih mejnih okvirjev. V implementaciji vsak
+kromosom generiˇcnega algoritma predstavlja morebitno pozicijo registrske tablice. Vsak kromosom ima 4 gene, koordinati (x1, y1) za levi
+zgornji in koordinati (x2, y2) za spodnji kot tablice. Funkcija vrne vrednost med 0 in 1, kjer je 1 odliˇcna registrska tablica, 0 pa slaba tablica.
+Ta vrednost je izraˇcunana iz ocen registrske tablice ˇstirih kategorij:
+– ocena glede na dimenzijo tablice,
+– ocena glede na to, kako blizu je v robni sliki predstavljen pravokotnik tablice,
+– ocena glede na to, v katerem delu je tablica prekrita z mejnimi
+okvirji morebitnih ˇcrk,
+– ocena glede na to, kako blizu okrog mejnih okvirjev je tablica
+centrirana; to se pravi, kako dobro so znaki centrirani v tablici.
+Ocene so nato pomnoˇzene ˇse z uteˇzmi pomembnosti, ki jih avtorji
+doloˇcijo sami.
+Slika 1.3 prikazuje postopek zgoraj opisane reˇsitve. Zaˇcne se s pretvorbo
+
+v sivinsko sliko (a), nato je pognan detektor robov (b), sledi upragovanje
+(c) in nato ˇse dilatacija in erozija (d). Po predprocesiranju slike je izveden ˇse generiˇcni algoritem (e). Na zadnji sliˇcici je prikazan konˇcni rezultat
+razpoznavanja registrske tablice (f).
+
+9
+
+Slika 1.3: Postopek algoritma za zaznavanje registrskih tablic avtomobilov.
+
+Naˇse reˇsitve optiˇcnega branja univerzalnega plaˇcilnega naloga smo se lotili na zelo podoben naˇcin. Podobno kot v opisanem postopku razpoznave
+registrske tablice, smo program razdelil na ˇstiri korake:
+1) predprocesiranje slike (angl. image preprocessing),
+2) lociranje polj, v katerih je vsebina,
+3) priprava najdenih polj na branje,
+4) branje vsebine polj.
+
+10
+
+POGLAVJE 1. UVOD
+
+Poglavje 2
+Obdelava slike in branje
+vsebine
+V tem poglavju so opisane uporabljene metode predprocesiranja slike in iskanja polj ter branja vsebine iz njih. Vsaka metoda je najprej predstavljena,
+nato pa je opisan ˇse naˇcin njene uporabe v sistemu.
+Za doseganje ˇcim boljˇsih rezultatov branja teksta je potrebno originalno
+sliko pred samim tekstovnim branjem predhodno obdelati. To doseˇzemo s
+postopkom predprocesiranja.
+Predprocesiranje [6] je zaporedje oziroma skupina postopkov, s katerimi ˇzelimo sliko predelati tako, da s tem poveˇcamo zanesljivost branja in
+zmanjˇsamo ˇcasovno zahtevnost algoritma za branje teksta. V grobem predprocesiranje delimo na postopke obnove slike (angl. image restoration) in
+postopke izboljˇsave slike (angl. image enhancement).
+Obnova slike [7] je operacija, s katero poskuˇsamo iz pokvarjene slike oziroma motne slike z veliko ˇsuma dobiti originalno sliko. Glavni namen obnove
+slike je, da s ˇciˇsˇcenjem slike, s katerim odstranimo ˇsum, pridobimo originalno
+sliko.
+Vizualni ˇsum (angl. image noise) [8] je nakljuˇcna variacija informacij
+svetlosti in barv v sliki. Povzroˇcen je s strani senzorja in vezja skenerja ali
+digitalne kamere. Je nezaˇzelen stranski produkt zajema slike, ki sliki doda
+11
+
+12
+
+POGLAVJE 2. OBDELAVA SLIKE IN BRANJE VSEBINE
+
+laˇzne in tuje informacije.
+Izboljˇsava slike [7] se od obnavljanja slike razlikuje predvsem v tem, da
+je njen glavni namen narediti sliko lepˇso za opazovalca in poudariti doloˇcene
+lastnosti slike. Pri tem ni nujno, da se pridobi originalno sliko.
+Drugi del predprocesiranja [6] pa je izloˇcitev ozadja, ˇcrt, okvirjev in podobnih, nepotrebnih elementov v sliki, ki bi lahko povzroˇcili motnje pri razpoznavanju besedila. To lahko storimo s pomoˇcjo detektorjev robov. V primeru, da slika ni lepo poravnana, je del predprocesiranja tudi rotacija slike.
+Po potrebi pa se sliko v predprocesiranju tudi zgladi, izostri in prilagodi
+kontrast potrebam detektorja besedila.
+Predprocesiranje je v naˇsem algoritmu sestavljeno iz naslednjih korakov:
+• pretvorba v sivinsko sliko (angl. grayscale),
+• obdelava s svetlobnim filtrom,
+• detekcija robov (angl. edge detection),
+• iskanje treh kvadratkov, omenjenih v predstavitvi plaˇcilnega naloga v
+uvodu in
+• rotacija slike.
+
+2.1
+
+Sivinska slika
+
+Prvi korak predprocesiranja slike je pretvorba v sivinsko sliko. Originalno,
+RGB-sliko najprej pretvorimo v sivinsko sliko.
+RGB-slika [9] je slika, predstavljena s tremi kanali, kjer R predstavlja
+ˇ je slika 24-bitna, ima
+rdeˇco barvo, G zeleno barvo, B pa modro barvo. Ce
+vsak kanal 8 bitov. Zaradi tega so barvne slike pogosto shranjene kot tri
+razliˇcne slikovne matrike, kjer vsaka matrika predstavlja koliˇcino posameznega kanala, oziroma barve v slikovnemu elementu.
+Tako kot v barvni RGB-sliki imamo tudi v pretvorjeni, sivinski sliki [10]
+tri kanale, razlika pa je v tem, da imamo v vseh kanalih enako vrednost.
+
+2.1. SIVINSKA SLIKA
+
+13
+
+Vrednosti se razlikujejo le v koliˇcini svetlobe v posameznem slikovnem elementu. Z veˇc svetlobe dobimo svetlejˇsi slikovni element, z manj svetlobe pa
+temnejˇsi.
+Za pretvorbo barvne slike v sivinsko obstaja veˇc metod, veˇcinoma pa vse
+delujejo po istem vzorcu. Pred seˇstevkom posameznih RGB-vrednosti se le
+te pomnoˇzijo z doloˇcenim odstotkom in tako dobimo eno samo vrednost, ki
+predstavlja svetlost slikovnega elementa. Razlika med metodami je obiˇcajno
+le ta, s kakˇsno vrednostjo (odstotkom) pomnoˇzimo posamezen kanal in tako
+dobimo razliˇcne svetlosti slikovnega elementa.
+V naˇsem sistemu smo za pretvorbo originalne slike v sivinsko uporabili
+standardno metodo, ki uporablja naslednjo funkcijo za izraˇcun svetlosti slikovnega elementa.
+S = 0.3R + 0.59G + 0.11B.
+
+(2.1)
+
+Slika 2.1 prikazuje sivinsko sliko univerzalnega plaˇcilnega naloga, pretvorjeno
+po omenjeni, standardni metodi.
+
+Slika 2.1: Sivinska slika univerzalnega plaˇcilnega naloga.
+
+14
+
+2.2
+
+POGLAVJE 2. OBDELAVA SLIKE IN BRANJE VSEBINE
+
+Svetlobni filter
+
+Prvi cilj naˇse reˇsitve je seveda zaznava pozicije samega univerzalnega plaˇcilnega
+naloga na celotni sliki. Pri zaznavi pozicije univerzalnega plaˇcilnega naloga si
+pomagamo z ˇze omenjenimi tremi ˇcrnimi kvadratki, saj z njihovo pozicijo in
+razdaljo med njimi lahko izraˇcunam ˇsirino in viˇsino plaˇcilnega naloga in njegovo dejansko pozicijo, zato jih po pretvorbi originalne RGB-slike v sivinsko
+sliko poskuˇsamo ˇcim bolj loˇciti od ostale slike in ozadja. Pri loˇcitvi kvadratkov od ozadja je naˇs prvi korak uporaba svetlobnega filtra nad sliko. Ker so
+kvadratki med najtemnejˇsimi elementi na sliki, sliko filtriramo po naslednjem
+postopku. Iz vseh slikovnih elementih sivinske slike najprej izraˇcunamo povpreˇcno vrednost svetlosti slikovnega elementa. Temu nato priˇstejemo ˇse ˇstiri
+razliˇcna ˇstevila, ki smo jih doloˇcili preprosto s poskuˇsanjem in dobimo ˇstiri
+konˇcne vrednosti. Razlog, da so uporabljene ˇstiri vrednosti, je ta, da kot
+vhodne parametre v programu dobivamo slike, ki se lahko zelo razlikujejo v
+svetlosti. S tem se izognemo, da bi filter spregledal kakˇsno pomembno stvar
+v sliki. Ko imamo izraˇcunane povpreˇcne vrednosti, se v zanki sprehodimo
+ˇcez vsak piksel in njegovo vrednost primerjamo z vsako izmed povpreˇcnih
+ˇ je vrednost piksla veˇcja od posamezne povpreˇcne vrednosti,
+vrednosti. Ce
+ta slikovni element pobarvamo belo. Tako dobimo ˇstiri razliˇcne sliˇcice, ki so
+prikazane na sliki 2.2. Na njih je lepo vidno, kako se slike razlikujejo glede
+na vrednost, s katero filtriramo.
+
+2.3. DETEKCIJA ROBOV
+
+15
+
+Slika 2.2: Slike, dobljene po uporabi svetlobnega filtra z razliˇcnimi povpreˇcnimi vrednostmi.
+
+2.3
+
+Detekcija robov
+
+Ko imamo na voljo slike, obdelane s svetlobnim filtrom, iskanje kvadratov
+nadaljujemo z metodo detekcije robov. Robovi v sliki nam bodo v veliko
+pomoˇc pri iskanju obrisov in s tem tudi iskanih kvadratov.
+Detekcija robov [11] je ime za skupek matematiˇcnih metod, katerih cilj
+je identifikacija toˇck v digitalni sliki, v katerih se svetlost slike moˇcno spremeni. Toˇcke, kjer je ta cilj doseˇzen, so tipiˇcno zdruˇzene v skupke toˇck, ki
+predstavljajo neke krivulje oziroma ˇcrte, imenovane robovi. Detekcija robov
+je osnovni pojem v procesiranju slik in raˇcunalniˇskem vidu, ˇse posebno, ko
+govorimo o detekciji in zaznavi elementov v sliki.
+Na sliki 2.3 je prikazan rezultat tipiˇcnega detektorja robov.
+
+Slika 2.3: Rezultat detekcije robov.
+
+16
+
+POGLAVJE 2. OBDELAVA SLIKE IN BRANJE VSEBINE
+Obstaja veliko metod za detekcijo robov, ki jih lahko veˇcinoma razdelimo
+
+v dve osnovni skupini, detektorji, osnovani na iskanju (angl. search-based), in
+detektorji, osnovani na prehodu niˇcle (angl. zero-crossing based). Detektorji,
+osnovani na iskanju, najdejo robove tako, da najprej izraˇcunajo mero moˇci
+roba in nato iˇsˇcejo lokalni smerni maksimum magnitude gradienta, z uporabo izraˇcunane ocene lokalne usmerjenosti roba, kar je obiˇcajno kar smer
+gradienta. Gradient je diferencialna operacija, definirana nad skalarnim ali
+vektorskim poljem, ki pove, v kateri smeri se polje najbolj spreminja.
+Detektorji, osnovani na prehodu niˇcle, temeljijo na iskanju prehoda niˇcle
+v izpeljanih izrazih drugega reda, izraˇcunanih iz slike.
+Znani detektorji robov se veˇcinoma razlikujejo v tipih glajenja slike, ki
+jih uporabljajo, in v naˇcinu izraˇcuna mer moˇci robov. Razlikujejo se tudi v
+tipih filtrov, uporabljenih za izraˇcun pribliˇzka gradienta v smeri x-a in y-a.
+Med najbolj poznanimi detektorji robov so:
+• Cannyjev detektor robov (angl. Canny Edge Detector),
+• Sobelov detektor robov (angl. Sobel Edge Detector),
+• Prewittov detektor robov (angl. Prewitt Edge Detector),
+• Robert Crossov detektor robov (angl. Robert Cross Edge Detector) in
+• Laplacov detektor robov (angl. Laplace Edge Detector).
+
+2.3.1
+
+Cannyjev detektor robov
+
+Za detektiranje robov smo se v svojem algoritmu odloˇcili za uporabo Cannyjevega detektorja robov. Razlogi za to so predvsem ti, da je Cannyjev
+detektor robov v praksi najbolj uporabljan detektor, je zelo neobˇcutljiv na
+ˇsum v sliki in v matematiˇcnem smislu velja za optimalni detektor robov.
+Cannyjev detektor robov [12, 13] je detekcija robov, ki z uporabo
+veˇcstopenjskega algoritma detektira ˇsiroko obmoˇcje robov v slikah. Razvil ga
+je John F. Canny. Canny je pri svojem razvoju ciljal na iznajdbo optimalnega
+
+2.3. DETEKCIJA ROBOV
+
+17
+
+algoritma za detekcijo robov. Optimalni detektor robov bi moral dosegati
+naslednje:
+
+• dobra detekcija: algoritem mora oznaˇciti kar se da veliko pravih robov
+v originalni sliki,
+
+• dobra lokalizacija: oznaˇceni robovi, ki jih najde algoritem, morajo biti
+kar se da blizu pravih robov v originalni sliki,
+
+• mininalna odzivnost: doloˇcen rob v sliki mora biti oznaˇcen samo enkrat;
+ˇce je moˇzno, ˇsum v sliki ne sme povzroˇciti nepravilnih robov.
+
+Za izpolnitev teh pogojev je Canny uporabil tako imenovani izraˇcun variacij (angl. calculus of variations). To je metoda, ki najde funkcijo, ki
+optimizira podano funkcionalnost. Optimalna funkcija v Cannyjevem detektorju je opisana z vsoto ˇstirih eksponentnih pogojev, lahko pa je pribliˇzana
+s prvim derivatom Gaussove funkcije [12].
+Gaussova funkcija je funkcija, doloˇcena z enaˇcbo:
+f (x) = ae−
+
+(a−b)2
+2c2
+
+,
+
+(2.2)
+
+kjer so a, b in c realna ˇstevila in e ≈ 2.71828.
+Gaussove funkcije so ˇsiroko uporabljene v statistiki, kjer opisujejo normalne porazdelitve, v procesiranju signalov, kjer so uporabljene za definicijo
+Gaussovih filtrov, v procesiranju slik, kjer so dvodimenzionalne Gaussove krivulje uporabljene za Gaussovo glajenje, in v matematiki, kjer so uporabljene
+za reˇsevanje enaˇcb.
+Na sliki 2.4 je prikazan primer rezultata Cannyjevega detektorja robov.
+Leva sliˇcica je originalna slika, na desni pa je prikazana slika robov.
+
+18
+
+POGLAVJE 2. OBDELAVA SLIKE IN BRANJE VSEBINE
+
+Slika 2.4: Primer Cannyjevega detektorja robov.
+
+2.3.2
+
+Stopnje Cannyjevega detektorja robov
+
+Kot je ˇze omenjeno v prejˇsnjem poglavju, je Cannyjev detektor robov [12, 13]
+veˇcstopenjski algoritem. Sestavljen je iz naslednjih stopenj:
+• zmanjˇsanje ˇsuma v sliki (angl. noise reduction),
+• iskanje gradienta intenzivnosti slike (angl. finding the intensity gradient
+of the image),
+• nemaksimalna supresija (odstranjevanje nemaksimalnih vrednosti) (angl.
+non maximum suppression),
+• sledenje robovom skozi sliko in histerezno upragovanje (angl. hysteresis
+thresholding).
+Za zmanjˇsanje ˇsuma v sliki Cannyjev detektor robov uporablja filter,
+osnovan na Gaussovi krivulji, kjer se na originalni sliki izraˇcuna konvolucija z Gaussovim filtrom. Gaussov filter je filter, katerega impulzivni odziv
+je Gaussova krivulja. Lastnosti Gaussovih filtrov so to, da nimajo nobene
+prekoraˇcitve vhoda koraka funkcije, medtem ko minimizirajo ˇcas vzpona in
+padca. Rezultat uporabe Gaussovega filtra na originalni sliki je rahlo zamegljena verzija originala, na katerega nobeden posamezni slikovni element ne
+vpliva v veliki meri.
+Rob v sliki lahko kaˇze v veliko razliˇcnih smereh, zato, za izraˇcun gradienta
+intenzivnosti, Cannyjev detektor uporablja ˇstiri razliˇcne filtre za detekcijo
+vodoravnih, navpiˇcnih in diagonalnih robov v zamegljeni sliki. Operator detektorja robov vrne vrednost prvega odklona v vodoravni smeri in v navpiˇcni
+
+2.3. DETEKCIJA ROBOV
+
+19
+
+smeri. Iz tega lahko izraˇcunamo gradient roba
+G=
+
+G2x + G2y
+
+(2.3)
+
+in smer
+Gy
+)
+(2.4)
+Gx
+Smer roba je zaokroˇzena na enega izmed ˇstirih kotov, ki predstavljajo vertiQ = arctan(
+
+kalo, horizontalo in dve diagonali.
+S podanimi ocenami gradientov slike Cannyjev detektor nato nadaljuje s
+preverjanjem, ali magnituda gradienta zavzame lokalen maksimum v smeri
+gradienta. Ta postopek se imenuje nemaksimalna surpresija. Z njim dobimo
+skupek toˇck, prikazan kot binarna slika.
+Zadnji korak Cannyjevega detektorja je sledenje robov. Gradienti z visoko
+intenzivnostjo bolj verjetno ustrezajo robovom kot gradienti z nizko intenzivnostjo. V veˇcini primerov je nemogoˇce doloˇciti prag, v katerem gradient s
+podano intenzivnostjo ustreza robovu in v katerem ne. Zato Canny v svojem
+algoritmu uporablja upragovanje s histerezo. Upragovanje s histerezo zahteva dva praga – visokega in nizkega. Zaˇcnemo z uporabo visokega praga, ki
+nam oznaˇci robove za katere je velika verjetnost, da so pravi. Tem robovom
+nato sledimo skozi sliko. Ko jim sledimo, uporabimo ˇse nizek prag, ki nam
+omogoˇca, da sledimo robovom tudi skozi svetle in zbledele dele slike, dokler
+ne najdemo zaˇcetne toˇcke. Po koncu tega procesa imamo binarno sliko, na
+kateri je vsak slikovni element oznaˇcen kot rob ali nerob. Dobljeno binarno
+sliko lahko obravnavamo tudi kot skupek robnih krivulj.
+
+20
+
+POGLAVJE 2. OBDELAVA SLIKE IN BRANJE VSEBINE
+
+2.3.3
+
+Pomembni algoritmi Cannyja
+
+Cannyjev algoritem [12, 13] vsebuje ˇstevilne razliˇcne, nastavljive parametre, ki imajo vpliv na ˇcas, ki je potreben za izraˇcun robov, in na uspeˇsnost
+detektorja. Najbolj pomembna sta dva.
+• Velikost Gaussovega filtra - filter za glajenje slike, uporabljen v prvem
+koraku, ima zelo velik vpliv na rezultat Cannyjevega algoritma. Manjˇsi
+filtri povzroˇcijo manjˇso zameglitev in omogoˇcajo detekcijo manjˇsih ostrih
+ˇcrt. Veˇcji filtri povzroˇcijo veˇcjo zameglitev slike in so boljˇsi za detekcijo
+veˇcjih, bolj gladkih robov.
+• Pragovi - uporaba dveh pragov s histerezo dovoljuje veˇcjo fleksibilnost kot pristop z enim samim pragom, ˇse vedno pa veljajo standardni
+problemi upragovanja. Previsok prag lahko spusti pomembne informacije, po drugi strani pa lahko prenizek prag nepomembne informacije
+napaˇcno obravnava kot pomembne. Zelo teˇzko je podati neki standardni prag, ki bi deloval za vse slike.
+Povzamemo lahko, da je Cannyjev detektor robov zelo prilagodljiv razliˇcnim
+okoljim, saj njegovi parametri dovoljujejo, da se ga prilagodi zaznavi robov
+razliˇcnih karakteristik in slik.
+
+2.3. DETEKCIJA ROBOV
+
+2.3.4
+
+21
+
+Uporaba Cannyjevega detektorja
+
+Po pretvorbi slike v sivinsko sliko in uporabi svetlobnega filtra, s katerim
+dobimo ˇstiri slike, v naˇsem algoritmu sledi detekcija robov z uporabo Cannyjevega detektorja robov. Cannyjev detektor uporabimo nad vsemi ˇstirimi
+slikami, ki jih dobimo po uporabi svetlobnega filtra. Kot rezultat dobimo
+ˇstiri binarne slike, ki jih lahko vidimo na sliki 2.5.
+
+Slika 2.5: Slike, dobljene z uporabo Cannyjevega detektorja robov v naˇsem
+sistemu.
+
+22
+
+POGLAVJE 2. OBDELAVA SLIKE IN BRANJE VSEBINE
+
+2.4
+
+Dilatacija in erozija
+
+V prvotno naˇcrtovani reˇsitvi naˇsega algoritma smo po uporabi Cannyjevega
+detektorja robov nameravali uporabiti iskalnik obrisov in z njim najti obrise
+v sliki, ampak se to ni izkazalo kot dovolj dobra reˇsitev. Kot rezultate smo
+namreˇc tako dobili ponekod preveˇc kvadratov, ponekod pa premalo. Da
+bi priˇsli do boljˇsih rezultatov pri iskanju kvadratov, smo morali slike, ki
+jih dobimo s Cannyjevim detektorjem, nekako izboljˇsati. To smo dosegli z
+morfoloˇskim procesiranjem slike.
+Morfoloˇsko procesiranje [14] je procesiranje binarnih slik, sestavljeno iz
+operacij, s katerimi je objekt X spremenjen s strani strukturiranega objekta
+B, pri ˇcemer dobimo obliko, ki je bolj ustrezna za obdelavo prepoznavanja
+vzorcev. Elementa v medsebojni interakciji (X in B) sta predstavljena kot
+skupka v evklidskem dvodimenzionalnem prostoru (angl. euclidean dimensional space).
+Evklidski prostor je realni topoloˇski vektorski prostor, v katerem je definiran skalarni produkt. S pomoˇcjo skalarnega produkta lahko potem v
+evklidskem prostoru merimo razdalje in kote.
+Veˇcina morfoloˇskih operacij je izpeljana iz dveh osnovnih morfoloˇskih
+operacij, dilatacije (angl. dilation) in erozije (angl. erosion).
+Dilatacija, z drugo besedo tudi razˇsirjenje, poskuˇsa zapolniti manjˇse vdore
+in s tem razˇsiriti regijo na sliki. Definicija: dilatacija X z B, oznaˇcena z X B,
+je mnoˇzica vseh toˇck x, kjer imata Bx in X neprazna preseˇciˇsˇca:
+X
+
+B = X|Bx ⊂ X
+
+(2.5)
+
+ˇ poenostavimo, je dilatacija operacija, ki vsak slikovni element ozadja, ki
+Ce
+se dotika objekta, spremeni v slikovni element objekta.
+Erozija, z drugo besedo tudi slabitev, poskuˇsa odstraniti manjˇse vdore
+in s tem oslabiti oziroma stanjˇsati regijo na sliki. Definicija: erozija X z B,
+oznaˇcena z X⊕B, je mnoˇzica vseh toˇck x, kjer je Bx vkljuˇcen v X:
+X ⊕ B = X|Bx ∩ X = 0
+
+(2.6)
+
+2.4. DILATACIJA IN EROZIJA
+
+23
+
+ˇ poenostavimo, je erozija operacija, ki vsak slikovni element objekta, ki se
+Ce
+dotika ozadja, spremeni v slikovni element ozadja.
+Na sliki 2.6, je prikazan dober primer erozije in dilatacije. Leva sliˇcica
+je originalna slika, na sredini je prikazana erozija te slike, na desni sliˇcici pa
+vidimo dilatacijo prve, originalne slike.
+
+Slika 2.6: Dilatacija in erozija.
+
+V naˇsem algoritmu smo s pomoˇcjo erozije in dilatacije zmanjˇsali ˇstevilo
+zaznanih obrisov in s tem izboljˇsali zaznavo kvadratov. Na binarnih slikah, ki jih dobimo s Cannyjevim detektorjem robov, je najprej uporabljena
+dilatacija, s katero zapolnemo morebitne luknje v zaznanih robovih, nato
+pa uporabimo ˇse erozijo, da z dilatacijo odebeljene robove nazaj stanjˇsamo.
+Slike, dobljene s tema dvema operacijama, so prikazane na sliki 2.7.
+
+Slika 2.7: Slike robov po dilataciji in eroziji.
+
+24
+
+POGLAVJE 2. OBDELAVA SLIKE IN BRANJE VSEBINE
+
+2.5
+
+Iskanje in detekcija kvadratkov
+
+Po korakih pretvorbe v sivinsko sliko, svetlobnem filtru, detekciji robov in
+dilataciji ter eroziji, imamo ˇstiri binarne slike robov, na katerih lahko brez
+veˇcjih problemov razpoznamo kvadratke. Detekcijo in razpoznavo kvadratkov implementiramo tako, da najprej uporabimo iskanje obrisov, ki najde
+vse obrise v sliki, ki pa jih nato filtriramo tako, da ostanejo samo ˇzeleni
+kvadratki.
+Naslednji korak je torej detekcija okvirjev v sliki. Programsko reˇsitev smo
+razvili v programskem jeziku C++ s pomoˇcjo knjiˇznice OpenCV [15].
+OpenCV je odprtokodna knjiˇznica za delo z raˇcunalniˇskim vidom. Napisana je v jeziku C in C++, poganja pa se lahko na operacijskih sistemih
+Linux, Windows in Mac OS X. Mogoˇce jo je vkljuˇciti tudi v druge programske
+jezike.
+Razvita je bila za raˇcunalniˇsko uˇcinkovitost in z velikim poudarkom na
+aplikacije v realnem ˇcasu. Napisana je v optimiziranem jeziku C in zna
+uporabljati veˇcjedrne procesorje. Glavni cilj knjiˇznice OpenCV je zagotoviti enostavno infrastrukturo raˇcunalniˇskega vida (angl. computer vision),
+ki uporabnikom pomaga hitro zgraditi zapletene aplikacije, ki uporabljajo
+raˇcunalniˇski vid. Knjiˇznica vsebuje veˇc kot 500 metod za delo z raˇcunalniˇskim
+vidom. Ker je raˇcunalniˇski vid velikokrat povezan s strojnim uˇcenjem (angl.
+machine learning), vsebuje OpenCV tudi podporo za strojno uˇcenje.
+Za iskanje obrisov je v naˇsem sistemu uporabljena metoda iz knjiˇznice
+OpenCV, imenovana cvFindContours(). Preden gremo v podrobnosti metode, si poglejmo, kaj sploh je obris. Obris je seznam toˇck, ki predstavlja
+neko povezano krivuljo v sliki. Ta predstavitev se lahko razlikuje glede na
+trenutne okoliˇsˇcine v sliki. V knjiˇznici OpenCv so obrisi predstavljeni z zaporedji, v katerih vsak vnos v zaporedje kodira informacijo o lokaciji naslednje
+toˇcke v krivulji. Ta zaporedja so predstavljena z objektom cvSeq (povezan
+seznam struktur).
+
+2.5. ISKANJE IN DETEKCIJA KVADRATKOV
+
+2.5.1
+
+25
+
+Iskanje obrisov
+
+Metoda cvFindContours() [15] poiˇsˇce oziroma izraˇcuna obrise iz binarnih
+slik, zato je bilo potrebno slike najprej obdelati s Cannyjevim detektorjem.
+Funkcionalnost metode cvFindContours() prikazuje slika 2.8. Na zgornjem delu slike je prikazana testna slika, ki vsebuje veˇc belih obmoˇcij (oznaˇcenih od A do E) na temnem ozadju. Na spodnjem delu pa je upodobljena ista
+slika, na kateri so oznaˇceni obrisi, ki jih najde metoda cvFindContours().
+Ti obrisi so oznaˇceni s cX ali hX, kjer c pomeni obris (angl. contour), h
+pomeni luknja (angl. hole), X pa je neko ˇstevilo. Nekateri obrisi so prikazani
+s prekinjenimi ˇcrtami. To so zunanje meje belih obmoˇcij. Drugi pa so prikazani s pikastimi ˇcrtami in so notranje meje oziroma zunanje meje lukenj
+(temnih obmoˇcij).
+
+Slika 2.8: Testna slika podana metodi cvFindContours().
+
+OpenCV omogoˇca tudi razvrˇsˇcanje najdenih obrisov v drevo obrisov, ki
+
+26
+
+POGLAVJE 2. OBDELAVA SLIKE IN BRANJE VSEBINE
+
+zakodira relacije vsebovanosti v svojo strukturo. Drevo obrisov, ki bi ustrezalo zgornji testni sliki, bi imelo obris c0, kot svoje korensko vozliˇsˇce. Luknji
+h00 in h01 bi bili njegova otroka, ta pa bi naprej imela obrise, ki jih direktno
+vsebujeta kot svoje otroke, in tako naprej.
+Metodi cvFindContours() je potrebno podati ˇsest parametrov in kot
+rezultat vrne ˇstevilo vseh najdenih obrisov (int), predstavljena pa je na naslednji naˇcin:
+int cvFindContours(
+IplImage*
+
+img,
+
+CvMemStorage
+
+storage,
+
+CvSeq*
+
+firstContour,
+
+int
+
+headerSize,
+
+CvContourRetrevialMode
+
+mode,
+
+CvChainApproxMethod
+);
+
+method
+
+Prvi parameter je vhodna slika, ki naj bi bila 8-bitna slika z enim kanalom
+in je interpretirana kot binarna (vsi neniˇcelni slikovni elementi so enaki med
+seboj). Med izvajanjem metoda cvFindContours() uporabi to sliko kot
+prostor za raˇcunanje, zato je potrebno narediti kopijo slike in podati to kopijo
+metodi, ˇce ˇzelimo sliko uporabiti pozneje.
+Naslednji parameter, storage, oznaˇcuje prostor, v katerem lahko metoda najde prostor v spominu, v katerega shrani obrise. Ta prostor je potrebno pred uporabo rezervirati. V knjiˇznici OpenCV se to stori z metodo
+cvCreateMemStorage(), ki ustvari entiteto, imenovano memory storage, ki
+je namenjena ravnanju s spominskim prostorom za dinamiˇcne objekte.
+Naslednji je firstContour, ki je kazalec na CvSeq*. Metoda
+cvFindContours() ga rezervira sama, zato da ga uporabniku ni potrebno.
+Namesto tega poˇsljemo v metodo le kazalec na firstContour, da ga lahko
+metoda nastavi. V tem objektu (firstContour) lahko najdemo kazalec na
+krovni element izdelanega drevesa obrisov.
+Parameter headerSize metodi samo pove veˇc o objektih, ki bodo rezervirani. Lahko je nastavljeno na sizeof(CvContour) ali na sizeof(CvChain).
+
+2.5. ISKANJE IN DETEKCIJA KVADRATKOV
+
+27
+
+Zadnje je uporabljeno, ko je metoda pribliˇzevanja nastavljena na CV CHAIN CODE.
+Naslednja sta na vrsti parametra mode in method, ki nam povesta veˇc o
+tem, kaj natanˇcno naj metoda raˇcuna in kako naj to raˇcuna.
+Parameter
+
+mode
+
+je lahko nastavljen na eno izmed ˇstirih moˇznosti:
+
+CV RETR EXTERNAL, CV RETR LIST, CV RETR CCOMP, ali CV RETR TREE. Vrednost parametra mode pove metodi, toˇcno katere obrise ˇzelimo najti in kako
+bi radi, da nam je rezultat predstavljen.
+Na sliki 2.9 so prikazane topologije (angl. topologies), ki jih dobimo kot
+rezultat vsake izmed ˇstirih moˇznih vrednosti za naˇcin, ki ga doloˇca paramater
+mode. V vsakem izmed primerov si strukture lahko predstavljamo kot ravni,
+ki so povezane z vodoravnimi povezavami (h next in h prev) in ki so loˇcene
+med seboj z navpiˇcnimi povezavami (v next in v prev).
+
+Slika 2.9:
+
+Prikaz razliˇcnih vrednosti parametra mode v metodi
+
+cvFindContours(), glede na vhodno sliko, prikazano na sliki 2.8.
+
+Naˇ
+cin CV RETR EXTERNAL
+Vrne samo najbolj zunanje obrise. V sliki 2.8 imamo samo en zunanji obris,
+zato je v sliki 2.9 za to vrednost prikazan samo prvi obris (c0), ki kaˇze na to
+zaporedje toˇck, drugih povezav pa ni prikazanih.
+Naˇ
+cin CV RETR LIST
+Vrne vse obstojeˇce obrise in jih doda v seznam. Slika 2.9 prikazuje seznam
+obrisov, za to vrednost, ki jih dobimo kot rezultat za vhodno sliko na sliki
+2.8. V tem primeru je najdenih osem obrisov, ki so vsi med seboj povezani
+
+28
+
+POGLAVJE 2. OBDELAVA SLIKE IN BRANJE VSEBINE
+
+s h prev in h next.
+Naˇ
+cin CV RETR CCOMP
+Vrne vse obstojeˇce obrise in jih organizira v dvonivojsko hierarhijo, kjer so
+meje na prvem nivoju vse zunanje meje komponent, meje na drugem nivoju
+pa so meje vseh lukenj. Glede na sliko 2.9 lahko vidimo, da imamo za vhodno sliko s slike 2.8 pet zunanjih mej, od katerih tri meje vsebujejo luknje.
+Luknje so povezane s pripadajoˇcimi zunanjimi mejami z v next in v prev.
+Najbolj zunanja meja c0 vsebuje dve luknji. Ker ima lahko v next samo eno
+vrednost, ima lahko vozliˇsˇce samo enega otroka. Vse luknje, znotraj c0, so
+zato povezane ena z drugo s h prev in h next kazalci.
+Naˇ
+cin CV RETR TREE
+Vrne vse obstojeˇce obrise in rekonstruira celotno hierarhijo ugnezdenih obrisov. V naˇsem primeru (sliki 2.8 in 2.9) to pomeni, da je najbolj zunanji obris
+c0 korensko vozliˇsˇce. Pod njim je luknja h00, ki je povezana s ˇse eno luknjo
+h01 na istem nivoju. Vsaka od teh lukenj ima otroke (obrisa c000 in c010), ki
+so povezani s svojimi starˇsi z vertikalnimi povezavami. Tako se povezovanje
+nadaljuje do najbolj notranjih obrisov v sliki, ki predstavljajo zadnja vozliˇsˇca
+(liste) v drevesu.
+Naslednji parameter v metodi je method, ki pove, kako so obrisi predstavljeni. Lahko ima pet vrednosti, opisanih spodaj.
+Najprej si poglejmo, kaj je veriˇzna koda (angl. chain code) [16]. Veriˇzna
+koda je brezizgubni stiskalni algoritem (angl. lossless compression algorithm)
+za enobarvne slike (slike, ki so v celoti naslikane z eno barvo oziroma veˇc
+odtenki ene barve). Osnovni princip veriˇzne kode je, da posamezno zakodira
+vsako povezano komponento v sliki. Za vsako takˇsno regijo je nato izbrana
+toˇcka na meji in njene koordinate so posredovane. Kodirnik se nato pomika
+po meji regije in v vsakem koraku posreduje simbol, ki predstavlja smer
+njegovega gibanja. Tako se nadaljuje, dokler se kodirnik ne vrne nazaj na
+svoj zaˇcetni poloˇzaj. Na tej toˇcki je bila trenutna povezana komponenta v
+celoti opisana in kodirnik nadaljuje z naslednjo. Ena najbolj znanih veriˇznih
+kod je Freemanova.
+
+2.5. ISKANJE IN DETEKCIJA KVADRATKOV
+
+29
+
+Metoda CV CHAIN CODE
+Obrisi, ki jih vrne cvFindContours(), so shranjeni kot Freemanove veriˇzne
+kode (angl. Freeman chain code). Vse ostale vrednosti vrnejo poligone (zaporedja toˇck).
+Metoda CV CHAIN APPROX NONE
+Spremeni oziroma pretvori vse toˇcke iz veriˇzne kode v toˇcke.
+Metoda CV CHAIN APPROX SIMPLE
+Stisne (angl. compresses) vodoravne, navpiˇcne in diagonalne segmente. Izpusti le njihove konˇcne toˇcke.
+Metoda CV CHAIN APPROX TC89 L1
+Uporabi Teh-Chinov veriˇzni algoritem za pribliˇzke.
+Metoda CV LINK RUNS
+Uporablja se popolnoma drugaˇcen algoritem od prej naˇstetih, ki poveˇze vodoravne segmente. To metodo lahko uporabimo samo, ˇce je parameter mode
+nastavljen na CV RETR LIST.
+
+2.5.2
+
+Uporaba metode in filtriranje obrisov
+
+Metoda cvFindContours() je v naˇsem sistemu uporabljena na vsaki izmed ˇstirih binarnih slik, ki jih dobimo v predhodnem koraku (detekcija
+robov). Parametra metoda (angl. method) in naˇcin (angl. mode), ki sta
+podana metodi, sta CV RETR LIST, ki vrne seznam vseh obstojeˇcih obrisov
+in CV CHAIN APPROX SIMPLE, ki iz rezultata izloˇci vse vmesne toˇcke in pusti
+samo toˇcke na robu. Tako dobimo, na primer, za ˇstirikotnik samo ˇstiri robne
+toˇcke, ki predstavljajo njegov obris.
+Obrise, ki jih dobimo za posamezno sliko, nato dodamo v seznam (CvSeq*)
+in tako dobimo v enem seznamu obrise vseh ˇstirih binarnih slik. Poleg obrisov
+ˇzelenih treh kvadratkov pa dobimo v seznam seveda tudi vse ostale obrise,
+nekateri obrisi pa so tudi podvojeni, saj zdruˇzimo skupaj vse obrise ˇstirih
+slik. Naslednji korak sistema je zato filtriranje dobljenih obrisov.
+Prvi filter je implementiran ˇze pri dodajanju obrisov posamezne slike v
+omenjeni skupni seznam. Preden je obris dodan v skupni seznam, mora
+
+30
+
+POGLAVJE 2. OBDELAVA SLIKE IN BRANJE VSEBINE
+
+izpolnjevati doloˇcene pogoje. Dodan je le, ˇce:
+• ima natanˇcno ˇstiri toˇcke, ker nas zanimajo samo ˇstirikotniki,
+• je konveksen (vsi robovi so izboˇceni); primer lahko vidimo na sliki 2.10,
+
+Slika 2.10: Primer konveksnosti in nekonveksnosti.
+
+• njegova velikost ustreza doloˇceni meji in
+• vsi njegovi koti so veˇcji od 90 stopinj; to velja takrat, ko za vsak kot
+obrisa velja, da je njegov sinus zelo majhen.
+Obrisi, ki jih dobimo z uporabo prvega filtra nad vsemi dobljenimi obrisi, so
+prikazani na sliki 2.11.
+
+2.5. ISKANJE IN DETEKCIJA KVADRATKOV
+
+31
+
+Slika 2.11: Obrisi, ki jih dobimo po prvem filtriranju.
+
+Kot je razvidno ˇze iz zgornje slike, rezultati dobljeni s prvim filtriranjem
+niso dovolj dobri, da bi si pomagali z njimi, saj je ˇstevilo obrisov ˇse vedno
+preveliko, nekateri enaki oziroma zelo podobni obrisi pa so v seznamu zapisani
+tudi dvakrat.
+Zato je potrebno implementirati ˇse dodatno filtriranje. Drugo filtriranje
+je izvedeno nad seznamom obrisov, dobljenim s prvim filtriranjem. Za vsak
+obris iz tega seznama se izvede naslednje preverjanje:
+• lokacija obrisa - obris se mora nahajati na desni polovici celotne slike,
+• ozadje obrisa - ozadje obrisa mora biti precej temnejˇse od ozadja v
+okolici obrisa,
+• razmerje stranic obrisa - stranici obrisa a in b morata biti v razmerju
+1 : 1; ta pogoj je izpolnjen takrat, ko za stranici a in b velja:
+abs(a - b) <= 2 pikslov.
+• unikatnost obrisa - v seznamu ne sme biti dveh enakih, oziroma zelo
+podobnih obrisov; o preverimo tako, da vsak obris iz seznama primerjamo z vsemi ostalimi obrisi; ˇce v seznamu ne obstaja nobeden drugi
+
+32
+
+POGLAVJE 2. OBDELAVA SLIKE IN BRANJE VSEBINE
+obris, ki ima pribliˇzno enak obseg in se hkrati nahaja na pribliˇzno enaki
+lokaciji, potem je obris unikaten.
+Obrise, ki izpolnjujejo vse zgornje pogoje, obdrˇzimo, v nasprotnem pri-
+
+meru pa so izbrisani iz seznama.
+Po drugem filtriranju dobimo ˇzelene tri obrise kvadratkov, s katerimi
+lahko doloˇcimo pozicije polj, ki jih iˇsˇcemo. Prikazani so na sliki 2.12.
+
+Slika 2.12: Obrisi, ki nam ostanejo po uporabi drugega filtra.
+
+2.6. ROTACIJA SLIKE
+
+2.6
+
+33
+
+Rotacija slike
+
+V aplikacijah, s katerimi bodo uporabniki zajemali slike univerzalnega plaˇcilnega naloga, bo sicer v naprej doloˇcena pozicija, kako naj nalog stoji, vseeno pa bo dovoljeno manjˇse odstopanje pri slikanju. Zato lahko na vhodu
+priˇcakujemo tudi nekoliko zasukane slike. Za poravnanje takˇsne slike je potrebno implementirati rotacijo.
+Ali je podana slika kandidat za rotacijo, preverimo s pomoˇcjo treh najdenih kvadratkov v predhodnem koraku. Najprej pregledamo pozicije vseh
+treh kvadratkov na sliki in se osredotoˇcimo na dva kvadratka, ki sta najbolj
+desno. Ta dva kvadratka morata biti toˇcno eden nad drugim, zato lahko z
+njuno pomoˇcjo izraˇcunamo kot zasuka slike.
+Najprej odˇstejemo y -koordinato leve zgornje toˇcke zgornjega kvadrata od
+leve zgornje toˇcke spodnjega kvadrata in tako dobimo razdaljo navpiˇcne ˇcrte
+med njima. Nato isto ponovimo ˇse za x -koordinato in dobimo razdaljo vodoravne ˇcrte med toˇckama. S tema dvema razdaljama lahko sedaj z uporabo
+Pitagorovega izreka izraˇcunamo ˇse dejansko razdaljo med toˇckama in tako
+dobimo pravokotni trikotnik, prikazan na sliki 2.13.
+
+Slika 2.13: Pravokotni trikotnik, dobljen s pomoˇcjo razdalj med toˇckama.
+
+Kot zasuka slike je enak zgornjemu kotu izraˇcunanega pravokotnega trikotnika. Izraˇcunamo ga s formulo za izraˇcun kota v pravokotnih trikotnikih:
+cos α =
+
+prileznaKateta
+hipotenuza
+
+(2.7)
+
+34
+
+POGLAVJE 2. OBDELAVA SLIKE IN BRANJE VSEBINE
+Sliko rotiramo samo v primeru, ˇce je ta kot veˇcji od dveh stopinj, saj je
+
+v nasprotnem primeru slika dovolj dobra in je ni potrebno rotirati.
+Na sliki 2.14 je prikazan primer rotacije slike, ki je izvedena v sistemu,
+po zgoraj opisanem postopku.
+
+Slika 2.14: Rezultat rotacije slike.
+
+2.6. ROTACIJA SLIKE
+
+2.6.1
+
+35
+
+Iskanje polj UPN-ja
+
+Po detekciji kvadratkov in rotaciji imamo sedaj na voljo pravilno rotirano
+sliko, z oznaˇcenimi tremi kvadratki. Imamo torej dovolj podatkov, da doloˇcimo,
+kje v slikanem univerzalnem plaˇcilnem nalogu se nahajajo polja z vsebino,
+ki nas zanimajo.
+Kot je omenjeno ˇze v uvodu, iˇsˇcemo polji Koda namena in Namen/Rok
+plaˇcila v zgornjem delu naloga, polja Znesek, IBAN in Referenca v sredinskem
+delu in vrstico OCR, ki je ˇcisto na dnu naloga (vsa ta polja so oznaˇcena na
+sliki 1.1).
+Preden se lotimo iskanja polj, je potrebno izraˇcunati viˇsino in ˇsirino
+ˇ
+plaˇcilnega naloga (samo dela ki nas zanima, brez talona za stranko). Sirino
+izraˇcunamo tako, da razdaljo osi x (vodoravne osi), med zgornjim in sredinskim kvadratkom, pomnoˇzimo s 3.05, viˇsino pa tako, da razdaljo osi y
+(navpiˇcne osi), med sredinskim in spodnjim kvadratkom, pomnoˇzimo z 2.7.
+sirina = (sredinskiKvadrat → x − zgornjiKvadrat → x) ∗ 3.05
+
+(2.8)
+
+visina = (spodnjiKvadrat → y − sredinskiKvadrat → y) ∗ 2.7
+
+(2.9)
+
+Polje: Koda namena
+Prvo polje, ki ga program poiˇsˇce, je Koda namena. Njegovo pozicijo dobimo
+tako, da vzamemo sredinski kvadratek, viˇsino in ˇsirino, in s pomoˇcjo teh
+vrednosti izraˇcunamo oddaljenost polja od tega kvadratka. Rezultat iskanja
+je prikazan na spodnji sliki 2.15.
+
+Slika 2.15: Zaznano polje, ki vsebuje kodo namena.
+
+36
+
+POGLAVJE 2. OBDELAVA SLIKE IN BRANJE VSEBINE
+
+Polje: Namen/Rok plaˇ
+cila
+Naslednje polje je na vrsti Namen/rok plaˇcila. Njegovo pozicijo dobimo tako,
+da prvemu polju, ki ga ˇze imamo zaznanega, priˇstejemo dolˇzino stranice enega
+od kvadratkov. Dobljeni rezultat prikazuje slika 2.16.
+
+Slika 2.16: Zaznano polje, ki vsebuje Namen/rok plaˇcila.
+
+Polje: Znesek
+Pozicijo polja zneska, podobno kot pri Kodi namena, dobimo tako, da vzamemo sredinski kvadratek, viˇsino ter ˇsirino, in izraˇcunamo, kje se nahaja.
+Na sliki 2.17 je prikazano polje, ki ga dobimo.
+
+Slika 2.17: Zaznano polje, ki vsebuje Znesek.
+
+Polje: IBAN
+Polje z IBAN-om se nahaja bliˇze spodnjemu kvadratku, zato tokrat namesto srednjega kvadratka vzamemo spodnjega. Tako kot pri Kodi namena in
+Znesku tudi tukaj pozicijo izraˇcunamo s ˇsirino in viˇsino naloga. Polje, ki ga
+s tem dobimo, je prikazano na sliki 2.18.
+
+Slika 2.18: Zaznano polje, ki vsebuje IBAN.
+
+2.6. ROTACIJA SLIKE
+
+37
+
+Polje: Referenca
+Predzadnje polje, ki ga poiˇsˇcemo, je polje Referenca. Vodoravno se zaˇcne
+v isti toˇcki kot polje IBAN, zato vzamemo za pozicijo osi x isto toˇcko kot
+za IBAN in s pomoˇcjo spodnjega kvadratka izraˇcunamo le, kje na osi y se
+nahaja. Polje je prikazano na sliki 2.19.
+
+Slika 2.19: Zaznano polje, ki vsebuje Referenco.
+
+Polje: OCR-vrstica
+Ostane nam ˇse zadnje iskanje polja OCR-vrstice. Poiˇsˇcemo jo tako, da
+enako kot pri referenci za pozicijo osi x vzamemo isto toˇcko kot za IBAN in
+poiˇsˇcemo ˇse pozicijo na osi y . Na sliki 2.20 je prikazana OCR-vrstica.
+
+Slika 2.20: Zaznana OCR-vrstica.
+
+38
+
+POGLAVJE 2. OBDELAVA SLIKE IN BRANJE VSEBINE
+
+2.7
+
+Razpoznava besedila (OCR)
+
+Za postopkom predprocesiranja, s katerim smo dobili polja, ki jih potrebujemo za branje besedila znotraj njih, je seveda na vrsti branje tega besedila.
+Branje besedila je sestavljeno iz dveh delov. Drugi del branja je optiˇcno razpoznavanje znakov (angl. optical character recognition - OCR), s katerim so
+prebrani posamezni znaki. Ker pa optiˇcno razpoznavanje znakov daje mnogo
+boljˇse rezultate, ˇce je vhodna slika ˇcrno bela in lepo obdelana (odstranjeni
+robovi, ozadje, ˇcrte ...), je prvi korak predpriprava zaznanih polj.
+
+2.7.1
+
+Priprava zaznanih polj na branje
+
+Cilj priprave na branje je torej odstranitev ˇcim veˇc moteˇcih objektov v
+ozadju, kot so robovi, ˇcrte in ostale stvari, ki bi lahko zmotile OCR pri braˇ si podrobno ogledamo zaznana polja, lahko opazimo, da je ozadje
+nju. Ce
+precej svetlejˇse od pisave, robovi in ˇcrte, ki oznaˇcujejo polja, pa so precej
+rdeˇce barve.
+Glavni del priprave polj je zato uporaba rdeˇcega filtra, ki slikovne elemente, ki presegajo doloˇcen prag rdeˇce barve, spremeni v slikovne elemente
+bele barve. Slika je v barvnem prostoru RGB, zato jo najprej pretvorimo v
+barvni prostor HSV (Slika 2.21), v katerem je laˇzje izolirati doloˇceno barvo,
+ki jo ˇzelimo. Tako kot pri RGB-slikah, tudi HSV hrani barvne informacije v
+treh kanalih, le da tukaj kanal V (Value) drˇzi informacijo o svetlosti, ostala
+dva kanala pa vsebujeta informaciji o barvi.
+
+Slika 2.21: Model, ki predstavlja HSV barvni prostor.
+
+2.7. RAZPOZNAVA BESEDILA (OCR)
+
+39
+
+Filter gre ˇcez vse slikovne elemente v sliki in primerja vrednosti H, S in
+ˇ katera od vrednosti presega prag, se ta slikovni
+V z doloˇcenimi pragi. Ce
+element pobarva v belo, v nasprotnem primeru pa se pobarva v ˇcrno. Tako
+se znebimo vseh rdeˇcih ˇcrt in robov polj, ki bi lahko motili OCR. Hkrati se
+v belo prebarva tudi ozadje, saj se preverja tudi vrednost V, ki predstavlja
+svetlost. Tako dobimo slike, ki imajo le ˇcrne in bele slikovne elemente in jih
+OCR dosti laˇzje prebere.
+Ponekod v slikah lahko ostane ˇse kakˇsen ˇsum, zato na sliki uporabimo
+ˇse glajenje, s katerim odstranimo morebitni ˇsum. Tako dobimo iz polj na
+slikah, prikazanih na prejˇsnjih straneh, pripravljena polja na branje vsebine,
+ki so prikazana na sliki 2.22.
+
+Slika 2.22: Zaznana polja, pripravljena na OCR-branje.
+
+40
+
+POGLAVJE 2. OBDELAVA SLIKE IN BRANJE VSEBINE
+
+2.7.2
+
+Optiˇ
+cno branje besedila v poljih
+
+Z vhodne slike, ki jo imamo na zaˇcetku, smo s pomoˇcjo predprocesiranja in
+zaznave polj dobili dele slike, na katerih so polja, ki nas zanimajo. Ta polja
+smo nato ˇse obdelali s svetlobnim filtrom ter jih zgladili. Sedaj je na vrsti ˇse
+samo optiˇcno razpoznavanje znakov v zaznanih poljih.
+Optiˇcno razpoznavanje znakov [17, 18, 19] je mehaniˇcna ali elektronska
+pretvorba skeniranih slik roˇcno napisanega ali natipkanega besedila oziroma
+znakov v strojno kodiran tekst. Pogosto se uporablja kot naˇcin vnosa podatkov iz neke vrste originalnih podatkov papirnatega izvora (dokumenti,
+poˇsta, poljubni tiskani zapisi). Je pogosta metoda digitalizacije tiskanih besedil, tako da se lahko elektronsko iˇsˇce po njih, so boljˇse shranjena, prikazana
+na spletu in uporabljena v strojnih procesih, kot na primer strojno prevajanje
+besedila in rudarjenje besedila (postopek pridobivanja kakovostnih informacij
+iz besedila).
+Zgodnje verzije je bilo potrebno programirati s slikami vsakega znaka in
+so delovale za posamezno pisavo naenkrat. Sodobnejˇsi sistemi, ki so na voljo
+sedaj, so inteligentni in imajo visoko stopnjo natanˇcnosti prepoznave veˇcine
+pisav. Nekateri sistemi so sposobni reproducirati formatirane izpise, ki so
+skoraj enaki kot originalna skenirana stran [16].
+Obstaja veliko plaˇcljivih in odprtokodnih sistemov za optiˇcno razpoznavanje znakov. Med najbolj znanimi so:
+• Tesseract (odptrokodni),
+• ABBY (plaˇcljiv),
+• IRIS ReadIRIS (plaˇcljiv),
+• Nuance (plaˇcljiv)
+Pri odloˇcanju, kateri sistem OCR uporabiti za branje, so najpomembnejˇse
+lastnosti, na katere je treba biti pozoren, naslednje:
+• natanˇcnost prepoznavanja znakov,
+
+2.7. RAZPOZNAVA BESEDILA (OCR)
+
+41
+
+• natanˇcnost pri rekonstrukciji izpisa strani,
+• podpora za razne jezike in pisave,
+• hitrost.
+Po raziskavi raznih sistemov OCR in pregledovanju njihovih lastnosti in zmogljivosti smo se odloˇcili za uporabo Tesseract-a. Temeljni razlog je ta, da je
+odprtokoden in hkrati zelo zmogljiv.
+Tesseract
+Tesseract [20] je najverjetneje nabolj natanˇcen odprtokodni sistem. Zmoˇzen
+je prebrati veliko razliˇcnih formatov slik in jih pretvoriti v besedilo v veˇc kot
+60 razliˇcnih jezikih, moˇzno pa ga je nauˇciti tudi nov jezik oziroma pisavo. V
+testu natanˇcnosti UNLV, leta 1995, je bil med prvimi tremi sistemi. Sistemu
+je bil med leti 1995 in 2006 zelo malo izboljˇsan, po tem pa je njegov razvoj
+prevzel Google, ki je do danes uvedel veliko optimizacij.
+Tesseract deluje na operacijskih sistemih Linux, Windows in Mac OSX,
+lahko pa je uporabljen tudi na ostalih sistemih, kot na primer Android in
+iPhone, vendar le-ti niso dobro testirani.
+Sistemu Tesseract smo sprva za test kar podali svoja predobdelana polja z
+besedilom s testne slike, brez kakrˇsnekoli predpriprave. Rezultati, ki smo jih
+dobili, so bili presenetljivo dobri, razen vrstice OCR, kjer je posebna pisava
+EUROBANKING, ki je Tesseract ni znal prebrati. Tesseract je v pribliˇzno
+80 % znake prebral pravilno, kar je zelo dobro. Izjeme so bile predvsem znaki
+a , ki jih je sistem zamenjal z @ ; znaki S , ki jih je sistem zamenjal
+s
+
+5
+
+in podobno. Druge izjeme so bile, da je sistem Tesseract ˇsum slike
+
+prepoznal kot znake. Primer branja polja Referenca s sistemom Tesseract je
+prikazan na sliki 2.23. Tesseract na vhod dobi polje Referenca, kot rezultat
+pa nam vrne nabor znakov, ki jih prepozna.
+
+42
+
+POGLAVJE 2. OBDELAVA SLIKE IN BRANJE VSEBINE
+
+Slika 2.23: Branje polja Referenca s sistemom Tesseract.
+
+Vidimo lahko, da so vsi znaki na sliki prepoznani pravilno. Problem je v
+tem, da so poleg njih prepoznani ˇse nekateri znaki, ki jih na sliki ni. Zato
+smo se odloˇcili, da sistem Tesseract ˇse izboljˇsamo in ga nauˇcimo nov jezik
+oziroma pisavo.
+Uˇ
+cenje Tesseracta
+Zadnja verzija Tesseracta (verzija 3.2) je nauˇcena prebrati veˇc kot 60 razliˇcnih
+ˇ pa uporabniku to ni dovolj, lahko sistem nauˇci nov jezik. V
+jezikov. Ce
+verziji 2 je bilo uˇcenje Tesseracta kar zapleten proces, ki je vzel veliko ˇcasa.
+Z verzijo 3 in naprej pa so razvijalci razvili Tesseract Trainer, ki uˇcenje zelo
+poenostavi.
+Za potrebe sistema optiˇcnega branja univerzalnega plaˇcilnega naloga smo
+Tesseract nauˇcili dve novi pisavi. Najprej smo ga nauˇcil pisave Courier New,
+z omejenim naborom znakov. Dovoljeni znaki so le vse slovenske ˇcrke, ˇstevilke
+od 0 do 9, vejica (,), pika (.), poˇsevnica (/), dvopiˇcje (:), podpiˇcje (;), minus (-) in zvezdica (*). To so vsi znaki, ki jih lahko priˇcakujemo v poljih
+univerzalnega plaˇcilnega naloga, zato drugih ne potrebujemo in bi nas samo
+motili.
+Kot drugo smo ga nauˇcil pisavo, s katero je napisana vsebina v vrstici
+OCR. To je pisava OCR-A1 EUROBANKING. To je posebna pisava, ki je
+uporabljena samo besedilo v OCR-vrstici in je namenjena prav boljˇsi prepoznavi z optiˇcnim branjem znakov.
+Postopek uˇcenja sistema Tesseract, pisave OCR-A1 EUROBANKING
+smo izvedli v veˇc korakih.
+
+2.7. RAZPOZNAVA BESEDILA (OCR)
+
+43
+
+1. korak: Namestitev potrebnih programov
+Preden se sploh lotimo uˇcenja nove pisave, je seveda potrebno namestiti
+programe, ki jih za to potrebujemo. Namestili smo programa
+• Tesseract 3.2 Trainer (program za uˇcenje Tesseracta) in
+• JTessBox Editor (program za izdelavo slik in datoteko okvirjev (angl.
+box file)).
+2. korak: Izdelava slike in datoteke z okvirji
+Program JTessBoxEditor omogoˇca zelo enostavno izdelavo slik in datotek z
+okvirji, saj ima urejevalnik, kjer se opravi vse, kar je potrebno za izdelavo
+le-teh.
+Za izdelavo slike in datoteke z okvirji za uˇcenje pisave Courier New je v
+urejevalniku le potrebno nastaviti ustrezno pisavo, velikost pisave in razmak
+med znaki ter izbrati opcijo ”generiraj”. S tem izdelamo sliko in okvirje
+za prvo pisavo. Program JTessBoxEditor, njegov urejevalnik s primerom
+vsebine in rezultat izdelave slike pisave so prikazani na sliki 2.24. Na levi
+strani slike je prikazan urejevalnik programa JTessBoxEditor z besedilom,
+na desni strani pa vidimo sliko in ustrezne okvirje, ki jih program izdela iz
+besedila na levi strani.
+
+Slika 2.24: Urejevalnik jBoxText Editor z vnesenim besedilom in rezultat
+generiranja slike in okvirjev.
+
+44
+
+POGLAVJE 2. OBDELAVA SLIKE IN BRANJE VSEBINE
+Pisave OCR-A1 EUROBANKING pa v urejevalniku programa ni, zato
+
+smo sliko in datoteko z okvirji izdelali roˇcno. Sliko smo izdelali tako, da
+smo iz testne slike univerzalnega plaˇcilnega naloga izrezali vrstico OCR in jo
+spremenili v ˇcrno-belo sliko (slika 2.25). Pomembno je, da shranimo sliko kot
+datoteko TIFF, saj je Tesseract moˇzno uˇciti le s tem formatom slik. Slika
+vsebuje nabor vseh moˇznih znakov v OCR-vrstici, zato je dovolj dobra za
+uˇcenje Tesseracta.
+
+Slika 2.25: Slika formata TIFF, ki jo uporabimo za uˇcenje Tesseracta pisave
+OCR-A1 EUROBANKING.
+
+Sedaj je sliki potrebno dodati ˇse ustrezne okvirje. To smo storili tako, da
+smo v datoteki okvirjev za sliko pisave Courier New spremenili njene vrednosti, da ustrezajo sliki EUROBANKING pisave. Rezultat (slike in okvirji), ki
+ga tako dobimo, je prikazan na sliki 2.26.
+
+Slika 2.26: Slika pisave OCR-A1 EUROBANKING z oznaˇcenimi okvirji.
+
+Poglavje 3
+Testiranje in rezultati
+V tem poglavju je predstavljeno testiranje in rezultati sistema, opisanega
+v prejˇsnjem poglavju. Testiranja smo se lotili v ˇstirih delih in z dvema
+naˇcinoma zajema slik. Najprej nas je zanimala pravilnost zaznave treh kvadratkov in s tem pozicije univerzalnega plaˇcilnega naloga na sliki. Nato smo
+preverili pravilnost rotacije, po tem ˇse pravilnost raˇcunanja pozicij polj in
+pravilnost branja vsebine v poljih.
+Prvi naˇcin zajema slik, ki je bil uporabljen, je zajem z mobilnimi napravami. Uporabljene mobilne naprave so bile Samsung Galaxy S3, Samsung
+Galaxy S2 (sistem Android), Samsung Galaxy S2(sistem Windows Mobile),
+Samsung Galaxy ACE2, Nokia Xperia, Nokia XpressMusic 5800, Nexus 3 in
+Iphone 4s.
+Z vsako napravo je bilo zajetih 20 slik razliˇcnih loˇcljivosti, razen s Samsung Galaxy Ace2, s katero je bilo zajetih 40 slik. Pri zajemanju slik so
+veljala naslednja navodila:
+• dovoljen je le manjˇsi naklon (do 10 stopinj),
+• slikamo v veˇc razliˇcnih prostorih in na veˇc razliˇcnih mestih znotraj
+enega prostora (pri oknu, stran od okna),
+• slikamo v razliˇcnih obdobjih dneva pri razliˇcnih osvetlitvah (jutro,
+veˇcer, popoldan),
+45
+
+46
+
+POGLAVJE 3. TESTIRANJE IN REZULTATI
+• slikamo nekaj slik z bliskavico, nekaj brez,
+• slikamo pri razliˇcnih virih osvetlitve (rumena, bela),
+• slikamo na podlagah razliˇcnih barv in tekstur.
+
+Tako smo dobili 180 razliˇcnih slik z razliˇcnimi osvetlitvami, ozadji, nakloni
+in loˇcljivostmi.
+Drugi naˇcin zajemanja slik pa je potekal z uporabo spletne kamere. V
+primeru, ˇce bi se odloˇcili sistem implementirati na blagajne v poslovalnicah
+Banke Koper, bi to storili s pomoˇcjo spletne kamere, na naˇcin, prikazan na
+sliki 3.1.
+
+Slika 3.1: Spletna kamera in stojalo za zajem slike univerzalnega plaˇcilnega
+naloga.
+
+Za testiranje smo stojalo sestavili iz dveh ˇskatel (ena veˇcja, ena manjˇsa) in
+steklenega okenca, ki smo ga postavili na ˇskatli. Vmes smo postavili spletno
+kamero ”Logitech Quickcam Pro 9000 Wired USB PC Webcam”, ki je bila
+priklopljena na testni raˇcunalnik.
+Za razliko zajemanja slik z mobilnimi napravami, kjer smo slike zajeli
+pred testiranjem, so bile s spletno kamero slike zajete ob samem testiranju,
+tako da se je po zajetju slike takoj sproˇzil naˇs sistem. Na ta naˇcin smo
+zajeli in testirali 100 razliˇcnih univerzalnih plaˇcilnih nalogov. Za razliko od
+slik, zajetih z mobilnimi napravami, so bile te slike vse pravilno poravnane,
+slikane v istem prostoru in na isti svetlobi.
+
+ˇ
+3.1. TESTIRANJE ZAZNAVE POLOZAJA
+UNIVERZALNEGA
+ˇ
+PLACILNEGA
+NALOGA
+
+47
+
+Skupaj je bilo torej z naˇsim sistemom testiranih 280 razliˇcnih slik univerzalnih plaˇcilnih nalogov. Testiranje je potekalo v ˇstirih korakih.
+
+3.1
+
+Testiranje zaznave poloˇ
+zaja univerzalnega
+plaˇ
+cilnega naloga
+
+Prvi test je bil test prve naloge naˇsega sistema - zaznave treh ˇcrnih kvadratkov. Testirala se je pravilnost iskanja in filtracije obrisov. Pozicije polj z
+vsebino, ki jih iˇsˇcemo, so najboljˇse izraˇcunane, ˇce imamo vse tri kvadratke,
+moˇzno pa jih je izraˇcunati ˇze z lokacijo dveh kvadratkov. Glede na to smo
+doloˇcili, da je naˇs prvi test uspeˇsen, ˇce sta zaznana najmanj dva kvadratka
+in najveˇc tri kvadratki.
+Test zaznave poloˇzaja je potekal delno avtomatsko. V primeru zajema
+slik z mobilnimi aparati smo vse slike shranili znotraj ene mape. Te slike
+je sistem rekurzivno bral in v primeru, da je naˇsel dva ali tri kvadratke, je
+poveˇcal doloˇcen ˇstevec. V primeru, da je sistem naˇsel dva ali tri kvadratke,
+smo roˇcno pregledali, ˇce so bili najdeni kvadratki pravilni.
+V primeru zajema slik s spletno kamero, kjer je testiranje potekalo takoj
+za zajemom slike, pa smo sistemu dodatno doloˇcili, da slike, kjer je uspeˇsno
+zaznal dva ali tri kvadratke, shrani znotraj dveh map, ki smo ju ustvarili
+za uspeˇsen test, v nasprotnem primeru pa znotraj mape za neuspeˇsen test.
+Tudi tukaj smo pravilnost najdenih kvadratkov preverili roˇcno.
+
+3.2
+
+Testiranje rotacije slik
+
+Drugi del testiranja je bil test pravilnosti rotacije slik, ki niso pravilno poravnane. Izmed vseh 180 slik je bilo za rotacijo primernih 20 slik z razliˇcnimi
+nakloni. Ostale slike so bile ˇze na vhodu pravilno poravnane. Kriterij, ki
+smo ga doloˇcili za uspeˇsnost testa, je velikost kota v pravokotnem trikotniku,
+dobljenim z desnima kvadratkoma (opisano v poglavju 2.6) po rotaciji. Test
+je bil uspeˇsen v primeru, ko je bil ta kot manjˇsi od dveh stopinj. Preverjala
+
+48
+
+POGLAVJE 3. TESTIRANJE IN REZULTATI
+
+se je tudi pravilnost izraˇcuna prvotnega naklona (ˇce je naklon manjˇsi od dveh
+stopinj, se rotacija ne sme izvesti).
+Ta del testiranja, je edini potekal v celoti avtomatsko. V primeru zajema
+slik z mobilnimi aparati je sistem rekurzivno bral slike in je, ˇce je bila rotacija
+uspeˇsna, poveˇcal doloˇcen ˇstevec.
+Testiranje pravilnosti rotacije slik zajetih s spletno kamero, je potekalo
+na enak naˇcin kot pri prvem testiranju, le da se je upoˇsteval drugaˇcen kriterij
+in nam slike ni bilo treba preverjati ˇse roˇcno.
+
+3.3
+
+Testiranje raˇ
+cunanja pozicije polj
+
+Tretji test je bil test raˇcunanja pozicije ˇsestih polj z vsebino. Za razliko
+od prvih dveh testiranj ta del testiranja ni potekal avtomatsko, ampak je
+bil v celoti izveden roˇcno. Uspeˇsnost testa smo ocenili tako, da smo roˇcno
+pregledali sliˇcice polj, ki jih je naˇs sistem izraˇcunal za posamezno sliko.
+Za oba naˇcina zajemanja slik je testiranje potekalo na enak naˇcin. Za
+vsako sliko smo preverili rezultate raˇcunanja pozicij (dobljene sliˇcice), in ˇce
+so bila na sliˇcicah lepo razvidna vsa polja in vsebina znotraj njih, je bil test
+uspeˇsen.
+
+3.4
+
+Testiranje branja vsebine
+
+ˇ
+Cetrti
+in zadnji del testiranja je bil test pravilnosti branja vsebine v izraˇcunanih
+poljih. Tako kot tretji del testiranja je tudi ta test v celoti potekal roˇcno in
+ga nismo avtomatizirali. Kriterij uspeˇsnosti tega testa je bila pravilnost prebrane vsebine, glede na izvorno vsebino v poljih.
+Testiranje je potekalo tako, da smo za vsako vhodno sliko, ne glede na njen
+naˇcin zajema slike, primerjali rezultat branja vsakega izmed izraˇcunanih polj
+z originalno vsebino. Primerjali smo roˇcno, tako da smo prebrali originalno
+ˇ se vsebini
+vsebino s slike in naˇse rezultate ter primerjali, ˇce se ujemata. Ce
+ujemata, je ta test uspeˇsen.
+
+3.5. OPTIMIZACIJA TESTIRANJA
+
+3.5
+
+49
+
+Optimizacija testiranja
+
+Zaradi razliˇcnih izboljˇsav sistema, ki zahtevajo veliko ponovnih testiranj,
+je testiranje na zgoraj opisani naˇcin, zelo ˇcasovno potratno in naporno. V
+izvajanju so ˇze optimizacije, s katerimi nameravamo testiranje naˇsega sistema
+popolnoma avtomatizirati, kar bo ponovne teste obˇcutno skrajˇsalo, saj ne bo
+potrebnega roˇcnega pregledovanja slik.
+Za avtomatizacijo testiranja je za prvi test potrebno na vsaki izmed slik
+doloˇciti center vsakega izmed treh kvadratkov, s katerim bomo lahko nato
+preverjali rezultate, ki jih vrne naˇs sistem. Testiranje pravilnosti rotacije je
+ˇze v celoti avtomatizirano, zato ni potrebnih novih izboljˇsav.
+Za potrebe naˇsega tretjega testiranja (test izraˇcuna pozicije polj), je na
+vsaki izmed slik potrebno doloˇciti toˇcke ˇstirih ogliˇsˇc vsakega polja. Te toˇcke
+bomo nato v testih primerjali s pozicijami, ki nam jih vrne naˇs sistem.
+Zadnje testiranje bo avtomatizirano tako, da bo iz vsake izmed slik prebrana vsebina polj, ki bo v testu primerjana z vsebino, ki jo vrne naˇs sistem.
+Vse opisane vrednosti bodo zapisane v tekstovni datoteki, ki bo vkljuˇcena
+k slikam in jo bo pri testiranju sistem prebral skupaj s sliko. Pomembno
+je, da pri primerjanju rezultatov naˇsega sistema z vrednostmi v datoteki
+upoˇstevamo doloˇceno napako, ki bo doloˇcala, kdaj je test uspeˇsen in kdaj ne.
+Primer takˇsne datoteke je prikazan na sliki 3.2. Zgoraj je slika univerzalnega plaˇcilnega naloga, na kateri so oznaˇcene toˇcke centrov kvadratkov
+in ogliˇsˇca polj, spodaj pa je tekstovna datoteka s koordinatami teh toˇck in
+vsebino v poljih.
+
+50
+
+POGLAVJE 3. TESTIRANJE IN REZULTATI
+
+Slika 3.2: Nalog z oznaˇcenimi centri kvadratkov in ogliˇsˇci polj ter tekstovna
+datoteka z vrednostmi toˇck in vsebino v poljih.
+
+3.6. REZULTATI TESTIRANJA
+
+3.6
+
+51
+
+Rezultati testiranja
+
+Tako kot testiranje samo so tudi rezultati le-tega predstavljeni v ˇstirih delih.
+
+3.6.1
+
+Pravilna zaznava poloˇ
+zaja
+
+Prvi testi je bil torej test pravilnosti zaznave treh kvadratkov. Izmed vseh
+180 slik, zajetih z mobilnimi napravami, je naˇs sistem pravilno zaznal tri
+kvadratke v 166 in dva kvadratka v 7 primerih. Pri sedmih slikah torej
+ta test ni bil uspeˇsen. Pri iskanju vzroka napaˇcne zaznave smo ugotovili,
+da je problem pri svetlobnem filtru, opisanem v poglavju 2.2. Vse slike,
+kjer je bil test neuspeˇsen, so imele ˇcrno ozadje. Povpreˇcna vrednost in s
+tem tudi filtracija v svetlobnem filtru je bila zato napaˇcna. Svetlobni filter
+smo zato prilagodili tako, da je namesto v celotni sliki povpreˇcje po novem
+raˇcunal le na sredinskem delu slike. Tako se ozadje ni upoˇstevalo. Po naˇsi
+prilagoditvi je sistem za 179 z mobilnimi napravami zajetih slik pravilno
+zaznal poloˇzaj univerzalnega plaˇcilnega naloga na sliki (3 kvadratke na 173
+slikah in 2 kvadratka na 6 slikah). Edina slika, na kateri je sistem zaznal
+preveˇc kvadratkov, je prikazana na sliki 3.3.
+
+52
+
+POGLAVJE 3. TESTIRANJE IN REZULTATI
+
+Slika 3.3: Slika z zaznanimi ˇstirimi kvadratki.
+
+Razlog za napaˇcno zaznavo je dodaten kvadratek na sliki (obkroˇzen z
+zeleno barvo), zaradi katerega sistem namesto treh kvadratkov zazna ˇstiri,
+saj dodaten kvadratek izpolnjuje vse pogoje, ki jih preverjamo z naˇsima
+filtroma. Reˇsitev tega problema, ki jo nameravamo vkljuˇciti v sistem, je dodatno preverjanje pozicije posameznega kvadratka glede na ostale kvadratke.
+Dva izmed kvadratkov se nahajata eden nad drugim (s tem, da je potrebno
+upoˇstevati moˇznost nepravilno poravnane slike), tretji kvadratek pa mora
+biti nad obema in levo od njiju. Druga dodatna kontrola pa je razdalja med
+kvadratki.
+V primeru zajemanja slik s spletno kamero je sistem pred naˇso prilagoditvijo in po njej pravilno zaznal vse tri kvadratke pri vseh 100 slikah.
+
+3.6.2
+
+Pravilnost rotacije
+
+Pri testiranju pravilnosti rotacije slike so bili rezultati sledeˇci. Izmed 20
+nepravilno poravnanih slik je bilo 18 pravilno rotiranih in dve nepravilno.
+Izmed ostalih 160 testnih slik, ki so bile pravilno poravnane, je sistem pravilno
+
+3.6. REZULTATI TESTIRANJA
+
+53
+
+izpustil in ni rotiral 152 slik, pri 8 slikah pa je narobe izraˇcunal velikost kota
+naklona slike. Razlog za nepravilno rotacijo in nepravilen izraˇcun velikosti
+kota naklona je, da pri izraˇcunu upoˇstevamo le naklon glede na os z oziroma
+sredinsko toˇcko slike (levo na sliki 3.4), ne upoˇstevamo pa naklon glede na
+os x (desno na sliki 3.4) in naklon glede na os y (na sredini slike 3.4).
+
+Slika 3.4: Razliˇcni naˇcini rotacije slike.
+
+Glede na to, da nameravamo ˇze z aplikacijami, v katerih bo vkljuˇcen naˇs
+sistem, uporabnika usmeriti k pravilni poravnavi slike, smo z rezultati tega
+testiranja zadovoljni, zato zaenkrat ni bilo uvedenih nobenih izboljˇsav rotacije. Dopolnitev, ki jo nameravamo dodati v prihodnosti je zaznava zunanjih
+robov plaˇcilnega naloga in z njimi izraˇcunati perspektivo ter s pomoˇcjo le te
+nato pravilno poravnati sliko.
+
+3.6.3
+
+Raˇ
+cunanje poloˇ
+zaja polj
+
+Pri tretjem testu, testu pravilnosti raˇcunanja poloˇzajev polj, je naˇs sistem
+za slike, zajete s spletno kamero, pravilno izraˇcunal poloˇzaje polj pri vseh
+100 slikah, za slike, zajete z mobilnimi napravami, pa je napaˇcno izraˇcunal
+poloˇzaje le za eno sliko (ˇce odˇstejemo sliko, na kateri je sistem napaˇcno zaznal
+kvadratke), pri vseh ostalih pa so bili poloˇzaji pravilno izraˇcunani. Slika, na
+kateri je sistem napaˇcno izraˇcunal poloˇzaje, je bila ena izmed ˇsestih slik, na
+kateri sta bila najdena le dva kvadratka, in edina slika, kjer sta to bila levi
+kvadratek zgoraj in desni kvadratek spodaj. Razlog za napaˇcne pozicije polj
+je po vsej verjetnosti napaˇcen izraˇcun le teh s tema dvema kvadratkoma,
+vendar pa napake zaenkrat ˇse nismo odkrili.
+
+54
+
+POGLAVJE 3. TESTIRANJE IN REZULTATI
+Rezultati tega testa so bili za nas sprejemnljivi in nismo uvedli nobenih
+
+izboljˇsav na tem podroˇcju.
+
+3.6.4
+
+Branje vsebine
+
+Rezultate branja vsebine smo preverjali v dveh delih.
+OCR-vrstica
+Najprej smo se lotili testiranja branja najbolj spodnjega polja, OCR-vrstice,
+ki je po naˇsem mnenju najpomembnejˇse polje. Izmed 100 slik, zajetih s
+spletno kamero, je sistem pravilno pripravil na branje in prebral 92 slik. Pri
+slikah, zajetih z mobilnimi napravami, pa je bilo pravilno prebranih 159 slik.
+Rezultati nas niso prepriˇcali, zato smo naˇs sistem poskusili izboljˇsati.
+Glede na to, da je polje OCR-vrstica bolj ali manj le ˇcrna pisava na beli
+podlagi, smo se odloˇcili preizkusiti branje vsebine na polju brez predobdelave.
+Rezultati so bili precej boljˇsi. Po naˇsem preizkusu je sistem pravilno prebral
+vse s spletno kamero zajete slike, od 180 slik, zajetih z mobilnimi napravami,
+pa je napaˇcno prebral le 6 slik, ki so vsebovale kar nekaj ˇsuma in so bile ˇze
+na pogled teˇzko berljive. Primer takˇsne slike je prikazan na sliki 3.5.
+
+Slika 3.5: Primer slike, z veliko ˇsuma, kjer sistem ne zna prebrati vsebine
+OCR vrstice.
+
+3.6. REZULTATI TESTIRANJA
+
+55
+
+Ostala polja
+Naslednje je bilo na vrsti preverjanje ostalih polj. Rezultati tega testiranja
+so predstavljeni v spodnji tabeli.
+
+Tabela 3.1: Rezultati branja vsebine iz polj univerzalnega plaˇcilnega naloga.
+Da bi izboljˇsali rezultate, smo predobdelavo pred samim branjem razdelili
+na dva dela, predobdelavo za slike, zajete s spletno kamero, in predobdelavo
+za slike, zajete z mobilnimi napravami, ter vsako predobdelavo prilagodili po
+svoje. Poleg tega smo sistem Tesseract OCR nauˇcili 5 novih jezikov ter vsako
+polje prebrali s svojim jezikom.
+Za polje koda namena obstaja 125 razliˇcnih vrednosti, zato smo Tesseract
+nauˇcili nov jezik s sliko, ki je vsebovala vseh 125 vrednosti.
+Slike za uˇcenje Tesseracta novih jezikov za boljˇse branje ostalih ˇstirih polj
+- namen plaˇcila, znesek, IBAN in referenca, smo izdelali tako, da smo vzeli
+vsebine teh polj iz 50 nakljuˇcnih univerzalnih plaˇcilnih nalogov ter iz njih
+izdelali slike za uˇcenje Teseracta.
+S tema optimizacijama smo uspeli branje slik, zajetih s spletno kamero,
+precej izboljˇsati. Malenkost nam je uspelo izboljˇsati tudi slike, zajete z mobilnimi napravami, vendar rezultati ˇse vedno niso bili najboljˇsi (tabela 3.2).
+
+56
+
+POGLAVJE 3. TESTIRANJE IN REZULTATI
+
+Tabela 3.2: Rezultati branja vsebine iz polj univerzalnega plaˇcilnega naloga
+po optimizaciji.
+
+Poglavje 4
+Zakljuˇ
+cek
+
+Naˇs sistem optiˇcnega branja univerzalnega plaˇcilnega naloga veliko bolje prebere vsebino slik, zajetih s spletno kamero. Razlogi za to so v tem, da so
+vse slike zajete z isto napravo, isto loˇcljivostjo, predvsem pa so to slike, vse
+zajete pri enaki svetlobi. V nasprotju s tem so slike z mobilnimi napravami
+zajete pri zelo razliˇcnih osvetlitvah, zato je tudi predprocesiranje veliko teˇzje.
+Po drugi strani pa smo s testiranjem ostalih funkcionalnosti sistema ugotovili, da je razen pri branju petih polj slik zajetih z mobilnimi napravami, pri
+izpolnjevanju svojih ostalih ciljev sistem zelo dober. Iskanje pozicije naloga
+na sliki je skoraj 100-odstotna, ne glede na naˇcin zajema slike, prav tako tudi
+raˇcunanje pozicij polj. Sistem je odliˇcno prebral tudi vsebino OCR-vrstice
+pri skoraj vseh slikah.
+Glede na dobljene rezultate, bi naˇceloma lahko zaˇceli z uporabo sistema,
+saj vrstica OCR vsebuje vse podatke, ki so potrebni za pravilno izpolnitev
+in delovanje aplikacije za delo s plaˇcilnimi nalogi, vseeno pa smo se odloˇcili,
+da ˇse poˇcakamo in poskuˇsamo izboljˇsati branje omenjenih petih polj, saj
+nekateri univerzalni plaˇcilni nalogi vrstice OCR nimajo izpolnjene.
+57
+
+ˇ
+POGLAVJE 4. ZAKLJUCEK
+
+58
+
+4.1
+
+Nadaljnje delo
+
+Prvi korak naˇsega nadaljnjega dela je seveda izboljˇsava predobdelave in branja polj Koda namena, Namen plaˇcila, Znesek, IBAN in Referenca, ki jih
+sistem prebere slabˇse od naˇsih priˇcakovanj. V teku so ˇze raziskave za ˇcim
+boljˇso predobdelavo in pripravo slike na optiˇcno branje ter izboljˇsave samega
+optiˇcnega branja. Izvajajo se tudi razliˇcne optimizacije sistema in implementacije idej, ki jih najdemo v raziskavah, ter testiranje, v kolikˇsni meri s temi
+spremembami izboljˇsamo naˇs sistem.
+V drugem koraku nadaljnjega dela bi implementirali obveˇsˇcanje komitenta
+o rezultatu. Sistem trenutno v primeru, da ni znal prebrati vsebine iz slike,
+uporabniku ne vrne nobene povratne informacije. Da bi bilo to mogoˇce, mora
+biti sistem dovolj pameten, da uspeˇsno zazna napako.
+V primeru, da do napake pride ˇze pri iskanju kvadratkov (sistem najde
+manj kot dva oziroma veˇc kot tri kvadratke) ali pri rotaciji je to zelo enostavno, saj je napaka takoj vidna. Uporabniku se v tem primeru poˇslje
+sporoˇcilo, da je pri branju priˇslo do napake in naj ponovno zajame sliko.
+Odkrivanje napaˇcnega branja vsebina univerzalnega plaˇcilnega naloga pa
+bo v sistemu potekalo po naslednjem postopku.
+• Prvo polje na univerzalnem plaˇcilnem nalogu je Koda namena, zato bo
+prvo preverjanje, preverjanje tega polja. Vsebina polja Koda namena
+se mora ujemati z eno izmed vrednosti v ˇsifrantu kod namenov plaˇcil
+[21].
+• V drugem polju, Namen plaˇcila, vsebina ni z niˇcemer doloˇcena, zato
+se pravilnosti branja ne da preverjati. Sistem bo za to polje v vsakem
+primeru vrnil, kar bo prebral.
+• Naslednje polje je polje Znesek. Tudi vsebina v znesku je lahko poljubno veliko ˇstevilo in ga ne moremo primerjati z neko drugo vrednostju. Za to polje bomo v sistemu preverjali, ali so vsi znaki ˇstevila in
+pozicijo pike in vejice, ter glede na to doloˇcali pravilnost.
+
+4.1. NADALJNJE DELO
+
+59
+
+• IBAN je v Sloveniji sestavljen iz 19 ˇcrkovnih in numeriˇcnih znakov, kjer
+prvi 4 znaki predstavljajo oznako drˇzave (za Slovenijo je to vedno SI56),
+naslednjih 5 znakov predstavlja oznako banke in njene organizacijske
+enote, naslednjih 8 znakov predstavlja ˇstevilko raˇcuna, zadnja 2 znaka
+pa sta kontrolni ˇstevilki.
+Vsebino je sistem torej pravilno prebral takrat, ko so na prvih ˇstirih
+mestih znaki SI56 in je ostanek pri deljenju ˇstevila, ki ga sestavlja
+ostalih 15 znakov, s ˇstevilom 97 enak 1 [23].
+• Vsebina polja Referenca je sestavljena iz konstante (SI ali RF), ˇstevilke
+modela (2 ˇstevilki) in vsebine modela (22 znakov, od tega 20 ˇstevilk in
+najveˇc dva vezaja). Prva dva znaka naˇsega polja morata torej biti SI
+ali RF, pravilnost ostale vsebine pa preverimo s kontrolno ˇstevilko, ki
+jo izraˇcunamo, iz te vsebine, po postopkih, opisanih v [22].
+• V zadnjem polju, vrstici OCR, imamo podatke reference, ibana in zneska, zato bo nam bo to sluˇzilo kot dodatna kontrola, za dodatno preverjanje pravilnosti prebrane vsebine (Slika 4.1).
+
+Slika 4.1: Povezava med podatki v vrstici OCR in ostalimi polji.
+
+Sistem bo v primeru odkritja napaˇcno prebrane vsebine enega izmed polj
+uporabnika ustrezno obvestil o napaki.
+
+ˇ
+POGLAVJE 4. ZAKLJUCEK
+
+60
+
+Naslednji korak nadaljnjega dela bi bila izdelava mobilne aplikacije, ki
+bi zajela sliko in jo posredovala naˇsemu sistemu v obdelavo in uveljavitev
+sistema na blagajnah Banke Koper.
+Kot zadnji korak naˇsega nadaljnjega dela, pa bi sistem nadgradili z inteligentnim optiˇcnim branjem vsebine oziroma optiˇcnim branjem roˇcno napisanih univerzalnih plaˇcilnih nalogov.
+
+Literatura
+[1] Zdruˇzenje bank Slovenije. Dostopno na:
+
+http://www.zbs-giz.si/
+
+zdruzenje-bank.asp?StructureId=933
+[2] Predstavitev univerzalnega plaˇcilnega naloga. Dostopno na: http://
+www.upn.si/
+[3] Tehniˇcni standard univerzalnega plaˇcilnega naloga. Dostopno na: http:
+//www.upn.si/uploads/public/tehnicni standard UPN.pdf
+[4] Spletna stran Nove KBM. Dostopno na: http://www.nkbm.si/vsebina/
+10362/Nova-KBM-predstavila-najsodobnejso-mobilno-banko
+[5] J.R.Parker, Pavol Federl, An Approach To Licence Plate Recognition. Dostopno na: http://pages.cpsc.ucalgary.ca/∼federl/Publications/
+LicencePlate1996/licence-plate-1996.pdf
+[6] Andolˇsek J., Kovaˇciˇc S., Avtomatsko prepoznavanje registrskih tablic,
+seminar, Univerza v Ljubljani, 2003
+[7] Image restoration. Dostopno na: http://www.owlnet.rice.edu/∼elec539/
+Projects99/BACH/proj2/intro.html
+[8] Leslie Stroebel, Richard D. Zakia, The Focal encyclopedia of photography, 1995
+[9] RapidTables – RGB Color Codes Chart. Dostopno na: http://www.
+rapidtables.com/web/color/RGB Color.htm
+61
+
+62
+
+LITERATURA
+
+[10] TechTerms - Grayscale. Dostopno na:
+http://www.techterms.com/definition/grayscale
+[11] D. Ziou, S. Tabbone, Edge detection techniques: An overview, 1998
+[12] J. Canny, A computational approach to edge detection, 1986
+[13] Ding, Lijun and Goshtasby, Ardeshir, On the Canny Edge Detector,
+Pattern Recognition, 2001.
+[14] G. V. Tcheslavski, Morphological Image Processing: Basic Concepts,
+2009
+[15] G. Bradski, A. Kaehler, Learning OpenCV - Computer Vision with the
+OpenCV Library, 2008
+[16] H. Freeman, On the encoding of arbitrary geometric configurations, IRE
+Transactions on Electronic Computers, 1961
+[17] Vasile Prejmerean, Simona Motogona, Character recognition using morphological transformations. Dostopno na: http://www.cs.ubbcluj.ro/
+∼studia-i/2001-1/9-Prejmerean.pdf
+
+[18] Schantz, Herbert F., The history of OCR, optical character recognition,
+1982
+[19] Optical Character recognition (OCR) – how it works. Dostopno na: http:
+//www.nicomsoft.com/optical-character-recognition-ocr-how-it-works/
+[20] Teach ITC - Optical Mark Reader. Dostopno na: http://www.teach-ict.
+com/gcse new/computer%20systems/input devices/miniweb/pg13.htm
+ˇ
+[21] Sifrant
+kod namenov plaˇcil. Dostopno na:
+http://www.ujp.gov.si/DocDir/Obrazec%20UPN/Kode%20namena%
+20placila sifrant.pdf
+
+LITERATURA
+
+63
+
+[22] Pravilnik o plaˇcilnih navodilih, izpiskih o prometu in stanju, delnih izpisih ter obrestnih listih. Dostopno na:
+
+http://www.mf.
+
+gov.si/fileadmin/mf.gov.si/pageuploads/Direktorat za zakladni%
+C5%A1tvo/Enotni zakladniski sistem v republiki Sloveniji/
+Predpisi/Seznam pravnih podlag s podrocja placilnega prometa/
+Pravilnik pn izpiski s prilogami.pdf
+[23] Banka Slovenije. Dostopno na:
+http://www.bsi.si/placilni-sistemi.asp?MapaId=1453
+
+

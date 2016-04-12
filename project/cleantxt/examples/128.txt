@@ -1,0 +1,3381 @@
+UNIVERZA V LJUBLJANI
+BIOTEHNIŠKA FAKULTETA
+ODDELEK ZA KRAJINSKO ARHITEKTURO
+
+Katja FARTEK
+
+UREJANJE OBMOČIJ BOLJ IZPOSTAVLJENIH
+KRIMINALNIM DEJANJEM V LJUBLJANI
+
+DIPLOMSKO DELO
+Univerzitetni študij
+
+Ljubljana, 2012
+
+UNIVERZA V LJUBLJANI
+BIOTEHNIŠKA FAKULTETA
+ODDELEK ZA KRAJINSKO ARHITEKTURO
+
+Katja FARTEK
+
+UREJANJE OBMOČIJ BOLJ IZPOSTAVLJENIH
+KRIMINALNIM DEJANJEM V LJUBLJANI
+DIPLOMSKO DELO
+Univerzitetni študij
+
+DESIGNING AREAS WHICH ARE MORE EXPOSED
+TO CRIMINAL ACTIVITY IN LJUBLJANA
+GRADUATION THESIS
+University studies
+
+Ljubljana, 2012
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+Diplomsko delo je zaključek Univerzitetnega študija krajinske arhitekture. Opravljeno
+je bilo na Oddelku za krajinsko arhitekturo Biotehniška fakulteta Univerze v Ljubljani.
+Anketa je bila izvedena v Ljubljani.
+Študijska komisija Oddelka za krajinsko arhitekturo je za mentorja diplomskega dela
+imenovala prof. dr. Markota Poliča in za recenzenta prof. dr. Davorina Gazvodo.
+
+Komisija za oceno in zagovor:
+Predsednik: 		 prof. dr. Ana KUČAN
+		 Univerza v Ljubljani, Biotehniška fakulteta,
+		 Oddelek za krajinsko arhitekturo
+Član: 		 prof. dr. Marko POLIČ
+		 Univerza v Ljubljani, Filozofska fakulteta,
+		 Oddelek za psihologijo
+Član: 		 prof. dr. Davorin Gazvoda
+		 Univerza v Ljubljani, Biotehniška fakulteta,
+		 Oddelek za krajinsko arhitekturo
+
+Datum zagovora:
+
+Naloga je rezultat lastnega dela. Podpisana se strinjam z objavo svoje naloge v polnem
+tekstu na spletni strani Digitalne knjižnice Biotehniške fakultete. Izjavljam, da je naloga,
+ki sem jo oddala v elektronski obliki, identična tiskani verziji.
+	
+
+Katja Fartek
+
+II
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+III
+
+KLJUČNA INFORMACIJSKA DOKUMENTACIJA
+ŠD 	
+DK 	
+KG	
+	
+AV 	
+SA 	
+KZ 	
+ZA 	
+LI 	
+IN 	
+TD 	
+OP 	
+IJ 	
+JI 	
+AI	
+
+Dn
+UDK 712:343.851:159.973.52(043.2)
+oblikovanje krajine/okoljska psihologija/kriminal/okolje/ preprečevanje kriminala 	
+z oblikovanjem krajine
+FARTEK, Katja
+POLIČ, Marko (mentor)
+SI-1000, Jamnikarjeva 101
+Univerza v Ljubljani, Biotehniša fakulteta, Oddelek za krajinsko arhitekturo
+2012
+UREJANJE OBMOČIJ BOLJ IZPOSTAVLJENIH KRIMINALNIM DEJANJEM V LJUBLJANI
+Diplomsko delo (univerzitetni študij)
+IX, 68, [5] str., 55 sl., 1 pril., 35. vir.
+sl
+sl/en
+Eden od naraščajočih problemov v urbanem prostoru je kriminal. V tej nalog smo
+podrobneje obravnavali četrto komponento kriminala, to je okolje. Ker z oblikovanjem krajine vplivamo na vedenje v njem je pomembno, da razumemo vpliv okolja
+na človeka, pri tem se moramo ozirati na osebni prostor, teritorialnost, gnečo in
+zasebnost ter sledimo že pridobljnim načelom na področju preprečevanja kriminala z oblikovanjem. Najpogostejša so naravni nadzor, nadzor dostopa, okrepitev
+teritorialnost in vzdrževanje. Ta dognajna smo pridobili s pregledom obstoječe
+literature. V nadaljevanju smo le te želeli prikazati z oblikovanjem idejne zasnove
+preureditve izbranega območja v Ljubljani. Izvedli smo anketo med stanovalci izbrane soeske s katero smo dobili vpogled v to kako zadovoljni so z okolico svojega
+stanovanjskega bloka in kako varno se počutijo v njem. Veliko jih tam živi že veliko
+let in so zadovoljni s prostorom z nekaj izjemami. Stanovalci so izrazili, da se počutijo
+varno predvsem podnevi, ponoči pa se ne zadržujejo zunaj. Pri oblikovanju smo
+upoštevali prej izpostavljena načela, ki pa so si nekajkrat tudi v nasprostju. Po eni
+strani smo si prizadevali ustvariti lepo okolje, prijetno za uporabo, kar zahteva tudi
+veliko sence torej veliko visoke vegetacije in hkrati varno, kjer je idelano okolje brez
+visoke vegetacije. S sklepanjem kompromisov smo se približali vsem zahtevam.
+Skozi celoten razvoj naloge smo ugotovili, da pri oblikovanju mestne krajine ni
+mogoče povsem upoštevati vsa načela za preprečevanja kriminala, služijo pa nam
+kot pomembne smernice.
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+IV
+
+KEY WORD DOKUMENTATION
+DN 	
+DC 	
+CX 	
+	
+AU 	
+AA 	
+PP 	
+PB	
+	
+PY 	
+TI	
+DT 	
+NO 	
+LA 	
+AL 	
+AB	
+
+Dn
+UDC 712:343.851:159.973.52(043.2)
+environmental design/environmental psychology/crime/environment/crime 		
+prevention through environmental design
+FARTEK Katja
+POLIČ, Marko (mentor)
+SI-1000, Jamnikarjeva 101
+University of Ljubljana, Biotechnical Faculty, Department od Landscape 			
+Arhitecture
+2012
+Designing Areas Which Are More Exposed To Criminal Activity In Ljubljana
+Gradutation Thesis (University studies)
+IX, 68, [5] p., 55 fig., 1 ann., 35. ref.
+sl
+sl/en
+Crime is one of the growing problems in the urban setting. In this thesis we looked
+closer at the fourth component of crime, this is the environment. Because we have
+an influence on the behaviour in which we are, it is important that we understand
+the influence environment has on people. We have to have in mind personal
+space, teritoriality, crowd and privacy, and we should follow already obtained
+principles about crime prevention thourgh enviromental design, which are natural
+surveliance, access control, territoriality and maintenance. We gained those facts
+through the examination of the existing litarature. Further on we wanted to
+show them through designing a conceptual rearrangement of the selected area
+in Ljubljana. We performed a opinin poll with there living inhabitants, with that
+we found out how satisfied and how saw they feel in the environment of there
+building. Many of them live there for a long period of time and they are satisfied
+with the environment, with some exceptions. The inhabitants said that they feel
+safe especially at day time, at night they don`t use the open spaces. In designing we
+considered the principles previously exposed, which sometimes where in conflict
+with one another. On one side we wanted to creat a nice environment, pleasant for
+use, requires also a lot of high trees for shade in the same time we wanted to make
+a safe place, for which it is ideal that there are no hight trees. By compromises we
+came closer to all the requirements. Throughout the development of this thesis we
+found, that in designing the urban landscape we can`t fully take into account all the
+principles of crime prevention, however they do serve as important guidlines.
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+V
+
+KAZALO VSEBINE
+		
+
+str.
+
+	
+	
+	
+	
+
+KLJUČNA INFORMACIJSKA DOKUMENTACIJA	
+KEY WORD DOKUMENTATION	
+KAZALO SLIK	
+KAZALO PRILOG	
+
+III
+IV
+VII
+IX
+
+1	
+1.2 	
+1.3 	
+2	
+2.1 	
+2.2 	
+2.2.1 	
+2.2.2 	
+2.2.3 	
+2.2.4 	
+2.3 	
+2.4 	
+2.4.1	
+2.4.2	
+2.4.3 	
+3	
+3.1 	
+3.2 	
+3.3 	
+3.4 	
+4	
+4.1 	
+4.2 	
+4.3 	
+4.4 	
+4.5 	
+4.5.1 	
+4.5.2 	
+5	
+6	
+6.1 	
+
+UVOD	
+CILJI NALOGE	
+DELOVNE HIPOTEZE	
+OKOLJSKA PSIHOLOGIJA 	
+ODNOS ČLOVEK – OKOLJE IN OBLIKOVANJE	
+“MEDČLOVEŠKO VEDENJE” V OKOLJU	
+Osebni prostor	
+Teritorialnost	
+Gneča	
+Zasebnost	
+MESTO IN NJEGOVE ZNAČILNOSTI	
+»STRESORJI«, ZNAČILNI DEJAVNIKI V MESTIH	
+Hrup	
+Vročina	
+Onesnaženost	
+CRIME PREVENTION THROUGH ENVIRONMENTAL DESIGN – CPTED 	
+CTED	
+DEFENSIBLE SPACE (Newman, 1972)	
+SITUATIONAL CRIME PREVENTION / 2ND GENERATION CPTED	
+OMEJITVE CPTED PRISTOPA	
+GLAVNE CPTED SMERNICE PRI OBLIKOVANJU 	
+NARAVNI NADZOR	
+NADZOR DOSTOPA	
+OKREPITEV TERITORIALNOSTI	
+VZDRŽEVANJE	
+OSTALO	
+Struktura prostora	
+Otroška igrišča in parkirišča	
+NARAVA IN KRIMINAL	
+ŽE IZVEDENI PRIMERI V TUJINI 	
+CROMER STREET, CAMDEN, VELIKA BRITANIJA 	
+
+1
+2
+2
+3
+3
+4
+4
+5
+5
+5
+6
+6
+7
+7
+7
+8
+10
+10
+11
+11
+13
+13
+14
+14
+15
+15
+15
+16
+17
+19
+19
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+6.2 	
+6.3 	
+6.4 	
+7	
+8	
+8.1 	
+8.2 	
+8.3 	
+9	
+9.1 	
+9.2 	
+9.3 	
+9.3.1 	
+9.3.2 	
+10 	
+10.1 	
+10.2 	
+10.3 	
+10.4 	
+10.4.1 	
+10.4.2 	
+10.4.3 	
+10.4.4 	
+10.4.5 	
+10.4.6 	
+10.4.7 	
+11 	
+12 	
+13 	
+	
+	
+
+BRONXDALE HOUSES, NEW YORK CITY, ZDRUŽENE DRŽAVE AMERIKE 	
+BEXLEY, LONDON, VELIKA BRITANIJA 	
+MOWBRAY PARK , SUNDERLAND, VELIKA BRITANIJA 	
+IZBOR LOKACIJE	
+ANALIZA IZBRANEGA OBMOČJA	
+OBMOČJE OBDELAVE	
+OPIS TRENUTNEGA STANJA / OPIS PROBLEMA	
+POVZETEK ANALIZE	
+ANKETA	
+GRADIVO	
+POSTOPEK	
+REZULTATI	
+Udeleženci 	
+Odgovori	
+PREDLOG PREUREDITVE ODPRTEGA PROSTORA SOSESKE NA JAMI	
+KONCEPT	
+PROGRAMSKA ZASNOVA SOSESKE (PROJEKTNI PROGRAM)	
+CONING	
+PREUREDITEV IZBRANEG OBMOČJA	
+Tloris preureditve izbranega območja	
+Shema poti	
+Odprti/nepozidani prostori med stolpnicami	
+Osrednja parkovna uredite	
+Športno rekreacijsko središče	
+Prostor pri trgovine 	
+Prostorski prikazi ureditve	
+SKLEPI IN RAZPRAVA	
+POVZETEK 	
+VIRI	
+ZAHVALA 	
+PRILOGE	
+
+VI
+
+20
+22
+23
+25
+26
+26
+27
+33
+34
+34
+34
+34
+34
+35
+44
+44
+44
+46
+48
+48
+49
+50
+55
+56
+56
+58
+61
+65
+66
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+VII
+
+KAZALO SLIK
+Slika 1: Interpretacija psihologije in kriminologije	
+Slika 2: Tloris stanovanjskega kompleksa na Cromer street, Camden v Veliki Britaniji	
+Slika 3: Izboljšan park v soseski je zelo obiskan in nadzor je omogočen 	
+iz veliko gospodinjstev	
+Slika 4: Pred vhodi je sedaj nizko grmičevje, ki poveča kakovost 	
+okolja in varnost v njej	
+Slika 5: Pogled na sosesko Bronxdale Houses	
+Slika 6: Tloris soseske Bronxdale Houses s predlogi preureditve	
+Slika 7: Zbiranje stanovalcev na igrišču	
+Slika 8: Tloris Mowbray parka	
+Slika 9: Pogled na del parka Mowbray	
+Slika 10: Lega soseske Na Jami v Ljubljani	
+Slika 11: Pogled na cestna A	
+Slika 12: Pogled na cesto B	
+Slika 13: Urbano pohištvo, ki se ga več ne uporablja	
+Slika 14: Prikaz obstoječe cestne sheme	
+Slika 15: Zaparkiranost glavne ceste	
+Slika 17: Parkiranje ob zeleni površini	
+Slika 16: Zaparkiranost sprehajalni poti	
+Slika 18: Prikaz obstoječe vegetacije	
+Slika 19: Zastrtost parkirišč z vegetacijo	
+Slika 20: Zastrtost peš poti z vegetacijo (pogled A)	
+Slika 21: Zastrtost peš poti z vegetacijo (pogled B)	
+Slika 23: Zastrtost zelenice z vegetacijo	
+Slika 22: Zastrtost peš poti z vegetacijo (pogled C)	
+Slika 24: Zastrtost otroškega igrišča z vegetacijo	
+Slika 25: Otroško igrišče 1	
+Slika 27: Smetnjaki pred stanovanjskim blokom	
+Slika 29: Smetnjaki pred otroškim igriščem	
+Slika 26: Otroško igrišče 2	
+Slika 28: Smetnjaki pri trgovini	
+Slika 30: Zaparkiran vhod v trgovino	
+Slika 31: Kako pogosto se zadržujete v okolici svojega stanovanjskega bloka?	
+Slika 32: Kje se največ zadržujejo?	
+Slika 33: Ali ste zadovoljni s tem, kar vam nudi prostor okrog vašega 	
+stanovanjskega bloka (poti, klopi, igrala, zelenica, drevesa, …)?	
+Slika 34: Kako pogosto se zadržujete v okolici svojega bloka, ko je zunaj že tema? 	
+Slika 35: Ali se v svoji soseski počutite varno?	
+Slika 36: Ali ste že kdaj v svoji soseski opazili fizični napad 	
+
+9
+19
+20
+20
+21
+22
+23
+24
+24
+26
+27
+27
+27
+28
+29
+29
+29
+30
+30
+30
+31
+31
+31
+31
+32
+32
+32
+32
+32
+33
+35
+35
+36
+37
+37
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+(rop, poškodovanje lastnine, nasilje, napad na osebo, ipd.)?	
+Slika 37: Ali ste že kdaj v svoji soseski slišali za fizični napad na osebo 	
+(rop, poškodovanje lastnine, nasilje, napad na osebo, ipd.)?	
+Slika 38: Zemljevid območij kje se počutijo najbolj varno podnevi	
+Slika 39: Zemljevid območij kje se počutijo najbolj nevarno podnevi	
+Slika 40: Zemljevid območij kje se počutijo najbolj varno ponoči	
+Slika 41: Zemljevid območij kje se počutijo najbolj nevarno podnoči	
+Slika 44: Stopnica do medprostorov	
+Slika 45: Medprostor z otroškim igrišče 1	
+Slika 46: Medprostor z otroškim igrišče 2	
+Slika 47 : Medprostor z otroškim igrišče 3	
+Slika 48: Vizualni nadzor nad otroškim igriščem	
+Slika 49: Medprostor s prostorom za šah in balinanjem	
+Slika 50: Medprostor s prostorom za piknik in namizni tenis	
+Slika 51: Medprostor s prostorom za piknik in namizni tenis	
+Slika 52: Osrednja parkovna ureditev	
+Slika 54: Prostor pri trgovini	
+Slika 53: Športno rekreacijsko središče	
+Slika 55: Pogledi s klopi ob trgovini	
+
+VIII
+
+38
+39
+40
+41
+42
+43
+50
+51
+51
+51
+52
+53
+53
+54
+55
+56
+56
+57
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+KAZALO PRILOG
+
+PRILOGA A: Vprašalnik uporabljen v anketi
+
+IX
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+1
+
+1 UVOD
+Kriminal 1 je del življenja v mestih in vpliva na kvaliteto življenja v njem. Ker kriminal vedno bolj narašča, z njim narašča tudi skrb in strah prebivalcev pred kriminalom. Kriminal in
+strah pred kriminalom omejujeta naše vsakdanje aktivnosti, kot na primer, ali bomo šli na
+večerni sprehod ali ne. “Vzroki za kriminal so številni in vključujejo socialno izključevanje,
+revščino, zlorabo drog, psihične težave, razpad družin, ekonomska gibanja ter hudobnost in pohlep. Prav tako vključujejo slab design bivališč in bivalnega okolja“ (Colquhoun,
+2004: 51).
+Trditev, da je tudi okolje vzrok za kriminal, izhaja iz predpostavke, da okolje vpliva na
+človeka in mu nudi priložnosti za različne dejavnosti. Dejstvo, da okolje vpliva na ljudi,
+na njihovo počutje, razpoloženje itn. doživljamo v vsakdanjem življenju. Pri oblikovanju
+pa je pomembno razumeti, kako okolje vpliva na ljudi. Ta vpliv je odvisen od značilnosti
+ljudi in značilnosti okolja, v katerem živimo, ki je danes pretežno mestno. Okolje nam
+tudi nudi priložnosti, neke dejavnosti omogoči, jih celo spodbuja, druge pa oteži ali celo
+onemogoči. Na ta način lahko nadziramo dogajanja v okolju.
+Torej lahko z oblikovanjem okolja posredno vplivamo na to, ali bo človek agresiven ali ne
+in nudimo priložnost za kaznivo dejanje ali ga onemogočimo. Kako bomo torej oblikovali
+okolje, da ustvarimo prostor, ki bo prijeten za življenje, je vprašanje, s katerim smo se
+soočali v tej nalogi.
+1.1 OPREDELITEV PROBLEMA
+Glavni problem je kriminal v mestu, ki postaja vse večji del našega življenja ter s tem
+tudi skrb državnih organov in javnosti. Naraščanje kriminala v zadnjih letih dokazuje
+neuspešnost preprečevanja kriminala s sistemom zakonitih kazenskih sankcij.
+Pri dosedanjem načinu oblikovanja prostora se ne upošteva lastnost okolja, da vpliva na
+ljudi in njihovo življenje na prej opisan način. Razlog za to je nesodelovanje med strokami
+in predvsem splošno neraziskanost tega področja pri nas.
+
+1	
+Kriminal so dejavnosti, ki zajemajo kazniva dejanja (SSKJ). Kaznivo dejanje je človekovo protipravno delovanje, ki ga zakon zaradi nujnega varstva pravnih vrednot določa kot kaznivo dejanje in hkrati
+določa njegove znake ter kazen za krivega storilca (Kazenski zakonik, 16. člen).
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+2
+
+1.2 CILJI NALOGE
+Cilj naloge je predstaviti drug način preprečevanje kriminala, ki ga še ne uporabljamo in
+je še precej neraziskan pri nas. To je preprečevanje kriminala z oblikovanjem okolja. V tej
+nalogi želimo podati pregled spoznanj in izkušenj na tem področju v tujini.
+Naprej bomo izdelali karto Ljubljane, na podlagi podatkov o številu in kraju kriminalnih
+dejanj pridobljenih od policije. Z njo bomo izpostavili območja, ki so bolj izpostavljena
+kriminalu. Za eno teh območij bomo izdelali podroben prikaz in predstavili predlog
+preureditve tega območja v bolj varnega po pridobljenih načelih priznanih avtorjev. Cilj
+naloge je torej poleg teoretičnih dejstev le-ta tudi uporabiti oz. prikazati na praktičnem
+primeru.
+1.3 DELOVNE HIPOTEZE
+Predpostavljamo, da lahko s fizičnim oblikovanjem okolja vplivamo na stopnjo kriminala
+nekega kraja. Zato morajo oblikovalci pri svojem delu upoštevati že uporabljene tehnike
+preprečevanja kriminala z oblikovanjem prostora.
+Okolje vpliva na ljudi in za kakovostno oblikovanje prostora moramo razumeti, kakšen je
+ta vpliv in kako pravilno oblikovati prostor, da ne bi omogočili ali celo spodbudili neželeno
+vedenje v njem.
+Prav tako predpostavljam, da je kriminal eden od naraščajočih problemov v Ljubljani in
+da so nekatera območja temu bolj podvržena kot druga ter da se lahko s fizično preureditvijo okolja spremenijo v bolj varna.
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+3
+
+2 OKOLJSKA PSIHOLOGIJA
+2.1 ODNOS ČLOVEK – OKOLJE IN OBLIKOVANJE
+Okolje ima vpliv na človeka, na njegovo počutje, zdravje in vedenje. To dejstvo je splošno
+priznano in zelo raziskano, je zelo zapleten in prepleten, oziroma kompleksen odnos.
+Polič (1986) navaja štiri pojmovanja o naravi odnosov človek - okolje:
+- Ekološki determinizem, ki meni, da je okolje neodvisna, človeško vedenje pa odvisna
+spremenljivka, da je torej okolje določujoča sila človekovega vedenja, ki se ji mora
+človek podvreči in prilagoditi, če hoče preživeti.
+- Ekološki posibilizem, ki kaže okolje kot sklop raznih stvarnih možnosti, ki naj bi jih človek
+izkoriščal, usmerjal in nadzoroval.
+- Ekološki proabilizem, po katerem naj bi fizično okolje nudilo možnosti za izbiro tako, da
+so nekatere izbire v danem okolju bolj in druge manj verjetne.
+- Sistemsko teoretična enota: človek – okolje, po kateri je okolje sistem “številnih prvin in
+odnosov, ki so v človeku in okolju hkrati. V tem sistemu se fizični svet subjektivira, dobiva psihične lastnosti, ki jih človek vanj projicira, hkrati pa se človekov svet objektivira,
+saj je tudi sam s svojim ravnanjem del tega okolja” (Trstenjak, 1978, cit. po Polič, 1986:
+9–10).
+Da bi lahko okolje oblikovali na način, ki bo koristil človeku v čim večji meri in hkrati čim
+manj škodil okolju, moramo, kolikor je to le mogoče, v celoti razumeti vpliv, ki ga ima
+okolje na človeka in obratno. »V obravnavi odnosov med človekom in njegovim okoljem
+se vse bolj kot osrednji razsežnosti vrednotenja okolja pojavljata pojma zaznane svobode in kraja nadzora. Obseg do katerega dano okolje omogoča posamezniku uspešno
+uresničevanje njegovih načrtov in ciljev določa tudi posameznikovo raven zadovoljstva
+s tem okoljem« (Polič 1998: 18). Torej moramo okolje oblikovati na način, da bodo ljudje
+imeli nadzor oz. da bodo imeli občutek nadzora, ki jim bo omogočil izpolnjevanje ciljev, ki
+smo jih predvideli za ta prostor. To lahko dosežemo le, če poznamo potrebe ljudi. Vključiti
+jih moramo v proces oblikovanja z dogovarjanji in usklajevanjem potreb in želja z danimi
+možnostmi. S tem ljudje ne samo dobijo občutek, da sodelujejo oz. sami odločajo o tem,
+kakšen bo prostor, ki ga uporabljajo, ampak jim bo ta tudi lep. Vzeli ga bojo za svojega in
+ga »branili« ter v kolikor bo to v njihovi moči, tudi preprečevali poškodovanje tega prostora in druge vrste kriminala v njem.
+Kot sem že omenila ljudje svojo okolico doživljajo tudi kot lepo (ali pa nasprotno). Znano
+pa je tudi, da je ta občutek subjektiven in drugačen od človeka do človeka. Vseeno pa
+velja nekaj načel, ki so univerzalna za vse ljudi. Berlyne (1974, cit. po Polič 1998: 30–31) je
+oblikoval naslednja načela:
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+4
+
+1. Osredinja se na t.i. primerjalne lastnosti dražljajskih vzorcev. To so ustrojne ali oblikovne
+lastnosti, ki vzbujajo primerjalne odzive. Najpomembnejše so naslednje: zapletenost,
+novost, neskladnost in presenetljivost. (Wholwill (1976, cit. po Polič, 1998: 31) je kasneje še dodal dvoumnost.)
+2. Osredinja se na motivacijska vprašanja.
+3. Proučuje tako besedno kot nebesedno izražene sodbe.
+4. Poudarja zveze med estetskimi pojavi in ostalimi psihološkimi pojavi.
+Z oblikovanjem fizičnega okolja lahko tudi vplivamo na medčloveško odnose; na
+družabnost. Različne raziskave so pokazale, da poznamo družbeno-težno okolje, ki
+pospešuje družabnost in družbeno-bežno okolje, ki jo zavira. Oblikovno družbeno-težno
+okolje oblikujejo krožen razpored elementov, oziroma skupino elementov, družbenobežno okolje pa linearen razpored. »Osnovno pojasnilo različnega vpliva obeh okolij je
+v dejstvu, da družbeno-težno olajšuje sporazumevanje in s tem prispeva k razvoju in
+vzdrževanju družbenih stikov, družbeno-bežno pa jih otežuje. Če so nam te zakonitosti
+znane, lahko po potrebi oblikujemo okolje, ki bo pospeševalo eno ali drugo obliko vedenja« (Polič, 1998: 67–68).
+Na odziv ljudi na okolje pa lahko vplivamo le delno (to dejstvo veliko oblikovalcev zanemari). »Motivacijo delimo na notranjo in zunanjo. Človek je lahko za nekaj motiviran zaradi dejanja samega, oziroma posledic, ki jih prinaša, ali pa gre za okrepitev, posledično
+notranjo okrepitev in čisto zunanjo okrepitev, ter seveda razne prehode med njimi« (Polič,
+1998: 18). Vplivamo lahko le na zunanjo motivacijo, pa še ta je pogojena z vrsto drugih
+dejavnikov, ki so nepredvidljivi in neobvladljivi.
+2.2 “MEDČLOVEŠKO VEDENJE” V OKOLJU
+2.2.1 Osebni prostor
+Osebni prostor je definiran kot nevidna meja, ki nas obdaja in čez katero nekateri lahko,
+drugi pa ne smejo stopiti. Regulira našo interakcijo z drugimi, premika se z nami, se razširja
+in prilagaja v skladu z dano situacijo (Baum, 1996: 275). Na velikost oz. meje našega osebnega prostora vpliva naša osebnost, spol, starost, socialno in fizično okolje ter kulturno in
+etnično ozadje, torej so meje osebnega prostora pri vsakem posamezniku drugačne. Zato
+ne moremo določiti idealne oziroma univerzalne velikosti osebnega prostora. Vprašanje,
+ki temu sledi je kako potem lahko pri oblikovanju upoštevamo to značilno človekovo vedenje. Prostor moramo oblikovati fleksibilno, lahko nudimo več različic delitve prostora
+ali prilagodljivost prostora tako, da vsak posameznik lahko najde sebi udoben prostor za
+interakcijo z drugimi (Gifford, 1987: 104–133).
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+5
+
+2.2.2 Teritorialnost
+Teritorialnost je vzorec vedenja in odnos posameznika ali skupine, ki temelji na zaznavanju, poskusnem ali dejanskem nadzorovanju določenega območja, predmeta ali ideje
+in lahko vključuje okupacijo/zasedanje, obrambo/zaščito, poosebljanje in označevanje le
+tega (Gifford, 1987: 137). Teritoriji so običajno relativno stalna območja, večinoma z vidnimi mejami, ki določajo, kdo bo vstopil v interakcijo (Baum, 1996: 275). Tudi teritorialnost
+je odvisna od osebnih dejavnikov, socialnega in fizičnega okolja ter kulturnega ozadja.
+Z upoštevanje tega vedenja naj bi oblikovalci zmanjšali agresivnosti, povečali nadzor, ki
+ga posameznik ima ter spodbudili red in varnost. Pri oblikovanju prostora je pomembno,
+da zagotovimo teritorialnost posameznikom oz. skupinam, posebej kadar gre za oblikovanje večjega območja, na primer sosesko. To lahko dosežemo s tem, da na ulicah soseske
+onemogočimo promet ljudem, ki ne živijo v tej soseski. S tem dobijo prebivalci soseske
+občutek lastništva in nadzora. To lahko tudi pripelje do zmanjšanja kriminala (Gifford,
+1987: 148–159).
+2.2.3 Gneča
+Ena najbolj izrazitih značilnosti sodobnega načina življenja, ki je danes večinoma mestno
+življenje je gneča, ki jo običajno vrednotimo kot negativno (Polič, 1989: 59). Ta pa ni nujno
+odvisna od gostote ljudi, je pa pogojena s prisotnostjo drugih ljudi. Podobno kot že prej
+opisano je tudi občutek gneče odvisen od osebnih dejavnikov, socialnega in fizičnega
+okolja ter kulturnega ozadja (Gifford, 1986: 161–193). Da bi zmanjšali negativen vpliv
+gostote ljudi z oblikovanjem okolja, nam ni treba zagotoviti več prostora, ampak lahko
+občutek gneče s skrbnim oblikovanjem danega (omejenega) prostora ublažimo oziroma
+zmanjšamo.
+2.2.4 Zasebnost
+Zasebnost je proces, v katerem posameznik (ali skupina) nadzoruje možnost stikov med
+seboj in drugimi ljudmi, možnost prenosa obvestil v eno ali drugo smer ter svobodo izbire
+s kom, kdaj in kje se bo družil (Altman, 1976; Ittelson in sod., 1974, cit. po Polič, 1998: 56).
+Za vsakega posameznika zasebnost pomeni nekaj drugega. Drži pa, da vsak človek ob
+določenem trenutku potrebuje več zasebnosti, ob drugem trenutku pa manj. Zasebnost
+je tesno povezana s teritorialnostjo, zasebnim prostorom in gnečo. Cilj oblikovalca mora
+biti, da vsakemu posamezniku da čim več zasebnosti. Vse teorije se strinjajo, da zasebnost toliko pomeni odprtost do drugih kot pomeni zaprtost do drugih. Pomembno je, da
+živimo in delamo v okoljih, ki posamezniku omogočajo, da sam odloča o meri »odprtosti«
+(Gifford, 1987: 198–199: 218).
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+6
+
+2.3 MESTO IN NJEGOVE ZNAČILNOSTI
+Mesto je naselje, ki je upravno, gospodarsko, kulturno središče širšega območja (SSKJ).
+Danes vedno več ljudi živi v mestu ali njegovi bližnji okolici. Leta 1990 je v mestih živelo
+42 % svetovnega prebivalstva, leta 2010 pa čez 50 % (United Nations, 2010).
+Prebivalci mest se soočajo z vsemi njegovimi negativnimi in pozitivnimi lastnostmi. Ittelson (1974, cit. po Polič, 1986: 53–54) je značilnosti mestnega okolja opisal v šestih
+točkah:
+1. Stres: mesto je onesnaženo s hrupom, umazanim zrakom, preobljudenostjo, ipd.
+2. Poizvedovanje in lahkota gibanja: kako se znajti v mestu, čitljivost mesta, dostopnost,
+promet in način, kako lahko prebivalec izve to, kar potrebuje.
+3. Družabnost in skupnost: treba je upoštevati spremenljivke, ki vplivajo na oblikovanje
+skupnosti ter ravnotežja med socializacijo in zasebnostjo.
+4. Kulturno-rekreacijske možnosti: zadovoljstva izhajajoča iz teh možnostih je treba presojati ne po tem, kar obstaja, pač pa po meščanovi zaznavi tega, kar mu je dostopno.
+5. Obogatitev izkustva: zaznavno je mesto okolje za učenje.
+6. Proces odločanja: ljudje so več kot številke, sami želijo odločati o svojih potrebah v
+okolju.
+Ljudje, ki živijo v mestnem okolju, so izpostavljeni množici dražljajev, preveč da bi se
+lahko na vse odzvali oz. se z njimi soočali. Ta množica dražljajev velikokrat pripelje do
+izčrpanosti, utrujenosti in obolenj. Nadaljnja preobremenjenost lahko vodi v resne
+psihične in čustvene težave. To pa ni nujno tako. Geller (1942, cit. po Baum, 1996: 373)
+trdi, da dražljaji (kot na primer v mestnem okolju), ki so intenzivni, kompleksni in/ali
+neobičajni, lahko vodijo k pozitivnim ali k negativnim učinkom. Na primer bi zapletenost
+pozitivno vplivala na človeka in njegovo estetsko dojemanje prostora (kar pa je v večini
+primerov v nasprotju z mestno krajino, za katero je značilna predvsem monotonost in
+ponavljanje vzorcev). Pomembno je razumeti, da ni fizično okolje mesta samo po sebi
+že »nezdravo«, pač pa se tu prelivajo socialni in gospodarski dejavniki in skupaj določajo
+končni izid (Polič, 1986: 55).
+2.4 »STRESORJI«, ZNAČILNI DEJAVNIKI V MESTIH
+»Psihologijo lahko uporabimo pri oblikovanju, da bi ustvarili čitljivo okolje, ki zmanjša
+vpliv stresorjev, kot so hrup, vročina in onesnaženost, ter povečajo prostorsko in socialno
+udobje« (Baum, 1996: 413).
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+7
+
+2.4.1 Hrup
+Osnovna in najpogosteje uporabljena definicija hrupa je »nezaželeni zvok«. Hrup na
+človeka vpliva na različne načine. Lahko vpliva na zdravstveno stanje človeka, v skrajnem
+primeru lahko celo povzroči izgubo sluha, prav tako vpliva tudi na mentalno zdravje, na
+naše delovanje in vedenje (Baum, 1996: 150–183). Eksperimenti Milgramovega tipa so
+pokazali, da pod določenimi pogoji hrup pospešuje agresivnost, eksperimenti Mathewa
+in Canona (Bell in sod., 1978) pa, da zmanjšujejo pripravljenost pomagati, oz. dejansko
+pomoč drugim (Polič, 1998: 84).
+2.4.2 Vročina
+Temperatura je eden od dejavnikov v fizičnem okolju, ki jih ljudje spreminjajo skozi urbanizacijo in industrializacijo. Vročina (in mraz) vpliva na človekovo fizično in psihično
+stanje ter na njegovo vedenje. Kadar vročina postane neprijetna, vpliva na zmanjšanje
+medčloveškega stika in poveča agresivnost (Baum, 1987: 195–207: 223). Ta vpliv lahko oblikovalci optimiziramo le do določene meje oz. le na omejenem območju. Z vključevanjem
+vegetacije in vodnih elementov nam je mogoče ustvariti prijetnejšo mikroklimo, ki blaži
+občutek vročine.
+2.4.3 Onesnaženost
+Onesnaženost ima vpliv na naše razpoloženje, vedenje in zdravje, četudi se tega ne zavedamo. Onesnaženost negativno vpliva na zdravje ljudi, poveča ali zmanjša agresivnost
+in privlačnost (odvisno od ostalih dejavnikov) (Gifford, 1987: 261–271). Vpliv, ki ga
+ima onesnaženost na ljudi, lahko dolgoročno uravnavamo le s tem, da zmanjšamo
+onesnaženost s trajnostnim razvojem. To vključuje načrtovanje bolj zelenih mest, ki imajo
+tudi bolj razvit sistem javnega prevoza in s podobo mesta spodbujajo uporabo alternativnih prevoznih sredstev, kot so na primer kolesa.
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+8
+
+3 PREPREČEVANJE KRIMINALA Z OBLIKOVANJEM OKOLJA (CPTED)1
+Del vsakdanjega življenja v mestih je postal tudi kriminal, to so dejavnosti, ki zajemajo
+kazniva dejanja (SSKJ) in z njim povezan strah pred kriminalom. Ugotovili so, da je danes
+kriminal eden od glavnih stresorjev v bivalnem okolju (Kullberg in sod., 2009) in različne
+raziskave so tudi dokazale, da je prav varnost glavna skrb javnosti (Cozens, 2007). V nekaterih mestih je že prišlo tako daleč, da so stanovalci postali »zaporniki« v svojih stanovanjih, ker jim kriminal in strah pred kriminalom preprečujeta, da bi se prosto gibali v okolju,
+še posebej v temi (Cisneros, 1995). Strah pred kriminalom pa je odvisen od osebne presoje tveganja, ki je rezultat dejanskega stanja in subjektivnega zaznavanja tveganja. Na
+strah pred kriminalom tako vpliva tudi človekovo okoljsko, socio-demografsko in osebno
+okolje (Kullberg in sod., 2009). Kriminal je ogledalo kvalitete socialnega okolja in indikator
+dobrega počutja oziroma blagostanja skupnosti (Cozens, 2007).
+Preprečevanje kriminala z oblikovanjem okoja (angleški izraz je crime prevention through
+environmental design, v nadaljevanju CPTED), je multidisciplinaren pristop za odvaračnje
+kriminala z oblikovanjem prostora. Začetnik CPTED C. Ray Jefferey in drugi pisci so enotnega mnenja, da so do sedaj delujoči sistemi za preprečevanje kriminala (policije, sodišča,
+zapori) očitno neuspešni ali neučinkoviti2. Jasen dokaz tega je, da kriminal ostaja temeljni
+socialni problem (Schneider in Kitchen, 2007; Cozens in sod., 2005). Ljudje so že od vedno
+skrbeli za svojo varnost in varnost svoje lastnine na različne načine. »Tudi poskusi nadzora
+nad vedenjem ljudi skozi oblikovanje in uporabo okolja so stari kot civilizacija« (Crowe
+in Zahm, 1994). CPTED je dosegel svetovne razsežnosti, je eden najbolj obetavnih in trenutno uspešnih pristopov v zmanjšanju priložnosti za kriminal (Crowe in Zahm, 1994). Z
+razliko od obstoječih sistemov, ki delujejo vzročno posledično, je to »preventiv,na« strategija, ki z različnimi sredstvi poskuša preprečiti kriminal, preden se zgodi (Stamps, 2009).
+Brantingham in Brantingham (1991, cit. po Cozens in sod., 2005) sta trdila, da so pri vsakem
+kriminalu štiri dimenzije: zakon, storilec kaznivega dejanja, žrtev in lokacija/mesto. CPTED
+se osredinja na četrto dimenzijo kriminala, to je lokacijo oz. kraj, kjer se zgodi kaznivo
+dejanje.
+Fizično okolje vpliva na kriminal. Ta trditev izhaja iz temeljnega dejstva psihologije, da je
+vedenje produkt interakcije med osebo in njenim okoljem. »V kriminologiji to pomeni,
+da je kriminal (vedenje) produkt med interakcijo kriminalca in priložnostjo za kriminal«
+(Clarke, 1997).
+
+1	
+Angleška kratica za Crime prevention through environmental design
+2	
+V Sloveniji velja sistem zakonitih kazenskih sankcij, te so: kazni, opozorilne sakncije in varnostni
+ukrepi (Kazenski zakonik, 3. Člen)	
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+9
+
+PSIHOLOGIJA: oseba x okolje = vedenje
+KRIMINOLOGIJA: nagnjenost h kriminalu x priložnost za kriminal = kriminal
+
+Slika 1: Interpretacija psihologije in kriminologije
+
+Teorija CPTED temelji na tej predpostavki, da kriminal delno izhaja iz priložnosti dane v
+fizičnem okolju. In če je to res, je možno z določenim oblikovanjem okolja nekoliko vplivati na preprečevanje kriminala. CPTED je filozofija preprečevanja kriminala, ki trdi da je s
+primernim oblikovanjem okolja in učinkovito rabo grajenega prostora možno zmanjšati
+kriminal in strah pred kriminalom ter lahko vodi do izboljšanja kakovosti življenja (CPTED, Securety Handbook; Cozens, 2007; Cozens in sod., 2005). CPTED deluje na način, da
+zmanjša možnosti za »izvršitev« kaznivega dejanja in poveča možnost, da nekdo vidi
+kriminal (CPTED, Securety Handbook). Cilji uporabe CPTED so ustvariti mesto, ki bo varno
+za bivanje ljudi in zmanjšati strah pred kriminalom. »Uporablja sredstva na mikro (varnost
+stavb), mezo (ulice, soseske) in makro (mesto) ravni. Najboljše jih je uporabiti pri stopnji
+načrtovanja, lahko pa se jih tudi uporabi pri spreminjanju obstoječega urbanega okolja«
+(Cozens, 2007).
+CPTED pa ni čarobna formula in ne zagotavlja, da bo ob uporabi teh načel mesto varno
+pred kriminalom. Najboljše deluje kot del širše strategije za preprečevanje kriminala v
+sodelovanju z drugimi sistemi (Cozens ,2007). “Design sam po sebi namreč ni vzrok za kriminal ali vzrok, da ljudje postanejo kriminalci” (Stollard, 1991: 1). »V nekaterih okoliščinah
+pa ima fizični design vlogo pri zmanjšanju kriminala« (Cisneros, 1995: 1). Raziskave v Veliki
+Britaniji so dokazale pozitivni izid v zmanjšanju kriminala in strahu pred kriminalom skozi
+način razvijanja po načelih CPTED (Cozens, 2007). »Objavljeni so bili številni primeri, ki
+kažejo na bistveno zmanjšanje kriminala po spremembah v fizičnem okolju. Ni dvoma, da
+se bo CPTED uporabil za pomoč pri zaščiti družbe pred kriminalom« (Clarke, 1997: 9).
+CPTED se je razvil v treh stopnjah: Prva stopnja je bila C. Ray Jefferey, ki je leta 1971 prvi
+izdal knjigo »Crime Prevention Through Environmental Design«3 in je tako bil tudi prvi,
+ki je uporabil to besedno zvezo oz. ta termin, ki se je kasneje tudi uveljavil. Druga stopnja se je razvila z Oscar-jem Newman-om, ki je eno leto kasneje izdal knjigo »Defensible
+Space«4. Temu je sledila tretja stopnja, tako imenovana druga generacija CPTED, »Situational Crime Prevention«5, ki jo je razvila vlada Velike Britanjije leta 1979.
+3	
+4	
+5	
+
+»Preprečevanje kriminala z oblikovanjem okolja«
+»Branljiv prostor«
+»Situacijsko preprečevanje kriminala«
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+10
+
+3.1 CTED
+Kot sem že omenila je termin CPTED stkoval C. Ray Jeffery, kriminolog, ki je kritiziral sociologe, da pri razlaganju pojava kriminala dajejo preveč poudarka na socialne značilnosti
+storilca in zanemarjajo biološke in okoljske determinante. Poudarjal je povezanost
+kriminala z okoljem in trdil, da mora preprečevanje kriminala temeljiti na analizi biologije kriminala in zmanjšanju možnosti za kriminal v okolju. Jeffrey je razglasil model
+za preprečevanje kriminala, ki temelji na oblikovanju stimulacij nagrad in kazni. Fizično
+okolje posameznikom nudi užitke in bolečine tako, da se naučijo spremeniti svoje vedenje
+tako, da maksimizirajo ali minimalizirajo užitek ali bolečino. Torej so spremembe fizičnega
+okolja ključ za pravo preprečevanje kriminala, tako da bi lahko nagrajevalo ali kaznovalo
+določeno vedenje. Kot temeljne principe CPTED navaja: »naravni nadzor«, nadzor nad
+dostopi, okrepitev teritorialnosti in pravilno umeščanje rabe prostora, da zmanjšamo oz.
+preprečimo konflikt interesov. Njegova knjiga je pri drugih kriminologih naletela na nezanimanje in zavračanje, ki so mu še posebej očitali biološke argumente (Clarke, 1997: 1–2;
+Schneider in Kitchen, 2007: 23–24).
+3.2 BRANJLIVO OKOLJE6
+Poglavje povzemamo po Newman-u (1972).
+Oscar Newman je izdal kritiko javnega bivanja v Ameriki, kjer krivi bivalno okolje za vzrok
+kriminala. Trdi, da zaradi gostote populacije sosed soseda ne pozna več, posledično ni
+več nobenega občutka soodgovornosti za skupen prostor ali lastnino drugega, moralni
+kodeks, ki je včasih bil normalen, je danes dobesedno izginil, celo pravi, da je današnji
+način bivanja »nečloveški«. Ljudje, ki živijo v stolpnicah, so se naučili, da se njihova odgovornost konča z mejami njihovih stanovanj in da se niti ne ozirajo na to, kar vidijo skozi
+okno. Policija je edina, ki izvaja nadzor nad okoljem.
+Predlaga, da se vrnemo nazaj k oblikovanju okolja, ki bo prijetno za bivanje. Manj gosto
+naseljena območja bodo omogočila ljudem, da prepoznajo svoje sosede in ločijo med
+sosedom in vsiljivcem v soseski. Kadar si manj ljudi deli odprti prostor, dobijo občutek
+lastništva in pripadnosti, kar pripelje do naravnega vedenja teritorialnosti. Teorija DS ljudem prav to hoče nuditi, želi ustvariti bivalno okolje, ki sporoča, da se »brani«, da je last
+nekoga in pod nadzorom. Želi vzpostaviti »samo-pomoč«, neodvisno od javnih sistemov.
+Po mnenju Newman-a (1996) so meščani, ki spoštujejo zakone, najbolj neizkoriščen potencial pri preprečevanju kriminala. Teorija »branljivo okolje« želi ljudem vrniti »moč«
+nad svojim bivalnim okoljem s prerazporeditvijo in prestrukturiranjem okolja. Kot najbolj
+pomembno poudari jasne meje med zasebnim, pol-zasebnim, pol-javnim in javnim prostorom. Operira s štirimi glavnimi mehanizmi: teritorialnost, nadzor (»naravni in nenara6	
+
+Peveden angleški izraz »defencible space«
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+11
+
+vni«), nadzor nad dostopi in vzdrževanost okolja.
+Temelji na predpostavki, da storilec kaznivega dejanja kraj zločina izbira racionalno,
+kjer bo čim večja nagrada in kjer bo čim manj tvegal, da bi ga nekdo opazil pri svoji nameri. Torej, če bo okolje dobro obiskano, očitno pod stalnim nadzorom stanovalcev in
+vzdrževano, bo manjša verjetnost, da bo to okolje postalo kraj zločina. »Pri enodružinskih
+hišah ali vrstnih hišah je najlažje oblikovati »defensible space«, pri dvo do treh nadstropnih večdružinskih hišah je že nekoliko oteženo. Najtežje pa je pri stolpnicah, ki imajo
+velike zelene površine. Te so ponavadi »nikogaršnja zemlja« v katerem nihče ne prepozna
+tujcev in je veliko možnosti ubega« (Cisneros, 1995: 6).
+Tehnike »branljivo okolje« so imele izrazit uspeh v močnem zmanjšanju kriminalnih aktivnosti pri nekaterih stanovanjskih kompleksih in soseskah (Cisneros, 1995: 3).
+3.3 SITUACIJSKO PREPREČEVANJE KRIMINALA7
+Nadaljnja dopolnitev se razširi čez zgolj fizično oblikovanje z vključevanjem socialnih
+dejavnikov. Druga generacija CPTED uporablja oceno tveganja, socialno ekonomske in
+demografske profiliranje (Cozens in sod., 2005). Drugače kot CPTED in branljiv prostor
+se situacijsko preprečevanje kriminala ne ukvarja s principi arhitekturnega designa in
+grajenega okolja (Clarke, 1997). Po mnenju Clarce-a (1992, cit. po Mayer in sod., 2006)
+situacijsko preprečevanje kriminala tudi ne temelji na izboljšanju družbe ali njenih institucij, ampak preprosto in zgolj na zmanjšanju možnosti za kriminal. Sestavljena je iz treh
+glavnih elementov: teoretični okvir, vključuje vrsto teorij o priložnostih, standardna metodologija za reševanje specifičnih težav, s katero najprej analizirajo in definirajo težavo,
+identificirajo in preizkusijo možne rešitve in ocenijo rezultate, ter niz tehnik za zmanjšanje
+možnosti oz. priložnosti, kjer »otežijo« cilj oziroma tarčo (target hardening), odvračajo
+storilce kaznivih dejanj in zmanjšajo pobude (Clarke, 1995).
+3.4 OMEJITVE PRISTOPA PREPREČEVANJA KRIMINALA Z OBLIKOVANJEM OKOLJA
+Omenila sem že nekaj raziskav in v nadaljevanju bom opisala še nekaj primerov, ki potrjujejo uspešnost tehnik CPTED pri zmanjšanju kriminala v bivalnem okolju. Ampak kot vsak
+pristop za preprečevanje kriminala ima tudi ta pomanjkljivosti in/ali omejitve.
+Cozens s sodelavCi (2005: 341–342 ) našteje pet omejitev. Prvo, ki jo izpostavi so »neracionalni« storilci. Kot sem namreč že prej omenila CPTED pristop temelji na predpostavki,
+da storilci kaznivih dejanj kraj zločina izbirajo racinalno, to pa ni vedno tako. Pogosto so
+storilci lahko pod vplivom alkohola ali droge in je njihovo vedenje povsem nepredvidlji7	
+
+Preveden angleški izraz »situational crime prevention«
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+12
+
+vo in to so »neracionalni« storilci. Naprej opisuje, da tudi socio-ekonomske in demografske spremembe lahko pozitivno ali negativno vplivajo na učinkovitost ukrepov. Tretja
+omejitev je »ekološki prag« soseske ali okolja, trdi da ima vsako okolje omejeno kapaciteto za določene aktivnosti in funkcije. Opozarja tudi na nevarnost, da kadar uporabimo
+CPTED tehnike brez sodelovanja javnosti, je vse, kar ostane »otežitev cilja« in ljudje lahko
+dobijo občutek, da so v »trdnjavi«, kjer so njihovi domovi obdani z zidovi in ograjami.
+Največja kritika, ki jo omenjajo tudi številni drugi pisci pa je »premestitev«. Gre za očitek,
+da z vsemi ukrepi CPTED le dosežemo, da si storilec poišče bolj primerno lokacijo in tako
+ne preprečimo kriminala, ampak ga le prestavimo na drugo lokacijo.
+Po mnenju Samuels-a (1996) je CPTED napačno ime, ker fizično okolje samo po sebi ne
+more ne preprečiti niti povzročiti kriminala, temveč lahko le poveča ali zmanjša potencialne možnosti v grajenem okolju, ki vplivajo na obseg kriminala, ki se bo po večji ali
+manjši verjetnosti zgodil. Torej ima okolje vgrajeni potencial ali predispozicijo, da ustreže
+določeni situaciji, ampak v nobenem primeru pa ne povzroči vedenja.
+Stollard (1991) opozarja na to, da ima oblikovana rešitev za varnejšo okolje lahko več kot
+le en izid in ta morda ni tak, kot je bilo načrtovano. Nekatere »rešitve« lahko morda celo
+poslabšajo stanje. Na primer s tehniko »otežitve cilja« lahko ljudem damo občutek izoliranosti od svojega okolja ter izgubijo socialne stike, ki pa so tudi temeljni mehanizem za
+preprečevanje kriminala v CPTED.
+Vsa teorija »Defensible Space« in teorija o nadzoru temelji na predpostavki, da tisti, ki
+živijo v soseski ali okolici, ne bodo storili kriminala. Statistike pa opozarjajo na to, da
+večina storilcev kaznivega dejanja stori kriminal v bližini svojih domov (ker to območje
+bolj poznajo, lažja možnost pobega ipd.).
+Zavedati se moramo, da niso vsi mehanizmi pristopa CPTED za preprečevanje kriminala
+»uspešnice«. V neki (omejeni) meri lahko pomagajo ustvariti bolj varno okolje in s tem
+doprinesejo k bolj varnim mestom in zmanjšanju strahu pred kriminalom ter posledično
+izboljšajo kakovost življenja. CPTED ni le design, ki naj bi preprečil kriminal, ampak predvsem mora tudi biti dober design.
+Največ uspeha lahko pričakujemo, kadar uporabljamo ta pristop v sodelovanju z drugimi
+tehnikami preprečevanja kriminala.
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+13
+
+4 GLAVNE SMERNICE PREPREČEVANJA KRIMINALA Z OBLIKOVANJEM OKOLJA
+4.1 NARAVNI NADZOR
+Naravni nadzor velja za najbolj osnovni element za odvračanje kriminala. Lahko bi ga
+definirali kot možnost stanovalcev in uporabnikov nekega okolja, da opazujejo, nadzirajo prostor, sosede, svojo lastnino in tudi skupno lastnino oz. skupne prostore, otroška
+igrišča, parkirišča ipd. Izhajamo iz predpostavke, da bo vedno nekdo opazoval okolico
+svojega doma in da se bo v primeru opazovanja kriminalnega dejanja nanj tudi odzval
+(npr. s tem, da pokliče policijo).
+Naravni nadzor lahko vzpostavimo s tem, da arhitekti oblikujejo “aktivne fasade”, okna
+in vrata obrnjena na glavne ulice, z jasno definiranimi vhodi in nemotenimi potmi do
+vhodov. Pomembno vplivata tudi osvetlitev in vegetacija, ki ne smeta ovirati pogleda,
+vizualnega stika. V odprtem in svetlem prostoru bo manjša možnost, da se nekdo skriva
+in uporabnik se počuti bolj varno, če vidi, kaj se dogaja okrog njega. S tem, da oblikujemo
+splošno lep in privlačen prostor, ki ga bodo ljudje želeli uporabljati, dosežemo večjo gostoto ljudi na zelenih površinah in tako tudi povečamo naravni nadzor nad tem krajem.
+Z zagotavljanjem možnosti nadzora pa ni nujno, da tudi dosežemo želeni učinek. Lahko
+ne bodo vedno prisotni “opazovalci” ali se pa ti ne bodo odzvali na opazovano. Če se bo
+posameznik odzval na dogajanje je odvisno od občutka lastniških in osebnih pravic, koliko je dogajanje v njegovem zaznanem območju vpliva in kako nenavadno je dogajanje
+za to okolje in s tem tudi upravičen odziv nanj (Newman, 1972). Zelo znan je primer žrtve
+Kitty Genovese, ki je zvečer šla domov, ko jo je neznanec zabodel, posilil in ubil. Dogajanje
+je videlo ali slišalo čez 30 ljudi in niti eden ni priskočil na pomoč niti poklical policijo (New
+York Times, 1964). Naravni nadzor torej ni neka idealna formula, ki bi lahko rešila tako
+kompleksen problem, kot je kriminal. Newman-ova (1972) hipoteza pa je, da je za zagotavljanje možnosti nadzora pomembno “odvračanje” kriminala, ki izrazito zmanjša strah
+prebivalcev pred kriminalom in ustvari splošen videz varnega okolja. V vsakem primeru
+pa je dejstvo, da če ima storilec kaznivega dejanja občutek, da bi ga pri izvajanju kaznivega dejanja nekdo opazoval, ga bo to odvrnilo od namere. In že samo zato je okolje, ki je
+vidno1 oblikovano tako, da omogoča naravni nadzor, bolj varno.
+Cozens in sodelavci (2005) navajajo tri različne tipe strategije nadzora: naravni, ki smo
+ga že opisali, formalni ali organiziran (npr. policija) in mehanska strategija nadzora (npr.
+video nadzor). Vse tri so pomembni načini za preprečevanje kriminala, za to nalogo pa je
+izpostavljen le prvi način, ker je edini pomemben pri oblikovanju okolja kot takega.
+1	
+Obiskovalci to lahko opazijo, vidijo, da je v prostoru omogočen nadzor s strani stanovalcev in
+drugih uporabnikov.
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+14
+
+4.2 NADZOR DOSTOPA
+Ulice in druge poti oblikujejo zgradbo urbanega prostora in prevažajo surovine, ljudi itn.
+ter tudi kriminal v življenje mesta (Schneider in Kitchen, 2007). Koncept nadzora dostopa
+oz. dostopov se osredinja na zmanjšanje priložnosti za kriminal skozi usmerjanje toka
+ljudi s tem, da omogoči vstop le upravičenim uporabnikom2 in onemogoči ali prepreči
+vstop vsiljivcem. Kriminalu najbolj »preprečimo« vstop v sosesko ali kraj s tem, da čim
+bolj zmanjšamo število vhodov in izhodov iz njega, s tem povečamo zaznano tveganje in
+napor storilcu kaznivega dejanja. Idealno je, kadar imamo eno vstopno in eno izstopno
+pot. Po Eck-u (1997, cit. po Cozens in sod., 2005) so raziskave dokazale, da imajo območja
+z nereguliranim dostopom več kriminala, kot pa ulice z bolj omejenim dostopom.
+Eden najstarejših načinov nadzorovanja dostopa so zidovi, ki segajo daleč v zgodovino
+civilizacije (Schneider in Kitchen, 2007). Danes ta koncept vključuje več kot le visok zid z
+bodečo žico, uporablja tudi vrata, ograje, zapornice in druge fizične elemente, osvetlitev,
+oblikovanje krajine ter organizacijo peš in drugih poti za nadzor ali preprečitev dostopa.
+4.3 OKREPITEV TERITORIALNOSTI
+V preteklosti so si vsi ljudje prizadevali pridobiti svoj del zemlje, za katerega so razvili
+občutek teritorialnosti, ki je izhajal iz lastništva. Danes, ko živimo v bolj gosto naseljenih
+območjih, posameznik težko definira svoj teritorij. Večina ljudi, ki živijo v stolpnicah, prostor okrog nje doživljajo kot izrazito javni prostor (Newman, 1972). Z okrepitvijo teritorialnosti želimo ljudem ponovno omogočiti občutek pripadnosti nekemu prostoru, v katerem bivajo, občutek lastništva in soodgovornosti zanj. V takem prostoru bodo vsiljivci
+čutili, da so v območju vpliva neke osebe ali skupine ljudi, ki imajo nadzor in bodo ob
+potrebi ta prostor tudi »branili«.
+Oblikovalci odprtega prostora lahko pri načrtovanju dosežejo pri stanovalcih okrepitev
+teritorialnosti z delitvijo ali razčlenitvijo prostora, kjer bodo zaznali svoje območje vpliva,
+zato je zelo pomembna dobra definicija mej med zasebnim, pol zasebnim, pol javnim in
+javnim prostorom. Uporabljajo se realne ali simbolične omejitve, s katerimi spremenimo
+dinamiko gibanja v prostoru. Realne so na primer zidovi, ograje, zapornice in podobno.
+Te pa včasih niso primerne, takrat lahko uporabimo simbolične, kot so nivo osvetlitve,
+nekaj stopnic, sprememba teksture, rastline in drugi načini oblikovanja krajine. Tudi z
+razčlenjeno zgradbo (subdivide) poti lahko ustvarimo teritorialno območje. Pomembno
+je, da je odprti prostor okrog stolpnic definiran, katerim stanovalcem pripada, zato moramo pri oblikovanju na stavbo in njeno neposredno okolico gledati kot celoto. Vsi ti načini
+ločevanja javnega in zasebnega prostora pa služijo istemu namenu: »da seznani ljudi s
+2	
+
+Upravičeni uporabniki prostora v soseski so njeni stanovalci oz. obiskovalci stanovalcev.
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+15
+
+tem, da prehajajo iz prostora, ki je javen, kjer njihovo vedenje ali njihova prisotnost ni
+vprašljiva, v prostor, ki je zaseben in kjer njihova prisotnost potrebuje utemeljitev« (Newman, 1972: 63).
+Občutek lastništva in teritorialnosti bomo pri ljudeh še dodatno okrepili, če bo prostor
+okrog njih lep, prijeten, privlačen in udoben. To dosežemo tudi z vključevanjem javnosti,
+uporabnikov prostora pri oblikovanju le tega, da upoštevamo njihove želje in potrebe.
+4.4 VZDRŽEVANJE
+Ta koncept se naslanja predvsem na »teorijo razbitih oken«. Ta trdi, da če pustimo eno
+»razbito okno« ali kakšno drugo škodo v prostoru, bo ta vodila k drugim, k novemu
+poškodovanju grajenega okolja (CPTED, Securety Handbook). Kadar pa je prostor čist in
+redno vzdrževan, izraža sporočilo o netoleriranju vandalizma (Davis, 2004) ali drugih kaznivih dejanj ter omogoča dolgoročno delovanje in lep videz odprtega prostora. Veliko
+raziskav potrjuje, da bo vzdrževanje pripomoglo k preprečevanju kriminala.
+4.5 OSTALE SMERNICE ZA PREPREČEVANJE KRIMINALA Z OBLIKOVANJEM OKOLJA
+Nekateri pisci dodajajo se druge smernice CPTED. Nekatere od teh so tudi pomembne pri
+oblikovanju prostora in jih bom na kratko opisala v nadaljevanju.
+4.5.1 Struktura prostora
+Nekateri omenjajo tudi »berljivost in prepustnost«, »dostop in gibanje«, »spodbujanje aktivnosti« in napotke za oblikovanje odprtega prostora, krajine, otroških igrišč, parkirišč
+in poti. Vse našteto bi lahko opisali kot strukturo prostora, ki jo gradimo z oblikovanjem
+odprtega prostora.
+Pri oblikovanju strukture prostora je najbolj pomembna jasna delitev prostora z dobro
+definiranimi mejami, izogibati se moramo »ostankom« v prostoru. S tem omogočimo
+najrazličnejše aktivnosti in preprečimo konfliktne situacije v prostoru, vseeno pa moramo spodbujati mešano rabo prostora. S primerno členitvijo prostora dosežemo želeno
+število aktivnosti, ki se bodo odvijala in s tem zagotovimo večje število uporabnikov, kar
+zmanjša tveganje za kriminal in da občutek varnosti stanovalcem. Tudi vrsto aktivnosti
+lahko z oblikovanjem omejimo ali na nek način vnaprej predvidimo. Na primer že samo
+tekstura tal omeji vedenje na njih.
+Vitalnost kraja je močno odvisna tudi od njegove prepustnosti ali dostopnosti. Premalo
+povezan kraj s premalo potmi ne bo vitalen, kadar je poti preveč, lahko pride do slabo ali
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+16
+
+neuporabljenih poti, ki nudijo priložnost potencialnemu storilcu kaznivega dejanja. Poti
+za avtomobile, kolesarje in pešce naj potekajo vzporedno. Kadar pa to ni možno, naj bodo
+peš poti kratke in direktne, široke, dobro osvetljene in zagotovljen naj bo naravni nadzor
+nad njimi. Vse poti morajo biti dobro organizirane, naj vodijo ljudi neposredno do cilja in
+pokrijejo vse potrebe različnih ljudi. Pravo število ter vrsta dostopov in poti lahko doprinese k bolj prijetni in varni soseski. Dosežemo jih s skrbnim in oblikovanjem, ki temelji na
+predhodni analizi prostora in potreb ljudi.
+4.5.2 Otroška igrišča in parkirišča
+Del odprtega prostora so tudi otroška igrišča in parkirišča. Otroška igrišča so zelo pomembna za razvoj otrok, velikokrat pa se na njih odvija kriminal. Zato je prav, da razmislimo
+o možnosti zaklepanja ponoči. Previdni moramo biti z umeščanjem igrišč v prostor. Ne
+smejo biti preveč blizu stanovanjskim objektom, kjer lahko predstavljajo moteč dejavnik
+zaradi hrupa, vseeno pa moramo zagotoviti naravni nadzor, zato jih na primer ne smemo
+zasaditi z visokimi drevesi ali drugo vegetacijo, ki bi lahko preprečila vizualni stik z okolico.
+Parkirišča so najbolj varna, kadar so manjša in blizu stanovanjskim hišam. Kadar se ne
+moremo izogniti velikim skupnim parkiriščem, naj bodo razdeljena na manjše dele, da se
+lastniki lahko poznajo med sabo in prepoznajo vsiljivce. Tudi pri prakiriščih je primerna
+nižja vegetacija, da ne omejimo naravni nadzor.
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+17
+
+5 ZELENE POVRŠINE IN KRIMINAL
+Kot sem že prej omenila, danes večina ljudi živi v urbanem območju. Združeni narodi
+ocenjujejo, da naj bi z letom 2030 že kar 60 % svetovnega prebivalstva živelo v urbaniziranem okolju (United Nations, 2005). Širjenje mest in vedno večja gostota ljudi prinašata
+pritisk na prostor v urbanih območjih, kjer je vedno več grajenega okolja. Grajeno okolje
+se čedalje bolj intenzivira, da bi preprečili širitev v okolico, pa vseeno zadostovali potrebam vedno večjega števila prebivalcev. Ta intenzifikacija poteka na račun zelenih površin
+v urbanem prostoru, ki jih »prepustijo« za nadaljnji razvoj. Ta izguba pa ima potencialno
+velike posledice za prebivalce mest zaradi pomena urbanih zelenih površin (Home in sod.,
+2010).
+Različne študije so dokazale pozitivne učinke izpostavljenosti naravnemu okolju na
+človeka in njegovo vedenje. Pokazale so, da povečajo pozitivno vedenje in stanje ljudi,
+kot so učinkovitost, zdravje ter povečajo pozitivne občutke (Mayer in sod., 2009). Zelene
+površine spodbujajo k vadbi, omogočajo socialne stike in okrevanje od stresa, zagotavljajo priložnosti za optimalen razvoj otrok in tudi priložnost za osebni razvoj odraslih (Home
+in sod., 2010). Hkrati pa tudi stik z naravo zmanjša negativno vedenje in negativna stanja
+ljudi, kot so agresivnost, depresija in bolezni (Mayer in sod., 2009).
+Urbane zelene površine predstavljajo stik prebivalcev mest z naravo. Swanwick (2003, cit.
+po Home in sod., 2010) opisuje zelene površine kot prostor, za katerega je značilna pretežna
+“nezaprtost” in prepustnost z mehkim površjem, kot je zemlja ali trava. Colquhoum (2004)
+pa uporablja definicijo, da je to kraj, kjer imaš vsaj v njegovi sredini občutek, da si v stiku
+z naravo. Kuo (1998 in 2001) trdi, da dobro obiskane urbane zelene površine spodbujajo
+povezovanje med sosedi, dajo večji občutek varnosti in zmanjšajo urbane »bolezni«, kot
+sta kriminal in nasilje.
+V tem smislu mestne krajine moramo načrtovalci rabe prostora razširiti pomen funkcij in
+razmisleke o zmožnostih oz. sposobnostih urbanih zelenih površin, ki so za veliko prebivalcev mest edini možen vsakdanji stik z naravo. Te od kraja bivanja posameznika ne
+smejo biti oddaljene več kot 3 minute hoje, takrat razdalja »premaga« potrebo (Bell in
+sod., 1996).
+Pri oblikovanju zelenih površin pa moramo imeti v mislih, da je kvaliteta pomembnejša
+od kvantitete. Tako če imamo ogromne zelene površine pa te niso primerno opremljene
+za potrebe ljudi, jih le-ti ne bodo uporabljali, ali pa če te niso vzdrževane, jih prav tako ne
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+18
+
+bodo obiskovali in v takih razmerah predstavljajo velik potencial, da postanejo zbirališče
+»upornikov« in »vozlišče kriminala«. »Urbane zelene površine so eden najtežjih delov oblikovanja grajenega prostora v smislu preprečevanja kriminala« (Colquhoum, 2004: 168).
+Oblikovane morajo biti tako, da zadovoljijo potrebe uporabnikov vseh starostnih skupin,
+da dajo občutek naravnega okolja in da so ljudje varni v njih.
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+19
+
+6 ŽE IZVEDENI PRIMERI PREUREDITVE PO NAČELIH PREPREČEVANJA KRIMINALA Z
+OBLIKOVANJEM OKOLJA V TUJINI
+Iz pri nas dostopne literature sem izbrala nekaj že izvedenih primerov preureditve sosesk
+po načelih preprečevanja kriminala z oblikovanjem okolja v tujini. Izbrala sem take primere, ki so bili izbedeni v gosto naseljenih soseskah, kjer so v proces preoblikovanja vključili
+stanovalce ali, ki zajemajo večjo zeleno površino za širšo javnost.
+6.1 CROMER STREET, CAMDEN, VELIKA BRITANIJA
+Poglavje povzemamo po viru Davies (2004: 54–55)
+Gre za povojne srednje gosto poseljene stanovanjske bloke. V okolici so še drugi stanovanjski kompleksi, institucionalna posestva (institutional buildings), trgovine in pisarne.
+Lokacija je bistveno vplivala na stopnjo kriminala. To območje je imelo resne težave s
+preprodajo drog, prostitucijo, vandalizmom in vlomi. Kot posledica takega stanja je kraj
+postal neprijeten za bivanje. K temu je prispevalo več dejavnikov: enostaven dostop v
+stanovanjske bloke, neuporabljeni podzemni prostori za shranjevanje, slaba osvetlitev,
+nenadzorovani vhodi in stopnišča in močna prepustnost območja.
+
+Slika 2: Tloris stanovanjskega kompleksa na Cromer street, Camden v Veliki Britaniji (Davies 2004: 54)
+
+Cromer street je bil del mestne prenove v obdobju med leti 1994 in 1999. Glavni poudarek v procesu preoblikovanja so bila dvorišča med stavbami. Te so spremenili v prostore, namenjene stanovalcem z igrišči, vrtovi in/ali parkirišči. Prenovili so bivalne stavbe,
+jih opremili s hišniki ob vhodu vsakega bloka in video nadzorom. Ogradili so podzemne
+prostore za shranjevanje z ograjami in vrati, ki omogočajo vizualni stik z okolico in hkrati
+nadzirajo dostop. En predel je ohranjen kot prehodna pot za javnost, da bi se izognili
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+20
+
+izolaciji območja. Drugi predeli pa so igrišča, parkirišča in vrtovi. Izboljšali so tlakovane
+površine, rastlinje in osvetlitev. Oblikovali so prostore za zbiranje ljudi s sedeži in otroška
+igrišča opremili z igrali.
+
+Slika 3: Izboljšan park v soseski je zelo obiskan
+in nadzor je omogočen iz veliko gospodinjstev
+(Davies 2004: 55)
+
+Slika 4: Pred vhodi je sedaj nizko grmičevje, ki
+poveča kakovost okolja in varnost v njej (Davies
+2004: 55)
+
+Cromer Street je sedaj stanovanjsko naselje, ki dobro funkcionira in je uspešno umeščeno
+v svojo okolico. V parkih je omogočen naravni nadzor s preglednostjo v parku in iz stanovanj v blokih okrog njih. Parki in ostali prostori med bloki se z mrakom zaklenejo. Okolica
+je dobro vzdrževana. Zdaj je zelo malo grafitov. Poskrbljeno je bilo tudi za prostore, ki
+omogočajo srečanje ljudi in druge aktivnosti vzdolž celotne ulice.
+Prišlo je do »premesitve« kriminala v bližnjo okolico, v glavnem v neposeljena območja.
+Dokazano pa je tudi bilo, da je na tem območju sedaj manj kriminala. Spremembe se ne
+kažejo zgolj v zmanjšanju kriminala, ampak se je izboljšala tudi kakovost življenja v tem
+urbanem okolju in življenje prebivalcev.
+6.2 BRONXDALE HOUSES, NEW YORK CITY, ZDRUŽENE DRŽAVE AMERIKE
+Poglavje povzemamo po viru Newman (1972: 172–186)
+Bronxdale Houses v New York-u je stanovanjski kompleks z 28 7-nadstropnimi stolpnicami na približno 109 265 m2, razdeljenih na ogromne sklope. Vsak od teh sklopov ima
+središčni del, ki je večinoma zasajen s travo in slabo opremljen. V kompleksu je razčlenjen
+sistem poti, te so neuspešne v usmerjanju ljudi. Poti so nepredvidljive, slabo osvetljene
+in nenadzorovane. Obstoječa oprema, ki omogoča igro mladim, se skoraj ne uporablja,
+ker ni jasno definirano komu »pripadajo«. Vsaka stavba ima dva vhoda, enega spredaj in
+enega zadaj. Med vhodi ni nobenega vizualnega stika. Kompleks je podvržen povečanju
+in vztrajnemu kriminalu. To lahko delno pripišemo tudi nejasnosti »tlorisov« središčnih
+delov, ki so slabo uporabljeni med drugim tudi zaradi strahu pred kriminalom.
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+21
+
+Reševanju problema kriminala v tem območju so se lotili na dva načina. Prvi je »tehnični«,
+kjer z elektronskimi pripomočki želijo zagotoviti naravni nadzor prebivalcev. Vsak od njih
+bi imel možnost spremljati dogajanje v stavbi in njeni okolici preko televizije. Stavbe
+so opremili z domofoni ter tudi preoblikovali vhode in hodnike, da bi povečali njihovo
+učinkovitost.
+
+Slika 5: Pogled na sosesko Bronxdale Houses (Newman, 1972: 176)
+
+Drugi način, ki je za to nalogo bistvenega pomena, pa je sprememba fizičnega designa
+okolice stanovanjskih blokov za povečanje varnosti. V ta namen so se odločili na novo
+definirati neposredne okolice, ki mejijo na stanovanjske stavbe. Da bi dosegli »podpolja«
+v tem kompleksu, ki vključujejo po 4 zgradbe so uporabili približno 1,8 m visoko kovinsko
+ograjo. Ta je še vedno omogočala vizualni stik z okolico, ampak je dostop usmerjala na
+določene vhodne točke. S tem so ustvarili nova »središčna območja«, ki so jasno definirana k določenim stavbam. Naslednji korak je bil intenziviranje rabe teh prostorov. Umestili
+so novo opremo za igro otrok, mladih in odraslih ter poskrbeli za možnosti za sedenje.
+Različnim prostorom za igro so močno definirali meje, da bi se izognili medgeneracijskim konfliktom. Bolj intenzivno rabo so zagotovila tudi parkirišča, ki so prav tako del teh
+središčnih območij.
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+22
+
+Slika 6: Tloris soseske Bronxdale Houses s predlogi preureditve (Newman, 1972: 179)
+
+Zelo pomemben del fizične preureditve je bil tudi sistem poti. Oblikovali so eno, jasno
+definirano javno pot, ki vodi skozi celoten kompleks in s tem zagotovili dobro uporabljeno pot ter se izognili možnostim za razvoj kriminala na slabo obiskanih poteh.
+6.3 BEXLEY, LONDON, VELIKA BRITANIJA
+Poglavje povzemamo po viru Colquhoun (2004: 255–260)
+V namen za boj proti kriminalu in nesocialnemu vedenju na celovit način se je v Bexleyu
+na severovzhodnem robu Londona oblikovala organizacija CSAZ – »Community Safety
+Action Zones«. Ta je uporabila več različnih pristopov za preprečevanje kriminala, eden
+od njih je tudi CPTED ali Design Out Crime. Drugi načini pa so še video nadzor ter drugi
+tehnični pripomočki, odstranitev grafitov, delo z mladimi ipd.
+Najprej so se soočili s predeli, kjer je bila nadpovprečna stopnja kriminala, to so storili na
+dva načina; s socialnimi ukrepi in s posegi za izboljšanje kakovosti življenja ter prenovo
+območja. Med drugim so tudi zagotovili prostore za mlade, kjer so se lahko srečevali,
+ne da bi s tem povzročali težave. Prenovili so stanovanjske zgradbe in izboljšali okolje.
+Zemljišče je bilo dodatno ozelenjeno s trajnicami in grmičevjem ter oblikovali so skupni
+vrt v središču območja z žarom in igrali. Izboljšali so tudi zunanjo osvetlitev in namestili videokamere na stavbe, parkirišča in otroška igrišča. Del projekta je bila tudi »čistilna
+akcija«, ki so jo izvedli po celotnem območju in je trajala več tednov.
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+23
+
+Slika 7: Zbiranje stanovalcev na igrišču Colquhoun (2004: 260)
+
+Skozi ves proces prenove pa so bili uspešno vključeni tudi prebivalci območja. Preden je
+CSAZ začel s svojim delovanjem je le 22 % prebivalcev potrdilo, da se počutijo varno v
+okolju, kjer živijo. To število je nato naraslo na 93 %. Ponovno je postalo okolje prijetno za
+bivanje, kar je potrdilo naraščanje povpraševanja za bivanje v tem okolju. Tudi policija je
+bila zadovoljna z izidom prenove.
+6.4 MOWBRAY PARK , SUNDERLAND, VELIKA BRITANIJA
+Poglavje povzemamo po viru Davies (2004: 80–81)
+Mowbray park v Sunderland-u (Velika Britanija) je Viktorijanski mestni park iz 17. stoletja v
+središču mesta in je eden od historičnih parkov in vrtov poln artefaktov. S treh stani meji
+na ceste, na eni strani pa na muzej in zimske vrtove. Diagonalno čez park so stanovanjski
+objekti, zato je park primarno namenjen tem stanovalcem. V parku je obstoječe otroško
+igrišče in pisarna varnostnika. Kljub temu so se v njem dogajali resni kriminalni incidenti.
+V sklopu nadgradnje muzeja in gradnje zimskih vrtov so obnovili tudi park. Park je bil
+popolnoma preoblikovan z glavnim ciljem zmanjšati kriminal. Glavna uporabljena metoda je bila izboljšanje naravnega nadzora v parku in iz njene okolice. To so dosegli s tem,
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+24
+
+da so odstranili nekaj dreves in previsoko grmičevje ter obnovili zanemarjene poglede
+in zmanjšali zaprtost prostorov. Umestili so novo otroško igrišče, kjer je bil zagotovljen
+naravni nadzor in namestili nove ograje po mejah parka.
+Prav tako so poskrbeli za sistem upravljanja in vzdrževanja z varnostniki in namestili
+videokamere. Park se zapre ob mraku. Igre
+z žogo, kolesarjenje in alkohol so prepovedani.
+Rezultat je urbani park visoke kakovosti, ki
+zagotovi prostor za sprostitev, igro za otroke
+in privlačno peš pot v središče mesta. Park
+je postal bolj varen in tudi narava kriminala
+se je spremenila, prej so bili resni incidenti, sedaj pa le »mladostniški nered« (juvenile disorder). Tudi število incidentov se je
+močno zmanjšalo. Pred prenovitvijo jih je
+bilo v povprečju 30–50 na mesec, sedaj pa
+le še okrog 10.
+Slika 8: Tloris Mowbray parka (Davies, 2004: 80)
+
+Opisani primeri dokazujejo učinkovitost CPTED ukrepov. Potrebno pa je tudi poudariti, da
+ti dosežejo željen učinek le ko so uporabljene z drugimi, ne-oblikovalskimi ukrepi.
+
+Slika 9: Pogled na del parka Mowbray (Davies, 2004: 81)
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+25
+
+7 IZBOR LOKACIJE ZA PRIKAZ MOŽNE PREUREDITVE PO NAČELIH PREPREČEVANJA
+KRIMINALA Z OBLIKOVANJEM OKOLJA
+Kot sem zapisala v uvodnem delu diplomske naloge je bil moj namen izdelati tematsko
+karto Ljubljane, na kateri bi vrisala območja, ki so bolj izpostavljena kriminalu. Ta naj bi
+temeljila na podatkih pogostosti in lokacije kaznivih dejanj v Ljubljani, ki bi jih dobila na
+policijski enoti. Tega žal nisem morala izvest, ker so se na policiji odločili, da teh podatkov
+niso pripravljeni deliti s študentko za diplomsko nalogo.
+Po tem nepričakovanem razpletu sem se po dogovoru z mentorjem in rencenzentom
+odločila, da se na podlagi „doživljajske/vizualne analize“ Ljubljane sama odločim za eno
+lokacijo, ki se mi bo zdela najbolj primerna glede na temo moje diplomske naloge, in ta
+bo območje moje obdelave za namen praktičnega prikaza pridobljenega znanja skozi
+pregled obstoječe literature, opisanega v prejšnjem, teoretičnem delu diplomske naloge. S tem namenom sem si ogledala nekaj sosesk v Ljubljani, ki imajo sloves, da se v
+njih odvija veliko kaznivih dejanj in so zato nevarna. To so bili predeli v Štepanjskem
+naselju, Fužinah, Šiški, Mostah in v centru. Na terenu sem si ogledala posamezne soseske
+in ugotavljala katera je oblikovana na način, da najbolj nasprotuje načelom in smernicam
+za preprečevanje kriminala z oblikovanjem okolja.
+Da pa bi diplomska naloga vseeno vključevala nekaj oprijemljivih podatkov, mi je mentor
+predlagal, da na izbranem območju obdelave izvedem krajšo anketo med stanovalci, ki
+bo pokazala, kako stanovalci doživljajo okolico svojih stanovanjskih blokov in kako se v
+njej počutijo.
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+26
+
+8 ANALIZA IZBRANEGA OBMOČJA
+8.1 OBMOČJE OBDELAVE
+
+Slika 10: Lega soseske Na Jami v Ljubljani
+
+Izbrano območje je manjša soseska v ulici Na Jami s šestimi stanovanjskimi bloki, ki imajo
+po 13 nadstopij s približno 1000 stanovalci. Nahaja se v mestni četrti Šiška v bližini centra mesta Ljubljane. Na severovzhodu meji na še nekaj stanovnjskih blokov in poslovne
+prostore s trgovinami in drugimi storitvami ob Celovški cesti, ta je zelo prometna štiri pasovna cesta. Na jugozahodu pa meji na še nekaj stanovanjskih blokov, ki pa imajo vhode
+orientirane na drugo stran, to je na Vodnikovo cesto ob kateri so pretežno enodružinske
+hiše, za katerimi se dviga Rožnik.
+Teren v izbranem območju je pretežno raven, z izjemo manjše pečine v južnem delu, v
+neposredni bližini, le nekaj metro vzhodno od soseske pa se dviga Rožnik z 420 m nadmorske višine.
+V širšem okolju so vglavnem enodružinske hiše, nekaj stanovanjskih blokov in poslovnih
+stavb.
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+27
+
+8.2 OPIS TRENUTNEGA STANJA / OPIS PROBLEMA
+Prostor je neorganiziran, v njem ni jasne delitve prostora in omogoči oz. spodbuja le malo
+aktivnosti v njem. V soseski ni jasne delitve prostora in zato prevladuje občutek zmešnjave
+in nevarnosti, predvsem zaradi avtomobilov. Nikjer ni kotička, kjer bi lahko ubežal avtomobilom in se v miru vsedel ali pustil otroku, da se sam igra na igrišču. Klopi, otroška
+igrala in drugo urbano pohištvo je polomljeno, obrabljeno in zastarelo. Tako okolje ni
+privlačno, ampak prav nasprotno, odbija uporabnike. Splošen vtis, ki ga dobimo v soseski
+je kaos, nemir in prehodnost.
+
+Slika 11: Pogled na cestna A
+
+Slika 12: Pogled na cesto B
+
+V soseki so večinoma stanovanjski bloki, nekaj je tudi zasebnih zemljišč in javnih objektov,
+kot je trgovina, katere vhod je v soseki. Zagotovljeni sta dve otroški igrišči in parkirišče za
+100 avtomobilov. Cesta in peš pot pa zagotavljata prehodnost znotraj nje. Ob peš poti
+je le nekaj klopi. Program, ki ga ima soseska je zelo okrnjen, neraznolik, nudi malo izbire
+in omogoča zelo ozek spekter aktivnosti ter nagovori le nekaj interesnih skupin. S tem
+po eni strani prispeva k manjši uporabi okolja in je zato manj vitalno, po drugi strani pa
+spodbudi neprimerno rabo prostora, predvsem s strani interesnih skupin katarih potreb
+ni možno zadovoljiti s tem kar nudi soseska.
+
+Slika 13: Urbano pohištvo, ki se ga več ne
+uporablja
+
+28
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+S
+
+Namenjeno pešcem
+Namenjeno avtomobilom
+Slika 14: Prikaz obstoječe cestne sheme
+
+Kot že prej omenjeno se eno glavnih načel CPTED imenuje„nadzor dostopa“, po tem načelu
+naj bi vstop v sosesko bil omogečen le upravičenim uporabnikom (omejen dostop) in naj
+bi čim bolj zmanjšali štvilo vhodov in izhodov v sosesko (reguliran dostop). Obstoječa
+cestna shema na izbranem območju je zelo nenadzorovana in nefunkcionalna ter predvsem neregulirana. Avtomobili imajo dostop v sosesko z dveh cest in dostopajo še iz treh
+dodatnih točk, preko peš poti ali parkirišča. Dostop v sosesko ni reguliran, kar pomeni, da
+je le ta omogočen vsem uporabnikom. S tem onemogoči, da bi se upravičeni uporabniki
+prostora (stanovalci) med sabo poznali in tako tudi prepoznali vsiljivce v soseski. Hkrati
+pa predstavlja lahko dostopno območje za potencialne storilce kaznivih dejanj. Peš poti
+so prekinjene s cestami, prehodov za pešce ni označen. Prostor je tako zelo nemiren, saj
+je povsem prehodno in zaparkirano območje.
+Velik problem tega prostora so parkirišča za avtomobile. Nekaj jih je „organiziranih“, večina
+jih je „spontanih“, kjer koli je cesta dovolj široka ali odprt prostor dovolj velik parkirajo
+avtomobili, tudi na zelenici in peš poti. Tukaj je potrebno opozoriti na dejstvo, da se je v
+zadnjih nekaj letih število avtomobilov na družino močno povečalo in so se zato povečale
+tudi potrebe po parkiriščih ob stanovanjskih blokih. Večina parkirišč je prav tako kot drugi
+prostori zasajenih z visoko vegetacijo. Parkirišča so za veliko število avtomobilov in neorganizirana, prav tako so dostopna vsem uporabnikom, tako da popolnoma onemogočijo,
+da bi se lastniki avtomobilov na parkiriščih med sabo poznali in razvili kakršen koli občutek
+solastništva in teritorialnosti.
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+Slika 15: Zaparkiranost glavne ceste
+
+Slika 17: Parkiranje ob zeleni površini
+
+Slika 16: Zaparkiranost sprehajalni poti
+
+29
+
+30
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+S
+
+Slika 18: Prikaz obstoječe vegetacije
+
+Na prikazu obstoječe vegetacije na izbranem območju lahko vidimo, da je zelo zasajeno
+z visokimi drevesi. Ta zastirajo pogled iz stanovanjskih blokov na celotno sosesko. Visoka
+drevesa so zasajena tudi ob peš poteh, na otroških igriščih in parkiriščih. Opisana gosta
+zasajenost območja z visoko vegetacijo onemogoči naravni nadzor, kot že prej opisano je
+to možnost stanovalcev, da opazujejo, „nadzirajo“ prostor, uporabnike prostora, zasebno
+in skupno lastnino (na primer avtomobil na parkirišču, klopi ob sprehajalni poti) ter tudi
+otroke na igrišču.
+
+Slika 19: Zastrtost parkirišč z vegetacijo
+
+Slika 20: Zastrtost peš poti z vegetacijo (pogled A)
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+31
+
+Slika 21: Zastrtost peš poti z vegetacijo (pogled B)
+
+Slika 22: Zastrtost peš poti z vegetacijo (pogled C)
+
+Slika 23: Zastrtost zelenice z vegetacijo
+
+Slika 24: Zastrtost otroškega igrišča z vegetacijo
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+32
+
+Obsotječi otroški igrišči sta premajhni, glede na število stanovalcev v tej soseski. Kot že
+prej omenjeno, so v večini igrišča popolnoma zasajena z visokimi drevesi, kar onemogoči
+nadziranje tega prostora. Nahajajo se tik ob cesti ali parkirišču za avtomobile brez karkršne
+fizične ovire med njimi. Igrišče je slabo opremljeno z igrali, ki so v večini primerna le za
+najmlajše otroke, igrala so obrabljena in delno polomljena.
+
+Slika 25: Otroško igrišče 1
+
+Slika 26: Otroško igrišče 2
+
+Še en problem, ki ga lahko opazimo so smetnjaki. Ti ponekod nimajo definiranega prostora in zastirajo pogled na otroško igrišče ter negativno vplivajo na videz soseske. Manjših
+košev za smeti pa skoraj ni.
+
+Slika 27: Smetnjaki pred stanovanjskim blokom
+
+Slika 29: Smetnjaki pred otroškim igriščem
+
+Slika 28: Smetnjaki pri trgovini
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+33
+
+Pomemben del soseske je tudi vhod v trgovino. Ta ni posebej izpostavljen ali označen in
+je slabo viden, ker je običajno povsem zaparkiran z avtomobili, ki otežijo vstop v trgovino.
+Zelo pomemben del pri preprečevanju kriminala pa je tudi, da so vhodi »čisti«, jasno vidni
+z vseh strani.
+
+Slika 30: Zaparkiran vhod v trgovino
+
+8.3 POVZETEK ANALIZE
+Kot glavni problem te soseke lahko izpostavimo slabo strukturiranost prostora za trenutne potrebe stanovalcev, kar lahko privede do zmede in konflikt interesov. To vključuje
+ceste, parkirišča peš pot in tudi vhode ter druge programske vsebine. Program v soseski
+zelo reven in zadostuje le majhnemu številu uporabnikov. Prav tako je zelo velik problem
+premočna prehonost in prevelika dostopnost območja, predvsem za avtomobile. Še eden
+od glavnih problem je pregosto in neregulirano zasajena vegetacija, ki prostor močno
+zapre in zastira poglede. Tudi splošen videz soseske, ki je neprivlačen in nemiren, je eden
+od pomombnih dejavnikov, ki vpliva na njeno varnost.
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+34
+
+9 ANKETA
+9.1 GRADIVO
+V prvem delu ankete so vključena demografska vprašanja o spolu, starosti, izobrazbi,
+zaposlitvi in koliko časa prebivalci že živijo na obravnavanem območju. Naslednjih 13
+vprašanj so od zaprtega do odprtega tipa vprašanj ter vprašanja, kjer so svoje mnenje
+podajali z obkroževanjem ustrezne številke na ocenjevalni lestvici. Ta vprašanja so se
+nanašala predvsem na to, koliko se zadržujejo v okolici stanovanjskga bloka, kako zadovoljni so z njim in kako varno se počutijo. Prav tako so lahko podali svoje opazke in predloge za spremembe ter izkušnje z fizičnimi napadi in podobnim v svoji soseski. Zadnje
+vprašanje pa je bilo drugačnega tipa, saj so svoje mnenje podajali v grafični obliki. Z njim
+so pokazali, kje se v svoji soseksi počutijo varno oz. kje se ne počutijo varno podnevi in
+nato še za ponoči. Celotna anketa je razvidna v Prilogi A.
+9.2 POSTOPEK
+Raziskavo sem izvedla osebno v mesecu juniju 2011. Anketiranje udeležencev je potekalo na obravnavanem območju. Anketo so reševali samostojno, razen starejši ljudje, ki so
+potrebovali dodatno pomoč. Reševanje vprašalnika je v povprečju trajalo 15 minut. Rezultate sem nato podala v pisni obliki, jih analizirala in predstavila z grafičnimi prikazi.
+9.3 REZULTATI
+9.3.1 Udeleženci
+V raziskavo sem vključila naključen vzorec ljudi, ki živijo znotraj območja obdelave. Anketiranih je bilo 50 stanovalcev, polovica moških in polovica žensk. Ti so bili različnih starosti
+od 10 do 86. Povprečna starost anketiranih je 44 let. Razlikovali so se tudi po izobrazbi in
+zaposlitvi. Največ jih je bilo z zaključeno univezitetno izobrazbo (30 %) in 4-letno srednjo
+šolo (24 %) ter končano poklicno srednjo šolo (20 %), to so predvsem starejša generacija,
+stari nad 40 let. Pri zaposlitvi so prevladovali zaposleni, to je 34 %. Ena četrtina anketirancev so bili dijaki ali študenti, druga četrtina pa upokojenci. Ostalo so ali samozaposleni
+v lastnem podjetju ali brezposelni. Več kot polovica anketirancev živi v teh stanovanjskih
+blokih že 10 let ali več, nekateri celo življenje (povprečna doba je 20 let).
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+35
+
+9.3.2 Odgovori
+
+20 Ženske
+
+8
+
+Moški
+
+16
+
+6
+12
+
+4
+
+8
+
+2
+
+4
+
+0
+
+0
+
+Zelo
+pogosto
+
+V asih
+
+Pogosto
+
+Skoraj
+nikoli
+
+Pred
+blokom
+
+Nikoli
+
+Na
+pe poti
+
+!!
+
+Slika 31: Kako pogosto se zadržujete v okolici svojega stanovanjskega bloka?
+
+15
+
+Na12prvo vprašanje drugega dela ankete, to je bilo kako pogosto se zadržujete v okolici
+10
+svojega
+stanovanjskega bloka, so stanovalci izrazili presenetljivo pogostost zadrževanja
+9
+8
+v tej6 okolici. Več kot polovica jih zunanji prostor uporablja pogosto ali celo zelo pogosto
+6
+in to3 niso bili le starejši, ampak skoraj v enakem odstotku tudi mladi. 28 % ljudi je ocenilo
+4
+pogosto,
+18 % pa skoraj nikoli, le eden nikoli.
+0
+
+20
+
+1
+sploh
+nisem
+zadovoljen/a
+
+2
+nisem
+zadovoljen/a
+
+3
+sem
+delno
+zadovoljen/a
+
+4
+sem
+zadovoljen/a
+
+2
+5
+sem
+0
+popolnoma
+zadovoljen/a
+30 Ženske
+
+16
+15
+12
+12
+89
+6
+4
+3
+00
+
+Nikoli
+
+1
+2
+Pred
+Na
+sploh
+ne poti
+blokom
+pe
+se
+ne
+po utim
+!!
+po utim
+se ne
+varno
+varno
+Slika 32: Kje se največ zadržujejo?
+10
+8
+6
+4
+
+5
+
+2
+
+Na
+3
+delnou
+igri
+se ne
+po utim
+varno
+
+Na
+4
+zelenici
+po utim
+se
+varno
+
+Na
+5
+parkiri
+u
+po utim
+se povsem
+varno
+
+25
+30
+20
+25
+15
+20
+10
+15
+5
+10
+0
+5
+0
+
+Zelo
+pogosto
+
+Moški
+
+Da
+Da
+
+20
+
+8
+
+16
+
+36
+
+6
+Fartek
+K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo,
+12 2012
+4
+
+8
+
+Pri
+Tukaj je bilo
+2 naslednjem vprašanju me je zanimalo, kje se stanovalci največ zadržujejo.
+4
+možnih več odgovorov. Več kot 60 % se jih zadržuje neposredno pred blokom. 52 % na
+peš
+mladih.
+0
+0 poti, teh je več starejši. Na igrišču nekoliko manj, to je 34 %, od teh je največ
+Zelo
+Skoraj
+Pred
+Še manj ljudi pa se zadržuje na zelenici, 16 %. Na parkirišču le ena oseba.
+pogosto
+
+Pogosto
+
+V asih
+
+nikoli
+
+Nikoli
+
+blokom
+
+!!
+
+15
+12
+
+Ženske
+Moški
+
+10
+
+9
+
+8
+
+6
+
+6
+
+3
+0
+
+Na
+pe poti
+
+4
+1
+sploh
+nisem
+zadovoljen/a
+
+2
+nisem
+zadovoljen/a
+
+3
+sem
+delno
+zadovoljen/a
+
+4
+sem
+zadovoljen/a
+
+5
+sem
+popolnoma
+zadovoljen/a
+
+2
+0
+
+Zelo
+pogosto
+
+Slika 33: Ali ste zadovoljni s tem, kar vam nudi prostor okrog vašega stanovanjskega bloka (poti, klopi,
+igrala,
+15 zelenica, drevesa, …)?
+30
+
+12
+
+Svoje zadovoljstvo s tem, kar jim nudi prostor okrog stanovanjskega bloka, je25
+21 stanoval9
+cev ocenilo z oceno 4. Le 6 anketirancev je s tem prostorom zelo zadovoljnih in so ga oce20
+nili6 z oceno 5. 14 jih je srednje zadovoljnih, 8 manj zadovoljni in 2 sploh nista zadovoljna
+15 ljudje so s
+z ureditvijo
+soseske. Opazna je razlika med starejšo in mlajšo generacijo; starši
+3
+prostorom bolj zadovoljni kot mladi.
+10
+1
+2
+3
+ne
+4
+5 se po svoji naravi
+Menim, sploh
+da je do opisanega
+izida delno
+prišlo predvsem
+zato, ker
+5 navadimo
+se ne
+se ne
+po
+po
+utim
+po
+utim
+utim
+na svoje okolje. Tudi stanovalci tega območja so se na svoje okolje navadili, saj živijo tupo utim
+se
+se povsem
+se ne
+po utim
+0
+kaj že zelo
+dolgo ali celo
+na nekaj navadiš,
+varno
+varnoin ko sevarno
+varno te stvari ne motijo več,
+varnovse življenje,
+0
+
+pravzaprav jih sploh ne opaziš, zato so z okolico zadovoljni. To velja predvsem za starejše.
+Pri mlajši pa imam občutek, da veliko časa preživijo v šoli in obšolskih dejavnostih ali
+v službi in s svojimi otroki, zato nimajo veliko časa se zadrževati zunaj. Tem skromnim
+potrebam, ki jih imajo za ta prostor, jim ta zadostuje in mu ne posvečajo kaj veliko pozornosti ter so zato zadovoljni z njim.
+V nadaljevanju so dobili priložnost izraziti svoja opažanja, kaj jih moti in kaj pogrešajo v
+svoji soseski. Največ stanovalcev je omenilo klopi, da so nenegovane, polomljene, umazane, brez naslonjal in da jih je premalo. Drugi problem, ki ga je veliko stanovalcev izpostavilo, je neorganiziran promet ob blokih tudi tik ob otroških igriščih in parkirišče, ki je
+popolnoma nestrukturirano in ima premalo parkirnih mest. Veliko stanovalcev je omenilo
+tudi, da jih moti hrup s Celovške ceste. Velik problem, ki ga je opazilo več uporabnikov so
+
+Da
+
+30
+
+20
+
+25
+
+16
+
+tudi otroška igrišča, ta so zanemarjena, pomanjkljivo opremljena, igrala so polomljena
+20
+in nevarna pa še premalo jih je. Naslednja stvar, ki jo pogrešajo, je več stojal za kolesa,
+15
+kolesarnice in kolesarske steze, ki jih trenutno sploh ni. Nekaj stanovalcev
+je tudi izrazilo
+željo po bolj urejeni in negovani okolici. Več ljudi je opazilo, da je premalo košev za smeti
+10
+in zato tudi veliko smeti po tleh. Nato so še bile omenjene naslednje opazke: bolj ure20
+8 poti, več zelenja, previsoka dravesa, ki zakrivajo pogled iz stanovanja,
+jene
+hrup mladih,
+5
+izpušni plini prometne glavne ceste, spuščeni psi in njihovi iztrebki, pomanjkljiva
+razst16
+Na
+Na
+Na
+Pred
+Na
+0
+6
+vetljava,
+potipeomogočajo
+hitro uzbežanje
+in skrivanje,
+želja upo barih ali lokalih in podobno
+igri
+parkiri
+Da
+poti
+zelenici
+blokom
+12
+(socialne storitve), vodne površine, igrišče za igro z žogo in lastno dvorišče.
+
+12
+8
+4
+0
+
+oli
+
+!!
+
+4
+2
+
+8
+4
+
+10
+
+0 8
+6 Zelo
+pogosto
+4
+5
+sem
+popolnoma
+zadovoljen/a
+
+m
+sem
+
+37
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+Pogosto
+
+V asih
+
+0
+
+Skoraj
+nikoli
+
+12
+
+0
+
+Zelo
+pogosto
+
+Pogosto
+
+V asih
+
+Pred
+blokom
+
+Nikoli
+
+Skoraj
+nikoli
+
+Nikoli
+
+10
+
+9
+
+30
+25
+20
+15
+
+5
+0
+
+8
+
+Slika
+6 34: Kako pogosto se zadržujete v okolici svojega bloka, ko je zunaj že tema?
+
+6
+
+3
+
+4
+Naslednje
+vprašanje se je nanašalo na to, ali se stanovalci zadržujejo zunaj v okolici svoje0
+20
+2
+1
+3 tema. Več kot polovica se jih
+5 takrat nikoli ali skoraj
+ga stanovanjskega
+bloka ko je zunaj že
+sploh
+4 generacijami;
+sem
+nikoli ne
+zadržuje več2 zunaj. Opaznasem
+je razlika med
+več je starejših, ki 0se
+16
+nisem
+nisem
+delno
+sem
+popolnoma
+ponočizadovoljen/a
+ne gibljejo zunaj.
+32 % jih jezadovoljen/a
+odgovorilo, dazadovoljen/a
+se včasih, le 10
+% pogosto in le 2 %
+zadovoljen/a
+zadovoljen/a
+12
+zelo pogosto.
+
+10
+
+Na
+pe poti
+
+!!
+
+2
+15
+
+Ženske
+Moški
+
+Zelo
+pogosto
+
+8
+15
+12
+9
+
+30 Ženske
+
+4
+Da
+
+Ne
+
+25
+
+0
+
+Da
+
+6
+
+NE
+
+20
+15
+
+3
+0
+
+Moški
+
+1
+sploh
+se ne
+po utim
+varno
+
+2
+ne
+po utim
+se ne
+varno
+
+3
+delno
+se ne
+po utim
+varno
+
+Slika 35: Ali se v svoji soseski počutite varno?
+
+10
+4
+po utim
+se
+varno
+
+5
+po utim
+se povsem
+varno
+
+5
+0
+
+Da
+
+10
+
+4
+
+5
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+0
+Dipl. delo. Ljubljana, Univerza v Ljubljani,
+za krajinsko arhitekturo, 2012
+NaBiotehniška fakulteta, Odd.Na
+
+Pred
+blokom
+
+Nikoli
+
+!!
+
+Na
+pe poti
+
+igri
+
+u
+
+Na
+zelenici
+
+parkiri
+
+u
+
+38
+
+0
+
+Da
+
+Naprej so anketiranci ocenjevali, kako varno se počutijo v svoji soseski. Zopet so bile
+ocene od 1 do 5 (5 - zelo varno se počutijo). Z 1, sploh se ne počutim varno, ni nihče ocenil svojega občutenja, z 2 le ena oseba. Največ jih je obkrožilo 3, 16 anketirancev ali 4, 21
+10
+anketirancev. 11 Anketirancev pa se v soseski počutijo zelo varno, 5.
+8
+6
+
+V nadaljevanju so svojo oceno morali utemeljiti, v kolikor se ne počutijo povsem varno
+4
+v svoji soseski. Pojasnila so se nanašala na tatvine v soseski, grožnje, napade na lastnino
+2
+5
+in ljudi, rope, pretepe, poškodovanje in krajo avtomobilov, predhodne izkušnje, zbiranje
+sem
+0
+brezdomcev in narokomanov
+v okolici ter drugih vprašljivih
+ljudji, spuščene pse in kače v
+Skoraj
+Zelo
+popolnoma
+asih
+V
+nikoli
+Nikoli
+pogosto
+Pogosto
+voljen/a zadovoljen/a
+neki podrtiji na obravnavanem
+območju.
+
+Ženske
+Moški
+
+30
+
+5
+po utim
+se povsem
+varno
+
+25
+
+20
+
+20
+
+16
+
+15
+
+12
+
+10
+
+8
+
+5
+
+4
+
+0
+
+Da
+
+Ne
+
+0
+
+Da
+
+Slika 36: Ali ste že kdaj v svoji soseski opazili fizični napad (rop, poškodovanje lastnine, nasilje, napad na
+osebo, ipd.)?
+
+Sicer pa je na vprašanje, če so že sami kdaj opazili fizični napad ali kaj podobnega 76 %
+ljudi odgovorilo z ne, le 12 (to je 24 %) anketirancev pa z da. Tisti, ki so odgovorili z da, so
+to doživeli 1-krat do 3-krat v zadnjih petih letih.
+Po mojem mnenju je do takega izida pri tem vprašanju prišlo tudi zato, ker imajo ljudje
+občutek, da če priznajo, da so sami že opazili ali tudi doživeli (podoben izid je pri tem
+vprašanju v nadaljevanju) fizični napad na ljudi, lastnino ali kaj podobnega, da s tem
+že “izdajo” tudi storilca. Strah pred storilcem, možnostjo, da ta izve, da so ga “izdali” in
+strah pred “posledicami” jih pripelje do hitrega odgovora, ne nikoli nisem nič podobnega
+videl/a ali doživel/a.
+
+V asih
+
+Skoraj
+nikoli
+Nikoli
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+
+39
+
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+Ženske
+Moški
+
+20
+16
+12
+8
+4
+Ne
+
+0
+
+Da
+
+NE
+
+!
+
+Slika 37: Ali ste že kdaj v svoji soseski slišali za fizični napad na osebo (rop, poškodovanje lastnine, nasilje,
+napad na osebo, ipd.)?
+
+Na vprašanje, ali so že kdaj slišali za fizični napad na osebo ali podobno, pa je 78 % odgovorilo pritrdilno in to kar 1-krat do 10-krat v zadnjih petih letih. Več je bilo starejši, ki so že
+slišali za incidentete take narave.
+Naslednje vprašanje se je nanašalo na osebne izkušnje s takimi dogodki. Kar 84 % anketirancev je spet odgovorilo z ne, le 7 jih je odgovorilo pritrdilno, ti so bili v glavnem moški.
+V zanjih petih letih je do takega dogodka v njihovih družinah prišlo 1-krat do največ
+2-krat.
+Pri zadnjem vprašanju so stanovalci na tlorisu svoje soseske označili, kje se počutijo varni
+in kje se ne ter enako za ponoči. Veliko jih je pustilo polje prazno, ali so rekli, da ne vedo,
+kaj naj označijo, ali da se vsepovsod počutijo varno in tudi da se ponoči nikjer ne počutijo
+varno. Njihove odgovore sem prenesla na eno karto, kjer sem označila območja, ki so
+jih izpostavili stanovalci. S prekrivanjem le teh sem ugotovila kje se največ stanovalcev
+počuti varno in nevarno podnevi ter ponoči.
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+40
+
+Območja kje se počutijo najbolj varno podnevi. Iz prikaza lahko razberemo, da se ljudje
+čez dan najbolj varno počutijo v neposredni bližini stanovanjskih blokov in poslovnih
+objektov.
+
+Slika 38: Zemljevid območij kje se počutijo najbolj varno podnevi
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+41
+
+Območja kje se počutijo najbolj nevarno podnevi. Čez dan se večina ljudi ne počuti
+ogroženih v tem območju. Nekaj ljudi pa je označilo posamezne točke, kjer se ne počutijo
+povsem varni tudi podnevi.
+
+Slika 39: Zemljevid območij kje se počutijo najbolj nevarno podnevi
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+42
+
+Območja kje se počutijo najbolj varno ponoči. Spet lahko iz prikaza razberemo, da se
+ljudje tudi ponoči najbolj varno počutijo okrog stanovanjskih blokov in poslovnih stavb,
+največ se jih počuti varno prav na peš poteh ob stanovanjskih blokih.
+
+Slika 40: Zemljevid območij kje se počutijo najbolj varno ponoči
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+43
+
+Območja kje se počutijo najbolj nevarno ponoči. Največ ljudi je naredilo oznako na zemljevidu za območja, kjer se počutijo ogroženi ponoči. Kot lahko vidimo, je veliko ljudi
+označilo območje ob ali na zelenici ob peš poti. Drugo izpostavljeno območje so predeli
+med poslovnimi objekti, ki so ponoči zaprti in prazni. Tretje izpostavljeno območje pa je
+ob stari cerkvi, stanovanjski bloki ter poslovni prostori ob njej in peš pot na hrib.
+
+Slika 41: Zemljevid območij kje se počutijo najbolj nevarno podnoči
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+44
+
+10 PREDLOG PREUREDITVE ODPRTEGA PROSTORA SOSESKE NA JAMI
+10.1 KONCEPT UREDITVE
+Z vsemi ukrepi si prizadevam oblikovati sosesko, ki bo imela splošno bolj urejen, lep in
+prijeten videz, ki si ga bodo stanovalci želeli uporabljati, predvsem pa, da bo varna, kolikor lahko vplivamo na to z oblikovanjem okolja. Zato sem že pri oblikovanju koncepta
+izhajala iz reševanja problemov v soseski, katera omogočajo oz. jo naredijo bolj privlačno
+za kazniva dejanja. Pri tem sem se ravnala po načelih za preprečevanje kriminala z oblikovanjem okolja, ki sem jih opisala v prvem delu diplomske naloge. Hkrati pa sem k projektu
+pristopala na način, ki ga narekuje stroka krajinske arhitekture, kar je seveda privedlo do
+nekaj konfliktov. Te sem poskušala reševati na tak način, da se čim bolj približam zahtevam
+za varno in lepo ter kakovostno mestno krajino.
+Zelo pomembna je jasna delitev prostora s fizičnimi in simboličnimi mejami, ki bodo
+natančno opredelile, kateri prostor je namenjen kateri dejavnosti in komu. V prostoru
+lahko ustvarimo različne nivoje zasebnosti, kar prebivalcem približa okolico njihovih
+stanovanjskih blokov, jim da občutek solastništva iz katerega lahko izhaja teritorialnost
+od njega. To vključuje ceste, parkirišča, peš pot, vhode in druge programske vsebine.
+Pomembno je zmanjšati prehodnost in dostopnost soseske predvsem za avtomobile,
+kar lahko dosežemo z zmanjšanjem števila vhodov in izhodov in dodatnimi omejitvami.
+Prostori za parkiranje avtomobilov morajo biti jasno definirani in tam kjer avtomobile ne
+želimo jim mora dostop biti onemogočiti s fizičnimi ovirami. Tudi vhodi morajo biti jasno
+vidni in bolj odprti, da je omogočen naravni nadzor. Program potrebuje dopolnitev in
+popestritev, ki bo omogočila več različnih aktivnosti več različnim interesnim skupinam.
+Vegetacijo je potrebno močno skrčiti in jo umeščati tako, da ne bo zapirala poglede, ki so
+pomembni za naravni nadzor nad ranljivimi območji.
+Rešitev predloga preureditve te soseske, ki bo sledil v tej diplomski nalogi je le ena od
+številnih različnih možnosti. Tudi ima le omjen vpliv na zmanjšanje kriminala, kot sem že
+prej omenila.
+10.2 PROGRAMSKA ZASNOVA SOSESKE (PROJEKTNI PROGRAM)
+V soseki živijo ljudje različnih starosti, z različnim socalnim statusom in podobno, zato se
+oblikujejo različne interesne skupine. Da bi prostor lahko in bi si tudi želelo uporabljati
+čim več stanovalcev (večja vitalnost prispeva k bolj varnemu okolju) sem si prizadevala
+omogočiti čim več različnih dejavnosti, kolikor prostor to dovoljuje. Prav tako sem se pri
+oblikovanju projektnega programa ozirala na želje in opazke stanovalcev, ki so jih izrazili
+v anketi izvedeni na izbranem območju.
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+45
+
+Projektni program vkljčuje:
+- parkovno ureditev,
+- sprehajalna pot s klopmi,
+- piknik prostori,
+- gostinski objekt,
+- otroško igrišče z različnimi igrali za različne starostne skupine otrok,
+- igrišča za različne športne aktivnosti: igrišče za nogomet, balinanje, košarko, namizni
+tenis, igranje šaha na prostem,
+- parkirišča,
+- stojala za kolesa,
+- podzemne zbiralnike smeti,
+- koše za smeti in
+- ulično razsvetljavo.
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani	
+	 Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2009
+
+46
+
+10.3 CONING PREUREDITVE IZBRANEGA OBMOČJA
+
+9
+9
+11
+12
+
+7
+
+1
+
+8
+
+7
+
+4
+
+3
+
+2
+
+8
+
+7
+
+1
+
+7
+
+8
+
+8
+
+10
+
+1
+
+1
+13
+
+7
+
+1
+
+7
+
+11
+
+5
+
+6
+
+10
+
+10
+
+11
+
+11 
+
+S
+
+Slika 42: Coning preureditve izbranega območja
+
+	
+	
+	
+	
+	
+
+1	
+2	
+3	
+4	
+5	
+
+Otroška irgišča
+Šah na prostem
+Igrišče za balinanje
+Piknik prostor
+Igrišče za namizni tenis
+
+	 6	
+	 7	
+	 8	
+	 9	
+	10 	
+
+Športno rekreacijsko igrišče
+Reprezentančna vhodna ploščad
+Prehodno območje
+Prostor pred in ob trgovini
+Zelene površine
+
+	11 	 Parkirišča
+	12 	 Poti
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+47
+
+Kot že prej omenjeno je ključna za varno sosesko jasna struktura prostora z dobro
+definiranimi mejmi, da ne pride do konfliktov med interesnimi skupinami. Zato je zelo
+pomembna razporeditev in organizacija programa v soseski in prehodnost znotraj nje.
+Najbolj jasno strukturo bo prostoru dala enosmerna krožna cesta, ob kateri sem umestila
+večja in manjša parkirišča glede na fizične danosti v prostoru.
+Prostori med stanovanjskimi bloki so najbolj zasebni deli soseske, skupaj jih je pet. Trije so
+pred vhodi v stanovnjske bloke, dva pa sta na strani blokov, kjer ni vhodov. Pred vhodi v
+stanovanjski blok sem pustila prostor za vhodno, reprezentančno ploščad. V teh prostorih
+kjer so vhodi se giblje največ ljudi, zato so tudi najbolj varni in primerni za otroška igrišča,
+kjer bodo otroci na očem čim večjemu številu uporabnikov. S tem povečamo tveganje za
+potencialnega storilca kaznivega dejanja in ga odvrnemo. Prostori kjer ni vhodov so bolj
+zasebni in mirni, zato so primerni za druge dejavnosti na prostem, kot so balinanje, šah na
+prostem ob parkovni ureditvi in namizni tenis ob parku s prostori za piknik. Še posebej za
+te prostore je pomembno zagotoviti čim več naravnega nadzora, zato sem na vsaki strani
+umestila prehodni pas, ki omogoča prehajanje za pešce in kolesarje, s tem zagotovimo
+večjo prehodnost, več uporabnikov in s tem tudi več potencialnih opazovalcev.
+Osrednji odprt prostor bo ostal glavna, največja parkovna ureditev te soseke s sprehajalnimi potmi in klopmi ter manjšim gostinskim objektom s teraso, ki ima pogled na osrednje, največje otroško igrišče (še dodatno poveča naravni nadzor nad otroškim igriščem)
+in na parkovno ureditev (nudi pogled na zelene površine). Park je s cesto razdeljen na dva
+dela, kar oblikovalsko gledano ni najbolj estetsko, z varnostnega pogleda pa je dobro,
+da skozi park poteka cesta, ki zagotavlja dodatni naravni nadzor in s tem prispeva k bolj
+varnemu okolju.
+V najbolj južni del soseske sem umestila še eno parkovno ureditev s športno rekreacijskim
+igriščem in manjšimi tribunami ter majhnim prostorom za rolkanje. Ta lokacija je za to
+vrstne aktivnosti in za mlajše interesne skupine najbolj primerna, ker je bolj odmaknjena
+od stanovanjskih blokov in je s tem manj moteče za ostale stanovalce, ke pa še vedno
+sestavni del soseske.
+Prostor pred in ob trgovini je bolj javen in zato mora biti tudi bolj reprezentančen, v njem
+so druge potrebe kot pa ob stanovanjskih bloki, namenjen mu je večji vstopni prostor z
+javnim prostorom za druženje.
+
+48
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani	
+	 Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2009
+
+10.4 PREUREDITEV IZBRANEGA OBMOČJA
+10.4.1 Tloris preureditve izbranega območja
+
+Merilo: 1:500 (pomanjšano)
+
+Kolesarska pot
+
+Glavna cesta
+Vodni objek s klopjo
+
+Trgovina
+Rastlinski bazeni
+Pokrovne rastline
+
+Otroško igrišče
+
+Šah na prostem
+
+Rampa za invalide
+
+Stojala za kolesa
+
+Piknik prostor
+
+Sprememba v tlaku
+
+Plastnice
+
+Igrišče za balinanje
+
+Koš za smeti
+
+Namizni tenis
+Vhod v stavbo
+
+Igrala
+
+Gostišče
+
+Zalenica
+
+Enosmerna cesta
+
+Igrišče za nogomet in košarko
+
+Klop
+Mize s stoli
+
+Stanovanjski blok
+Parkirišče
+
+Podzemni zbiralniki odpadkov
+
+Parkirišče
+
+Sprehajalna pot
+Ležalnik
+
+Prostor za deskanje
+Tribune
+Zasebno zemljišče
+
+Peš pot
+Vegetacija
+
+Slika 34: Tloris preureditve izbranega območja
+
+S
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+49
+
+10.4.2 Shema poti
+Kot sem že prej omenila, sem skozi celotno sosesko speljala enosmerno krožno cesto. Ta
+zagotavlja, da se avtomobili vozijo enako pogosto v vseh delih soeske in s tem se izognemo
+“ostankom v prostoru”, ki bi bili manj uporabljeni in bi predstavljali bolj privlačen prostor
+za kazniva dejanja. Cesta se nekajkrat tudi zalomi, da členi monotonost mestne krajine in
+prostoru doda pestrost, ter upočasni promet na njej. Nadzorovan dostop je tudi pomemben del pri zmanjšanju kriminala, saj s tem kot že v prejšnjem delu omenjeno povečamo
+znano tveganje in napor storilcu karnivega dejanja. To sem pri oblikovanju upoštevala
+in načrtovala le eno vstopno in eno izstopno pot. Vstop za avtomobile v sosesko pa bi
+bil omogočen le stanovalcem, ki živijo v tej soseski, vsem drugim potencialnim uporabnikom prostora bi bil vstop z avtomobilom preprečen z zaporo pred vhodom in izhodom.
+Tako bi ta cesta bila manj javna, saj je namenjena stanovalcem soseske, ki bi do nje lahko
+razvili občutek solastništva in tudi soodgovornosti (teritorialnost). Vhod in izhod za avtomobile je močno zaraščen ampak le z nisko vegetacijo, da je še vedno omogočen nadzor
+nad dostopom. Smernice za preprečevanje kriminala z oblikovanjem okolja vključujejo
+tudi načela za oblikovanje sistema poti in predlaga, da poti za avtomobile, pešce in kolesarje naj potekajo vzporedno. V idejni zasnovi peš pot, ki je dovolj šitoka, da zagotavlja
+možnost prehoda za pešce in tudi kolesarje ves čas poteka ob cesti (večino časa poteka
+tik ob cesti, ponekod pa le nekaj metrov stran). Tam, kjer pa to ni možno (med stanovanjskimi bloki) pa so poti kratke, široke in dobro pregledne, brez vizualnih ovir, ki bi preprečile
+naravni nadzor. Peš pot sem želela oblikovati čim bolj prostorno, da omogoča neoviran
+prehod za veliko število ljudi, pešce in kolesarje. Ponekod se pot dodatno razširi za druge
+aktivnosti in dodatni program na njej, kot so na primer klopi. S tem, da omogočimo večjo
+prehodnost območja zagotovimo večjo vitalnost, da se v njem giblje večja gostota ljudi
+in s tem zmanjšamo tveganje za razvoj kriminala.
+Bočna parkirišča ob cesti so v manjših skoplih, tako da se lahko lastniki parkirišč med
+sabo poznajo. Poleg teh sta še dve nekoliko večji parkirišči, ki pa še vedno zagotavljata
+parkiranje le preglednemu številu avtomobilov. Tudi parkirišča so močno zasajena, ampak spet le z nizko vegetacijo z nekaj nemotečimi izjemami, to so visoka drevesa.
+Med parkirišči in peš potjo se razteza ozek zeleni pas, ki popestri enoličnost betonske
+ceste, parkirišč in peš poti. Ta je raznoliko zasajen z vegetacijo pri kateri ni ponavljajočih
+se vzorcev. Višina vegetacije pa je vedno prilagojena primarni potrebi (v sklopu tematike,
+ki jo obravnava ta naloga), to je da oblikujem varen prostor s tem, da je zagotovljen čim
+večji naravni nadzor.
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+50
+
+10.4.3 Odprti/nepozidani prostori med stolpnicami
+Odprti prostori med stolpnicami so od glavne peš poti ločeni z nizko stopnico, kateri ni namen, da bi premagala višinsko razliko ampak zgolj služi kot simbolična meja, ki označuje
+razčlenitev prostora med bolj javno peš potjo in bolj zasebnim “dvoriščem”. (S stopom
+na stopnico uporabnik zazna, da prehaja v drugo območje, to je bolj zaseben prostor
+namenjen stanovalcem stolpnic..) S tako jasno členitvijo prostora, ki jo zaznajo vsi uporabniki prostora dosežemo okrepitev teritorialnost stanovalcev do tega prostora, ki je spet
+namenjen njim in njihovim potreba, hkrati pa druge uporabnike seznanimo s tem, da so
+vstopili v prostor, ki je pod vplivom in nadzorom določene skupine ljudi.
+
+Slika 44: Stopnica do
+medprostorov
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Trgovina
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+Rastlinski bazeni
+Količki
+
+Pokrovne rastline
+
+Otroško igrišče
+
+Sprememba v tlaku
+
+Šah na prostem
+
+Rampa za invalide
+
+51
+
+Igrišče za balinanje
+
+Koš za smeti
+
+Glavna
+Stojala za kolesa
+
+Plastnice
+Vodni objekt s klopjo
+Zalenica
+
+Trgovina
+Rastlinski bazeni
+
+Gostišče
+Klop
+Slika 45: Medprostor z
+otroškim igriščem 1
+
+Sprehajalna pot
+
+Visoka trava
+
+Ležalnik
+
+line
+
+Piknik prostor
+
+Sprememba v tlaku
+
+Šah na prostem
+
+Igrišče za balinanje
+
+Mize
+
+Koš za smeti
+
+Enosmern
+
+Namizni tenis
+
+Vhod
+
+Glavna cesta
+Igrala
+Vegetacija
+
+Gostišče
+
+lopjo
+
+Igrišče za nogomet in košarko
+
+Klop
+
+Slika 46: Medprostor z
+otroškim igriščem 2
+
+Mize s stoli
+
+Parkirišče
+
+pot
+
+alnik
+
+Piknik prostor
+
+Enosmerna cesta
+
+Tr
+
+Namizni tenis
+
+Stanovanjski blok
+Zasebno zemljišče
+Parkirišče
+
+Vhod v stavbo
+
+Peš pot
+Igrišče za nogomet in košarko
+
+Podzemni zbiralniki odpadkov
+Slika 47 : Medprostor z
+otroškim igriščem 3
+
+rkirišče
+
+Prostor za deskanje
+Tribune
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+52
+
+Trije medprostori, kjer so vhodi v stanovanjske bloke imajo kot že prej omenjeno večjo
+reprezentančno ploščad. Ta ni zasajena z gosto vegetacijo in na njej je le najnujnejši program za brezhibno funkcioniranje tega prostora, ta vključuje stopnice do vhodov, rampe
+za vozičke, stojala za kolesa, klopi in nekaj rastlinskih bazenov z vegetacije. S tako odprto
+zasnovo te ploščadi, kjer ni ničesar kar bi zastiralo pogled na vhode sem zagotovila naravni nadzor tako iz peš poti kot tudi iz stolpnic. V osrednjih delih teh ploščadi so otroška
+igrišča. Ta sem oblikovala v istem slogu, ampak vseeno vsakega na individualen način, saj
+z večjo raznolikostjo prostora dosežemo bolj estetski videz soseske, ki bo bolj privlačna
+ter bolj prepoznavna in ga bodo ljudje zato želeli uporabljati, tako bo ta hkrati tudi bolj
+varen. Otroška igrišča imajo drugačen tlak kot ploščad plošad okrog njih, kar je ponovno
+simbolična meja, ki označuje delitev prostora, prehod v drugo območje, ki je namenjeno
+drugi dejavnosti in določeni interesni skupini. Znotraj njih so igrala za različne starostne
+skupine. Od glavnih peš poti jih ločuje korito, ki služi kot fizična ovira med pretežno javnim
+in bolj zasebnim delom, hkrati pa služi za varnost otrok s tem, da jim onemogoči prehod
+na glavno peš pot in tudi cesto. V teh koritih je nizka vegetacija, ki ne zastira pogleda na
+otroško igrišče, z izjemo nekaj dreves, ki so umeščena tako, da pogled zastirajo čim manj,
+a kljub temu zagotavljajo senco za igro otrok ter tudi ljudi, ki sedijo na klopeh na/ali do
+igrišču
+
+Slika 48: Vizualni
+nadzor nad
+otroškim igriščem
+
+rišče
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+Del teh medprostorov so tudi smetnjaki, ki sem jih nadomestila s podzemnimi zbiralniki
+odpadkov, ki so manj moteč element v prostoru, ne vpivajo negativno na estetski videz
+soseske in zahtevajo manj prostora. Ti so v prostor umeščena tako, da so čim bližje vhodom, a hkrati ne preveč izpostavljeni ali preblizu otrokom nav igriščih.
+Ostala dva medprostora, kjer ni vhodov sta bolj umirjena, zasebna in v njih se dogajajo
+druge dejavnosti za druge interesne skupine. En prostor je namenjen starejši populaciji stanovalcev, v njem se nahaja manjše igrišče za balinanje s klopmi in mize s stoli za
+igranje šaha ali drugih “namiznih” iger. Med različnim programom je zagotovljeno tudi
+dolvolj odprtega prostora za prehodnost območja. Z dveh strani sta široki odprti poti, ki
+objekt
+s klopjo
+omogočata prehod drugim uporabnikom iz ene strani glavne peš poti naVodni
+drugo,
+s tem
+ustvarimo pehoden prostor, ki ni odrezan od svoje okolice in bi bil tako bolj privlačen
+za kriminalno dogajanje na njem. Prostor Trgovina
+je z obeh strani obdan z manjsimi parkovnimi
+ureditvami na kateri ja razgibana vegetacija, ki zagotavlja več zasebnosti a še vedno zagRastlinski bazeni
+otavlja čim večjo mero naravnega nadzora.
+Pokrovne rastline
+
+Sprememba v tlaku
+
+Šah na prostem
+
+Rampa za invalide
+
+Igrišče za balinanje
+
+Koš za smeti
+
+Glavna cesta
+Vodni objekt s klopjo
+
+olesa
+
+Plastnice
+
+Igrala
+
+Gostišče
+
+Zalenica
+
+Slika 49: Medprostor
+s prostorom za šah in
+balinanjem
+
+Klop
+
+Mize s stoli
+
+mbaVisoka
+v tlakutrava
+
+nanje
+
+53
+
+Sprehajalna pot
+Ležalnik
+
+Koš za smeti
+
+Piknik prostor
+
+Parkirišče
+
+Enosmerna cesta
+
+Namizni tenis
+Vhod v stavbo
+
+Igrala
+
+tišče
+
+Vegetacija
+Mize s stoli
+
+Parkirišče
+
+Podzemni zbiralniki odpadkov
+Igrišče za nogomet in košarko
+Peš p
+Slika 50: Medprostor s
+prostorom za piknik in
+namizni tenis
+
+Prostor za deskanje
+Tribune
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+54
+
+Slika 51: Medprostor s
+prostorom za piknik in
+namizni tenis
+
+V drugem medprostoru, v katerem ni vhodov v stanovanjske bloke, so manjši prostori, ki
+se zarezujejo v parkovno ureditev na obrobju. Parkovna ureditev ločuje te manjše prostore z različnim programom med sabo in od glavne peš poti. S tem ustvarimo zasebne
+medprostore, ti so bolj privlačni za uporabo, saj smo obdani z gosto zasajeno vegetacijo,
+ki pa je ponovno pretežno dovolj nizka, da ne predstavlja vidne ovire. V teh prostorih so
+mize za namizni tenis in nekaj klopi ter piknik prostori, ki omogočajo piknike, druženje
+in podobne dejavnosti na prostem. Kot v prej opisanem prostoru med stavbami je tudi v
+tem zagotovljena dobra prehodnost z manjšo potjo med programom in dvema širšima
+potmi ob straneh.
+
+Količki
+Pokrovne rastline
+
+Sprememba v tlaku
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+Otroško igrišče
+
+Šah na prostem
+
+Rampa za invalide
+
+55
+
+Igrišče za balinanje
+
+Koš za smeti
+
+10.4.4 Osrednja parkovna uredite
+
+Stojala za kolesa
+
+Plastnice
+
+Gostišče
+
+Zalenica
+
+Klop
+
+Mize s
+Visoka trava
+
+Sprehajalna pot
+Ležalnik
+
+Slika 52: Osrednja parkovna ureditev
+
+Osrednji največji odprt prostor soseske, ki je oblikovan v (kot) parkovno ureditev, je z
+enosmerno cesto razdeljen na dva dela. Manjši del ima eno dinamično sprehajalno pot s
+klopmi in lesenimi ležalniki obdaja jo pa razgibano zasajena vegetacija, ki je sestavljena
+Vegetacija
+tako kot v drugih delih iz pokrovnih rastlin, nizkega grmičevja in nekaj drevesi, ki dajejo
+senco in tako posamezniku nudijo izbiro med sedenjem na soncu ali v senci.
+Večji del osrednje parkovne ureditve meji na enosmerno cesto in glavno sprehajalno pot.
+V sredini je manjši hrib, ki ragiba površje a ne predstavlja vizualne ovire za uporabnike
+prostora. Čezenj poteka manjša sprehajalna pot s klopmi. Ta prostor predstavlja glavno
+zeleno potezo te soseske in v njej sem želela uporabniku čim bolj približati občutek narave z veliki odprtim prostorom z zelenico in raznoliko vegetacijo. Glavna peš pot v enem
+delu močno razširi tako, da nastane večja ploščad, ki se zajeda v parkovno ureditev. Na
+njej je manjši gostinski objekt s teraso (za mize s stoli) s katere imaš razgled na parkovno
+ureditev, naravo in/ali otroško igrišče, da staršem omogoči nadzor nad otroki.
+
+klopjo
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+56
+
+10.4.5 Športno rekreacijsko središče
+
+Enosmerna cesta
+
+Piknik prostor
+
+V najbolj južnem delu soseske je še en nekoliko večji odprt prostor, kjer se peš pot ponovnoNamizni
+razširi vtenis
+večjo ploščad v parkovno zaledje. Na njej je športno rekreacijsko igrišče za
+Stanovanjski blok
+v stavbo
+nogomet in košarko ali druge Vhod
+športne
+igre. Ob njem so manjše tribune za gledalce, prosParkirišče
+tor za rolkanje in nekaj klopi.
+
+Igrišče za nogomet in košarko
+
+Podzemni zbiralniki odpadkov
+
+rkirišče
+
+Prostor za deskanje
+Slika 53: Športno rekreacijsko središče
+
+Tribune
+Zasebno zemljišče
+
+10.4.6 Prostor pri trgovini
+Vodni objekt s klopjo
+Peš pot
+Trgovina
+Rastlinski bazeni
+Pokrovne rastline
+
+Šah na prostem
+
+e
+
+Piknik prostor
+
+Sprememba v tlaku
+
+Igrišče za balinanje
+
+Koš za smeti
+
+Namizni tenis
+
+Slika 54: Prostor pri trgovini
+
+astnice
+
+Gostišče
+
+Zalenica
+
+Sprehajalna pot
+Ležalnik
+
+Igrala
+
+Igrišče za nogome
+
+Pred trgovino
+Klop se zgodi sprememba v tlaku, kar označuje prostor vhoda v trgovino. V tlaku
+sta dva izpusta z večjimi drevesi, ki zagotavljata senco, predvsem pa razbijeta monotonost mestne krajine med stolpnicami. Drevesi
+sta dovolj visoki,
+da je prostor še vedno
+Mize s stoli
+Parkirišče
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+57
+
+povsem pregleden tako za osebe, ki se vozijo mimo v avtomobilih, kot tudi za pešce in
+kolesarje, saj je za ta izrazito javen prostor zelo pomembno, da zagotovimo čim višjo stopnjo naravnega prostora, a je še vedno lep na pogled in prijeten za uporabo. Ob vhodu
+so na eni strani stojala za kolesa, na drugi strani pa je manjši vodni objekt z razširjenim
+robom za sedenje.
+Severno od vhoda je večji odprt tlakovan prostor v katerega sem vmestila tri korita z vegetacijo, tudi drevesi, ki zagotavlja senco. Obdaja jih klop, ki je oblikovana na tak način, da
+se človek lahko odloča ali bo vstopil v interakcijo z drugimi ali ne, kar posamezniku da
+potrebno stopnjo zasebnosti, možnost izbire.
+
+Slika 55: Pogledi s klopi ob trgovini
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani	
+	 Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2009
+
+10.4.7 Prostorski prikaz ureditve
+
+Slika 48: Prostorski prikaz ureditve, pogled na eno od otroških igrišč
+
+58
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani	
+	 Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2009
+
+Slika 49: Prostorski prikaz ureditve, pogled na osrednjo parkovno ureditev
+
+59
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani	
+	 Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2009
+
+Slika 50: Prostorski prikaz ureditve C
+
+60
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+61
+
+11 SKLEPI IN RAZPRAVA
+Skozi pregled obstoječe literature smo uspeli zbrati veliko podatkov o tem, kakšen je odnos med človekom in njegovim okoljem, še posebej mestnim, kako ga doživlja, kdaj je
+lepo in kako ima fizično okolje vpliv na ljudi. Vpliva na medčloveške odnose, na počutje
+posameznika in na njegove dejavnosti. S tem pa hkrati vpliva tudi na kriminal v mestu, saj
+je človekovo vedenje v soodvisnosti z njegovim okoljem. Na vse to torej lahko vplivamo
+z oblikovanjem okolja. Seveda pa je ta vpliv omejen, saj z oblikovanjem ne moramo vplivati na notranjo motivacijo posameznika in le delno lahko predvidimo odziv človeka v
+določeni situaciji.
+Po povzetku nekaj psiholoških dejstev o povezavi med človeškim vedenjem in njegovim okoljem ter skozi kratek pregled zgodovine preprečevanja kriminala z oblikovanjem
+okolja (CPTED) smo izluščili nekaj dejstev in smernic, ki jih lahko neposredno upoštevamo
+pri oblikovanju mestne krajine.
+Načela in ukrepi, poudarjeni v tej nalogi pa so seveda učinkoviti le do neke mere. Kot že
+prej omenjeno namreč ne moremo vplivati na vso motivacijo v človeku, prav tako lahko le predvidevamo, da če nekdo opazi kriminal to tudi posreduje naprej in podobno.
+Prepričani pa smo, da je pomembno, da oblikovalci upoštevamo ta dognanja v čim večji
+meri in s tem ustvarimo najbolj varno okolje, kar ga je možno z oblikovanjem.
+S psihološkega vidika je tudi pomembno in koristno vključiti stanovalce soseske, v katero
+nameravamo poseči, saj jim s tem damo možnost soodločanja, občutek solastništva in
+tako povečamo teritorialnost do njega. Ker je moja diplomska naloga le idejna predstvitev, ki ne bo šla v realizacijo izvedena anketa ne bo imela tega učinka. Nam pa je vsekakor dala vpogled v to, kako izbrano območje doživljajo njeni stanovalci, kako zadovoljni
+so z njim in predvsem kako varno se počutijo vnjem. Tako nam lahko pokažejo stvari, ki so
+vidne le s strani stanovalca in jih opazovalec, obiskovalec in tudi strokovnjak ne bi videl ali
+dojel na tak način, še posebej glede varnosti.
+Pri vprašanjih o tem, kako so zadovoljni z okolico svojega stanovanjskega bloka in kaj bi
+želeli spremeniti, je bilo močno opazno, da večina anketirancev v tej soseski živi že vrsto
+let ali celo življenje, kar ima velik vpliv na njihovo dojemanje tega prostora. S prostorom
+so zadovoljni ali pa vsaj delno zadovoljni, ne vidijo več pomanjkljivosti, razen tistih ki jih
+redno ovirajo, ne opazijo pa tisto, kar bi lahko bilo lepše in boljše.
+Primerjava odgovorov pri naslednjem sklopu vprašanj, kako varno se počutijo v svoji
+soseski, je pokazala omembe vredna neskladja. Večina anketirancev je odgovorila, da se
+počutijo varno ali celo zelo varno. Sledilo je vpršanje ali bi okolico svojega bloka upora-
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+62
+
+bljali tudi ko je zunaj že tem, na kar je večina anketirancev odgovorilo, da ne. Razvidno
+je, da ta odgovor ni v skladu s prejšnjo trditvijo oz. pomeni, da se v njem varno počutijo
+le podnevi.
+Pri vprašanju kaj bi spremenili oz kaj pogrešajo v svoji soseski je bilo veliko različnih odgovorov, ampak ponavljale so se opazke o neurejenem prometu, slabo označenih parkiriščih,
+nevarnih peš in kolesarskih poti. Ta opažanja nam potrjujejo ugotovitve psihologije okolja
+in CPTED, da ljudje potrebujemo jasno strukturiran prostor, da se lahkov njem počutimo
+dobro in tudi varno.
+Vse pridobljene podatke in ugotovitve smo skušali v čim večji meri upoštevati tudi pri
+oblikovanju idejne zasnove.
+Sledila je analiza obstoječega stanja izbranega območja na podlagi katere smo z
+upoštevanjem načel okoljske psihologije in CPTED razvili koncept, kako s preureditvijo
+dosežemo bolj varno sosesko, ki je hkrati lepa in privlačna za čim večje število uporabnikov. V večj meri smo se spopadali s tem kako tako izrazito javen prostor preoblikovati v
+bolj zasebne (manj javne) predele, v kolikor je to možno glede na naravo prostora, z jasno
+delitvijo prostora in definiranimi mejami. Drugo osrednje vodilo pri razvijanju koncepta
+je nadzor, omogočiti čim več naravnega nadzora in nadzor nad dostopi.
+V nadaljevanju smo razvili bogati projektni program, ki omogoča čim več različnih dejavnosti za čim več različnih interesnih skupin. Pri izbiri programa smo tako kot pri drugih
+stvareh želeli v čim večji meri upoštevati načela in smernice CPTED, ki pa se jih žal ne da v
+celoti izvesti zaradi različnih omejitev. Nekatere so fizične ovire, kot so obstoječe stavbe in
+velikost prostora. Potem tudi, da je prostor odprt in izrazito javen z velikim številom uporabnikov, kar oteži ustvarjanje zasebnih prostorov in omogočanje občutkov solastništva
+stanovalcev ter podobno.
+Izbrane dejavnosti imajo različne prostorske potrebe in se med seboj izključujejo, saj se
+razlikujejo po naravi in stopnji ranljivosti glede varnosti je zelo pomembna tudi njihova
+umestitev v prostoru. To smo razvijali v coningu tako, da smo upoštevali predvsem za
+katero dejavnost je najpomembnejše, da je čim bolj izpostavljena (otroško igrišče) in katera so lahko bolj zasebna (namizni nogomet). Ključnega pomena je enosmerna krožna
+cesta, ki poteka skozi celotno soseko, okrog katere so umeščene ostale dejavnosti. Ta je
+najmočnejši dodan programski element, ki določa velik del strukture prostora (skupaj s
+obsoječimi stavbami). Ostale poti smo oblikovali tam kjer so nujno potrebne in nekaj dodatnih sprehajanih poteh. Poti, pri katerih je uporaba večja, smo vedno oblikovali zelo
+široke, (glede na prostorske danosti) da si posamezniki ne vstopajo v osebni prostor in mu
+omogočimo, da najde sebi udoben prostor za interakcijo (ali neinterakcijo) z drugimi.
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+63
+
+Medprostori naj bi bili najbolj zasebni. Pri oblikovanju tega prostora je bilo pomembno,
+da ustvarimo to zasebnost, a ga hkrati ne odrežemo od svoje okolice, da ni pretežno prehoden ampak vseeno vitalen. Vanj smo umestili aktivnosti za prosti čas za ralične generacije in vedno ohranjali naravni nadzor.
+Park ima zelo pomembno funkcijo, saj ljudje potrebujemo stik z naravo za dobro počutje
+in zdravje, kot v uvodu omenjeno ta stik tudi vpliva na zmanjšanje agresivnosti in podobno. V tako ozkem odprtem prostoru je seveda težko ustvariti nek naravi podobno okolje,
+predvsem zaradi izrazite okoliške mestne krajine. Kljub tem omejitvam smo z veliko odprto zelenico in raznoliko vegetacijo, sprehajalnimi potmi in klopmi ter ležalnikom oblikovala prostor, ki nudi stanovalcem možnost sprostive v parku blizu njihovega doma.
+Športno rekreacijski del je namenjen predvsem mladim, ki trenutno nimajo nobenega
+dela, ki bi bil namenjen njim in, ki bi lahko zadovoljil njihove potrebe po rekreaciji in
+druženju. S tem, da tej interesni skupini nudimo “njihov” prostor (v teoriji) preprečimo
+ali zmanjšamo tveganje, da bi imeli potrebo po neprimerni rabi ostalih prostorov in/ali
+urbanega pohištva.
+Javni del soseske ostaja območje pred in okoli trgovino, kateremu ni bilo smiselno dodajati neko stopnjo zasebnosti, saj ne moremo regulirati stranke trgovine. Zato smo ta prostor pustili javnega, doali pa sem mu bolj jasno strukturo z reprezentančnim vhodom in
+odprtim prostorom, ki je namenjen tudi krajšemu zadrževanju v njem.
+Končni cilj te idejne zasnove izbrane soseske je tloris, ki bo kar se da najbolje izpolnil
+potrebe in pričakovanja najširšega kroga uporabnikov z upoštevanjem vseh načel CPTED
+za varno okolje. Pri tem smo naleteli na kar nekaj konfliktov pri oblikovanju. Eden od teh
+je ustvariti teritorialnost do okolja tako, da stanovalci zaznajo nadzor nad tem območjem,
+dobijo občutek pripadnosti, solastništva, soodgovornosti in jim omogočimo, da prepoznajo svoje sosede. Oblikovati tako okolje v taki soseski s takšnim številom prebivalcev
+v tako izrazito javnem območju je izredno težko, če ne nemogoče. Ne moremo zagotoviti,
+da otroško igrišče pred vhodi uporablja majhno število ljudi, če pa v dveh stanovanjskih
+blokih skupaj živi čez 300 ljudi. V idejni zasnovi smo se približali tem zahtevam s tem,
+da smo uporabljali nekaj simoboličnih mej, ki ljudem omogočajo, da zaznajo območje
+svojega vpliva in drugim uporabnikom sporočamo, da vstopajo v drugi prostor. (Predvsem za medprostore pred vhodi se nam je to zdelo najbolj pomembno. ) V ta namen smo
+tudi omejili dostop v sosesko z avotmobili, oblikovali majhna parkirišča in predvsem pa
+zagotovili jasno delitev prostora z dobro definiranimi mejami.
+Drugo tako nasprotovanje je pri naslednji dveh načeli za oblikovanje varnega prostora, to
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+64
+
+sta naravni nadzor in nadzor nad odstopi. V “idelanem” primeru bi to pomenilo, da ni nobenih vizualnih preprek in s tem tudi nobene (visoke) vegetacije. Hkrati pa nam narekuje
+naj oblikujemo prostor, ki bo čim lepši in prijeten za uporabo, da človeku omogoči veliko
+različnih aktivnosti in prostor za sprostitev, stik z naravo. Za tak prostor pa so potrebne velike tudi visoke vegetacije, saj se ne moremo igrati na primer namizni tenis, če smo popolnoma izpostavljeni soncu, ne moremo imeti občutek, da smo v naravi če nas obdajajo
+le visoke stolpnice. Ta pa, vsaj nekoliko prepreči naravni nadzor in nadzor nad dostopi.
+Tudi na tem področju smo sklepali kompromise s katerimi smo se lahko do neke stopnje
+približala tem različnim zahtevam.
+Raziskave okojske psihologije in CPTED so nam podale nekaj nečel za oblikovanje krajine
+na način, ki zmanjša tveganje za kriminal v njej. Teh načel se ne moremo povsem oklepati,
+so pa koristne smernice, katere nas lahko usmerjajo pri oblikovanju za bolj varno mestno
+krajino.
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+65
+
+12 POVZETEK
+Naloga se ukvarja s tematiko preprečevanje kriminala z oblikovanjem krajine (CPTED),
+predvsem mestne, kjer je kriminal del vsakdanjega življenja prebivalcev. To naj bi bil preventiven ukrep za boj proti kriminalu. Fizično okolje obravnava kot eno od komponent,
+ki vplivajo na pojav kriminala v nekem prostoru. Tako imamo z oblikovanjem krajine vpliv
+na stopnjo kriminala na območju obdelave, kar trenutno pri oblikovanju nimamo v mislih
+oz. ne upoštevamo.
+V prvem, teoretičnem delu naloge smo najprej opredelili problem, postavili hipoteze
+in cilje, ki smo jih v nadaljevanju preverjali. Opisan je bil pogled okoljske psihologije na
+fenom bivanja v urbanem okolju, njegove slabosti in pomembne lastnosti človeka katere moramo vzeti v obzir pri oblikovanju. Nato smo predstavili koncept CPTED in izluščili
+glavne smernice, ki smo jih tudi podrobneje opisali. Prav tako pa smo tudi izpostavili
+omejitve teh smernic.
+Po izboru območja obdelave smo izvedli anketo med stanovalci te soseke, v kateri je
+sodelovalo 50 ljudi. V njej so odgovarjali na vprašanja kako se počutijo v svoji soseski,
+kaj jih moti in kako varno se počutijo v njej. Anketo smo nato pregledali in jo analizirali
+v tej nalogi. Ugotovitve pridobljene skozi analizo smo v nadaljevanju tudi upoštevali pri
+oblikovanju idejne zasnove.
+Osrednji del naloge obsega idejno zasnovo preureditve izbranega območja, ki vključuje
+analizo obstoječega stanja, izbor projektnega programa, oblikovanje coninga in končno
+tudi izdelava tlorisa ter prostorskih prikazov.
+V zadnjem delu naloge smo podali kratek pregled najpomembnejših ugotovitev skozi
+pregled obstoječe literature na področju okoljske psihologije in CPTED. V razpravi rezultatov anket smo izpostavili nekaj pomembnih ugotovitev in neskladij. Na koncu pa smo
+opisali postopek izdelave idejne zasnove v skladu z zapisanimi načeli in težave na katere
+smo naleteli pri tem.
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+66
+
+13 VIRI
+Baum A., Singer J. E., Valins S. 1978. Advances in Environmental Psychology. Volume 1. The
+Urban Environment. New Jersey, Lavrence Erlbaum: 204 str.
+Bell P. A., Greene T. C., Fisher J. D, Baum A. 1996. Environmental psychology. Fourth edition.
+Belmont, Thomson-Wadsworth: 634 str.
+Bechtel R. B., Churchman A. 2002. Handbook of Environmental Psychology. New York,
+USA, John Wiley & Sons: 722 str.
+Cisneros H. G. 1995. Defensible Space: Deterring Crime and Bulding Community. Secretary
+of Housing and Urban Development, Washington D.C.: 86 str.
+Clarke R. V. 1995. Situational Crime Prevention, Crime and Justice. The Univerity of Chicago,
+USA: 47 str.
+Colquhoum I. 2004. Design Out Crime, Creating Safe and Sustainable Communities.
+Oxford, Burlington: Architectural Press: 325 str.
+Cozens P. 2002. Public health and the potential benefits of Crime Prevention Trough
+Enviromental Design. NSWPublic Health Bulletin,18, 11/12: 232 – 237
+Crowe T. D., Zahm D. L. 1994. Crime Prevention through Environmental Design. Land
+Development: 22 – 27
+Entorf H., Spengler H. 2002. Crime in Europe: Causes and Consequences. Berlin, Germany,
+Springer, cop.: 235 str.
+Fleissner D., Heinzelmann F. 1996. Crime Prevention Through Environment Design and
+Community Policing. National Institute of Justice, Research in Action: 12 - 18
+Giddens A. 1982. Sociology: A brief about critical introduction, second edition. London,
+UK, Houndmolls: MCMillan Press: 182 str.
+Gifford R. 1987. Environmental Psychology, Principles and Practice. Boston, Allyn and
+Bacon: 472 str.
+Haralambos M., Holborn M. 1999. Sociologija: Teme in pogledi. Ljubljana, Slovenija, DZS:
+966 str.
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+67
+
+Home R, Bauer N., Hunziker M. 2010. Cultural and Biological Determinants in the Evaluation
+of Urban Green Spaces. Environment and Behavior, 42, 4: 494 - 523
+Hunter R. D., Dantzker M. L. 2002. Crime and Criminality: Causes and Consequences. New
+Jersey, USA, Upper Saddle River (etc.): Prentice Hall: 225 str.
+Kullberg A., Karlsson N., Timpka T., Lindqvist K. 2009. Correlates of local safety-related
+concerns in a Swedish Community: a cross-section study. BMC Public Health, 9: 221.
+	 http://www.biomedcentral.com/1471-2458/9/221 (28. junij 2012)
+Llewelyn-Davies 2004. Safer Places: The Planning System and Crime Prevention. London,
+UK, Office of the Deputy Prime Minister: Home Office: 107 str.
+Marsh I. 1986. Crime (Sociology in focus). New York, USA: Longman: 97 str.
+Mayer F. S., McPherson Frantz C., Bruehlman-Senecal E., Dolliver K. 2009. Why is Nature
+Beneficial, The Role of Connectedness. Environment and Behavior, 41, 5: 607 – 643
+Mehrabian a., Russell J. A.. 1974. An Approach to Environmental Psychology. London, The
+MIT Press: 266 str.
+Minnery J. R., Lim B. 2005. Measuring crime prevention trough environmental design.
+Journal of Architectural and Planning Research, 22, 4 : 330 – 341
+Newman O. 1972. Defensible space. People and design in the violent city. London,
+Architectural press: 264 str.
+Ogrin D. 2010. Krajinska arhitektura. Ljubljana, Oddelek za krajinsko arhitekturo,
+Biotehniška fakulteta: 324 str.
+Pakes F., Pakes S. 2009. Criminal Psychology. Portland, Oregon, USA, Cullompton: Willan:
+180 str.
+Polič M. 1986. Ekološka psihologija I. Ljubljana, Univerza v Ljubljani, Oddelek za krajinsko
+arhitekturo: 62 str.
+Polič M. 1986. Ekološka psihologija II. Ljubljana, Univerza v Ljubljani, Oddelek za krajinsko
+arhitekturo: 142 str.
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+68
+
+Popis prebivalstva 2002. 2002. Statistični urad Republike Slovenije.
+http://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=SLO-04&ti=&path=../Database/Popis2002/Slovenija/Prebivalstvo/Demografske_znacilnosti/&lang=2 (28. junij 2012)
+Samuels R. 1996. Crime prevention through Environmental Design: Community
+Participation and Afterdark Design. Security in Government 96 Conference, Attorney
+General`s Department: 1– 18
+Schneider R. H., Kitchen T. 2007. Crime Prevention and the Built Environment. New York,
+Routledge: 274 str.
+Slovar slovenskega knjižnega jezika.
+http://bos.zrc-sazu.si/sskj.html (28. junij 2012)
+Stamps A. E. III. 2009. On Shape and Sapciousness. Environment and Behavior, 41, 4: 526
+- 548
+Stollard P. 1991. Crime Prevention Through Housing Design. London, UK: 95 str.
+Trstenjak A., Uredil: Grahek S.1984. Ekološka psihologija. Problemi in perspektive.
+Ljubljana, ČGP Delo – TOZD gospodarski vestnik: 324 str.
+World Urbanization Prospect, the 2011 Revision. 2011. United Nations, Department of
+Economic and Social Affairs (26. apr. 2012)
+http://esa.un.org/unpd/wup/index.htm (28. junij 2012)
+Žerjavc C. 1994. Kriminalistika. Ljubljana, Slovenija, Ministerstvo za notranje zadeve Republike Slovenije, Izobraževalni center: 474 str.
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+ZAHVALA
+Zahvaljujem se mentorju prof. dr. Marku Poliču in recenzentu prof. dr. Davorinu Gozvodi
+za strokovno vodenje, usmerjanje ter pomoč pri izdelavi diplomske naloge.
+Zahvala gle tudi Nadji Seidl Penko in Alenki Cof za strokovno pomoč ter seveda Tomažu
+Podboju za pripravljenost pomagati.
+Hvala vsem prijateljem in družini, ki ste me spodbujali pri delu, še posebej hvala sestrični
+Mateji.
+Največja zahvala pa gre mojemu ljubečemu možu Davidu za vso pomoč, nasvete, spodbudo in neizčrpno potrpežljivost.
+Hvala ti Bog, da si bil ob meni tudi v tem.
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+PRILOGE
+Priloga A
+Vprašalnik uporabljen v anketi
+Sem Katja Fartek, študentka krajinske arhitekture. V svoji diplomski nalogi se ukvarjam z
+vprašanjem, koliko se ljudje počutijo ogroženi zaradi kriminalnih dejanj v svojem stanovanjskem okolju. Anketa je anonimna in podatki bodo uporabljeni zgolj v raziskovalne
+namene.
+Zahvaljujem se vam za vaše sodelovanje,
+Katja Fartek
+1. Spol: M Ž
+
+2. Starost: _____ let
+
+3. Izobrazba:
+a) osnovna šola ali manj,
+b) poklicna srednja šola,
+c) 4-letna srednja šola,
+d) višja ali visoka strokovna šola,
+e) fakulteta oz. univerzitetna izobrazba.
+
+4. Zaposlitev:
+a) dijak/-inja ali študent/-ka,
+b) zaposlen/-a,
+c) samozaposlen/-a v lastnem podjetju,
+d) gospodinja,
+e) kmetovalec/-ka,
+f ) upokojenec/-ka,
+g) brezposeln/-a.
+
+5. Koliko časa že živite v trenutnem stanovanju? ____________________
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+6. Kako pogosto se zadržujete v okolici svojega stanovanjskega bloka?
+a) Zelo pogosto.
+b) Pogosto.
+c) Včasih.
+d) Skoraj nikoli.
+e) Nikoli.
+
+7. Kje se največ zadržujete?
+a) Pred blokom.
+b) Na peš poti.
+c) Na igrišču.
+d) Na zelenici.
+e) Na parkirišču.
+f ) Drugo: ________________
+
+8. Ali ste zadovoljni s tem, kar vam nudi prostor okrog vašega stanovanjskega bloka (poti,
+klopi, igrala, zelenica, drevesa, …)?
+(sploh ne) 1 2 3 4 5 (zelo)
+
+9. Prosimo povejte, kaj pogrešate oz. kaj vas moti?
+______________________________________________________________
+
+10. Kako pogosto se zadržujete v okolici svojega bloka, ko je zunaj že tema?
+a) Zelo pogosto.
+b) Pogosto.
+c) Včasih.
+d) Skoraj nikoli.
+e) Nikoli.
+11. Ali se v svoji soseski počutite varno?
+(sploh ne) 1 2 3 4 5 (zelo)
+12. V kolikor se ne počutite povsem varno, prosim pojasnite zakaj?
+_________________________________________________________________________
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+___________________________________________________
+13. Ali ste že kdaj v svoji soseski opazili fizični napad (rop, poškodovanje lastnine, nasilje,
+napad na osebo, ipd.)?
+a) Da.
+b) Ne.
+
+14. V kolikor ste odgovorili z da, kolikokrat v zadnjih 5 letih?
+_________________________
+
+15. Ali ste že kdaj v svoji soseski slišali za fizični napad na osebo (rop, poškodovanje lastnine, nasilje, napad na osebo, ipd.)?
+a) Da.
+b) Ne.
+
+16. V kolikor ste odgovorili z da, kolikokrat v zadnjih 5 letih?
+_________________________
+
+17. Ali je vas ali člana vaše družine že kdo napadel v vaši soseski?
+a) Da.
+b) Ne.
+
+18. V kolikor ste odgovorili z da, kolikokrat v zadnjih 5 letih?
+_________________________
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+19. Označite mi prosim na zemljevidu vaše soseske predele, za katere menite, da so povsem varni in tiste, kjer bi se počutili ogrožene.
+a) Podnevi
+
+Fartek K. Urejanje območij bolj izpostavljenih kriminalnim dejanjem v Ljubljani.	
+Dipl. delo. Ljubljana, Univerza v Ljubljani, Biotehniška fakulteta, Odd. za krajinsko arhitekturo, 2012
+
+b) Ponoči
+
+

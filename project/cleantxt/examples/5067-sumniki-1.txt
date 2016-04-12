@@ -1,0 +1,2430 @@
+UNIVERZA V LJUBLJANI
+FAKULTETA ZA RAUNALNITVO IN INFORMATIKO
+
+Programski
+modul
+za
+krmiljenje
+proizvodnih
+procesov
+z
+uporabo
+digitalne kamere
+
+DIPLOMSKO DELO
+NA VISOKOOLSKEM STROKOVNEM TUDIJU
+
+Mentor: doc. dr. Peter Peer
+
+Ljubljana, 2011
+
+Rezultati diplomskega dela so intelektualna lastnina Fakultete za ra£unalni²tvo in informatiko Univerze v Ljubljani. Za objavljanje ali izkori²£anje rezultatov diplomskega
+dela je potrebno pisno soglasje Fakultete za ra£unalni²tvo in informatiko ter mentorja.
+
+A
+
+Besedilo je oblikovano z urejevalnikom besedil L TEX.
+
+IZJAVA O AVTORSTVU
+diplomskega dela
+
+Spodaj podpisani
+
+z vpisno ²tevilko
+
+Andrej muc,
+
+63010148,
+
+sem avtor diplomskega dela z naslovom:
+
+Programski modul za krmiljenje proizvodnih procesov z uporabo digitalne
+kamere
+
+S svojim podpisom zagotavljam, da:
+
+•
+
+sem diplomsko delo izdelal/-a samostojno pod mentorstvom doc. dr.
+Petra Peera
+
+•
+
+so elektronska oblika diplomskega dela, naslov (slov., angl.), povzetek
+(slov., angl.) ter klju£ne besede (slov., angl.) identi£ni s tiskano obliko
+diplomskega dela
+
+•
+
+sogla²am z javno objavo elektronske oblike diplomskega dela v zbirki
+Dela FRI.
+
+V Ljubljani, dne 17. 5. 2011
+
+Podpis avtorja:
+
+Zahvala
+Na tem mestu bi se zahvalil dr. Borutu Lenardi£u, ki mi je z idejo in dostopom
+do strojne opreme omogo£il, da je diplomska naloga nastala.
+Zahvaljujem se mentorju doc. dr. Petru Peeru za pomo£ in spodbudo pri
+pisanju diplomske naloge.
+Zahvala gre tudi Zvonku Bo²tjan£i£u za mnenja in nasvete pri implementaciji programske opreme in Petru Jakopi£u, ki mi je predstavil proces izdelave
+opti£nih vlaken in svetoval pri vklju£evanju razvite programske opreme v proces.
+Posebna zahvala gre star²em za potrpeºljivost in podporo pri ²tudiju in
+Katji, ki mi je pri pisanju diplomske naloge stala ob strani.
+
+Kazalo
+Povzetek
+
+1
+
+Abstract
+
+2
+
+1
+
+Uvod
+
+3
+
+1.1
+
+Industrijska avtomatika . . . . . . . . . . . . . . . . . . . . . . .
+
+3
+
+1.2
+
+Strojna oprema za nadzor naprav v industriji
+
+5
+
+1.3
+
+1.4
+
+2
+
+3
+
+SCADA
+
+. . . . . . . . . .
+
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+1.3.1
+
+Vmesnik za povezavo £lovek-stroj
+
+1.3.2
+
+Kontrolniki naprav
+
+1.3.3
+
+5
+
+. . . . . . . . . . . . .
+
+6
+
+. . . . . . . . . . . . . . . . . . . . .
+
+7
+
+Komunikacijska infrastruktura . . . . . . . . . . . . . . .
+
+8
+
+Pregled vsebine
+
+. . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+Opis obstoje£ega sistema
+
+9
+
+10
+
+2.1
+
+Obstoje£a programska re²itev
+
+. . . . . . . . . . . . . . . . . . .
+
+10
+
+2.2
+
+Opis problema . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+11
+
+2.3
+
+Okolje .NET . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+11
+
+2.4
+
+Krmilniki Beckho
+
+14
+
+. . . . . . . . . . . . . . . . . . . . . . . . .
+
+Programski modul za nadzor procesa z digitalno kamero
+
+16
+
+3.1
+
+Kamera za nadzor procesa . . . . . . . . . . . . . . . . . . . . .
+
+16
+
+3.1.1
+
+3.2
+3.3
+
+Barvni formati kamere
+
+. . . . . . . . . . . . . . . . . . .
+
+17
+
+3.1.1.1
+
+Format RGB
+
+. . . . . . . . . . . . . . . . . . .
+
+17
+
+3.1.1.2
+
+Monokromatski RGB8 format . . . . . . . . . .
+
+18
+
+3.1.1.3
+
+Format YUV
+
+. . . . . . . . . . . . . . . . . . .
+
+18
+
+3.1.1.4
+
+Format Y800
+
+. . . . . . . . . . . . . . . . . . .
+
+19
+
+Osnovni koncepti delovanja naprave . . . . . . . . . . . . . . . .
+
+19
+
+Programska re²itev kontrole s kamero . . . . . . . . . . . . . . .
+
+21
+
+3.3.1
+
+Kontrolnik SCADA . . . . . . . . . . . . . . . . . . . . .
+
+21
+
+3.3.2
+
+Glavno okno kamere
+
+27
+
+. . . . . . . . . . . . . . . . . . . .
+
+3.3.2.1
+
+Glavni meni . . . . . . . . . . . . . . . . . . . .
+
+27
+
+3.3.2.2
+
+Nastavljanje interesnega obmo£ja . . . . . . . .
+
+28
+
+3.3.2.3
+
+Nastavljanje lastnosti slike . . . . . . . . . . . .
+
+29
+
+3.3.2.4
+
+Nastavljanje generi£nih vhodnih parametrov . .
+
+32
+
+3.3.2.5
+
+Prikaz slike
+
+. . . . . . . . . . . . . . . . . . . .
+
+32
+
+3.4
+
+Povezava modula z glavno aplikacijo
+
+. . . . . . . . . . . . . . .
+
+33
+
+3.5
+
+Arhitektura sistema . . . . . . . . . . . . . . . . . . . . . . . . .
+
+34
+
+3.6
+
+Implementacija algoritmov za obdelavo slike
+
+. . . . . . . . . . .
+
+37
+
+3.6.1
+
+Metoda GetSupportedInputTypes . . . . . . . . . . . . .
+
+37
+
+3.6.2
+
+Metoda GetTransformOutputTypes . . . . . . . . . . . .
+
+38
+
+3.6.3
+
+Metoda Transform
+
+. . . . . . . . . . . . . . . . . . . . .
+
+38
+
+3.6.4
+
+Metoda ProcessImageData . . . . . . . . . . . . . . . . .
+
+40
+
+3.6.5
+
+Metoda PaintOverlay . . . . . . . . . . . . . . . . . . . .
+
+40
+
+4
+
+Primer uporabe
+
+41
+
+5
+
+Zaklju£ek
+
+44
+
+Seznam slik
+
+45
+
+Seznam tabel
+
+46
+
+Literatura
+
+47
+
+Seznam uporabljenih kratic in
+simbolov
+SCADA  Supervisory Control And Data Acquisition (nadzorna kontrola in
+pridobivanje podatkov)
+
+HMI  Human Machine Interface (vmesnik £lovekstroj)
+PLC  Programmable logic controller (programabilni kontrolnik)
+ROI  Region Of Interest (interesno obmo£je)
+XML  Extensible Markup Language (raz²irljiv ozna£evalni jezik)
+
+Povzetek
+Diploma opisuje programsko re²itev za kontrolo proizvoda industrijskega procesa s pomo£jo digitalne kamere. Aplikacija, katere del je kamerin programski
+modul za krmiljenje, je bila posebej razvita za kontrolo procesa proizvodnje
+surovcev za opti£na vlakna. Zaradi svoje generi£ne zasnove je razvita re²itev
+primerna tudi za druga industrijska podro£ja. Re²itev deluje kot samostojen
+modul znotraj aplikacije.
+
+Pri procesu izdelave kamera zajema slike obdelo-
+
+vanca in jih po²ilja svojemu nadzornemu sistemu, ki je zaradi svoje generi£ne
+zasnove sposoben zajeto sliko procesirati na najrazli£nej²e na£ine. Pridobljeni
+podatki se po²ljejo v obdelavo ostalim napravam, ki so del ve£jega sistema
+SCADA. Programski modul za delo s kamero je tako po meri narejen kontrolni sistem, uporaben v realnem industrijskem okolju, kjer je prilagodljivost
+na spremenljive zahteve proizvodnega procesa klju£nega pomena.
+Ker re²itev s kamero re²uje zaokroºen problem v industriji, diploma opisuje
+osnove nadzora industrijskih procesov in komunikacije med napravami v proizvodnji. Opisani so klju£ni elementi, potrebni za ra£unalni²ki nadzor industrijskega procesa. Programski modul je razvit v okolju .NET in poizku²a izkoristiti prednosti, ki mu jih to okolje ponuja v primerjavi z v industriji bolj uveljavljenimi tehnologijami. Diploma poizku²a bralcu predstaviti svet avtomatike
+z vidika .NET razvijalca in predstaviti prednosti tak²ne izbire tehnologije pred
+bolj tradicionalno usmerjenimi tehnologijami v svetu avtomatike.
+
+Klju£ne besede:
+
+SCADA, kamera, avtomatika, kontrola, proizvodnja, okolje .NET
+
+1
+
+Abstract
+The diploma thesis describes software solution for controlling industrial
+processes with the help of digital camera. The developed software module is a
+part of application developed originally for optic bre preform manufacturing,
+but can also be applied to other elds of industry. The digital camera solution
+functions as an independent module inside control application. During manufacturing process it captures images of manufactured part and sends them into
+its subsystem for further processing. Module is developed in such a manner
+that multiple dierent algorithms can easily be applied to images, according
+to process needs. Acquired data is then sent to various devices, which are part
+of bigger SCADA system. Camera control module is custom made control system useful in real industrial environment, where adaptation to process changes
+plays a vital role in production of high quality products.
+Since developed solution solves specic industrial problem as a whole, the
+diploma also describes basics of automation and process control. Basic elements needed for computer based process control are also described. In contrast
+to more widely accepted solutions in industry, software was developed using
+Microsoft .NET framework.
+
+The diploma tries to introduce the aspect of
+
+developing automation solutions from .NET developer's point of view. It also
+discusses advantages of using such technology in contrast to more traditional
+technologies used in automation.
+
+Key words:
+
+SCADA, camera automation, control, manufacturing, .NET framework
+
+2
+
+Poglavje 1
+Uvod
+1.1 Industrijska avtomatika
+loveka v razvitem svetu vsepovsod obkroºajo raznovrstne dobrine. Kadar se
+odlo£amo o nakupu nekega izdelka, lahko pogosto izbiramo med celo paleto
+podobnih proizvodov in prodajalci nas prepri£ujejo o njihovi kakovosti.
+
+e
+
+nam je bilo v£asih dovolj imeti na izbiro nekaj osnovnih izdelkov, katere je relativno preprosto proizvesti, je velika ponudba kompleksnih in visokotehnolo²kih
+izdelkov dandanes nekaj samoumevnega.
+
+Proizvajalci v svoje izdelke tako
+
+vklju£ujejo najrazli£nej²e materiale in polizdelke, razvite s kompleksnimi postopki. Obstoja teh izdelkov in materialov se niti ne zavedamo, vendar pa bi se
+ob njihovem pomanjkanju hitro zavedeli njihove nepogre²ljivosti pri sodobnem
+na£inu ºivljenja.
+Malokdo se vpra²a, kako taki izdelki pridejo na prodajne police, kako so
+sestavljeni in kako jih, zaradi pogosto izjemno visokega povpra²evanja, uspejo proizvesti v dovolj velikih koli£inah.
+
+Seveda si pri omenjenih vpra²an-
+
+jih proizvajalci pomagajo z najrazli£nej²imi stroji in napravami. Nih£e si ne
+more predstavljati proizvodnje avtomobilov, pri kateri bi vse delo opravljal
+£lovek ro£no. V sodobnih obratih to delo opravljajo stroji in to z veliko ve£jo
+natan£nostjo in hitrostjo kot bi bil to sposoben narediti £lovek. Obstaja veliko zapletenih tehnolo²kih procesov, pri katerih £lovek igra manj²o vlogo in
+naprave, ki opravljajo dolo£eno delo, le nadzira.
+Ker so tehnolo²ki procesi vedno bolj zapleteni in zahtevajo hitro in natan£no
+odzivnost glede na parametre sistema (seveda ob visoki u£inkovitosti), je ra£unalnik postal nepogre²ljiv pri krmiljenju proizvodnih procesov. V sodobni
+industriji je ra£unalnik postal ºe tako nepogre²ljiv kakor sam stroj, ki delovni
+proces opravlja.
+
+Kadar sli²imo, da v dolo£eni industriji ne uporabljajo ra-
+
+3
+
+Poglavje 1: Uvod
+
+4
+
+£unalnikov pri krmiljenju proizvodnega procesa, nam pogosto pride na misel,
+da najbrº proizvajajo izjemno enostaven izdelek in to ne v posebno velikih
+koli£inah. U£inkovitost v njihovem proizvodnjem procesu pa je verjetno veliko
+manj²a kot bi bila, £e bi imeli ra£unalni²ko podprto krmiljenje proizvodnje.
+
+Podro£je avtomatizacije proizvodnje je izjemno ²iroko. Ker se v razli£nih
+vrstah industrije in tudi znotraj posameznih panog izdelke proizvaja na razli£ne
+na£ine z uporabo razli£nih, velikokrat tudi speci£no prilagojenih strojev, se
+inºenirji soo£ajo s problemom njihovega krmiljenja. Manj²i problemi takega
+tipa se pojavljajo v industriji, kjer so tehnolo²ki postopki ºe dobro preverjeni
+in ute£eni, re²itve na podro£ju njihovega krmiljenja pa dobro znane. Tak²ni
+procesi ne zahtevajo posebno velikega truda za njihovo ra£unalni²ko podporo.
+
+Ve£je teºave pa imajo inºenirji pri avtomatizaciji bolj kompleksnih in speci£nih tehnolo²kih postopkov, ki so ponekod ²e v fazi raziskav in razvoja.
+V takih primerih se pogosto zgodi, da so naprave v tehnolo²kem postopku
+popolnoma heterogene, postopki pa zahtevajo izjemno veliko prilagodljivost
+sistema na razli£ne oblike prilagoditev. Pri na£rtovanju kontrolnih sistemov za
+kompleksne tehnolo²ke postopke se tako inºenirji sre£ujejo z izjemno velikim
+²tevilom parametrov.
+
+Ra£unalni²ki sistem, ki krmili tak tehnolo²ki proces
+
+mora biti sposoben hitro prera£unavati razli£ne vrednosti, katere mu posredujejo senzorji.
+
+Ker je takih izra£unov pogosto zelo veliko, morajo inºenirji
+
+poskrbeti za primerno zmogljivost sistema in optimizacijo algoritmov. Krmilni
+sistem nadzoruje stroje in naprave v realnem £asu, torej si ne more privo²£iti
+po£asne odzivnosti.
+
+Podatke o stanju procesa mora dobiti hitro, jih v naj-
+
+kraj²em moºnem £asu obdelati, se odlo£iti o nadaljnem poteku proizvodnega
+procesa ter sporo£iti ustreznim napravam ustrezna navodila.
+
+Tudi zanesljivost delovanja je pri kontrolnih sistemih v industriji bistvenega
+pomena. Pri uporabi ve£ine aplikacij s katerimi se sre£ujemo pri vsakodnevnem
+delu in zabavi, si na£rtovalci programske opreme lahko privo²£ijo ob£asne izpade delovanja. Kadar pride do napake sistema, uporabnik aplikacijo zaºene
+znova in nato nadaljuje delo brez teºav.
+
+Izpada kontrolnega sistema pa si
+
+na£rtovalci v industriji ne morejo privo²£iti, saj je to pogosto povezano z
+velikimi stro²ki.
+
+Ra£unalni²ki sistemi velikokrat krmilijo tehnolo²ke proce-
+
+se, v katerih nastopajo nevarne in zdravju ²kodljive snovi, zato je nemoteno
+delovanje tu izjemnega pomena.
+
+Industrijski kontrolni sistemi morajo tako
+
+vsebovati varnostne mehanizme, ki ob morebitnem izpadu delovanja sistema
+prepre£ijo po²kodbe ljudi in zmanj²ajo ali prepre£ijo gmotno ²kodo.
+
+1.2 Strojna oprema za nadzor naprav v industriji
+
+5
+
+1.2 Strojna oprema za nadzor naprav v industriji
+Ker v industriji ra£unalniki delujejo v posebnih razmerah, zahteve glede stabilnosti delovanja in zmogljivosti pa so visoke, se je na tem podro£ju uveljavila strojna oprema, posebej prilagojena zahtevam industrije.
+
+Pomembna
+
+naloga industrijskih nadzornih sistemov je povezati okolico (naprave, senzorje ipd.)
+
+z delom kontrolnikov, ki izvajajo nadzorno logiko.
+
+eprav obstaja
+
+ne²teto raznovrstnih naprav, s katerimi lahko nadzorni sistem komunicira pa
+komunikacija med njimi ponavadi poteka s pomo£jo digitalnih in analognih
+signalov. Na nadzorni sistem bi torej lahko gledali kot na £rno ²katlo, ki pridobiva informacije od dolo£enega ²tevila vhodnih signalov, informacije obdela in
+jih nato posreduje okolju v obliki mnoºice izhodnih signalov. Ponavadi mora
+delovati zelo hitro. e naprava pridobiva podatke o hitrosti vrtenja motorja,
+ki kontrolira precizne procese in se mora odzivati v najkraj²em moºnem £asu,
+mora biti sposobna podatke ustreznih vhodnih signalov obdelati pravo£asno
+ter nastaviti vrednost ustreznih izhodnih kontrolnih signalov. asa za obdelavo
+podatkov v tem primeru ni na pretek. Odzivnost naprave je izjemnega pomena
+in ponavadi bistveno ve£ja, kot je to zahtevano od doma£ih ra£unalnikov.
+V industriji se za krmiljenje pogosto uporablja druga£ne naprave, kot so na
+primer kontrolniki PLC (angl. Programmable Logic Controller) [1]. Za razliko
+od obi£ajnih ra£unalnikov je kontrolnik PLC na£rtovan za priklju£itev ve£jega
+²tevila vhodov in izhodov. Posebej je prilagojen delu v industrijskem okolju,
+kjer lahko vladajo vi²je temperature, pojavljajo se lahko elektri£ne motnje iz
+okolja ter vibracije. Tak²ni kontrolniki so ponavadi raz²irljivi, po potrebi lahko
+na njih priklju£imo dodatno ²tevilo vhodov in izhodov. Stanje sistema, ki ga
+nadzorujejo, lahko posredujejo drugim napravam, ki tak²ne podatke obdelujejo na razli£ne na£ine. Kontrolniki PLC so primerni za vzdrºevanje dolo£enega
+stanja sistema neodvisno od ostalih delov sistema. e se komunikacija z ostalim delom sistema prekine, lahko vsak kontrolnik PLC ²e naprej opravlja svoje
+funkcije in tako ohranja naprave, ki jih upravlja, v ºeljenem na£inu delovanja.
+
+1.3 SCADA
+Kadar govorimo o sistemu SCADA (angl.
+
+Supervisory Control And Data
+
+Acquisition)[2], govorimo o sistemu, ki pokriva celoten spekter nadzora in kontrole nad procesom in napravami, ki v takem procesu sodelujejo. Ve£inoma se
+to nana²a na kontrolo strojev in procesov v industriji ali na nadzor nad ve£jimi
+
+Poglavje 1: Uvod
+
+6
+
+in kompleksnej²imi napravami, kot so elektrarne, £istilne naprave, letali²£a ipd.
+Sistemi, ki sodelujejo v industrijskih procesih in bi jih ºeleli nadzorovati, so
+razli£nih dimenzij in kompleksnosti. Lahko govorimo o kontroli enega stroja,
+ki obdeluje kovino, morda o tekstilni tovarni, kjer mnoºica avtomatiziranih
+strojev proizvaja tkanino. Lahko pa govorimo o ve£ji geografski lokaciji, kjer
+centralni nadzorni sistem kontrolira in zbira podatke o desetinah vetrnih elektrarn ter nadzornikom omogo£a popolno kontrolo nad njihovim delovanjem ne
+glede na to, kje se nadzorna oseba v nekem trenutku nahaja. Sistem SCADA
+ponavadi sestavljajo vsaj naslednje osnovne komponente:
+
+•
+
+vmesnik za povezavo £lovekstroj (angl.
+
+Human Machine Interface 
+
+HMI)
+
+•
+
+kontrolniki naprav
+
+•
+
+komunikacijska infrastruktura.
+
+Komponente skupaj sestavljajo sistem, zmoºen nadzorovati ²e tako zapleten
+proces, ki bi bil brez tak²nega nadzora neobvladljiv
+
+1.3.1
+
+Vmesnik za povezavo £lovek-stroj
+
+Vmesnik HMI [3] v sistemu SCADA predstavlja vez med napravami in £lovekom.
+Z njegovo pomo£jo so operaterjem na razumljiv na£in predstavljeni podatki
+o delovanju sistema.
+
+Preko njega lahko operater prebere podatke o tlaku
+
+v dolo£eni £rpalki, elektri£ni napetosti v dolo£enem daljnovodu ali temperaturi pe£i za taljenje ºeleza. Glede na predstavljene podatke lahko operaterji
+sprejmejo odlo£itve o poteku procesa. Vmesniki HMI operaterjem poleg predstavitve sistemskih podatkov ponujajo interaktiven nadzor nad sistemom. Po
+potrebi lahko z njim regulirajo pretoke razli£nih snovi, odpirajo ali zapirajo
+razli£ne ventile, omogo£eno jim je nastavljanje temperature razli£nih pe£i ipd.
+Dober vmesnik HMI operaterja pravo£asno opozarja na morebitna kriti£na
+stanja in napake v sistemu. e dolo£ena sistemska spremenljivka (na primer
+tlak v kotlu) preseºe svoje okvire, vmesnik HMI to jasno prikaºe, najpogosteje
+v obliki alarma, kar omogo£i operaterju, da se na dogodek ustrezno odzove
+(na primer preko vmesnika HMI odpre ventil za zmanj²anje tlaka v kotlu).
+Prav tako ²£iti sistem pred morebitnimi napakami uporabnika. Prepre£i lahko
+posredovanje napa£nih vrednosti razli£nih parametrov, ki bi sistem morebiti
+lahko po²kodovali (na primer morebitno nastavitev previsoke temperature, ki
+bi povzro£ila eksplozijo kotla).
+
+1.3 SCADA
+
+7
+
+Izziv na£rtovalcev vmesnikov HMI je predstaviti realno stanje kompleksnih
+naprav na uporabniku razumljiv na£in. Mnogokrat je zaºeljeno, da vmesnik
+HMI prikazuje £imbolj realno stanje resni£nega sistema. Tako so v vmesniku
+poleg elementov, ki neposredno kontrolirajo obna²anje dolo£enih komponent
+sistema (na primer ventilov), pogosto prikazane ²e cevi, ki dolo£ene ventile
+povezujejo. Prikazane so tudi komponente sistema, ki jih s pomo£jo vmesnika HMI ne moremo kontrolirati, vendar je koristno vedeti, da na dolo£enem
+delu naprave obstajajo (na primer zasilni ventili za ro£no spro²£anje pritiska
+v sistemu). Vse to sluºi namenu, da si operaterji, ki uporabljajo sistem, £im
+laºje predstavljajo zi£no napravo. Pri na£rtovanju vmesnika HMI, je treba
+upo²tevati tudi morebitne razli£ne vrste izobrazbe uporabnikov sistema. Inºenirja, vajenega dela s kompleksnimi izra£uni, morebiti zanimajo podrobni
+parametri v procesu in ºeli imeti £imve£ji nadzor nad vsako najmanj²o podrobnostjo sistema. Tehnologa, ki pregleduje zi£no kondicijo sistema pa pri
+uporabi vmesnika HMI morda zanima le, kako na £imbolj preprost na£in hitro
+odpreti ali zapreti dolo£en ventil med servisom dolo£enega dela sistema.
+Vmesnik HMI mora biti posebej prilagojen delu v industrijskem okolju. V
+nasprotju z delovnim okoljem obi£ajnega uporabnika ra£unalnika, ki ima £as
+raziskovati ²tevilne funkcije sistema, je v industrijskem okolju zaºeljeno, da
+je nepotrebnega klikanja £im manj.
+
+Odzivnost na uporabnikove spremembe
+
+mora biti hitra. Na£in, s katerim so funkcije prikazane na vmesniku, naj bo
+preprost in razumljiv. Tako je v okolju, kjer operaterji pri delu uporabljajo za²£itne rokavice, zaºeljeno, da uporabnik nastavlja dolo£ene parametre sistema
+z uporabo velikih kontrol na zaslonu ob£utljivem na dotik. Precizno klikanje s
+pomo£jo ra£unalni²ke mi²ke ali uporaba svetlobnega peresa je v industrijskem
+okolju nezaºeljena.
+
+1.3.2
+
+Kontrolniki naprav
+
+Zapletene sisteme sestavlja veliko ²tevilo naprav, ki v njem zasedajo razli£ne
+vloge.
+
+V industrijskih procesih uporabljamo od najpreprostej²ih ventilov in
+
+kontrolnikov pretoka, do bolj zapletenih naprav kot so specialne pe£i, struºnice
+za obdelovanje kovin, razli£nih senzorjev ipd.
+
+Kadar ºelimo naprave nad-
+
+zorovati s pomo£jo ra£unalni²kih sistemov, moramo poskrbeti za vmesnik med
+napravo in sistemom za nadzor naprave.
+Kontrolnik, ki povezuje ra£unalni²ki sistem in napravo, mora poskrbeti za
+komunikacijo med njima.
+
+Ra£unalniku mora omogo£iti dostop do podatkov
+
+naprave v digitalni obliki, podatke posredovane v digitalni obliki iz ra£unalnika pa posredovati napravi v obliki elektri£nih signalov. Tako bi lahko pre-
+
+Poglavje 1: Uvod
+
+8
+
+prost ventil s pomo£jo kontrolnika nadzorovali tako, da bi ra£unalni²ki sistem
+kontrolniku posredoval digitalno vrednost 1 za odprtje ventila, kontrolnik pa bi
+ventilu poslal signal v obliki elektri£ne napetosti 24V, kar bi sporo£ilu ventilu
+naj se odpre.
+
+V primeru, da bi ra£unalni²ki sistem kontrolniku sporo£il di-
+
+gitalno vrednost 0, bi ventilu poslal signal v obliki elektri£ne napetosti 10V,
+kar bi pomenilo, da ºelimo ventil zapreti. Na podoben na£in in z razli£nimi
+kontrolniki lahko nadzorujemo stotine ali tiso£e naprav v ²e tako zapletenem
+sistemu.
+Nekateri deli sistema, ²e posebej bolj zapleteni, morajo znotraj sistema
+delovati z dolo£eno stopnjo avtonomije. Njihovo delovanje bi ºeleli urejati z
+bolj ali manj zapleteno logiko, ki bi lahko delovala neodvisno od sistema, ta
+pa bi pridobival podatke o njenem delovanju in z dolo£enimi nastavitvami
+urejal, na kak²en na£in naj se logika obna²a. V tak²nih primerih je smiselna
+uporaba kontrolnikov PLC [1].
+
+Tak²ni kontrolniki izvajajo svoj program in
+
+poskrbijo za delovanje delov sistema, ki ga nadzorujejo.
+
+Kontrolnikov PLC
+
+je lahko v sistemu zelo veliko in vsak ureja to£no dolo£eno podro£je poteka
+procesa. Podatke o delovanju lahko po²iljajo svojim nadzornim sistemom, ki
+jih zdruºujejo in posredujejo v ostale dele sistema SCADA, dokler niso podatki
+na voljo operaterjem, ki uporabljajo vmesnik HMI.
+Z zagotavljanjem avtonomnega delovanja delov sistema lahko poskrbimo
+za dodaten nivo varnosti v sistemu.
+
+Ob napaki v delu sistema, ki ga nad-
+
+zoruje kontrolnik PLC s svojo logiko, bi kontrolnik ugotovil, da je pri²lo do
+nepredvidenega dogodka in za£el izvajati varnostne postopke. Tako bi sistem
+spravili v varno stanje.
+
+Tudi £e bi se prekinila povezava do glavnega nad-
+
+zornega sistema, bi lokalni kontrolnik varno upravljal napravo.
+
+Ob ponovni
+
+vzpostavitvi povezave z glavnim nadzornim sistemom pa bi se mu posredovali
+podatki o na£inu delovanja kontrolnika. Operater bi s pomo£jo vmesnika HMI
+ugotovil, da del sistema deluje v posebnem na£inu in bi se na dogodek ustrezno
+odzval. Z avtonomnim krmiljenjem delov sistema bi na tak na£in vzpostavili
+vi²jo stopnjo redundance in varnosti.
+
+1.3.3
+
+Komunikacijska infrastruktura
+
+Klju£ni lastnosti infrastrukture, ki skrbi za prenos podatkov med razli£nimi
+deli sistema SCADA, sta vsekakor hitrost in zanesljivost.
+
+Skozi zgodovino
+
+razvoja sistemov SCADA so njihovi proizvajalci uvedli razli£ne komunikacijske protokole, prilagojene za industrijsko okolje [4]. Veliko teh protokolov je
+splo²no sprejetih, nekateri pa so standardizirani in jih podpira ve£ina ve£jih
+razvijalcev sistemov SCADA. Tak²ni protokoli podpirajo izjemno hiter prenos
+
+1.4 Pregled vsebine
+
+9
+
+podatkov in so prilagojeni okolju, kjer je pri izra£unih in ravnanju s podatki
+pomembna vsaka milisekunda.
+Za povezave med razli£nimi napravami in sistemi nekateri uporabljajo serijske povezave (RS-232, RS-485), uveljavile pa so se (in se uveljavljajo £edalje
+bolj pogosto) tudi Ethernet povezave [5].
+Nekateri proizvajalci sistemov SCADA so razvili aplikacije, ki omogo£ajo
+dostop do vmesnika HMI tudi preko interneta. Tako je operater nenehno obve²£en o delovanju procesa, ki ga nadzoruje. e je zaradi narave upravljanega
+procesa mogo£e, lahko s pomo£jo mreºnih vmesnikov operater dolo£ene dele
+sistema upravlja neodvisno od svoje lokacije.
+
+1.4 Pregled vsebine
+Namen prvega poglavja je bralcu predstaviti pogled na svet industrijske avtomatike z vidika razvijalcev programske opreme.
+
+Predstavljeni so osnovni
+
+problemi, s katerimi se sre£ujemo pri krmiljenju strojev in naprav. Predstavljene so osnove strojne opreme, prilagojene za industrijski svet in razloºeni
+principi sistemov SCADA. Prvo poglavje bralca seznani z osnovami nadzora
+in kontrole ter komunikacije med nadzornim sistemom in napravo, ki jo sistem
+nadzira.
+Drugo poglavje predstavi speci£en pristop k re²evanju problemov kontrolnih sistemov. Predstavljeno je okolje .NET za razvoj programske opreme. Z
+njim je razvita programska oprema, ki skupaj s strojno opremo podjetja Beckho oblikuje zaklju£en sistem za kontrolo strojev in proizvodnih procesov,
+katerega del je tudi re²itev opisana v tem diplomskem delu. Opisane so osnove
+programske re²itve, katere del je obravnavani programski modul.
+Tretje poglavje podrobno opisuje razvito re²itev za nadzor proizvodnega
+procesa s pomo£jo digitalne kamere. Opisana je uporabljena strojna oprema
+in njene zmogljivosti.
+
+Opisane so programske knjiºnice za upravljanje digi-
+
+talne kamere ter principi postopka zajema slike za obdelavo.
+
+Podrobno so
+
+opisani deli programske re²itve, razvite za delo s kamero, njena arhitektura
+in komunikacija s preostalim delom aplikacije.
+
+Opisani so tudi postopki za
+
+programiranje po meri narejenih algoritmov za obdelavo slike in njihovo integracijo v sistem.
+etrto poglavje predstavi uporabniku rezultate uporabe razvite programske
+re²itve v realnem proizvodnem okolju.
+Peto poglavje obnovi bistveno vsebino diplomskega dela in obravnava moºnosti
+za izbolj²anje razvite programske re²itve.
+
+Poglavje 2
+Opis obstoje£ega sistema
+2.1 Obstoje£a programska re²itev
+Razvit programski modul za nadzor procesa s kamero je integriran v aplikacijo
+za nadzor in kontrolo industrijskih procesov.
+
+Ta je primerna predvsem za
+
+kontrolo bolj zapletenih postopkov, ki se hitro spreminjajo in od kontrolnega
+sistema zahtevajo ²tevilne prilagoditve. Aplikacija se uporablja za krmiljenje
+procesa izdelave surovca za opti£na vlakna [6], primerna pa je tudi za uporabo
+v drugih industrijskih panogah. Postopek izdelave opti£nih vlaken je zapleten
+proces, pri katerem je treba v realnem £asu usklajevati komunikacijo med stotinami signalov in naprav. Naprave vklju£ujejo od preprostih ventilov in regulatorjev pretoka, stikal in pogonov motorjev, do naprav izdelanih po meri samo
+za potrebe procesa, ki za krmiljenje zahtevajo zapleteno logiko. Aplikacija je
+razvita v okolju .NET, podpora komunikaciji s kontrolnimi moduli razli£nih
+proizvajalcev pa omogo£a enostavno raz²irljivost in prilagodljivost za delovanje
+v razli£nih okoljih. Skupaj s ²iroko paleto krmilnikov in komunikacijskih modulov podjetja Beckho je odli£en izbor za krmiljenje najrazli£nej²ih procesov,
+ki so dovolj zapleteni, da je njihova ra£unalni²ka kontrola smiselna.
+Aplikacija ponuja uporabniku ²iroko paleto funkcij za krmiljenje procesov:
+
+•
+
+vsestranski vmesnik HMI za nadzor in kontrolo sistema v realnem £asu
+
+•
+
+izvajanje zapletenih procesov v obliki receptov [7]
+
+•
+
+povezljivost z krmilniki PLC in komunikacijskimi moduli razli£nih proizvajalcev
+
+•
+
+mo£na orodja za analizo stanja sistema, ki ga uporabnik nadzoruje
+
+10
+
+2.2 Opis problema
+
+•
+
+11
+
+varnostne mehanizme, ki med kontrolo procesa varujejo naprave in uporabnika
+
+Sistem omogo£a modularno vklju£evanje kontrolnih sistemov narejenih po meri
+za krmiljenje specialnih naprav, ki sodelujejo v procesu. Kontrola za nadzor
+procesa s pomo£jo digitalne kamere je eden tak²nih modulov.
+
+2.2 Opis problema
+Proces izdelave surovca za opti£na vlakna je zapleten in navadno traja tudi ve£
+ur. Obdelovanec je podvrºen zaporedju obdelav, ki na razli£ne na£ine spreminjajo njegove lastnosti. Parametre naprav, ki sodelujejo pri obdelavi materiala,
+je treba med procesom nenehno spremljati in prilagajati. Nekatere parametre
+lahko prilagodimo na podlagi vizualnega izgleda obdelovanca ali njegovih delov med postopkom obdelave. V ta namen je smiselno razviti poseben modul,
+ki s pomo£jo digitalne kamere in razli£nih algoritmov za obdelavo zajete slike
+spremlja stanje obdelovanca med procesom.
+
+Tako lahko bodisi avtomatsko
+
+nadzira izbrane procesne parametre bodisi sluºi operaterju kot pomo£ pri sprejemanju odlo£itev in mu omogo£a ro£no prilagajanje procesnih spremenljivk.
+Ker se proces zaradi prilagoditev spreminja, je pomembno, da je razviti modul
+prilagodljiv.
+
+Podpirati mora uporabo raznovrstnih algoritmov za obdelavo
+
+slike in omogo£ati vklju£evanje spremenljivega ²tevila procesnih spremenljivk
+v postopek delovanja modula. Re²itev mora biti prilagodljiva do te mere, da
+jo je mogo£e uporabiti tudi za vizualni nadzor drugih proizvodnih procesov
+(ob uporabi aplikacije, katerega del je razviti modul).
+
+2.3 Okolje .NET
+Pri na£rtovanju novega programskega sistema se vedno pojavi vpra²anje izbire
+orodja za njegovo izdelavo. V£asih je izbira enostavna, saj smo (predvsem v
+zelo speci£nih primerih) pri izbiri vezani na funkcionalnosti, ki jih dolo£eno
+orodje ponuja. V veliki ve£ini primerov pa se nam ponuja pestra paleta orodij
+in platform, izbira med njimi pa je vse prej kot lahka.
+Programska okolja so se skozi zgodovino razvijala predvsem zaradi vpra²anja, kako razvijalcem programske opreme omogo£iti laºje (ter hitrej²e in
+posledi£no cenej²e) na£rtovanje in izdelavo programske kode. Izbira okolja je
+odvisna od ºelja in potreb razvijalca. Nobene ovire ni, da se ne bi lotili pisanja
+programskega sistema v zbirnem jeziku ali celo strojni kodi. Tak²na odlo£itev
+
+Poglavje 2: Opis obstoje£ega sistema
+
+12
+
+bi nam vsekakor pustila proste roke pri upravljanju z viri ra£unalnikov, na
+katerem bi tekla na²a programska oprema.
+
+V tem primeru nih£e ne bi mo-
+
+gel oporekati hitrosti in u£inkovitosti na²e programske opreme  seveda pod
+pogojem da bi bili na²i algoritmi optimalni.
+
+Vendar pa bi nas pri razvoju
+
+najverjetneje ustavil pogled na ceno tak²nega razvoja, tako z vidika £asa kot
+denarja.
+V tak²nem primeru je vsekakor bolje izbrati bolj napredno programsko
+okolje, ki namesto nas poskrbi za dolo£ene vidike razvoja programske opreme.
+Gre predvsem za vidike, ki nas pri delu upo£asnjujejo in pove£ujejo moºnosti
+napak. Pri izbiri se navadno soo£amo z vpra²anjem, koliko programerske svobode smo pripravljeni ºrtvovati na ra£un hitrosti in udobja pri razvoju. Zanimiva moºnost izbire je Microsoftovo okolje .NET [8], ki je trenutno na voljo v
+svoji 4. razli£ici.
+Okolje .NET poenostavlja razvoj programske opreme z abstrakcijo operacijskega sistema. Razvijalcem prihrani £as, ki bi ga druga£e porabili s prilagajanjem aplikacije operacijskemu sistemu in jim omogo£a, da svoj £as namenijo
+svoji programski opremi.
+
+Okolje poskrbi za dolo£ena niºjenivojska opravila,
+
+s katerimi bi se moral ukvarjati razvijalec, kar pripomore k hitrosti in u£inkovitosti razvoja programske opreme. Pri velikem ²tevilu razvojnih okolij se
+mora razvijalec ukvarjati z alociranjem pomnilnika, kar je zamudno opravilo
+in lahko vodi do hudih programskih napak, ki so mnogokrat teºko izsledljive.
+V okolju .NET to ni problem, saj za ta opravila poskrbi namesto razvijalca.
+Pri razvoju v razli£nih okoljih se mnogokrat pojavlja pojem ponovnega
+izumljanja ne£esa.
+
+Kadar razvijalec pride do programske naloge (ponavadi
+
+zelo nizkonivojske), lahko ugotovi, da bi mu pomagala dolo£ena avtomatizirana funkcija, ki pa je okolje, v katerem razvija, ne podpira.
+
+V ta namen
+
+se odlo£i razviti razne funkcije in metode, ki bi jih okolje moralo priskrbeti
+ºe samo po sebi.
+
+Pri tem izgublja dragoceni £as.
+
+Ker razvijalec te funkcije
+
+le malokdaj razvije v obliki lo£ene knjiºnice, ki bi se dala vklju£iti v druge
+aplikacije (ali pa zaradi razli£nih razlogov teh knjiºnic ni dovoljeno vklju£iti
+v ostale aplikacije), so omenjene funkcije ponavadi izgubljene, ko se razvijalec
+loti dela na naslednji aplikaciji. V primeru, da uporablja isto orodje in naleti na
+podoben programski izziv, se lahko loti ponovnega razvoja ºe razvitih funkcij.
+Pogosto se zgodi, da tak²ne funkcije probleme re²ujejo na neoptimalen na£in.
+Okolje .NET s svojim ²irokim naborom dobro preizku²enih knjiºnic poskrbi
+za re²itev tak²nih situacij. Nizkonivojsko programiranje naj bi bilo razvijalcu
+prihranjeno, saj je zanj, bolj kot okolje v katerem razvija, pomembna aplikacija,
+ki jo razvija.
+Okolje .NET za u£inkovitej²i razvoj ponuja tudi ²iroko paleto ºe izdelanih
+
+2.3 Okolje .NET
+
+13
+
+kontrol in re²itev, s katerimi razvijalcu poenostavi razvoj aplikacij. Z uporabo
+teh re²itev (in £e je mogo£e s prilagoditvijo svoje aplikacije tem re²itvam),
+lahko razvijalec v nekaj dneh ponudi stranki svojo re²itev, katere razvoj bi
+druga£e lahko trajal tedne. Seveda ima tako razvijalsko udobje svojo ceno.
+Kritiki .NET okolja (in podobnih okolij) bi rekli, da je njihova slabost
+ravno v poenostavitvi opravil uporabniku, saj razvijalec nima popolne kontrole nad nizkonivojskimi sistemskimi opravili. To neizogibno nekoliko podalj²a
+izvajalni £as aplikacije.
+
+Vendar pa je £asovna potratnost sistema ponavadi
+
+kriti£na le na dolo£enih delih aplikacije. Ponavadi so tak²ni deli aplikacij specialni algoritmi za izvajanje speci£ne naloge, ki je le del ve£jega programskega
+paketa.
+
+Postavlja se vpra²anje, ali je vredno celotno aplikacijo zasnovati na
+
+platformi, ki omogo£a ve£ji nadzor nad sistemskimi viri uporabniku, vendar pa
+je neprimerno bolj okorna za razvoj, zaradi nekaj manj²ih (a vendar £asovno
+kriti£nih) delov sistema.
+Mnogokrat razvijalec po podrobnem pregledu ugotovi, da re²itve za njegove
+programerske izzive ne zahtevajo direktne kontrole nad sistemskimi viri (torej
+kontrole nad viri mimo nadzorovanega okolja). Kadar pa vseeno tak nadzor
+potrebuje, okolje .NET zanj ponuja re²itev.
+
+Posamezne dele kode lahko na
+
+poseben na£in ozna£i in dovoljeno mu je uporabiti na£in dostopa do pomnilnika, kot smo jih vajeni pri nekaterih drugih programskih jezikih (in okoljih).
+Tak²en primer so kazalci, s katerimi lahko neposredno manipulira s pomnilnikom. Vendar pa se mora v tem primeru razvijalec na dolo£enih delih kode
+soo£ati s problemi, ki so mu v nadzorovanem okolju prihranjeni (kot so problemi s pisanjem v za²£iten del pomnilnika ipd.).
+Zaradi tega lahko re£emo, da je okolje .NET prilagodljivo okolje za razvijalca, ki ga ²£iti pred njegovimi napakami in mu olaj²a razvoj programske
+opreme.
+
+Prihrani mu ukvarjanje s podrobnostmi, ki so sicer za delovanje
+
+njegove aplikacije nujne, vendar z vidika obna²anja aplikacije nepomembne.
+Navsezadnje bi se moral razvijalec pri na£rtovanju dobre aplikacije bolj ukvarjati z vpra²anjem, kaj naj njegova aplikacija dela in ne z vpra²anjem, kako naj
+njegova aplikacija (na dolo£enem sistemu in v dolo£enem okolju) deluje.
+V industrijskem svetu se za razvoj kontrolnih sistemov navadno uporabljajo
+re²itve, razvite v razli£nih programskih jezikih. Veliko kontrolnih aplikacij pred
+dobro uporabni²ko izku²njo postavlja zanesljivost pri upravljanju procesa in
+zmogljivost delovanja. Veliko aplikacij pa uporabni²kemu vmesniku ne namenjajo takoreko£ nikakr²ne pozornosti, pomembno je samo, da je z njimi mogo£e
+opraviti zahtevano delo.
+
+Tako so v industriji pogosto prisotne aplikacije, ki
+
+leta opravljajo isti postopek, so neprilagodljive in imajo razvit le osnoven uporabni²ki vmesnik. Okolje .NET je, zaradi ²irokega nabora raznovrstnih kontrol
+
+Poglavje 2: Opis obstoje£ega sistema
+
+14
+
+in visoke prilagodljivosti, idealno orodje za razvoj aplikacij, od katerih se na
+eni strani pri£akuje dobro uporabni²ko izku²njo ter zmogljivost in zanesljivost
+delovanja na drugi strani.
+
+2.4 Krmilniki Beckho
+Obstoje£a re²itev za povezavo z napravami, ki jih krmili, podpira uporabo
+strojne opreme razli£nih proizvajalcev.
+
+Od vsakega proizvajalca posebej je
+
+odvisno na kak²en na£in njihove re²itve podpirajo uporabo razvojnih okolij.
+Nekateri med njimi za povezavo z njihovo strojno opremo priskrbijo samo
+osnovne knjiºnice (ponavadi napisane v programskem jeziku C / C++). Drugi
+poleg tega ponujajo ²e raznovrstne programske knjiºnice za krmiljenje njihove
+opreme z uporabo razvojnih okolij kot so .NET, Java ipd. Kadar ºelimo pri
+razvoju uporabiti okolje .NET, se je za dobro re²itev izkazala strojna oprema
+proizvajalca Beckho.
+Podjetje Beckho se na podro£ju avtomatizacije usmerja ve£inoma v re²itve,
+ki delujejo s pomo£jo osebnih ra£unalnikov (PC-based control).
+
+V svetu o-
+
+sebnih ra£unalnikov je bila dolgo £asa kontrola procesov, ki pri avtomatizaciji zahtevajo hitro odzivnost in visoko stopnjo zanesljivosti nadzornega sistema, nepredstavljiva.
+
+Osebni ra£unalniki so veljali za relativno nestabilen
+
+sistem, ki ni sposoben dalj²e £asovno obdobje neprekinjeno krmiliti proizvodnega procesa. Do tak²nega slovesa so jim nekoliko pomagale splo²no znane
+teºave operacijskih sistemov.
+
+Tudi dejstvo, da so bile strojne komponente
+
+osebnega ra£unalnika med seboj dobro zdruºljive bolj v teoriji kot v praksi
+(in to je posledi£no vplivalo na stabilnost sistema), osebnim ra£unalnikom ni
+pomagalo pri slovesu v svetu industrije. Z razvojem osebnih ra£unalnikov in
+mreºne tehnologije pa se je po£asi spremenilo tudi to prepri£anje in danes osebni ra£unalniki £edalje bolj pridobivajo na slovesu tudi v svetu industrijske
+avtomatike.
+
+Podjetje Beckho je, z raznovrstno strojno opremo za razli£ne
+
+namene krmiljenja in avtomatizacije procesov, eno izmed vodilnih podjetij na
+tem podro£ju [9]. Osebne ra£unalnike z industrijskimi krmilniki povezuje njihova programska oprema TwinCat [10], ki z implementacijo komunikacijskih
+protokolov, primernih za industrijo, poskrbi za dovolj hitro in robustno komunikacijo med osebnim ra£unalnikom in industrijskim okoljem.
+Beckho ponuja razvijalcem dobro vzdrºevane programske knjiºnice za
+povezavo z njihovim sistemom tudi za okolje .NET. Razvijalci lahko z njimi na
+preprost na£in dostopajo do funkcij sistema TwinCat, ki vzdrºuje komunikacijo
+med razli£nimi moºnimi arhitekturami kontrolnikov sistemov v industrijskem
+
+2.4 Krmilniki Beckho
+
+15
+
+okolju. Integracija z razli£nimi programskimi moduli, narejenimi po meri, je
+zato preprosta.
+
+Knjiºnice poskrbijo za komunikacijo med razli£nimi moduli
+
+in sistemom TwinCat, ta pa podatke posreduje do kontrolnih modulov, ki jih
+nadzoruje.
+
+Poglavje 3
+Programski modul za nadzor
+procesa z digitalno kamero
+V skladu s koncepti obstoje£e aplikacije sem izdelal programski modul, ki
+omogo£a nadzor procesov z digitalno kamero.
+
+Ta modulu med delovanjem
+
+po²ilja sliko produkta v izdelavi, modul pa s temi podatki in uporabo razli£nih
+algoritmov v realnem £asu ra£una razli£ne parametre, pomembne za krmiljenje procesa. Nekateri izra£unani parametri so na voljo sistemu za krmiljenje
+in nadzor procesa, nekateri pa tudi operaterju sistema v pomo£ pri morebitnem
+ro£nem posredovanju med izdelavo produkta.
+
+3.1 Kamera za nadzor procesa
+Pri na£rtovanju re²itve sem uporabil digitalno kamero podjetja ImagingSource,
+model DMK 31AG03.I (slika 3.1). Osnovna specikacija kamere je podana v
+tabeli 3.1 [11].
+
+Slika 3.1: Kamera DMx 31AG03.I
+
+16
+
+3.1 Kamera za nadzor procesa
+
+17
+
+Lo£ljivost:
+
+1024×768
+
+Barvni formati:
+
+Y800, RGB8
+
+Hitrost zajemanja slike:
+
+do 30 slik na sekundo
+
+Dimenzije:
+
+vi²ina: 50,6mm, ²irina: 50,6mm, dolºina: 50mm
+Tabela 3.1: Specikacije kamere
+
+Kamera podpira zajem izklju£no £rno-belih slik, vendar barve pri ugotavljanju parametrov, ki jih potrebujemo za proces izdelave surovcev opti£nih vlaken,
+niso relevantne. Pomembna lastnost naprave je sposobnost avtomatskega kontroliranja zaslonke in to je tudi eden od razlogov, zakaj je bila za potrebe
+procesa izbrana prav ta kamera.
+Kamero priklju£imo na ra£unalnik preko gigabitnega ethernet omreºja. Za
+programsko kontrolo naprave so v ve£ programskih jezikih na voljo napravi
+priloºene knjiºnice IC Imaging Control.
+
+Aplikacija, katere del je kontrola
+
+kamere, je napisana v jeziku C# in ker so kontrolne knjiºnice za kamero na
+voljo tudi v okolju .NET, so logi£na izbira za to programsko re²itev.
+
+3.1.1
+
+Barvni formati kamere
+
+V ra£unalni²kem svetu predstavljamo podatke digitalno. Podatki, ki jih kamera zajema in po²ilja sistemu, na katerega je priklju£ena, morajo biti v digitalni
+obliki.
+
+Tudi podatki o barvah niso izjema.
+
+Kakor so pomembne dimenzije,
+
+v katerih se slika po²ilja sistemu, tako je treba za obdelavo slike vedeti, v
+kak²nem formatu se sistemu posreduje informacija o barvah. Kamera, ki sem
+jo uporabil pri izdelavi re²itve ne podpira zajema barvnih slik. Podatke o barvah (odtenkih sivine) po²ilja v enem izmed dveh formatov: RGB8 ali Y800.
+
+3.1.1.1
+
+Format RGB
+
+V formatu RGB [12] je vsaka barva podana z dolo£itvijo ²tevilskih vrendosti
+njenih komponent. Vsako barvo, predstavljeno v tem formatu, se da dolo£iti
+kot se²tevek vrednosti, ki predstavljajo njeno rde£o (R), zeleno (G) in modro
+(B) komponento. e imajo vse komponente vrednost 0, je predstavljena barva
+£rna, v primeru, da imajo vse komponente maksimalno vrednost, pa je barva
+bela. tevilo barv, ki jih lahko predstavimo je odvisno od ²tevila bitov, ki jih
+pri dolo£eni predstavitvi uporabimo za vsako barvno komponento.
+Nekateri sistemi (tudi sistem, v katerega je integrirana re²itev s kamero),
+predstavljajo barve v 32-bitnem formatu RGBA (slika 3.2 [13]).
+
+Format u-
+
+porablja po 8 bitov za predstavitev vsake barvne komponente in ostalih 8
+
+Poglavje 3: Programski modul za nadzor procesa z digitalno kamero
+
+18
+
+bitov za predstavitev transparentnosti. Transparentnost (alfa) je ponazorjena
+z 8 biti tako, da vrednost 0 pomeni popolno transparentnost (torej je slikovni
+element neviden), maksimalna vrednost pa pomeni popolno netransparentnost
+slikovnega elementa.
+
+Slika 3.2: 32-bitna RGBA predstavitev barve
+
+3.1.1.2
+
+Monokromatski RGB8 format
+
+V sistemih, kjer zajemanje barvnih slik ni podprto, se v£asih odlo£imo za
+predstavitev sivin v monokromatskem RGB8 formatu.
+
+Namesto komponent
+
+za rde£o, zeleno in modro, v tem primeru 8 bitov opisuje 256 moºnih intenzitet
+sivin. Sliko tako sestavljajo samo slikovni elementi z razli£nimi odtenki sive
+barve.
+
+3.1.1.3
+
+Format YUV
+
+Ta format za predstavitev barv uporablja nekoliko druga£en sistem kot format
+RGB. Tudi YUV format uporablja 3 vrednosti za dolo£itev barve. Vrednost
+Y dolo£a svetlost barve, dobimo pa jo s se²tevkom obteºenih vrednosti R, G
+in B. Uporabljene uteºi so lahko razli£ne, vendar se v modernej²ih formatih
+uporablja formula:
+
+Y = 0, 2125R + 0, 7154G + 0, 0721B
+Vrednosti U in V v formatu dolo£ata barvo, dobi pa se ju z uporabo formul:
+
+U =B−Y
+V =R−Y
+Zgodovinsko je format tesno povezan z razvojem televizije.
+
+S pojavom
+
+barvnih televizij so se razvijalci soo£ili s problemom, kako zakodirati podatke
+o barvah, s tem da bi obstoje£i £rno-beli televizorji ²e vedno normalno predvajali sliko.
+
+Komponenti Y so dodali ²e barvni komponenti U in V. Barvni
+
+televizorji so sposobni barvni komponenti, skupaj s komponento Y, dekodirati
+in pretvoriti v RGB signal.
+Kadar konvertiramo digitalni video, pri ra£unanju ponavadi skaliramo vrednosti YUV komponent tako, da ima komponenta Y vrednosti v razponu
+16-235, komponenti U in V pa vrednosti v razponu 16-240.
+
+Vrednost 128
+
+v primeru U in V predstavlja izhodi²£e. rna barva bi bila tako predstavljena
+z YUV vrednostmi (16, 128, 128), bela barva pa z vrednostmi (235, 128, 128).
+
+3.2 Osnovni koncepti delovanja naprave
+
+3.1.1.4
+
+19
+
+Format Y800
+
+Format Y800, uporabljen pri konvertiranju kamerine slike, je preprosta oblika
+YUV formata, ki pri prezentaciji ne uporablja barvnih komponent (komponent
+U in V). Podobno kot pri monokromatskem RGB8 formatu, sliko sestavljajo
+slikovni elementi razli£nih intenzitet sivin, le da so v primeru kodiranja s formatom Y800 predstavljene le s komponento Y. Ker kamera prednastavljeno
+predstavlja sliko v tem formatu, sem ga pri implementaciji modula uporabil
+tudi jaz.
+
+3.2 Osnovni koncepti delovanja naprave
+Knjiºnica za delo z omenjeno kamero je zasnovana tako, da na £imbolj preprost na£in razvijalcu omogo£i zajem kamerine slike in njeno manipulacijo.
+Ob nakupu naprave dobimo priloºeno tudi knjiºnico za delo z njo. Tako lahko
+uporabnik zlahka izkoristi zmogljivosti naprave, ki jo uporablja. Knjiºnica tako
+omogo£a operacije nad slikovnimi elementi zajete slike za potrebe razli£nih algoritmov, kot tudi nekatere priro£ne moºnosti kot so pribliºevanje in pomik
+slike.
+Slika 3.3 prikazuje postopek zajema slike z uporabljeno kamero. Slike, ki
+jih zajema naprava, lahko ponazorimo kot tok podatkov. Ta te£e od izvora 
+naprave, ki podatke zajema, do ponora  sistema, ki podatke potrebuje. Ker je
+podatke priro£no obdelovati lo£eno za potrebe prikaza in potrebe algoritmov
+za obdelavo slike, je podatkovni tok mogo£e razdeliti na dva dela. To sta del za
+prikazovanje podatkov in del za obdelavo podatkov. Oba dela podatkovnega
+toka sta identi£na, saj gre v bistvu za isti podatkovni tok, ki potuje v razli£ne
+smeri. e torej uporabimo nespremenjen podatkovni tok za prikaz podatkov in
+za obdelavo podatkov, potem sistem obdeluje to£no tako sliko, kot je prikazana
+na uporabnikovem zaslonu.
+Priro£nost tak²ne razdelitve se pokaºe v primeru, da ºelimo uporabniku
+prikazati nekoliko spremenjene podatke, kot jih obdeluje algoritem.
+
+Zaradi
+
+deljenega podatkovnega toka lahko dodajamo razli£ne ltre [14] za obdelavo
+slik na del podatkovnega toka namenjenega prikazu slike in del podatkovnega
+toka, namenjenega obdelavi podatkov z algoritmi (ponor). Tak²en na£in obdelave podatkov nam omogo£a preprosto dodajanje gra£nih elementov na
+prikazovalni del, ki pa zaradi deljenosti podatkovnega toka ne moti algoritmov
+pri izra£unavanju parametrov. Kadar ºelimo ltrirati podatke za oba dela podatkovnega toka, lahko dodajamo ltre na osnovni podatkovni tok, ki poteka
+iz naprave.
+
+20
+
+Poglavje 3: Programski modul za nadzor procesa z digitalno kamero
+
+Slika 3.3: Arhitektura modula za zajemanje in obdelavo slike
+
+Vsako udobje pri razvijanju sistemov zahteva svoje sistemske vire. Vendar
+pa nam prilagodljivost obdelave podatkov omogo£a dober nadzor nad dodatno
+porabo leteh. Arhitektura sistema, ki uporablja deljen podatkovni tok, nam
+ponuja razli£ne moºnosti tudi pri var£evanju z razpoloºljivimi zmogljivostmi
+sistema. e ºelimo optimizirati performanse, lahko na preprost na£in ugasnemo prikazovalnik ali razli£ne gra£ne elemente, ki jih morebiti dodajamo na podatkovni tok, speljan v prikazovalnik podatkov. Optimizacijo se da dose£i tudi
+z racionalnim postavljanjem ltrov podatkov na podatkovnemu toku. Seveda
+pa je vpra²anje, ali nam aplikacija, ki jo razvijamo to dopu²£a.
+Pri na£rtovanju sistema je treba previdno razmisliti o vseh pomembnej²ih
+funkcionalnostih (²e posebej zahtevnih s stali²£a porabe sistemskih virov). e
+ugotovimo, da se nam obdelava podatkov za namen dolo£ene funkcionalnosti
+bolj izpla£a na nivoju kamere, jo bomo, raje kot na nivoju aplikacije, vklopili na
+nivoju same naprave. S previdnim na£rtovanjem lahko tako obdrºimo eleganco
+in preprostost pri razvoju, ki nam jo omogo£a knjiºnica za delo s kamero, ne
+da bi se zato odpovedali dobrim performansem sistema, ki ga razvijamo.
+
+3.3 Programska re²itev kontrole s kamero
+
+21
+
+3.3 Programska re²itev kontrole s kamero
+Z vidika uporabnika je modul kamere razdeljen na dva dela:
+
+•
+
+kontrolnik SCADA
+
+•
+
+glavno okno kamere.
+
+3.3.1
+
+Kontrolnik SCADA
+
+Razvit modul kamere je integriran v sistem SCADA in tako del ve£je sistemske
+re²itve (glej 3.5).
+
+Vmesnik HMI omogo£a vizualen prikaz kamere na shemi
+
+celotnega sistema, z njegovo pomo£jo pa lahko uporabnik dostopa do prikaza
+glavnega okna kamere.
+
+Kontrolnik je navidez sestavljen samo iz gra£nega
+
+dela, ki prikazuje kamero in gumba, s katerim dostopamo do glavnega okna
+kamere.
+
+Vendar lahko uporabnik s pomo£jo kontrolnikovih nastavitev poleg
+
+izgleda nastavlja ²e nekatere druge parametre, ki so nujni za delovanje kamere,
+niso pa spremenljivi med samim delovanjem sistema.
+
+Kontrolnik kamere,
+
+vklju£en v celotno shemo SCADA, predstavlja naslednji opis XML:
+
+<ScadaObject xsi:type="IcImagingDevice" height=""
+Identifier=""zindex="" x="" y="" width="">
+<Description></Description>
+<BackgroundColor></BackgroundColor>
+<BorderSize></BorderSize>
+<BorderStyle></BorderStyle>
+<BorderColor></BorderColor>
+<ExecutionOrder></ExecutionOrder>
+<ManualOverride></ManualOverride>
+<Name></Name>
+<Visible></Visible>
+<AutoIrisOffset></AutoIrisOffset>
+<MaxExposure></MaxExposure>
+<BackgroundImage></BackgroundImage>
+<DeviceName></DeviceName>
+<FilterName></FilterName>
+<FilterParameters></FilterParameters>
+<FlipHorizontal></FlipHorizontal>
+<FlipHorizontalDisplay></FlipHorizontalDisplay>
+<AutoMaxExposure></AutoMaxExposure>
+
+Poglavje 3: Programski modul za nadzor procesa z digitalno kamero
+
+22
+
+<FlipVertical></FlipVertical>
+<FlipVerticalDisplay></FlipVerticalDisplay>
+<FrameRate></FrameRate>
+<ImageFormat></ImageFormat>
+<InputNames></InputNames>
+<LicenceKey></LicenceKey>
+<ROIHeight></ROIHeight>
+<ROIWidth></ROIWidth>
+<Rotation></Rotation>
+<RotationDisplay></RotationDisplay>
+<ShowSerialNumber></ShowSerialNumber>
+</ScadaObject>
+z opisa lahko razberemo nekatere nastavljive lastnosti, ki so posredovane sistemu preko kontrolnika SCADA. Njegove lastnosti lahko razdelimo na dva dela.
+Nekatere dolo£ajo splo²en izgled in obna²anje kontrolnika, z nekaterimi pa
+uporabnik dolo£a bolj precizno obna²anje kamere ali algoritmov, ki obdelujejo
+njeno sliko.
+
+Lastnost Description
+Uporabniku prijazen opis naprave, ki ponavadi vsebuje bolj podrobne informacije o napravi. To je ²e posebej uporabno, kadar imamo ve£ naprav istega tipa
+in ºelimo uporabniku ponuditi dodatne podatke o speci£ni instanci naprave.
+
+Lastnost BackgroundColor
+Lastnost dolo£a barvo ozadja naprave, prikazane v vmesniku HMI. Podana je
+v formatu RGBA, pri £emer so vrednosti lo£ene z vejicami.
+
+Lastnost BorderSize
+Lastnost dolo£a ²irino okvirja kontrolnika SCADA, kot je prikazan uporabniku
+v vmesniku HMI. Vrednost je podana v slikovnih elementih.
+
+Lastnost BorderStyle
+Uporabnik s to lastnostjo dolo£a stil okvirja, ki omejuje kontrolnik SCADA.
+
+3.3 Programska re²itev kontrole s kamero
+
+23
+
+Lastnost BorderColor
+Lastnost dolo£a barvo okvirja kontrolnika SCADA.
+
+Lastnost ExecutionOrder
+Lastnost dolo£a vrstni red, po katerem glavna aplikacija prera£unava vrednosti
+algoritmov naprav. Lastnost je uporabna v sklopu integracije modula v glavno
+aplikacijo.
+
+Lastnost ManualOverride
+Dolo£a, ali je po zagonu sistema uporabniku dovoljena interakcija s kontrolnikom SCADA. S tem parametrom lahko uporabniku med delovanjem sistema
+prepre£imo uporabo naprave.
+
+Lastnost Name
+Uporabniku prijazno ime naprave, ki se uporablja za identikacijo na vmesniku
+HMI.
+
+Lastnost Visible
+Dolo£a vidnost kontrolnika SCADA uporabniku.
+
+Lastnost BackgroundImage
+Lastnost dolo£a pot do morebitne slike, ki naj se prikaºe v ozadju kontrolnika
+SCADA na vmesniku HMI.
+
+Lastnost AutoIrisOset
+Odpiranje in zapiranje zaslonke kamere se kontrolira s po²iljanjem signala
+dolo£ene frekvence napravi. Ta frekvenca se od naprave do naprave razlikuje.
+S pomo£jo te lastnosti se kalibrira ksno to£ko, pri kateri se zaslonka ne odpira
+niti ne zapira. V na²em primeru je vrednost tega parametra 0.
+
+Lastnost MaxExposure
+Parameter nastavlja maksimalno vrednost hitrosti zaslonke kamere. Sluºi kot
+varovalka, ki prepre£uje, da bi se v izra£un posredovali dve enaki sliki.
+
+24
+
+Poglavje 3: Programski modul za nadzor procesa z digitalno kamero
+
+Lastnost AutoMaxExposure
+Lastnost ureja vklop avtomatskega prilagajanja parametra izpostavljenosti
+svetlobi pri zajemu slike na dolo£eno hitrost zajema slike sistema tako, da
+se pri tem hitrost po²iljanja slike ne zmanj²a.
+
+e uporabnik nastavi vi²jo
+
+hitrost po²iljanja slike, bo funkcija AutoMaxExposure parameter MaxExposure nastavila na dolo£eno vrednost, £e bo uporabnik hitrost zmanj²al, bo ta
+funkcija parameter MaxExposure pove£ala.
+
+Lastnost DeviceName
+Lastnost dolo£a model kamere, s pomo£jo katerega se sistem poveºe na napravo.
+Veljavne vrednosti te lastnosti dolo£a proizvajalec kamere.
+
+Lastnost FilterName
+S to lastnostjo podajamo ime algoritma, ki ga ºelimo uporabljati pri obdelavi
+slike, pridobljene iz naprave. To nam omogo£a uporabo razli£nih algoritmov
+za obdelavo slike.
+
+Veljavna vrednost lastnosti je odvisna od implementacije
+
+algoritma v programski kodi in mora ustrezati specikacijam posameznega
+algoritma.
+
+Lastnost FilterParameters
+Nastavitev se uporablja za posredovanje posebnih parametrov algoritmom za
+obdelavo slike. Podobno kot pri imenu algoritma, mora nabor nastavitev ustrezati specikacijam posameznega algoritma.
+
+Lastnost FlipHorizontal
+Lastnost sporo£a algoritmom kamere, ali naj pred obdelavo sliko obrnejo po
+horizontali. Zrcaljenje poteka samo za potrebe algoritma, na prikazno sliko ta
+nastavitev ne vpliva.
+
+Lastnost FlipVertical
+Omogo£a zrcaljenje slike po vertikali. Zrcaljenje poteka samo za potrebe algoritma, na prikazno sliko ta nastavitev ne vpliva.
+
+3.3 Programska re²itev kontrole s kamero
+
+25
+
+Lastnost FlipHorizontalDisplay
+Lastnost se uporablja za morebitno obrnitev slike na prikazovalnem delu kamere.
+To je uporabno ²e posebno v primeru, ko bi radi le rotirali prikaz slike, ne pa
+tudi slike same (zaradi obna²anja algoritmov, ki sliko obdelujejo). Zrcaljenje
+poteka samo za potrebe prikazne slike, na izvajanje algoritma to zrcaljenje ne
+vpliva.
+
+Lastnost FlipVerticalDisplay
+Omogo£a zrcaljenje slike po vertikali.
+
+Zrcaljenje poteka samo za potrebe
+
+prikazne slike, na izvajanje algoritma to zrcaljenje ne vpliva.
+
+Lastnost FrameRate
+S pomo£jo te nastavitve lahko uporabnik nastavlja ²tevilo sli£ic, ki jih v
+sekundi zajame kamera in po²lje v sistem.
+
+Ve£ja kot je vrednost paramet-
+
+ra, bolj teko£a je slika, vendar to bolj obremeni sistem. Pri uporabi kamere
+na sistemih z manj zmogljivimi procesorji je smiselno zmanj²ati vrednost te
+lastnosti. Pri opisani re²itvi je uporabljena maksimalna hitrost zajema slike,
+ki ga podpira kamera, to je 30 sli£ic na sekundo.
+
+Lastnost ImageFormat
+Lastnost dolo£a format, v katerem so zajete slike posredovane sistemu. Trenutno
+je podprta samo moºnost uporabe formata Y800.
+
+Lastnost InputNames
+Lastnost je namenjena dolo£anju posebnih generi£nih vhodnih parametrov v
+napravo. Uporabnik lahko dolo£i maksimalno 10 posebnih vhodnih parametrov.
+Za vsak parameter, kateremu uporabnik poda ime (imena so med seboj lo£ena
+z znakom ';' ), sistem generira uporabni²ki vmesnik na glavnem oknu kamere.
+Vrednost lastnosti lahko vsebuje tudi prazne vnose, s katerimi lahko uporabnik
+presko£i vhodne parametre, ki jih ne ºeli prikazati na uporabni²kem vmesniku.
+Primer: e ºeli uporabnik od desetih moºnih vhodnih parametrov v glavnem
+oknu kamere prikazati 1., 4.
+
+in 5., potem lahko to stori tako, da nastavi
+
+vrednost lastnosti InputNames na naslednji na£in:
+
+Input0;;;;Input4;Input5.
+
+Tip gradnika se dolo£i glede na tip signala, ki je priklju£en na dolo£en vhod
+modula (glej poglavje 3.5 in 3.4).
+
+e je na vhod priklju£en digitalni signal,
+
+bo modul generiral gradnik za dolo£anje digitalnih vrednosti (polje za izbiro
+
+26
+
+Poglavje 3: Programski modul za nadzor procesa z digitalno kamero
+
+s kljukico), £e pa je priklju£en signal analogen, bo modul generiral drsnik
+in vnosno polje, s katerim bo uporabnik lahko nastavljal analogne vrednosti.
+Razpon vrednosti na drsniku so dolo£ene glede na minimalno in maksimalno
+vrednost priklju£enega signala.
+
+Lastnost LicenceKey
+S to lastnostjo uporabnik poda licen£ni klju£ za uporabo kontrolnih knjiºnic
+kamere. Licen£ni klju£ je priloºen vsaki napravi posebej. Kontrolne knjiºnice
+so navadno vklju£ene v ceno kamere. Uporabljena kamera skupaj s kontrolnimi
+knjiºnicami stane 670 EUR.
+
+Lastnost ROIHeight
+Lastnost dolo£a vi²ino interesnega obmo£ja kamere.
+
+Vrednost je podana v
+
+²tevilu slikovnih elementov.
+
+Lastnost ROIWidth
+Lastnost dolo£a ²irino interesnega obmo£ja kamere.
+
+Vrednost je podana v
+
+²tevilu slikovnih elementov.
+
+Lastnost Rotation
+S to lastnostjo lahko rotiramo sliko, poslano iz kamere, za potrebe algoritma.
+Lastnost ne vpliva na prikazno sliko, marve£ samo na sliko poslano algoritmu.
+Moºna je rotacija za 90, 180 in 270 stopinj. Veljavne vrednosti lastnosti so:
+None, Deg90, Deg180, Deg270.
+
+Lastnost RotationDisplay
+Lastnost deluje podobno kot lastnost Rotation, le da v tem primeru rotira sliko
+za potrebe prikazovalnika. Lastnost ne vpliva na sliko poslano algoritmu.
+
+Lastnost ShowSerialNumber
+Uporabnik lahko s to lastnostjo dolo£i, ali naj se na kontrolniku SCADA
+prikaºe serijska ²tevilka kamere. To je uporabno za namen hitre identikacije
+naprav na vmesniku HMI.
+
+3.3 Programska re²itev kontrole s kamero
+
+3.3.2
+
+27
+
+Glavno okno kamere
+
+Glavno okno kamere sem razdelil na pet delov:
+
+•
+
+glavni meni (segment D na sliki 3.4)
+
+•
+
+nastavljanje interesnega obmo£ja (segment A na sliki 3.4)
+
+•
+
+nastavljanje parametrov slike (segment B na sliki 3.4)
+
+•
+
+nastavljanje generi£nih vhodnih parametrov (segment C na sliki 3.4)
+
+•
+
+prikaz slike (segment E na sliki 3.4).
+
+Slika 3.4: Glavno okno kamere
+
+3.3.2.1
+
+Glavni meni
+
+Glavni meni sestavljajo naslednji gradniki:
+
+Gumb Show live video
+S to opcijo lahko uporabnik prikaºe ali skrije prikazovanje slike, poslane iz
+kamere. V primeru, da je slika skrita, algoritem v ozadju ²e vedno prera£unava
+njene parametre. Opcija je uporabna predvsem v primeru, ko ºelimo za£asno
+
+Poglavje 3: Programski modul za nadzor procesa z digitalno kamero
+
+28
+
+izbolj²ati performance sistema na ra£un izklopa prikaza slike, hkrati pa imeti
+odprto okno za nastavljanje njenih parametrov.
+
+Gumb Show overlay
+Ta opcija uporabniku omogo£a vklop in izklop prikaza gra£nih elementov
+slike.
+
+Na sliki, ki jo kamera po²ilja, gra£ni elementi ozna£ujejo pomembne
+
+dele, kot so robovi in interesna obmo£ja.
+
+Izbirni menu Zoom
+S pomo£jo te opcije lahko uporabnik pove£uje, ali pomanj²uje prikazno sliko.
+Uporabnik lahko izbira ve£ obmo£ij do maksimalnega pove£anja slike na 200%
+originalne vrednosti, ali do minimalnega obmo£ja 25% originalne velikosti slike.
+
+Gumb Enable processing
+Gumb deluje kot stikalo in v primeru, da je vklopljen, omogo£i aplikaciji izvajanje algoritma za obdelavo slike. V primeru, da je opcija izklopljena, aplikacija
+presko£i izra£unavanje parametrov, ki jih aplikacija pridobiva s pomo£jo zajete
+slike.
+
+Gumb Enable camera
+S pomo£jo tega gumba lahko uporabnik popolnoma izklopi delovanje kamere.
+V tem primeru se izklopi tako zajem in po²iljanje slike aplikaciji, kot tudi
+izra£unavanje parametrov.
+
+3.3.2.2
+
+Nastavljanje interesnega obmo£ja
+
+Uporabni²ki vmesnik za nastavljanje interesnega obmo£ja sestavljata dve kontroli, sestavljeni iz drsnika s pripadajo£im vnosnim poljem (slika 3.4). Z njuno
+pomo£jo lahko uporabnik nastavlja pozicijo interesnega obmo£ja. Kontroli se
+imenujeta Top in Left. Prva premika pozicijo zgornjega levega kota interesnega obmo£ja v koordinatnem sistemu po osi Y, druga po osi X.
+irino in vi²ino denicijskega obmo£ja lahko uporabnik nastavlja v nastavitvah kontrolnika SCADA kot lastnosti naprave (glej poglavje 3.3.1). Parametra sta nastavljiva samo med ustavljenim stanjem sistema. To je nujno, ker
+nastavljanje parametrov slike, ki dolo£ata vi²ino in ²irino interesnega obmo£ja,
+vplivata na format videa, ki ga zajema kamera. Format videa se med po²iljanjem slike aplikaciji ne sme spreminjati. Omenjena parametra vplivata tudi
+
+3.3 Programska re²itev kontrole s kamero
+
+29
+
+na denicijsko obmo£je vrednosti, nastavljivima s kontrolama za premikanje
+pozicije. Kontrola Top ima denicijsko obmo£je od 0 do 767 slikovnih elementov  vi²ina interesnega obmo£ja, kontrola Left pa denicijsko obmo£je
+od 0 do 1023 slikovnih elementov  ²irina interesnega obmo£ja, pri £emer pa
+so na voljo samo vrednosti v tem obmo£ju, ki so deljive z 8.
+
+3.3.2.3
+
+Nastavljanje lastnosti slike
+
+S pomo£jo tega dela uporabni²kega vmesnika lahko uporabnik nastavlja lastnosti slike kamere in tako sliko prilagodi, da lahko algoritem kar najbolj
+u£inkovito opravlja svoje delo. Nastavljive so naslednje lastnosti kamere:
+
+Lastnost Brightness
+Lastnost se uporablja za nastavljanje svetlosti slike, ki jo zajemamo s kamero.
+Sistem vsakemu slikovnemu elementu pri²teje konstanto, kar pomeni, da vsako
+sliko posvetli ali potemni. Vi²ja vrednost lastnosti pomeni svetlej²o sliko.
+
+Lastnost Gamma
+Lastnost se uporablja za nastavljanje vrednosti popravka game slike, ki jo
+zajemamo. S tem kompenziramo nelinearno obna²anje parametrov slike.
+Popravek gama je parameter, ki nam omogo£a pravilno prikazati zajeto
+sliko na ekranu.
+
+Pri deniranju svetlosti slikovnega elementa se na monito-
+
+rjih pojavljajo odstopanja od nastavljene vrednosti svetlosti. e dolo£enemu
+monitorju po²ljemo informacijo, da je svetlost nekega slikovnega elementa
+
+x,
+
+se v praksi izkaºe, da naprava prikaºe svetlost tistega slikovnega elementa z
+γ
+vrednostjo x .
+Parameter
+
+γ
+
+se lahko od monitorja do monitorja razlikuje. Tipi£no se na
+
+monitor po²ilja vrednost svetlosti slikovnega elementa med 0 in 1. To pomeni,
+da £e je vrednost parametra
+
+γ = 2, 2
+
+in nastavljena vrednost slikovnega ele0, 52,2 , kar znese
+
+menta 0,5, bo prikazana vrednost na zaslonu imela svetlost
+
+0,2176. Torej bo prikazana slika na monitorju videti temnej²a, kot bi glede na
+nastavitve ºeleli. Situacijo opisuje formula:
+γ
+
+L=V ,
+
+kjer je V nastavljena vrednost svetlosti in L prikazana vrednost svetlosti.
+Re²itev za omenjeni problem je popravek gama.
+
+Vhodni signal, ki dolo£a
+
+svetlost slikovnega elementa, popravimo tako, da dobljeno vrednost potenciramo z inverzom parametra
+
+γ
+
+(slika 3.5 [15]).
+
+Poglavje 3: Programski modul za nadzor procesa z digitalno kamero
+
+30
+
+Slika 3.5: Graf vrednosti signala in njegovega gamma popravka
+
+Pri vpeljevanju popravka gama torej uporabimo formulo:
+1
+
+L0 = L γ
+
+V primeru vrednosti parametra 2,2, nastavljene vrednosti svetlosti slikovnega
+1
+0
+elementa 0,5 in dobljene vrednosti 0,2176, dobimo vrednost L = 0, 2176 2,2 =
+0, 21760,45455 = 0, 5, kar pa ustreza originalni vrednosti svetlosti slikovnega
+elementa, ki jo ºelimo nastaviti.
+
+Lastnost Gain
+Lastnost se uporablja za oja£anje slike, ki jo zajemamo. Vsak slikovni element
+se pomnoºi z nastavljeno vrednostjo. S pove£anjem te funkcije tako izbolj²amo
+kontrast slike. e sliko oja£amo preve£, lahko na njej opazimo ²um.
+
+Lastnost AutoGain
+Lastnost omogo£a vklop, ali izklop avtomatske funkcije nastavljanja oja£anja
+slike. Pri nastavljanju vrednosti si modul pomaga z vrednostjo lastnosti AutoReference.
+
+Lastnost Exposure
+Lastnost nastavlja £as osvetlitve slike, ki jo zajemamo.
+
+Ve£ja kot je njena
+
+vrednost, ve£ svetlobe bo pri²lo do senzorja. Pri zajemanju slike zelo svetlega
+predmeta mora biti £as osvetlitve majhen.
+
+3.3 Programska re²itev kontrole s kamero
+
+31
+
+Lastnost AutoExposure
+Lastnost omogo£a avtomatsko regulacijo £asa osvetlitve slike. Pri nastavljanju
+vrednosti si modul pomaga z vrednostjo lastnosti AutoReference.
+
+Lastnost AutoReference
+Ta lastnost se uporablja kot referen£na vrednost za avtomatske algoritme,
+ki regulirajo avtomatsko osvetlitev, avtomatsko oja£anje slike in avtomatsko
+nastavljanje zaslonke. Glede na vrednost tega parametra se bodo algoritmi odlo£ali, kako nastavljati druge parametre glede na trenutno stanje slike, ki jim jo
+kamera posreduje. V primeru, da je glede na vrednost lastnosti slika pretemna,
+potem sistem najprej odpira zaslonko, dokler je popolnoma ne odpre. e to
+ne zadostuje pove£uje parameter izpostavljenosti svetlobi do vrednosti lastnosti MaxExposure. Kadar tudi to ni dovolj za£ne pove£evati vrednost lastnosti Gain. V primeru, da je slika presvetla, sistem izvede postopek, obraten
+postopku za primer pretemne slike: najprej zmanj²a vrednost lastnosti Gain,
+nato kraj²a £as izpostavljenosti svetlobi, nazadnje pa za£ne z zapiranjem zaslonke.
+
+Lastnost AutoIris
+Lastnost omogo£a avtomatsko regulacijo odpiranja ali zapiranja zaslonke kamere.
+Pri nastavljanju vrednosti si modul pomaga z vrednostjo lastnosti AutoReference.
+
+Lastnost IrisSpeed
+Lastnost, s katero lahko kontroliramo hitrost odpiranja ali zapiranja zaslonke
+kamere. Knjiºnica za delo s kamero ponuja ²tiri moºne hitrosti: 1, 2, 3 in 4,
+kjer manj²a ²tevilka pomeni po£asnej²o hitrost premikanja zaslonke.
+
+Lastnost OpenIris
+S pomo£jo tega gumba uporabnik ro£no odpira zaslonko kamere.
+se odpira s hitrostjo, dolo£eno v lastnosti IrisSpeed.
+
+Zaslonka
+
+Zaslonka se odpira to-
+
+liko £asa, dokler uporabnik zadrºuje mi²kin gumb v pritisnjenem stanju nad
+gumbom Open iris.
+
+32
+
+Poglavje 3: Programski modul za nadzor procesa z digitalno kamero
+
+Lastnost CloseIris
+S pomo£jo tega gumba uporabnik ro£no zapira zaslonko kamere. Hitrost zapiranja dolo£a lastnost IrisSpeed. Zaslonka se zapira toliko £asa, dokler uporabnik zadrºuje mi²kin gumb v pritisnjenem stanju nad gumbom Close iris.
+
+Lastnost Damping
+S to lastnostjo blaºimo spremembe pri avtomatskem nastavljanju parametrov
+kamere. Ve£ja kot je vrednost lastnosti, manj radikalne bodo avtomatske spremembe slike, ki jih nastavljajo avtomatski algoritmi.
+
+3.3.2.4
+
+Nastavljanje generi£nih vhodnih parametrov
+
+Programskemu modulu kamere lahko uporabnik dolo£i do 10 generi£nih vhodnih parametrov. Z njimi sistemu posreduje vrednosti, katere lahko algoritem
+za obdelavo slike uporablja med svojim delovanjem. Denira se jih tako, da
+kontrolniku SCADA nastavimo vrednost lastnosti InputNames, v kateri deniramo imena generi£nih vhodnih parametrov (glej poglavje 3.3.1).
+
+Za vsako
+
+ime, ki se nahaja v lastnosti InputNames, sistem zgenerira kontrolo na uporabni²kem vmesniku. Vrednost generi£nih parametrov je posredovana v sistem s
+pomo£jo signala, ki je lahko digitalen, ali analogen (glej 3.4).
+
+Glede na tip
+
+signala, ki je priklju£en na mesto poimenovanega generi£nega parametra, se
+zgenerira ustrezen uporabni²ki vmesnik: drsnik in vnosno polje za analogne
+signale in kontrolnik za izbiro stanja tipa boolean za digitalne signale.
+
+3.3.2.5
+
+Prikaz slike
+
+Okno za prikaz slike prikazuje sliko, ki jo po²ilja kamera preko prikazovalnikovega podatkovnega toka. Nanjo vplivajo nastavitve, ki so speci£ne za prikazovalnikov tok podatkov. Prednastavljena je velikost slike 1024×768 slikovnih
+elementov. Sliko lahko na prikazovalniku zmanj²amo in prikaºemo samo njen
+del tako, da v nastavitvah kontrolnika SCADA deniramo obmo£je ROI (z
+uporabo lastnosti ROIWidth in ROIHeight), ki je manj²e od prednastavljene velikosti slike. V tem primeru lahko dolo£amo kateri del slike je prikazan
+na zaslonu. To storimo z uporabo drsnikov dela uporabni²kega vmesnika za
+nastavljanje interesnega obmo£ja slike na glavnem oknu kamere.
+Slika je uporabniku prikazana samo v primeru, da je v glavnem menuju
+izbrana opcija Enable camera. Kadar je slika uporabniku vidna, lahko po ºelji
+vklju£imo opcijo gra£nega prikaza izra£unanih, ali nastavljenih parametrov z
+
+3.4 Povezava modula z glavno aplikacijo
+
+33
+
+opcijo Show overlay. Gra£ni parametri, prikazani na zaslonu, se razlikujejo
+od ltra do ltra, njihove specikacije morajo biti podane v specikaciji ltra.
+
+3.4 Povezava modula z glavno aplikacijo
+Programski modul za nadzor kamere podatke za delovanje pridobiva iz dveh
+virov.
+
+Podatki, ki se med delovanjem sistema ne spreminjajo, so shranjeni
+
+v podatkovni bazi, modul pa jih prebere ob inicializaciji povezave s zi£no
+napravo.
+Vrednosti podatkov se nastavlja s pomo£jo posebnih urejevalnikov lastnosti naprav, njihove spremembe pa glavna aplikacija upo²teva ²ele ob vsakem
+novem zagonu in se med delovanjem sistema ne spreminjajo. Za parametre,
+katerih vrednost se med delovanjem sistema spreminja, poskrbi poseben komunikacijski mehanizem, vgrajen v sistemski del glavne aplikacije. Vsak tak²en
+podatek v modulu kamere je povezan z aplikacijo kot bodisi vhodni bodisi
+izhodni signal.
+
+Programski modul za nadzor kamere si lahko predstavljamo
+
+kot £rno ²katlo (slika 3.6): vhodni signali posredujejo informacije iz zunanjega
+okolja v modul kamere, ta s pomo£jo pridobljenih podatkov opravi izra£une in
+jih nato posreduje v zunanje okolje v obliki izhodnih signalov.
+Signali za prenos podatkov med modulom kamere in glavno aplikacijo so
+lahko dveh tipov:
+
+digitalni ali analogni.
+
+Digitalni signali lahko zavzamejo
+
+vrednost 0 ali 1, analogni pa katerokoli vrednost, predstavljivo s 64 bitno
+predstavitvijo ²tevila s plavajo£o vejico.
+Podatke, ki jih v okolje s pomo£jo izhodnih signalov po²ilja modul kamere,
+lahko deli sistema SCADA uporabljajo za razli£ne namene, bodisi za dodatno
+obdelavo podatkov bodisi za komunikacijo z razli£nimi zi£nimi napravami s
+pomo£jo kontrolnikov PLC. Podobno se podatki, ki se spreminjajo med delovanjem sistema SCADA iz zunanjega okolja, prena²ajo v modul kamere s pomo£jo vhodnih signalov. Tak²ni podatki lahko pridejo iz razli£nih virov. Lahko
+so rezultat razli£nih nastavitev v gra£nem uporabni²kem vmesniku, lahko so
+rezultat razli£nih algoritmov, ki delujejo v sistemu SCADA, lahko pa so tudi
+vrednosti, posredovane iz zi£nih naprav, kot so raznovrstni senzorji povezani
+preko kontrolnikov PLC. Tak²en na£in komunikacije modula kamere z glavno
+aplikacijo omogo£a preprosto integracijo z obstoje£im sistemom SCADA, se
+odziva na spremembe okolja in vanj po²ilja ustrezne podatke.
+
+34
+
+Poglavje 3: Programski modul za nadzor procesa z digitalno kamero
+
+Slika 3.6: Shema programskega modula za nadzor kamere
+
+3.5 Arhitektura sistema
+Re²itev za nadzor proizvodnega sistema s pomo£jo kamere je zasnovana tako,
+da znotraj obstoje£ega sistema deluje kot zaklju£ena celota, ki zdruºuje kontrolne elemente za delo s kamero.
+nikacijo z glavno aplikacijo.
+
+Vsebuje potrebne mehanizme za komu-
+
+To modulu kamere omogo£a, da se z le nekaj
+
+manj²imi nastavitvami v konguraciji vklju£i v celoten sistem SCADA. modul
+kamere vsebuje vizualne dele, ki uporabniku ponujajo preprost gra£ni vmesnik za delo s kamero. Programski deli nadzorujejo napravo, prena²ajo podatke
+med deli kontrole kamere in jih usklajujejo.
+
+Posebni komunikacijski deli pa
+
+poskrbijo za komunikacijo med modulom in aplikacijo.
+Na sliki 3.7 je prikazana osrednja programska enota, poimenovana nadzor
+kamere, ki sem jo implementiral kot osrednjo sti£no to£ko za povezavo delov modula. Sluºi kot povezava med zi£no napravo, vizualnimi deli modula
+kamere in glavno aplikacijo. Ob zagonu sistema preveri ali je kamera prisotna
+v omreºju. e je njeno iskanje uspe²no, poskrbi za osnovno vzpostavitev ko-
+
+3.5 Arhitektura sistema
+
+35
+
+Slika 3.7: Arhitektura sistema nadzora kamere
+
+munikacijskih vmesnikov med modulom in glavno aplikacijo. Ko je postopek
+kon£an, lahko deli modula s pomo£jo nadzora kamere nastavljajo parametre
+na zi£ni napravi. Tak²ni parametri so odpiranje in zapiranje zaslonke, nastavljanje razli£nih parametrov zajema slike (svetlost, gama popravek ipd.). Vsi
+podatki, ki jih obdeluje modul kamere, se prena²ajo med deli celotnega sistema
+s pomo£jo nadzora kamere. To vklju£uje podatke, ki jih modul po²ilja glavni
+aplikaciji, glavna aplikacija modulu ali katerikoli del sistema SCADA kameri
+(zi£ni napravi). Nadzor kamere pri inicializaciji povezave z napravo poskrbi
+tudi za nastavljanje vseh morebitnih ltrov za obdelavo slike na podatkovni
+tok podatkov, ki te£e od izvora do ponora slike.
+Z vidika celotnega proizvodnega sistema je glavna naloga podsistema za
+delo s kamero posredovanje podatkov, ki jih modul kamere priskrbi iz pri-
+
+Poglavje 3: Programski modul za nadzor procesa z digitalno kamero
+
+36
+
+dobljene slike.
+
+Sistem je zasnovan na na£in, da je za pridobivanje razli£nih
+
+podatkov preprosto zamenjati algoritem, ki iz slike izlu²£i podatek, pomemben za potrebe procesa.
+
+Nadzor kamere ob inicializaciji preveri ali ima na
+
+voljo implementacijo algoritma za obdelavo slike. Ta poleg postopka za pridobivanje podatkov, pomembnih za industrijski proces, vsebuje tudi kodo, ki (£e
+je ta moºnost na voljo) informacije o podatkih tudi gra£no prikaºe na prikazovalnem delu podatkovnega toka. e je algoritem prisoten, modul kamere na
+zahtevo glavne aplikacije njenemu sistemskemu delu posreduje parametre, ki
+jih izra£una pri obdelavi slike.
+Sistemski del glavne aplikacije izra£unava vrednosti s frekvenco 50 milisekund.
+
+Glavna aplikacija torej lahko s tako frekvenco zahteva ali po²ilja
+
+podatke od modula kamere.
+
+Ker je modul vezan na sistemske parametre,
+
+od katerih nekateri nadzirajo funkcije zi£ne naprave, bi se lahko zgodilo,
+da bi napravo poplavili s prehitrimi zahtevki po spremembah parametrov.
+Pri posredovanju parametrov med modulom in zi£no napravo zato posreduje posebna programska nit, ki skrbi izklju£no za prenose parametrov med
+tema dvema deloma re²itve [16].
+
+Nit poskrbi, da se spremembe posredujejo
+
+izklju£no ob spremembah parametrov, tako iz smeri zi£ne naprave kot iz smeri
+programskega modula. Deluje tudi kot blaºilnik hitrih sprememb, ki bi potencialno lahko povzro£ile napake in neodzivnost programskih knjiºnic, s katerimi
+se kontrolira zi£no napravo.
+Vizualni del sistema za nadzor kamere je sestavljen iz kontrolnika SCADA
+in glavnega okna kamere. Kontrolnik SCADA sluºi za integracijo v obstoje£
+vmesnik HMI. Sistemski del glavne aplikacije in vmesnik HMI sta povezana s
+komunikacijskimi mehanizmi, ki si preko nadzora kamere sporo£ajo vrednosti
+parametrov.
+
+Sistem glavne aplikacije je tako obve²£en o spremembah vred-
+
+nosti parametrov, ki jih uporabnik nastavlja v vizualnih delih modula kamere,
+ti pa so obve²£eni o spremembah, ki bi morebiti izvirale iz sistemskega dela
+glavne aplikacije. Na ta na£in je uporabniku zagotovljena ne samo moºnost
+nadzora nad spreminjanjem podatkov, marve£ tudi moºnost videti realno sliko
+parametrov sistema.
+Glavno okno kamere je poseben del za nadzor parametrov modula kamere,
+ki je dostopno preko kontrolnika SCADA. eprav lahko uporabnik do glavnega
+okna kamere dostopa le s pomo£jo kontrolnika SCADA, pa ima lastne mehanizme za komunikacijo z nadzorom kamere.
+
+Ko je uporabniku glavno okno
+
+kamere na voljo, to za svoje delovanje in komunikacijo s sistemom ne potrebuje
+kontrolnika SCADA in se obna²a kot popolnoma neodvisen del aplikacije. To je
+²e posebej primerno za primer, ko ºeli uporabnik imeti glavno okno kamere na
+voljo tudi, ko uporablja kak²en drug del aplikacije in ºeli imeti zaprt vmesnik
+
+3.6 Implementacija algoritmov za obdelavo slike
+
+37
+
+HMI.
+Kontrolnik SCADA, sistemski del glavne aplikacije in nadzor kamere imajo
+dostop do podatkov shranjenih v podatkovni bazi (slika 3.7). Ob inicializaciji
+sistema, nadzor kamere iz nastavitev v podatkovni bazi prebere vrednosti
+nekaterih parametrov, kot so serijska ²tevilka kamere in tip kamere.
+
+To so
+
+parametri, ki jih nadzor kamere navadno potrebuje le ob zagonu sistema in se
+med delovanjem sistema ne spreminjajo.
+Modul kamere je sposoben izvajati razli£ne algoritme za obdelavo slike,
+vendar ne ve£ algoritmov hkrati. Aktivni algoritem se izbere s pomo£jo nastavitve vrednosti lastnosti kontrolnika SCADA, zamenja pa se ga lahko le, ko je
+izvajalni sistem glavne aplikacije ustavljen. Ob zagonu glavne aplikacije nadzor kamere pregleda programsko kodo in ugotovi ali vsebuje implementacijo
+algoritma z imenom, podanim v lastnosti FilterName kontrolnika SCADA.
+
+3.6 Implementacija algoritmov za obdelavo slike
+Zajete slike lahko obdelujemo z implementacijo ltrov za obdelavo slike, ki
+jih knjiºnice kamere po zajemu slike znajo uporabljati. Za implementacijo in
+uporabo ltra je v programski kodi najprej treba kreirati razred ltra za obdelavo slike in dedovati [17] od razreda FrameFilterImpl.
+
+Nato je potrebno
+
+implementirati tri metode: GetSupportedInputTypes, GetTransformOutputTypes in Transform, ki skrbijo za obdelavo slike [18].
+
+3.6.1
+
+Metoda GetSupportedInputTypes
+
+public void GetSupportedInputTypes(ArrayList frameTypes)
+Metoda denira podprte na£ine kodiranja slikovnih elementov, ki jih lter sprejme v obdelavo. Tipe kodiranja dodajamo v podatkovno strukturo ArrayList.
+Primer za dodajanje podprtosti formatu Y800:
+
+public override void GetSupportedInputTypes(
+ArrayList frameTypes)
+{
+frameTypes.Add(new TIS.Imaging.FrameType(
+TIS.Imaging.MediaSubtypes.Y800));
+}
+
+Poglavje 3: Programski modul za nadzor procesa z digitalno kamero
+
+38
+
+3.6.2
+
+Metoda GetTransformOutputTypes
+
+public bool GetTransformOutputTypes(FrameType inType,
+ArrayList outTypes)
+Metoda denira morebitne transformacije med formati v katerih so podani
+slikovni elementi zajete slike. Parameter inType denira vhodni format, parameter outTypes pa vsebuje formate, katere lahko lter transformira iz danega
+formata podanega v parametru inType.
+
+Metoda vrne vrednost true, £e je
+
+napolnila parameter outTypes z vrednostmi in false, £e ni na voljo nobena
+transformacija.
+
+V primeru, da transformacije formata, v katerem so podani
+
+slikovni elementi, ne ºelimo, lahko med izhodne formate podamo kar vhodni
+format in vrnemo vrednost true:
+
+public override bool GetTransformOutputTypes(FrameType inType,
+ArrayList outTypes)
+{
+outTypes.Add(inType);
+return true;
+}
+3.6.3
+
+Metoda Transform
+
+public bool Transform(IFrame src, IFrame dest)
+Sistem nad vsako zajeto sliko izvede metodo Transform. To je metoda, ki izvaja
+dejansko obdelavo slike. V parametru src je podana vhodna slika, v parametru
+dest pa izhodna slika. V primeru, da izvedemo transformacijo nad parametrom
+src in ga zapi²emo v parameter dest uspe²no, metoda vrne vrednost true. e
+vrnemo vrednost false, se bo slika podana v parametru src zavrgla.
+Zaradi laºje obdelave slike se uporablja unsafe blok kode, ki ga podpira programski jezik C# in nam s tem dovoljuje uporabo kazalcev. Znotraj tak²nega
+bloka mora razvijalec, podobno kot v nekaterih drugih programskih jezikih,
+sam poskrbeti za upravljanje s pomnilnikom, saj mu pri tem okolje .NET
+pusti proste roke. Tako se lahko s pomo£jo kazalcev premikamo po besedah
+(angl. bytih) vhodne slike in nastavljamo vrednosti besed izhodne slike.
+
+public override bool Transform(IFrame src, IFrame dest)
+{
+
+3.6 Implementacija algoritmov za obdelavo slike
+
+39
+
+unsafe
+{
+if (dest.Ptr == null) return false;
+byte* pIn = src.Ptr;
+byte* pOut = dest.Ptr;
+//zapi²imo nespremenjen slikovni element
+//na lokaciji kazalca *pIn
+//na pozicijo kazalca *pOut
+*pOut = *pIn;
+}
+}
+Ker metoda Transform te£e v drugi programski niti [16], je treba v primeru, da
+ºelimo kodi metode posredovati kak²ne posebne parametre, ki smo jih dolo£ili
+v algoritmu, te posredovati v bloku BeginParameterTransfer() in EndParameterTransfer().
+
+Blok znotraj teh dveh metod poskrbi za sinhronizacijo in se
+
+tako izogne neºelenim ustavitvam sistema zaradi dostopa do iste pomnilni²ke
+lokacije iz ve£ programskih niti. Po kon£ani implementaciji zahtevanih metod
+ltra lahko lter uporabimo tako, da kreiramo njegovo instanco, jo posredujemo metodi FrameFilterCreate in lter je pripravljen. Lahko ga dodamo na
+ustrezen podatkovni tok kot vsak drug lter, ki je del knjiºnice IC Imaging
+Control.
+Ker je modul kamere zasnovan tako, da bi bila implementacija algoritmov
+za obdelavo slike kar se da preprosta, za dolo£ene zgoraj opisane vidike implementacije posebnih algoritmov uporabniku ni treba skrbeti. e uporabnik ºeli
+implementirati nov algoritem za obdelavo slike, mora kreirati razred algoritma,
+ki deduje od razreda FilterBase in ga opremiti z atributom ImagingFilter, s
+katerim ozna£i ime algoritma. Primer deklaracije tak²nega razreda:
+
+[ImagingFilter(BrightnessThresholdFilter)]
+internal class BrightnessThresholdFilter : FilterBase
+{
+}
+V tak²nem razredu lahko uporabnik implementira dve metodi za obdelavo
+slike: ProcessImageData, v kateri implementira algoritem za obdelavo slike in
+PaintOverlay, kjer lahko implementira morebiten dodaten prikaz podatkov na
+sliki.
+
+Poglavje 3: Programski modul za nadzor procesa z digitalno kamero
+
+40
+
+3.6.4
+
+Metoda ProcessImageData
+
+protected override unsafe void ProcessImageData(
+TIS.Imaging.IFrame data)
+Znotraj te metode uporabnik implementira algoritem za obdelavo slike.
+
+Do
+
+vhodnih parametrov kamerinega modula lahko dostopa s pomo£jo objekta
+RuntimeParameters. Tako bi do prvega vhodnega parametra modula dostopal
+na naslednji na£in:
+
+int xPos = (int)IcControl.RuntimeParameters.Input0;
+Podatke lahko po²ilja na izhode modula z metodo SetOutputUnsafe. Na prvi
+izhod modula bi tako poslal vrednost 100 na naslednji na£in:
+
+IcControl.SetOutputUnsafe(0, 100);
+Do posameznih slikovnih elementov slike lahko uporabnik znotraj te metode
+dostopa na enak na£in kot je opisan pri uporabi metode Transform (glej 3.6.3).
+
+3.6.5
+
+Metoda PaintOverlay
+
+public override void PaintOverlay(OverlayBitmap overlay)
+V primeru, da ºeli uporabnik na prikazovalni del glavnega okna kamere dodati
+gra£ne elemente, ki jih kamera ne zajema, lahko to stori z implementacijo te
+metode. S klicem metode:
+
+Graphics g = overlay.GetGraphics();
+dobi dostop do standardnega C# gra£nega objekta, s pomo£jo katerega lahko
+ri²e poljubne gra£ne elemente, katere modul kamere prikaºe na prikazovalnem
+delu glavnega okna kamere. Ve£ o delu z gra£nim objektom bralec lahko najde v [19].
+V primeru uporabljenega algoritma pri procesu izdelave surovca opti£nega
+vlakna, je bilo potrebno za implementacijo novega algoritma implementirati
+metodo ProcessImageData in metodo PaintOverlay za prikaz dodatnih informacij na zajeti sliki (speci£en primer uporabe razvitega modula je opisan
+v poglavju 4).
+
+Ukvarjanje z bolj speci£nimi vidiki vklju£evanja algoritmov
+
+v modul je razvijalcu algoritmov prihranjeno.
+
+Z opisanimi na£ini dostopa
+
+do parametrov modula (glej 3.6.4) ima uporabnik pri implementaciji algoritmov na voljo vsa sredstva za komunikacijo s sistemom glavne aplikacije preko
+vhodov in izhodov modula kamere.
+
+Poglavje 4
+Primer uporabe
+Modul, ki sem ga razvil in opisal v tej diplomski nalogi, je bil najprej preizku²en
+pri nadzoru procesa izdelave surovca za opti£na vlakna [6].
+
+Kamera je v
+
+realnem £asu zajemala sliko obdelovanca in jo preko nadzora kamere (glej
+poglavje 3.5) po²iljala v sistem glavne aplikacije.
+
+Ta je rezultate obdelave
+
+slike nato uporabil za razli£ne izra£une, na njihovi podlagi pa je nadzoroval
+potek dolo£enih delov proizvodnega procesa. Razviti modul je operaterju, ki je
+vodil proces, omogo£il prilagoditev modulovega vmesnika potrebam konkretnega proizvodnega procesa.
+
+Glede na potrebe procesa je operater nastavil
+
+lastnostim kontrolnika SCADA naslednje vrednosti:
+
+<MaxExposure>333</MaxExposure>
+<FilterName>BrightnessThresholdFilter</FilterName>
+<FilterParameters>0</FilterParameters>
+<FlipHorizontal>true</FlipHorizontal>
+<FlipHorizontalDisplay>false</FlipHorizontalDisplay>
+<AutoMaxExposure>false</AutoMaxExposure>
+<FlipVertical>false</FlipVertical>
+<FlipVerticalDisplay>false</FlipVerticalDisplay>
+<FrameRate>30</FrameRate>
+<ImageFormat>Y800</ImageFormat>
+<InputNames>XPos;XWidth;Threshold</InputNames>
+<ROIHeight>768</ROIHeight>
+<ROIWidth>1024</ROIWidth>
+<Rotation>Deg90</Rotation>
+<RotationDisplay>None</RotationDisplay>
+Interesno obmo£je slike, dolo£eno z lastnostima ROIWidth in ROIHeight, je
+operater nastavil kar na celotno obmo£je zajete slike, to je 1024×768 slikovnih
+
+41
+
+42
+
+Poglavje 4: Primer uporabe
+
+elementov (za opis lastnosti kontrolnika SCADA glej poglavje 3.3.1).
+
+Za
+
+potrebe uporabljenega algoritma za obdelavo slike, je operater sliko rotiral za
+90 stopinj in preslikal po horizontali. To sta mu na preprost na£in omogo£ili
+lastnosti kontrolnika SCADA Rotation in FlipHorizontal.
+
+Rezultat nas-
+
+tavitev prikazuje slika 4.1 glavnega okna kamere narejena med izvajanjem
+procesa.
+
+Slika 4.1: Glavno okno kamere med potekom procesa
+
+Parametre za potrebe proizvodnega procesa je ra£unal algoritem z imenom
+BrightnessThresholdFilter. Algoritem je za potrebe procesa ºelel razviti naro£nik sam, kar modul, ki sem ga razvil, tudi omogo£a.
+zaradi konkuren£ne prednosti algoritem tukaj ni opisan.
+
+Na ºeljo naro£nika
+Naro£nik je algo-
+
+ritem lahko vklju£il v sistem s postopkom, opisanim v poglavju 3.6. Ker so
+ºeleli nekatere rezultate in parametre algoritma prikazati na zaslonu, sem njihovi implementaciji algoritma dodal moºnost prikaza dolo£enih parametrov
+na prikazovalni del glavnega okna kamere (slika 4.1). Pomembnej²i rezultati
+obdelave slike, ki jih je omenjeni algoritem ra£unal in po²iljal sistemu glavne
+aplikacije v obdelavo, so sredi²£e in robovi obdelovanca. Sredi²£e sem v prikazovalnem delu glavnega okna slike prikazal z rumeno horizontalno £rto po celi
+
+43
+
+Slika 4.2: Avtomatsko generiran uporabni²ki vmesnik za nastavljanje vhodnih
+parametrov
+
+²irini slike, robova pa z oranºnima horizontalnima £rtama.
+Za potrebe delovanja algoritma je operater kontrolniku SCADA podal
+tri vhodne parametre: XPos, XWidth in Threshold.
+bili posredovani z analognimi signali (glej 3.4).
+
+Vsi trije parametri so
+
+Modul kamere je s pomo£jo
+
+vrednosti, podanimi v lastnosti InputNames kontrolnika SCADA, generiral tri
+vhodne kontrolnike, sestavljene iz drsnika in vnosnega polja. Z njimi je bilo
+mogo£e nastavljati vrednosti omenjenih vhodnih parametrov (slika 4.2).
+
+Za
+
+opis postopka avtomatskega generiranja uporabni²kega vmesnika glej poglavje
+3.3.2.4.
+Vrednosti parametrov XPos in XWidth sem na ºeljo naro£nika gra£no
+prikazal na prikazovalnem delu glavnega okna kamere (glej poglavje 3.6.5). Pri
+uporabljeni implementaciji algoritma sta prikazana z obmo£jem rde£e barve, ki
+poteka po celotni vi²ini sike od njenega zgornjega do spodnjega roba. Parameter XPos dolo£a pozicijo skrajno levega dela tega obmo£ja, parameter XWidth
+pa ²irino tega obmo£ja. Z uporabo avtomatsko generiranih drsnikov in vnosnih polj za omenjena parametra, lahko operater med obdelavo slike nastavlja
+vrednosti teh parametrov. Rde£e obmo£je se premika glede na nastavitve in
+mu nazorno prikazuje rezultate njegovega dela.
+Zaradi prilagodljive zasnove modula kamere si je operater procesa lahko
+popolnoma prilagodil razviti modul glede na potrebe speci£nega surovca za
+opti£na vlakna, ki ga je v tistem trenutku obdeloval. Prilagojen uporabni²ki
+vmesnik modula kamere je operaterju omogo£il nadzor nad obdelovancem v
+procesu, preprosto kontrolo dolo£enih (tudi posebej za ta primer deniranih)
+procesnih spremenljivk in spremljanje rezultatov njegovih nastavitev na zaslonu v realnem £asu.
+
+Poglavje 5
+Zaklju£ek
+Pri izdelavi diplomske naloge sem na£rtoval in implementiral programsko re²itev
+za krmiljenje industrijskega procesa s pomo£jo digitalne kamere. Posebej v ta
+namen sem razvil uporabni²ki vmesnik za upravljanje tako s zi£no napravo
+kot s parametri procesa.
+Uporabni²ki vmesnik se brez teºav integrira v obstoje£i sistem kot del vmesnika HMI. S pomo£jo programskih knjiºnic modul nadzira nastavitve kamere
+in od nje pridobiva informacije. Vmesnik za nadzor kamere je zasnovan tako,
+da se vanj lahko vklju£ijo razli£ni algoritmi za obdelavo slik, ki lahko sluºijo
+razli£nim namenom. Rezultati, ki jih algoritmi producirajo, se lahko posredujejo drugim algoritmom v obdelavo, £e pa je zaradi narave procesa smiselno,
+lahko te rezultate aplikacija posreduje razli£nim komunikacijskim modulom ali
+kontrolnikom PLC za neposredno kontrolo naprav. Ker je programska re²itev
+integrirana v sistem SCADA obstoje£e aplikacije (in bi v skrajnem primeru
+skupaj s zi£nimi krmilniki lahko bila sama svoj, sicer zelo okrnjen, sistem
+SCADA), bi lahko rekli, da je razvita generi£na re²itev, ki jo lahko uporabimo
+za kontrolo razli£nih industrijskih procesov.
+Kot verjetno pri vsakem kontrolnem sistemu, bi se tudi pri razvitem modulu
+lahko na²le moºnosti za izbolj²ave.
+
+Poleg izbolj²av uporabni²kega vmesnika
+
+je v procesu ²e nekaj prostora za optimizacijo z dodajanjem razli£nih ltrov
+na podatkovni tok zajete slike.
+
+Moºnost izbolj²ave vidim tudi v morebitni
+
+dodatni funkcionalnosti za dinami£no dodajanje in odvzemanje algoritmov za
+obdelavo slike.
+
+Ker pa so v industriji funkcionalnosti kontrolnega sistema
+
+v veliki meri dolo£ene s procesom, ki ga upravljajo, je generi£na re²itev, ki
+dopu²£a raznovrstne dodelave, dobra osnova za re²evanje zapletenih izzivov
+krmiljenja proizvodnih procesov.
+
+44
+
+Slike
+3.1
+
+Kamera DMx 31AG03.I
+
+3.2
+
+32-bitna RGBA predstavitev barve
+
+3.3
+
+Arhitektura modula za zajemanje in obdelavo slike
+
+3.4
+
+Glavno okno kamere
+
+3.5
+
+Graf vrednosti signala in njegovega gamma popravka
+
+3.6
+
+Shema programskega modula za nadzor kamere
+
+3.7
+
+Arhitektura sistema nadzora kamere
+
+4.1
+4.2
+
+. . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . .
+
+16
+18
+
+. . . . . . .
+
+20
+
+. . . . . . . . . . . . . . . . . . . . . . . .
+
+27
+
+. . . . . .
+
+30
+
+. . . . . . . . .
+
+34
+
+. . . . . . . . . . . . . . .
+
+35
+
+Glavno okno kamere med potekom procesa . . . . . . . . . . . .
+
+42
+
+Avtomatsko generiran uporabni²ki vmesnik za nastavljanje vhodnih parametrov
+
+. . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+45
+
+43
+
+Tabele
+3.1
+
+Specikacije kamere . . . . . . . . . . . . . . . . . . . . . . . . .
+
+46
+
+17
+
+Literatura
+[1] Bolton W.: Programmable logic controllers. Elsevier, Burlington, ZDA,
+2009
+[2] Bailey D., Wright E.: Practical SCADA for industry. Elsevier, Oxford,
+Velika Britanija, 2003, strani 1-4, 17
+[3] Wiles J.: Techno Security's guide to securing SCADA. Elsevier, Burlington, ZDA, 2007, stran 66
+[4] Mahalik N. P.:
+
+Fieldbus technology:
+
+Industrial network standards for
+
+real-time distributed control. Springer, Berlin, 2003, strani 10-12
+[5] Kalapatapu R.: SCADA protocols and communication trends. Dostopno
+na:
+http://www.isa.org/intech/April2005/NetCommDept
+(datum zadnjega obiska: 10. 4. 2011)
+[6] Freudenrich C.: How ber optics work. Dostopno na:
+http://communication.howstuworks.com/ber-opticcommunications/ber-optic5.htm
+
+(datum
+
+zadnjega
+
+obiska:
+
+9.
+
+4.
+
+2011)
+[7] Brandl D.: Design patterns for exible manufacturing. ISA - Instrumentation, Systems and Automation society, United states, 2006, strani 20-22
+[8] Microsoft, Overview of the .NET framework. Dostopno na:
+http://msdn.microsoft.com/en-us/library/a4t23ktk.aspx
+(datum zadnjega obiska: 15. 4. 2011)
+[9] PC-based Control: The new performance class of Beckho Industrial PCs.
+PC-Control, November 2010, strani 8-11
+
+47
+
+48
+
+LITERATURA
+
+[10] TwinCat 3 - Convergence of technologies. Dostopno na:
+http://www.pc-control.net/pdf/042010/pcc_0410_twincat3_e.pdf
+(datum zadnjega obiska: 20. 4. 2011)
+[11] The Imaging Source Cameras. Dostopno na:
+http://www.theimagingsource.com/en_US/products/cameras/gige-ccdmono/dmk31ag03i/
+(datum zadnjega obiska: 25. 4. 2011)
+[12] Petrou M., Petrou C.: Image processing: The fundamentals, 2nd edition.
+John Wiley & Sons, Chichester, Velika Britanija, 2010
+[13] RGBA color space. Dostopno na:
+http://en.wikipedia.org/wiki/RGBA_color_space
+(datum zadnjega obiska: 25. 4. 2011)
+[14] The Imaging Source Europe GmbH: IC Imaging Control .NET: Frame
+lters. Dostopno na:
+http://www.imagingcontrol.com/en_US/support/documentation/
+dotnet/tech_FrameFilter.htm (datum zadnjega obiska: 20. 4. 2011)
+[15] Gamma correction. Dostopno na:
+http://en.wikipedia.org/wiki/Gamma_correction
+(datum zadnjega obiska: 25. 4. 2011)
+[16] Microsoft: Threads and Threading. Dostopno na:
+http://msdn.microsoft.com/en-us/library/aa720724%28v=vs.71%29.aspx
+(datum zadnjega obiska: 15. 4. 2011)
+[17] Microsoft: Inheritance (C# programming guide). Dostopno na:
+http://msdn.microsoft.com/en-us/library/ms173149%28v=VS.100%29.aspx
+(datum zadnjega obiska: 15. 4. 2011)
+[18] The Imaging Source Europe GmbH: Writing a Frame Filter: Binarization.
+Dostopno na:
+http://www.imagingcontrol.com/en_US/support/documentation/
+dotnet/Binarization.htm
+(datum zadnjega obiska: 20. 4. 2011)
+[19] Graphics class. Dostopno na:
+http://msdn.microsoft.com/en-us/library/system.drawing.graphics.aspx
+(datum zadnjega obiska: 25.4.2011)
+
+

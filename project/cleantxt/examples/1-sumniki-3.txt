@@ -1,0 +1,2485 @@
+FAKULTETA ZA INFORMACIJSKE ŠTUDIJE
+V NOVEM MESTU
+
+DIPLOMSKA NALOGA
+VISOKOŠOLSKEGA STROKOVNEGA ŠTUDIJSKEGA PROGRAMA
+PRVE STOPNJE
+
+FRANJA CIMERMANĈIĈ
+
+FAKULTETA ZA INFORMACIJSKE ŠTUDIJE
+V NOVEM MESTU
+
+DIPLOMSKA NALOGA
+
+KAKO LAHKO BANKE S POMOĈJO NAPREDNIH
+TEHNOLOGIJ ZAGOTAVLJAJO STORITVE T.I.
+GENERACIJI Y?
+Mentor: doc. dr. Tomaţ Aljaţ
+
+Novo mesto, oktober 2014
+
+Franja Cimermanĉiĉ
+
+IZJAVA O AVTORSTVU
+Podpisana Franja Cimermanĉiĉ, študentka FIŠ Novo mesto, izjavljam:
+
+
+da sem diplomsko nalogo pripravljala samostojno na podlagi virov, ki so navedeni v
+diplomski nalogi,
+
+
+
+da dovoljujem objavo diplomske naloge v polnem tekstu, v prostem dostopu, na
+spletni strani FIŠ oz. v elektronski knjiţnici FIŠ,
+
+
+
+da je diplomska naloga, ki sem jo oddala v elektronski obliki identiĉna tiskani verziji,
+
+
+
+da je diplomska naloga lektorirana.
+
+V Novem mestu, dne _________________
+
+Franja
+Cimermancic
+Podpis avtorice ______________________
+
+Digitalno podpisal Franja Cimermancic
+DN: c=SI, o=ACNLB, o=NLB, ou=Fizicne
+osebe, serialNumber=2245054800,
+cn=Franja Cimermancic
+Datum: 2014.10.29 05:30:31 +01'00'
+
+POVZETEK
+Diplomsko delo obravnava temo nudenja banĉnih storitev mladim generacije Y s pomoĉjo
+naprednih tehnologij. V prvem delu naloge so opredeljene generacije, s poudarkom na
+znaĉilnostih generacije Y, kako jim trţiti in kakšne so njihove finanĉne zahteve. Opredeljene
+so sodobne tehnološke poti v banĉništvu in njihova pravna ureditev. V drugem delu so
+predstavljene tuje raziskave in analiza sekundarnih virov podjetja RM Plus. Cilj diplomske
+naloge je pregledati uporabo sodobnih tehnologij pri banĉnih storitvah generacije Y in
+ugotoviti, kako si lahko banke s pomoĉjo sodobnih tehnologij zagotovijo stranke novih
+generacij.
+KLJUČNE BESEDE:
+generacija Y, banĉne storitve, finanĉne storitve, sodobne tehnologije, e-banĉništvo
+
+ABSTRACT
+The thesis discusses the theme of providing banking services to young people of Generation
+Y by using innovative technologies. In the first part of the thesis generations are defined,
+focusing on the characteristics of Generation Y, how to market them and what are their
+financial requirements. In the first part are also defined modern technologies in the banking
+and legal regimes. The second part presents the research and analysis of secondary sources of
+the firm RM Plus. The aim of the thesis is to discuss the use of innovative technologies in
+banking services to Generation Y and find out how banks can with the help of modern
+technologies provide itself new generations of customers.
+
+KEY WORDS:
+
+Generation Y, banking services, financial services, advanced technology, e-banking
+
+KAZALO
+
+1.
+
+UVOD................................................................................................................................. 1
+
+2.
+
+GENERACIJA Y ................................................................................................................ 3
+2.1
+
+3.
+
+Generacije .................................................................................................................... 3
+
+2.1.1
+
+Generacija veteranov ........................................................................................... 4
+
+2.1.2
+
+Generacija otroci blaginje.................................................................................... 4
+
+2.1.3
+
+Generacija X ......................................................................................................... 5
+
+2.1.4
+
+Generacija Y ......................................................................................................... 6
+
+2.1.5
+
+Generacija Z ......................................................................................................... 6
+
+2.2
+
+Znaĉilnosti generacije Y .............................................................................................. 6
+
+2.3
+
+Generacija Y in trţenje ................................................................................................ 8
+
+2.4
+
+Generacija Y in finance ............................................................................................... 9
+
+GENERACIJA Y IN BANĈNE STORITVE ................................................................... 10
+3.1
+
+Finanĉne zahteve generacije Y .................................................................................. 10
+
+3.2
+
+Sodobne trţne poti v banĉništvu ................................................................................ 10
+
+3.2.1
+
+PayPal ................................................................................................................ 12
+
+3.2.2
+
+Bitcoin................................................................................................................. 13
+
+3.2.3
+
+Google denarnica ............................................................................................... 13
+
+3.2.4
+
+Moneta ................................................................................................................ 13
+
+3.3
+
+Mobilno banĉništvo ................................................................................................... 14
+
+3.4
+
+Tehnološki trendi v banĉništvu .................................................................................. 15
+
+3.4.1
+
+Enostavnejše bančništvo ..................................................................................... 16
+
+3.4.2
+
+Varnejše bančništvo ............................................................................................ 17
+
+3.4.3
+
+Človeški stik v digitalni prihodnosti ................................................................... 18
+
+3.4.4
+
+Bančništvo in zabava .......................................................................................... 20
+
+3.4.5
+
+Oblikovanje lastne znamke ................................................................................. 21
+
+3.4.6
+
+Uporaba storitev v oblaku .................................................................................. 21
+
+3.4.7
+
+Big Data.............................................................................................................. 22
+
+3.5
+
+3.5.1
+
+Zakon o elektronskem poslovanju in elektronskem podpisu ............................... 23
+
+3.5.2
+
+Uredba o pogojih za elektronsko poslovanje in elektronsko podpisovanje ....... 24
+
+3.5.3
+
+Kazenski zakonik Republike Slovenije ................................................................ 24
+
+3.5.4
+
+Zakon o bančništvu ............................................................................................. 25
+
+3.5.5
+
+Standard PSIST BS 7799 .................................................................................... 25
+
+3.6
+4.
+
+E-banĉništvo in pravna ureditev ................................................................................ 23
+
+Trţenje finanĉnih storitev generaciji Y...................................................................... 25
+
+RAZISKAVA ................................................................................................................... 27
+4.1
+
+Namen raziskave ........................................................................................................ 27
+
+4.2
+
+Cilj raziskave ............................................................................................................. 28
+
+4.3
+
+Naĉrt raziskave .......................................................................................................... 28
+
+4.3.1
+
+Izhodišča raziskave ............................................................................................. 28
+
+4.3.2
+
+Raziskovalne metode........................................................................................... 28
+
+4.3.3
+
+Izhodiščne hipoteze ............................................................................................. 29
+
+4.3.4
+
+Omejitve .............................................................................................................. 30
+
+4.4
+
+Kvalitativna raziskava................................................................................................ 30
+
+4.4.1
+
+Deloitte spodbujevalci sprememb ....................................................................... 30
+
+4.4.2
+
+Poročilo Intuit 2020 ........................................................................................... 31
+
+4.4.3
+
+Raziskava CISCO ............................................................................................... 32
+
+4.4.4
+
+Efma in Capgemini ............................................................................................. 34
+
+4.5
+
+Kvantitativna raziskava.............................................................................................. 35
+
+4.5.1
+
+Socio-demografske značilnosti uporabnikov e-bančništva v Sloveniji ............... 35
+
+4.5.2
+
+Raziskava ugleda, kakovosti storitev in tržnega položaja slovenskih ....................
+bank‒prebivalstvo 2013 ..................................................................................... 36
+
+5.
+
+ZAKLJUĈEK ................................................................................................................... 45
+
+6.
+
+LITERATURA IN VIRI................................................................................................... 49
+
+KAZALO GRAFIKONOV
+
+Grafikon 4.1: Starostna struktura anketirancev. ....................................................................... 37
+Grafikon 4.2: Zakonski stan anketirancev. ............................................................................... 38
+Grafikon 4.3:Finanĉne storitve, ki jih mladi trenutno uporabljajo. .......................................... 39
+Grafikon 4.4: Finanĉne storitve, ki jih bodo mladi uporabljali v naslednjih 12 mesecih. ........ 40
+Grafikon 4.5: Zadovoljstvo s storitvami glavne banke............................................................. 41
+Grafikon 4.6: Osebne teţave anketiranih pri njihovi stalni banki. ........................................... 42
+Grafikon 4.7: Vir koristnih informacij o banĉnem poslovanju anketiranih. ............................ 43
+Grafikon 4.8: Razlogi za pozitivno mnenje o glavni banki. ..................................................... 44
+
+1. UVOD
+
+Ljudje se skozi ĉas spreminjamo. Obdobje, v katerem se rodimo in odrašĉamo, vse
+spremembe, ki so odvijajo okoli nas, nas oblikujejo v posameznike z doloĉenimi ţeljami in
+potrebami. Kljub spremembam pa se naše bistvo ni zelo spremenilo. Še vedno delamo enake
+stvari, kot smo jih delali 100 let nazaj, le izvajamo jih na drugaĉen in predvsem hitrejši naĉin.
+Današnji hiter tempo ţivljenja, ki ga obĉutimo predvsem mladi, zelo vpliva na naš naĉin
+razmišljanja in odloĉanja. Generacijske razlike kot jih obĉutimo v današnjem svetu vĉasih
+niso obstajale. Velika koliĉina dostopnih informacij in tehnologija moĉno vplivata na naš
+naĉin ţivljenja in razmišljanja. Mladi, rojeni po letu 1981, tudi tako imenovana generacija Y,
+so odrašĉali v obdobju nenehnih sprememb in izboljšav. Vrednote in prepriĉanja te generacije
+so zelo drugaĉne v primerjavi z drugimi generacijami ravno zaradi hitrih sprememb; katere
+vrednote, ţelje in motivi, v kaj verjamejo, kaj potrebujejo v ţivljenju in na kakšen naĉin jim to
+ponuditi je zelo pomembno vprašanje za vse ponudnike storitev in produktov.
+Pomembno vlogo v ţivljenju imajo banĉne in finanĉne ustanove. Tako kot mi sprejemamo
+sodobne tehnologije v vsakodnevni uporabi, morajo tudi banke prilagoditi svoje storitve
+napredni druţbi. Novi naĉini komuniciranja, uĉenja, poslovanja, nakupovanja idr. omogoĉajo
+nove naĉine dostopa do potrošnikov. Vendar ali se finanĉne institucije zavedajo, kako
+pomemben element v njihovi prodajni verigi so mladi generacije Y, in da jim je potrebno
+zagotoviti prilagojene storitve, ki jim bodo omogoĉale samostojno finanĉno pot?
+V zadnjem desetletju so se zgodile velike spremembe na trgu finanĉnih storitev. Mladi se
+seznanjajo z vodenjem svojih financ veliko prej kot generacije pred njimi. Na voljo jim je veĉ
+informacij, ki so prosto dostopne, tako se sami odloĉajo o svoji izbiri. Pri vsej poplavi
+informacij pa so postali potrošniki zelo zahtevni, saj se zavedajo svoje potrošniške moĉi.
+Podjetja se morajo tako prilagoditi posameznikom in njihovim potrebam predvsem na naĉin,
+da bodo pridobili dolgoroĉne stranke. Sprejeti morajo njihove ţelje in navade ter jih vkljuĉiti
+v svojo ponudbo na naĉin, da bodo ĉim bolj zanimivi in uporabni.
+Tradicionalni naĉin banĉništva, kjer ljudje stojijo v vrsti in opravljajo tradicionalne banĉne
+storitve, poĉasi menja sodobno banĉništvo v smeri z novimi produkti, novim naĉinom
+komuniciranja s ciljno publiko in novim naĉinom banĉnega poslovanja. Banke se morajo
+boriti z dvema stranema‒ljudem omogoĉiti temelj banke, v katerega bodo zaupali,hkrati pa
+jim omogoĉiti nove sodobnejše poti. Nova informacijska tehnologija usmerja prihodnji razvoj
+
+1
+
+banĉništva in tako postaja njen najpomembnejši element. Nujnost uporabe interneta namreĉ ni
+veĉ vprašanje priloţnosti, ampak nujnost vsakega poslovanja.
+V okviru spreminjanja poslovanja bank se bodo le-te morale prilagoditi in oblikovati ponudbo
+za mlade. Informacijsko-komunikacijske tehnologije, med katerimi je na prvem mestu splet,
+so gotovo najbolj uĉinkovita orodja trţenja mladim generacijam. Mladi generacije Y namreĉ
+ţe vstopajo na trg delovne sile in bodo kmalu postali zelo dobiĉkonosne stranke, ki ne bodo
+predstavljale velikega stroška bankam. Prihodnost bank je tako ravno v tej generaciji, saj
+predstavlja najveĉji segment populacije, poleg tega pa je ravno v obdobju, ki ga generacija Y
+ţivi, najveĉ potrošnje in sklepanja poslov.
+V diplomski nalogi se bomo dotaknili predvsem naĉina, kako lahko banke s sodobnimi
+tehnologijami ponudijo svoje storitve mladim generacije Y. Za oblikovanje strategije naĉina
+dostopa do mladih je potrebno poznati njihove ţelje, potrebe, lastnosti in predvsem
+priĉakovanja od banĉnih storitev. Na podlagi njihovih ţelja, zbranih v raziskavi, bomo navedli
+predloge bankam, kako naj na najboljši naĉin doseţejo mladino. Zanima nas tudi, kako se
+finanĉne ustanove v Sloveniji prilagajajo mladim in ali je v svetu veliko drugaĉe kot pri nas.
+V prvem delu diplomskega dela bomo podrobno opisali generacijo Y, katere so njene
+vrednote, ţelje in potrebe, na kakšen naĉin jih lahko doseţemo in katera so njihova finanĉna
+priĉakovanja.
+V drugem delu se bomo lotili raziskave. Predstavili bomo ţe narejene tuje raziskave ter
+naredili analizo sekundarnih podatkov, ki so bili zajeti za namen ţe opravljene raziskave z
+naslovom Raziskava ugleda, kakovosti storitev in trţnega poloţaja slovenskih bank 2013, ki
+jo je izvedla raziskovalna agencija RM Plus. Pri analiziranju podatkov bomo poskušali
+osvetliti predvsem ţelje in priĉakovanja mladih do bank. Zanima nas tudi,ali jim lahko te ţelje
+in priĉakovanja banke izpolnijo s pomoĉjo sodobne tehnologije.
+V sklepu bomo podali kljuĉne ugotovitve iz teoretiĉnega in praktiĉnega dela diplomske
+naloge.
+
+2
+
+2. GENERACIJA Y
+2.1
+
+Generacije
+
+Vsi ljudje smo genetsko zasnovani enako, vendar imamo razliĉno obnašanje in razmišljanje,
+ki ju definira okolje, v katerem odrašĉamo. Ljudje, ki so rojeni v istem obdobju, so podobnega
+karakterja oz. imajo podobne lastnosti. Tako obdobje, ki socialno, kulturno, ekonomsko in
+tehnološko ostaja nekaj ĉasa nespremenjeno imenujemo generacija (Sheahan, 2005). V
+današnjem ĉasu so se potrebe in vrednote razliĉnih generacij izostrile v 4 generacijske
+skupine, ki so jim trţniki pripisali svojevrstna imena (Breĉko 2005, str. 48):
+
+
+Generacija veteranov, rojena med 1922 in 1943.
+
+
+
+Generacija otroci blaginje, rojena v obdobju med 1944 in 1960.
+
+
+
+Generacija X, rojena v obdobju med 1961 in 1980.
+
+
+
+Generacija Y, rojena v obdobju 1981 in 2000.
+
+
+
+Generacija Z, rojena med 2000 in 2012.
+
+Meje med temi generacijami niso jasno zaĉrtane. Razliĉni avtorji klasificirajo ljudi v
+generacije glede na letnico rojstva, nekateri ĉrpajo generacije na podlagi zgodovinskih
+dogodkov, drugi iz hitrih socialnih ali demografskih sprememb(Pew research center, 2010).
+Razlike med generacijami izhajajo iz dejstva, da imajo ljudje, ki se rodijo v druţbi v razliĉnih
+obdobjih, razliĉne izkušnje, raziskovalci so ugotovili, da pripadniki starejših generacij
+razliĉno zaznavajo z delom povezane znaĉilnosti pripadnikov najmlajše generacije Y (Meriac
+in drugi, 2010). Tudi proces globalizacije je spodbudil nov naĉin prouĉevanja generacij, in
+sicer koncept globalnih generacij oziroma koncept generacij, ki si zaradi razvoja
+informacijsko-komunikacijskih tehnologij (internet, mobilne komunikacije, globalna socialna
+omreţja), medijev, velike prostorske mobilnosti, izobraţevanja, prostega pretoka kapitala in
+delovne sile postajajo podobne na globalni ravni. Svet postaja eno, z njim pa se tudi ljudje, ki
+jih povsod pestijo podobne teţave in osreĉujejo enake stvari, oblikujejo v eno globalno
+generacijo(Zorko, 2010). V nadaljevanju diplomske naloge bomo opredelili osnovne
+znaĉilnosti vsake generacije, predvsem z vidika razumevanja izbrane obravnavane generacije
+Y.
+
+3
+
+2.1.1
+
+Generacija veteranov
+
+Generacijo veteranov predstavljajo ljudje, ki so po drugi svetovni vojni postavili svet znova
+na noge. Rojeni so bili v letih 1922‒1943 in so veĉinoma ţe upokojeni(Zemke in drugi,
+2000).
+Odrašĉali so v teţkih ekonomskih ĉasih in v druţbi, ki je zelo cenila moralo, tradicijo, trdo
+delo in druţbene norme. So zelo privrţeni delu, a hkrati pazljivi, spoštujejo avtoriteto, cenijo
+red in jasna pravila, so potrpeţljivi in pripravljeni dlje poĉakati na pohvalo za delo (Breĉko
+2005, str. 48). Nanje je moĉno vplivalo vzpostavljanje gospodarstva po drugi svetovni vojni,
+tako so jim najprej pomembne delovne obveznosti, šele nato osebni interesi in uţitki. Ne
+uporabljajo sodobnih plaĉilnih poti, opredeljuje jih konservativen potrošniški stil kot npr.
+plaĉevanje z gotovino (Zemke in drugi, 2000). Veterani imajo ogromno znanja in izkušenj,
+zaradi ĉesar so odliĉni mentorji in svetovalci. Ĉutijo potrebo po prenašanju svojega znanja na
+mlajše generacije (Zorko, 2010).Ţelijo si biti vkljuĉeni v druţbeno dogajanje, samostojni ter
+na tekoĉem z vsem, kar se dogaja okrog njih (Marconi, 2000). Radi imajo udobnost,
+veliĉastne stvari, disciplino, glede potrošništva so zelo konservativni. So osebe, ki so zelo
+ponosne na svoje doseţke in o njih zelo rade govorijo (Mednick, 2006).
+
+2.1.2
+
+Generacija otroci blaginje
+
+Generacija otroci blaginje1 je bila rojena v letih 1944‒1960 oziroma 1946‒1964. Prvi jih je
+poimenoval avtor Landon Jones v knjigi Great Expectations (op. p.: velika priĉakovanja) leta
+1980. V knjigi je prvi opisal transformacijo generacije X tako v naĉinu ţivljenja kot tudi na
+podroĉju politike in izobraţevanja, ţivljenjskega poslovanja in poslovnih odloĉitev (Landon,
+2008).
+Generacija otrok blaginje je optimistiĉna, rada dela v timih, ceni zdravje in dobro kondicijo,
+verjame v delo pred zabavo ter je socialno zavedna (Breĉko 2005, str. 50). Verjamejo v
+vseţivljenjsko zaposlitev in ji ĉutijo moĉno pripadnost. Ker so odrašĉali v velikih druţinah so
+dobri pri timskem delu. So zagnani, vztrajni, marljivi, radi imajo stabilno delovno okolje.
+Zadovoljni so s stvarmi, ki jih uporabljajo preudarno, ne zavrţejo jih, dokler jim sluţijo. Za
+pripadnike te generacije je znaĉilen vzorec osebnega razvoja. Najprej so poskrbeli za
+izobrazbo, potem za kariero in druţino ter napredovanje na delovnem mestu. Svoje ţelje
+1
+
+Znana tudi pod angleškim imenom »baby boom« generacija ali »babyboomers«.
+
+4
+
+dosegajo postopoma (Zorko, 2010).Generacija ceni kot glavni vir blaginje predvsem redno
+zaposlenost, je motivirana predvsem s finanĉnimi spodbudami, potrebuje veliko
+izobraţevanja, da lahko sledi vsem spremembam pri delu, in uţiva v timskem duhu (Zemke in
+drugi, 2000).
+
+2.1.3 Generacija X
+Predstavniki generacije X so bili rojeni med letoma 1961 in 19802. Pojem generacija X sta
+ustvarila novinarja Charles Hamblet in Jane Deverson, ki sta leta 1964 izdala knjigo
+Generation X. V knjigi so bili zbrani intervjuji mladih o njihovi miselnosti, ţivljenju,
+prihodnosti. Izraz generacija X pa je leta 1991 še bolj populariziral Douglas Coupland, najprej
+s stripom, nato pa še s knjigo o nezadovoljni mladini v Los Angelesu (BBC News magazine,
+2014).
+Generacijo X predstavljajo ljudje, ki so odrašĉali v šestdesetih in sedemdesetih letih
+prejšnjega stoletja. To je bilo obdobje velike ekonomske negotovosti, gospodarske recesije v
+osemdesetih, visoke stopnje brezposelnosti in inflacije v devetdesetih. Generacija X ceni
+prosti ĉas, dela le zato, da ţivi. Njeni pripadniki so kreativni, samozavestni, odloĉni pri
+odpravljanju teţav, prilagodljivi in se zlahka sooĉajo s spremembami. Nove tehnologije
+spremljajo, jih sprejemajo in uporabljajo. Odrašĉali so v ĉasu velikega tehnološkega
+napredka, zato teţijo k hitremu razvoju in inovacijam, hkrati pa so tudi zelo tehniĉno
+podkovani. Kupujejo in uporabljajo le tisto tehnologijo, ki jim je ali jim bo v korist. Njihovi
+starši so se posveĉali predvsem sluţbam, tako ta generacija predstavlja zelo samostojne ljudi,
+ki jim je pri delu pomembno, da ga opravijo hkrati pa uţivajo v okolju, kjer vladajo sprošĉeni
+odnosi (Breĉko 2005, str. 48). Priloţnosti za profesionalno in osebnostno rast vedno
+izkoristijo, dvomijo pa o pravilih na delovnem mestu, ki jih tudi nemalokrat kršijo.
+Tako generacija X kot tudi njena naslednica generacija Y sta pri delu manj samokritiĉni kot
+njuni starejši generaciji, hitro menjata sluţbe in ne marata avtoritete, njun vodja jim
+predstavlja mentorja ali svetovalca. Pri delu sta teţje vodljivi, agresivnejši, zaletavi in
+nepotrpeţljivi. Pripadniki so naklonjeni skupinskemu delu, teţijo k iskanju zadovoljstva tudi v
+karieri, pri kateri je pomemben svobodnejši pristop do dela (Zorko, 2010).
+
+2
+
+Razliĉni avtorji opredeljujejo odstopanja pri doloĉanju ĉasovnih obdobij, tudi 1956 in 1982.
+
+5
+
+2.1.4
+
+Generacija Y
+
+Generacija Y sledi generaciji X. Pripadniki generacije Y so bili rojeni med letoma 1981 in
+2001. V zibelko so jim bile poloţene informacijsko-komunikacijske tehnologije. Zaradi
+dostopnosti informacij in moţnosti, ki jih ima, velja za najbolj izobraţeno generacijo vseh
+ĉasov. Velika veĉina uspešno konĉa srednješolske programe in se vpiše na univerzitetne
+programe, ki jih uspešno zakljuĉi (Zorko, 2010). Veĉ o generaciji Y in njenih znaĉilnostih
+bomo opisali v naslednjem podpoglavju.
+
+2.1.5
+
+Generacija Z
+
+Generacija Z so otroci rojeni po letu 2001. Tako kot generaciji Y je tudi njim tehnologija
+poloţena v zibelko, vsak ima svoj spletni profil, ţivijo v nenehnem stresu in so stalno zasiĉeni
+z informacijami. Generacija Z s potrošniškega vidika predstavlja verjetno najhitrejšo rastoĉo
+trţno nišo. So zelo aktivni potrošniki, saj je zanje znaĉilno, da imajo visoko stopnjo vpliva na
+nakupne odloĉitve svojih staršev. So zelo spletno ozavešĉeni in usmerjeni v socialno
+mreţenje, bloganje, interesne skupine in forume. Ţivljenje jim predstavlja umetniško polje in
+so tako zelo ekspresivni in originalni. Je generacija digitalnih ustvarjalcev, ki bo v prihodnosti
+zelo spremenila naĉin potrošnje (Zorko, 2010). Ta generacija ta trenutek še ni zaĉela vstopati
+na trg delovne sile in še nima lastnih finanĉnih virov, zato se bomo v nadaljevanju posvetili
+predvsem generaciji Y in njenim moţnostim.
+
+2.2
+
+Značilnosti generacije Y
+
+Generacija Y je velikokrat poimenovana tudi kot »Echo Boomers«, »Generation Next«,
+»Millennials«, »Boomlets«, »I generation«, »Net generation«, »Netizens«, »Generation
+WHY«. Prviĉ se je ime generacija Y pojavilo avgusta leta 1993 v reviji Advertising Age (Ad
+age, 2014). Tako se imenujejo, ker sledijo generaciji X. Hkrati je za to starostno skupino
+znaĉilno veĉno vprašanje: »Zakaj?« izgovor glasu »y« je angleška vprašalnica »why«, ki
+pomeni zakaj. Y je tudi prva ĉrka angleškega izraza za mlade (»young«). Nekateri avtorji pa
+Y razlagajo z angleškim izrazom »yet to come«, kar v prevodu pomeni: naslednji, ki pridejo
+(Novak 2005, str. 36).
+Generacija Y je neformalna in sprošĉena, merila uspešnosti so pri generaciji Y zelo visoka,
+priĉakujejo rezultate in nagrade takoj oziroma ĉim prej po opravljenem delu (Ţagar, 2009).
+6
+
+Osnovna vrednota generacije Y je svoboda, fleksibilnost in izbira. To je generacija, za katero
+je znaĉilen optimizem, materializem in potrošništvo. Cenijo odnose, izkušnje, potovanja in
+aktivnosti (Twenge, 2007). Glavne znaĉilnosti te generacije so samozavestnost in
+samozadostnost, inovativnost, prilagodljivost, radovednost, uĉljivost, odprtost do drugaĉnih,
+visoka raven civilne in globalne ozavešĉenosti ter sposobnost opravljanja veĉ nalog hkrati
+(Ţagar, 2009). To, da so se navadili ţiveti v okolju z izjemno številnimi draţljaji, pa ima tudi
+negativno plat, ki se odraţa kot neobĉutljivost, nepotrpeţljivost, nenehna potreba po
+dogajanju in zabavi, zdolgoĉasenost, apatiĉnost, starejšim generacijam se zdi, da jim
+primanjkuje obĉutka za soĉloveka in skupnost (Novak 2005, str. 37). Zaradi neprestanega
+gibanja, poplave informacij, številnih vtisov iz realnega in virtualnega sveta, komuniciranja
+prek spleta in mobilnih komunikacij, druţenja s pripadniki drugih rasnih, nacionalnih in
+etiĉnih skupin, je ta generacija bolj strpna kot katerakoli generacija prej. Prepoznamo jih tudi
+po tem, da med skupnim druţenjem (sedenje v lokalu za isto mizo) vsak prek mobilne
+naprave komunicira še z nekom tretjim. Sodobna tehnologija jim je dala veliko širino in
+zaradi tega so velikokrat bolj prilagodljivi od starejših generacij (Zorko, 2010).
+Generacija Y sedaj vstopa na trg delovne sile. Na delo so mladi nepripravljeni: izšli so iz
+"starega" šolskega sistema s poudarkom na poslušnosti in uĉenju na pamet, sedanje ostre trţne
+razmere pa zahtevajo vedno veĉjo samostojnost in prodornost. Mnogi pripadniki generacije Y
+zelo dolgo ostanejo pri starših, saj je tam bolj udobno in manj odgovorno. Njihovi starši so
+prevzeli velik del odgovornosti, z njimi so se uĉili in delali naloge ter jim pri tem pozabili
+vcepiti vsaj kanĉek odgovornosti in potrpljenja (MojeDelo.com, 2012). Veliko se morajo
+nauĉiti o temeljnih komunikacijskih vešĉinah prezentacije lastnega mnenja, kultiviranega
+sooĉanja razliĉnih pogledov in konstruktivnega reševanja konfliktov. Mladim je všeĉ jasna
+informacija o organizaciji, njenem poslanstvu, viziji in vrednotah ter vzroki o pomembnosti
+prispevka mladega sodelavca v njej. Pristojnosti in odgovornosti morajo biti jasno
+opredeljene, najbolje tudi v pisni obliki, vzpostavljen mora biti odprti dialog z nadrejenimi,
+sodelovati mora pri vzpostavljanju ciljev v sodelovanju z vodjo, delo mora biti zanimivo s
+ĉim veĉ ne rutinskimi in neobiĉajnimi nalogami, pravoĉasna mora biti korektna povratna
+informacija o dogajanju in osebni uspešnosti, pa naj bo ta pozitivna ali negativna, ţelijo si ĉim
+veĉ priznanj in pohval tudi v pisni obliki. Njihovo lojalnost je mogoĉe pridobiti le z lastnim
+dobrim zgledom (Novak 2005, str. 37). Na delovnem mestu so veliko bolj neformalni in
+sprošĉeni kot druge generacije. Cenijo osebno obravnavo, radi imajo izzive, z neuspehi se ne
+obremenjujejo in jih jemljejo kot dobro izkušnjo. Cenijo tudi prijetno delovno vzdušje in
+ustvarjalno delovno okolje (Breĉko, 2008).
+7
+
+Mladi imajo v ospredju »poĉeti karkoli« in ne »imeti vse«. Menijo, da je ţivljenje sestavljeno
+iz projektov, ki te bogatijo. So zelo dobro obvešĉeni kupci in zelo dobro vedo, kdaj se jih
+zavaja z laţnimi obljubami. Hitro spreminjajo kupne navade, identiteto in razpoloţenje.
+Oglaševalci se morajo zato vedno znova prilagajati in ustvarjati nove ideje, ki bi na kreativen
+naĉin dosegle mlade (Šubic 2006, str.48−49).
+Za generacijo Y je biti del mnoţice preteklost. Kaj naj jim trţenje torej da, da bodo lahko
+individualni in unikatni?
+Generacija Y in trženje
+
+2.3
+
+Generacija Y preko spleta nakupuje, išĉe zabavo, bere novice in uporablja socialna omreţja.
+Glede na mnoţiĉno uporabo digitalnih medijev je digitalni marketing najbolj uĉinkovit naĉin
+za komuniciranje z generacijo Y. Digitalni marketing je praksa oglaševanja produktov in
+storitev, z uporabo digitalnih distribucijskih kanalov preko raĉunalnikov, mobilnih telefonov,
+pametnih telefonov in drugih digitalnih naprav, ki so skupne in bistvene za to generacijo
+(Smith, 2012).Vso to tehnologijo dojemajo pripadniki generacije Y kot pripomoĉek za laţje
+ţivljenje, zdruţevanje prijateljev in druţine (Pew research center, 2010).
+Ta generacija ima najveĉ informacij o vsem, zato mora biti trţenje zelo dobro premišljeno.
+Trije elementi za uspešno trţenje generaciji Y so (McDevitt, 2013):
+
+
+Generacija Y priĉakuje, da se uspešne blagovne znamke oglašujejo, vendar
+priĉakujejo, da oglasi niso moteĉi.
+
+
+
+Generacija Y je medijsko in trţenjsko izobraţena, priĉakuje strokovnost in ve, kdaj se
+z njo manipulira.
+
+
+
+Ţeli si novosti in jih z veseljem sprejme.
+
+
+
+Ţeli uporabne in zabavne oglase.
+
+Podjetja morajo skrbno preuĉiti vzorce obnašanja in vrednote današnje mladine in temu
+prilagoditi trţenje. Pri tem morajo upoštevati predvsem, da je tehnologija eno izmed
+pomembnejših orodij za trţenje, saj bo odziv na e-pošto ali interaktivno spletno stran boljši
+kot na katerokoli drugo obliko oglaševanja(Marconi 2000, str. 108). Potrebno pa je tudi
+upoštevati, kaj mladi ţelijo v doloĉenem obdobju, in jim ob velikih ţivljenjskih dogodkih
+ponuditi tisto, kar potrebujejo. Mladi ne ţelijo biti postavljeni v kalup, tako se je potrebno
+izogniti stereotipom in jim ponuditi izdelke, ki jim bodo dali dejanski obĉutek posebnosti
+(Gibson, 2013).
+
+8
+
+Trţenje bo uspešno le, ĉe se bo prisluhnilo ţeljam in razmišljanjem mladih. Mlade je potrebno
+prepriĉati z vrednotami in doţivetji, v katerih vidijo svoj interes. Za doseganje teh doţivetij pa
+mladi potrebujejo denar, zato je ta generacija najveĉja priloţnost ravno za finanĉne institucije,
+ki lahko pridobijo nove stranke.
+
+2.4
+
+Generacija Y in finance
+
+Generacija Y je odrasla v bogatih in stabilnih ĉasih, vse do finanĉne krize leta 2008 (e-utrip,
+2012). Finanĉni poloţaj mladih generacije Y je moĉno povezan z njihovim razpoloţljivim
+dohodkom in njihovimi glavnimi viri in dejavniki, ki doloĉajo višino tega dohodka. Ti
+dejavniki se nanašajo predvsem na zaposlitveni status in raven doseţene izobrazbe, hkrati pa
+je ekonomski in socialni poloţaj mladih zelo povezan s politikami, ki se nanašajo na trg dela,
+ukrepe drţavne blaginje, izobraţevalno, druţinsko, socialno in še katero politiko. Trg delovne
+sile namreĉ ne deluje v prid mladim, zato se strategija ostajanja doma izkaţe kot racionalna
+izbira mladih pri zagotavljanju socio-ekonomske varnosti in s sistemom socialnega varstva
+predstavlja svojevrsten mehanizem prepreĉevanja revšĉine in zadovoljevanja potreb mladih
+(Nagode in drugi 2009, str. 57). Stopnja tveganja revšĉine med mladimi v Sloveniji je opazno
+niţja od stopnje tveganja s katero se sreĉujejo v Evropi. Do teh razlik prihaja ravno zaradi
+poznega odhoda mladih od doma (Lavriĉ in drugi 2011, str. 332).
+Generacija Y razmišlja o finanĉnih ciljih, proraĉunu in varĉevanju za veĉje nakupe, vendar ne
+razmišlja, kaj se lahko zgodi v prihodnosti. Glavni poudarek mladih je v izpolnjevanju
+kratkoroĉnih potreb in ne toliko dolgoroĉnih. Najveĉji ţivljenjsko pomembni dogodki kot je
+npr. nakup stanovanja ali avtomobila, pa vendar sproţijo njihovo finanĉno aktivnost(Meyer,
+2005). Podjetje Pearce Callahan in Associates je odkrilo, da se mladi odloĉijo za pokojninsko
+varĉevanje in investiranje v delnice, ko se zaroĉijo ali poroĉijo, o zagotavljanju svoje
+prihodnosti pa zaĉnejo razmišljati, ko dobijo otroke (Pearse Callahan & Associates, 2014).
+Finanĉne storitve mlajšim generacijam so tako nova trţna niša, saj so stroški servisiranja
+mladih nizki, v bliţnji prihodnosti pa bodo prišli do veĉjih denarnih sredstev. Na dolgi rok
+tako nosijo izjemen potencial, tako v obliki dobiĉkonosnosti, kot v obliki zvestobe.
+
+9
+
+3. GENERACIJA Y IN BANČNE STORITVE
+
+3.1
+
+Finančne zahteve generacije Y
+
+Veĉina mladih ocenjuje svoj finanĉni poloţaj kot razmeroma dober. Konkretne finanĉne
+izkušnje so le redkoma izkusili na svoji koţi, izkusili so jih preko staršev ali preko tehnologije
+(Meyer, 2005). Glede na to, da veĉina mladih ţivi s svojimi starši,svoj finanĉni poloţaj strogo
+loĉujejo od finanĉnega poloţaja staršev, za katerega veĉina meni, da je sicer stabilen, ni pa
+preveĉ dober. Osebni proraĉun mladih je po veĉini kombiniran in se deli na tri veje: stalne,
+delno stalne in spremenljive dohodke (Lavriĉ in drugi 2011, str. 339). Svoj finanĉni poloţaj
+mladi moĉno povezujejo z novimi komunikacijskimi tehnologijami. Tako je podjetje Cisco
+Systems v svoji raziskavi ugotovilo, da potrošniki iz generacije Y zaupajo svojim bankam,
+hkrati pa neverjetno hitro sprejemajo nove komunikacijske tehnologije, kot so video in spletne
+rešitve. Med prioritetami mladih potrošnikov so zniţevanje dolgov, upravljanje odhodkov in
+izobraţevanje o finanĉnih vprašanjih (Farah in drugi, 2010).
+Mladi vidijo svojo prihodnost kot izjemno svetlo. Glavna vrednota v ţivljenju jim je
+odraslost, ki je oblikovana iz finanĉne in ĉustvene neodvisnosti z ustvarjanjem lastne druţine
+(Lavriĉ in drugi 2011, str. 578). Pripadniki generacije Y ţelijo finanĉne nasvete svojih bank in
+potrebujejo pomoĉ pri sprejemanju finanĉnih odloĉitev. Potrebe pripadnikov generacije Y so,
+da ţelijo avtomatizirano in strokovno pomoĉ pri upravljanju financ, dolgov in porabe. Banke
+imajo tako na tem podroĉju veliko priloţnosti za rast. V raziskavi podjetja Cisco System so
+banĉništvu za prebivalstvo so predstavili izsledke, ki kaţe, da bi lahko banke ustvarile do 10
+odstotkov veĉ prihodkov, ĉe prisluhnejo potrebam generacije Y (Farah in drugi, 2010).
+
+3.2
+
+Sodobne tržne poti v bančništvu
+
+Sodobne trţne poti v banĉništvu so poti, pri katerih se uporablja sodobna tehnologija,
+predvsem iz raĉunalniškega in informacijskega podroĉja. Z uporabo informacijskih tehnologij
+so banke omogoĉile izvajanje storitev tudi brez neposredne prisotnosti porabnika. S tem se je
+dvignila konkurenĉna raven bank, ki so izkoristile nove priloţnosti, komitentom pa je bil
+omogoĉen dostop do banĉnih storitev kjerkoli, kadarkoli in kakorkoli si ţelijo (Jerman Blaţiĉ
+in drugi, 2001). Opredelitev pojma elektronsko banĉništvo je razliĉna: od raznovrstnega
+
+10
+
+komuniciranja banĉnih komitentov z banko do pravih denarnih in finanĉnih transakcij z
+uporabo elektronskih medijev (Hernaus, 1997) ali pa je opredeljeno kot kakršenkoli naĉin
+poslovanja strank z banko, ki je neodvisna od poslovalnice in temelji na informacijski
+tehnologiji (Sjekloĉa, 1999).
+Banke so z uvedbo e-poslovanja izboljšale svoje poslovanje, komunikacijo s potrošniki ter
+optimizirale trţne poti. E-poslovanje pomeni poslovanje, ki vkljuĉuje uporabo vseh oblik
+informacijske in komunikacijske tehnologije v poslovnih odnosih, vkljuĉuje dosledno
+upoštevanje temeljnih pravil v naĉrtovanju e-poslovanja, znanje s podroĉja informacijske
+tehnologije, znanja s podroĉja postavitve strategije in konceptov nastopa na internetu ter še
+mnogo drugih znanj. Elektronsko poslovanje v bankah imenujemo e-banĉništvo. Razlika ebanĉništva od tradicionalnega banĉništva je predvsem v tem, da je e-banĉništvo dosegljivo
+neprekinjeno 24 ur na dan, 7 dni v tednu, dosegljivo je kjerkoli, delo je avtomatizirano, osebni
+podatki in transakcije so varovani (Nahtigal, 2010). Elektronski naĉin poslovanja vedno bolj
+nadomešĉa tradicionalno banĉništvo. Banka pri razvoju e-banĉništva upošteva predvsem ţelje
+in zahteve strank ter tehnološke zmoţnosti (Braĉun, 1997).
+Danes poznamo naslednje elektronske prodajne poti (Nahtigal, 2010):
+
+
+Spletno banĉništvo:
+
+
+uporaba banĉnih storitev preko osebnega raĉunalnika; preko interneta lahko
+banka ponudi uĉinkovite storitve, ki so uporabnikom na voljo povsod in vedno.
+
+
+
+Plaĉilne kartice:
+
+
+so sodobno nadomestilo za gotovino, s katerimi lahko plaĉujemo blago in
+storitve na vseh prodajnih mestih, ki so oznaĉene z nalepko kartice.
+
+
+
+POS-terminali:
+
+
+so naprave, ki strankam omogoĉajo plaĉevanje kupljenega blaga ali storitev ter
+dvig gotovine. Pot je odprta skladno s poslovnim ĉasom ponudnika blaga ali
+storitve. Pogoj za uporabo POS-terminala je, da ima stranka kartico, da se ob
+nakupu podpiše ali vpiše osebno identifikacijsko številko (PIN).
+
+
+
+Banĉni avtomati:
+
+
+
+
+so naprave, ki omogoĉajo stranki, da opravi razliĉne banĉne storitve.
+
+Informacijski terminali:
+
+
+uporabljajo banke predvsem za informiranje svojih komitentov o njihovih
+storitvah.
+
+
+
+Telefonsko banĉništvo:
+
+11
+
+
+
+poznamo govorni odzivnik, ki se avtomatiĉno odzove na naš klic, in banĉnega
+operaterja, kjer se usposobljen banĉni delavec oglasi na klic.
+
+
+
+Mobilno banĉništvo:
+
+
+obsega opravljanje storitev s pomoĉjo mobilnih naprav, kot so prenosniki ali
+ţepni raĉunalnik oziroma mobilni telefon (tudi z namešĉenimi aplikacijami).
+
+Uporaba interneta v gospodinjstvih v Sloveniji narašĉa. V prvem ĉetrtletju 2013 je imelo v
+Sloveniji dostop do interneta 76% gospodinjstev, internet uporablja kar 74% vseh oseb v
+starosti 10‒74 let. Kar 95% teh oseb uporablja internet vsaj enkrat na teden ali pogosteje, od
+tega jih kar 31% uporablja internet za e-banĉništvo (STAT, 2013).
+Pri opravljanju elektronskih transakcij se uporabljajo razliĉni spletni in mobilni plaĉilni
+sistemi tako imenovani PSP-sistemi (Payment Service Provider) kot npr. Square, Google
+denarnica, Dwolla, Amazon Payments, PayPal, Skrill, Bitcoin, Moneta itd. (Awwwards,
+2014). V nadaljevanju bomo opisali štiri najbolj uporabljene spletne plaĉilne sisteme, ki
+podpirajo elektronska plaĉila iz Slovenije.
+
+3.2.1
+
+PayPal
+
+PayPal je plaĉilni sistem, ki je najbolj razširjen in najbolj uporabljen za internetno plaĉevanje
+v vseh zahodnih drţavah. Za identifikacijo uporabnika uporablja elektronski poštni naslov.
+Spada med najveĉje in najbolj priljubljene spletne plaĉilne sisteme med spletnimi trgovci in
+potrošniki. Vkljuĉitev v sistem je brezplaĉna in preprosta. Pologi se vršijo preko kreditnih ali
+debetnih kartic. Finanĉni podatki pošiljatelja, številka kreditne kartice oz. številka raĉuna so
+prejemniku skrite, kar prepreĉuje zlorabo podatkov. PayPal omogoĉa premikanje denarja iz
+PayPal raĉuna na banĉni raĉun in plaĉevanje spletnih nakupov. V prihodnosti naj bi bili tudi
+pri nas moţni pologi in dvigi preko banĉnega raĉuna, ĉekov, poloţnic in drugih denarnih poti,
+kar je ţe sedaj moţno v veĉini razvitih drţav sveta (PayPal, 2014). PayPal je zakljuĉil prvi
+projekt integracije PayPal-plaĉil z Bitcoin omreţjem, ki omogoĉa alternativni naĉin
+plaĉevanja. S povezovanjem so tako omogoĉili trgovcem, da z uporabo PayPal plaĉilnega
+centra ustvarijo BitPay raĉun trgovca, ki zagotavlja poverilnice strank. Tako lahko stranke z
+Bitcoin denarnicami plaĉujejo ţelene digitalne vsebine s PayPal raĉunom (Gallippi, 2014).
+
+12
+
+3.2.2 Bitcoin
+Bitcoin je virtualna valuta, ki omogoĉa enostavno plaĉevanje z mobilnikom: z mobilnikom
+preberemo kodo in potrdimo plaĉilo, brez registracij, uporabe kartic, vpisovanja PIN-kode ali
+podpisovanja. Ĉe ţelimo prejeti plaĉilo z Bitcoini le pokaţemo QR kodo v svoji Bitcoin
+denarnici plaĉniku ali pa se dotaknemo s telefonoma in uporabimo brezţiĉno tehnologijo
+NFC. Plaĉila in nakazila z Bitcoinom varuje moĉno šifriranje, ki onemogoĉa, da kdorkoli
+plaĉuje v našem imenu. Opozoriti je potrebno, da se vsak Bitcoin naslov uporabi le enkrat in
+uporabniki morajo paziti, da ne objavljajo svojih naslovov. Bitcoin uporablja odprto
+tehnologijo, zato je vsa programska oprema zdruţljiva. V prihodnosti naĉrtujejo izboljšave na
+podroĉju izogibanja hkratnega plaĉevanja z veĉ razliĉnih naslovov, razvoj grafiĉnih
+uporabniških vmesnikov denarnic in skušali bodo prepreĉiti veĉkratno uporabo naslovov.
+Veliko raziskav vlagajo tudi v razvoj razširjenih funkcionalnosti za zasebnost kot npr.
+moţnost zdruţevanja nakazil nepovezanih uporabnikov (Bitcoin, 2014). Virtualna valuta
+Bitcoin je podvrţena številnim tveganjem, saj ji primanjkuje zaupanja, pravne gotovosti in
+odpornosti za kibernetiĉne napade. Tveganja v povezavi z valuto Bitcoin je izdal Evropski
+banĉni organ, zato na slovenskem finanĉnem ministrstvu o uradnem priznavanju valute še ne
+razmišljajo (Ministrstvo za finance, 2014).
+
+3.2.3 Google denarnica
+Google denarnica omogoĉa shranjevanje podatkov za plaĉilo v Google raĉunu, spremljanje
+stanja naroĉil in shranjevanje podatkov na varnem. Google denarnico lahko uporabljamo za
+opravljanje varnih in priroĉnih plaĉil tudi z NFC, kjer se telefon le dotakne katerega koli
+terminala, ki podpira NFC (Chandler, 2014). Googlova denarnica omogoĉa pošiljanje denarja
+prek Gmail priponk, vendar je ta storitev zaenkrat na voljo le v ZDA. Uporaba Googlove
+denarnice je brezplaĉna. Za nakupe pri trgovcih ni dodatnih stroškov, plaĉajo se samo nakupi,
+davki ter stroški dostave (Google Wallet, 2014).
+
+3.2.4 Moneta
+Moneta je storitev, ki omogoĉa brezgotovinsko plaĉevanje z mobilnimi telefoni na veĉ kot
+2000 plaĉilnih mestih z Moneta logotipom. Ustanovljena je bila leta 2001. Uporabljamo jo
+lahko kot storitev pri mobilnem operaterju ali pri bankah kjer imajo vsi uporabniki
+13
+
+opredeljeno zaĉetno meseĉno omejitev porabe in jo lahko prilagodijo svojim ţeljam in
+poslovanju. Letos je z uporabo storitve Moneta zaţivela aplikacija Urbana, ki je virtualna
+nadgradnja sistema enotne mestne kartice Urbana. Aplikacija Urbana ponuja vse, kar ponuja
+vrednostna kartica Urbana: brezstiĉno plaĉilo storitve, brezplaĉno prestopanje znotraj 90
+minut, potovanje za veĉ ljudi hkrati, dodatno pa ponuja aplikacija tudi polnjenje raĉuna
+neposredno z mobilnim telefonom ali na urbanomatu, izpis stanja, pregled zgodovine
+validiranja, urnik prihodov in odhodov avtobusov in druge potovalne informacije. Aplikacija
+Urbana je bila letos v Londonu nagrajena kot najuspešnejši plaĉilni sistem na mobilnih
+telefonih in je tako prejela nagrado MasterCard plaĉilni sistemi v prometu (mojMikro, 2014).
+
+3.3
+
+Mobilno bančništvo
+
+Banke morajo slediti razvoju mobilne tehnologije, saj bodo operaterji mobilne tehnologije
+postali na podroĉju plaĉilnega prometa in potrošniških posojil zelo velik konkurent.
+Opravljanje posojilno-denarnih transakcij se tako ne bo omejevalo le na ozko banĉno
+podroĉje, temveĉ bodo s pomoĉjo tehnološko izpopolnjenega sistema zaraĉunavanja
+izpopolnjeni varnostni elementi prenosa podatkov prek mobilnih omreţij. Dostopni
+mehanizmi procesiranja plaĉilnih instrumentov bodo zelo velik potencial banĉnim ustanovam.
+Uspeh mobilnega plaĉevanja doloĉajo trije faktorji: izpolnjene zahteve strank, hitra širitev
+mreţe prodajnih avtomatov in POS-terminalov ter splošni tehniĉni standardi in postopki
+(Friedrich in drugi, 2005). Najveĉja prednost mobilnih operaterjev je v tem, da imajo ţe danes
+veĉjo bazo individualnih strank kot katerakoli slovenska banka (Karpe 2001, str. 43−44).
+Ĉedalje veĉja razširjenost mobilnih telefonov med prebivalstvom zagotavlja veliko število
+potencialnih uporabnikov mobilnega banĉništva, ki se lahko z internetom poveţejo kjerkoli in
+kadarkoli. Mobilno poslovanje poleg mobitelov omogoĉajo tudi ostali mobilni terminali kot
+so dlanĉnik in prenosni raĉunalnik.
+O mobilnem plaĉevanju govorimo takrat, ko kot plaĉilni instrument za plaĉevanje
+uporabljamo mobilni terminal. Mobilno plaĉevanje predstavlja prenos elektronskega plaĉila
+od plaĉnika do prejemnika plaĉila, pri ĉemer se uporablja elektronski plaĉilni instrument. Ob
+tem mora vsaj eden izmed udeleţencev uporabljati mobilni terminal, ki ni vezan na lokacijo in
+ki oddaja ali sprejema podatke prek brezţiĉne povezave. Mobilno plaĉevanje naj bi postalo
+eno najpomembnejših aplikacij v mobilni trgovini (Kosec, 2014), po podatkih podjetja
+Gartner naj bi ga do leta 2016 uporabljalo preko 448 milijonov uporabnikov (Kordiš, 2013).
+
+14
+
+Storitve mobilnega banĉništva se od banke do banke razlikujejo. Najpogosteje se preko
+mobilnega kanala komitentov omogoĉa vpogled v promet na osebnih in kartiĉnih raĉunih,
+moţnost opravljanja nakazil, plaĉilo elektronskih raĉunov, sklepanje depozitov in kreditov ter
+nastavitev limitov. Kljub široki dostopnosti se za uporabo mobilnih storitev v Sloveniji odloĉa
+le manjši deleţ uporabnikov, je pa opazen trend porasta uporabe (Motl, 2013). V Sloveniji je
+mobilne naprave v prvem ĉetrtletju 2013 uporabljalo 40 % oseb v starosti 10‒74 let za dostop
+do interneta (STAT, 2013).
+Tehnološki trendi v bančništvu
+
+3.4
+
+Svetovno gospodarstvo stavi na nove tehnologije, s pomoĉjo katerih poizkušajo zagotoviti
+konkurenĉno prednost in rast. Naloţbe v tehnologije druţbenih medijev narašĉajo, podjetja
+stavijo na lastne druţbeno-medijske strategije. Najbolj napredne organizacije ţe izvajajo
+aktivnosti, s katerimi išĉejo in izobraţujejo ter vplivajo na kljuĉne posameznike, ki lahko
+doprinesejo k temu zagonu. Generacija Y, ki trenutno tvori najveĉji deleţ svetovne
+populacije, bo verjetno pospešila druţbene iniciative podjetij. Z namenom razumeti odnos
+generacije Y do informacijske tehnologije je Forrester izpeljal anketo med 1152
+severnoameriškimi in evropskimi uporabniki poslovnih tehnologij, ki so predstavniki
+generacije Y. Glavne ugotovitve so bile (Keitt, 2011):
+
+
+Tehnologijo IT, ki jo uporabljajo za zasebne namene, vidijo kot boljšo od tehnologije
+IT, ki jo uporabljajo na delovnih mestih.
+
+
+
+Niĉ kaj bolj verjetno od predstavnikov ostalih starostnih skupin ni, da bodo to
+tehnologijo prinesli s sabo na delovno mesto.
+
+
+
+So dokaj zadovoljni s tehnologijo IT, ki jo uporabljajo na delovnem mestu.
+
+
+
+Nekoliko manj so zadovoljni z orodji IT, ki jim je na voljo na delovnih mestih.
+
+
+
+Oddelke IT v glavnem vidijo kot vir pomoĉi in ne kot oviro pri delu.
+
+Mladi si ţelijo imeti kontrolo nad svojim finanĉnim premoţenjem, sodobna tehnologija jim na
+podroĉju banĉništva omogoĉa laţje sledenje in uporabo, banĉništvo postaja bolj varno in
+zabavno.
+
+15
+
+3.4.1
+
+Enostavnejše bančništvo
+
+Banĉne storitve za posameznike se razvijajo v smeri laţje uporabe mobilnih telefonov in
+novih tehnologij. Ena izmed teh tehnologij je NFC (Near Field Communication). NFC je
+visokofrekvenĉna komunikacijska tehnologija kratkega dosega, ki zdruţuje pametno kartico
+in ĉitalec v eni napravi. Povezava NFC se vzpostavi v manj kot sekundi, pri tem je potreben le
+kratek dotik med napravami. Drugi primer mobilnega plaĉevanja v trgovinah in razliĉnih
+terminalih pri nas je ţe omenjena Moneta (Isaković, 2013). V zadnjem ĉasu se pojavlja
+tehnologija QR kot posrednik (mobilnega) plaĉevanja. QR kode so matriĉne ĉrtne kode, ki so
+zraven izdelkov ali storitev in jih posnamemo z mobilnikom ter prevedemo z bralnikom QRkode. Sama naprava tako prebere spletni naslov in obišĉe spletno stran, kjer lahko opravimo
+dejanski nakup. Ţe nekaj ĉasa je takšno plaĉevanje moţno v restavracijah Starbucks.
+Naslednja nova tehnologija na podroĉju mobilnega banĉništva je tehnologija RDC (Remote
+Deposit Capture), ki vkljuĉuje zajem slike in preverjanje pravilnosti nakazila. Iz zajete slike
+aplikacija izvzame vse potrebne podatke in nato sama izvede plaĉilo (Camhi, 2013). Velik
+napredek mobilnega banĉništva je tudi v povezavi z GPS, ki bo lahko uporabnika vodila ali
+mu pomagala pri iskanju najbliţjega bankomata oziroma banĉne poslovalnice in druge
+storitve vezane na uporabnikovo geo-pozicijo. Ravno tako lahko banke v povezavi s
+trgovinami razvijajo aplikacije, ki bodo uporabnike opozorile, da so v bliţini doloĉene
+trgovine, ki jim ponujajo posebne akcije in ugodnosti, hkrati pa jim banke ponudijo moţnost
+pregleda stanja na raĉunu, analizirajo porabo in primerjavo s podobnimi porabniki.
+Poleg mobilnega banĉništva se moĉno razvijajo tudi banĉništva povezana s socialnimi
+omreţji. Zelo je v porastu poslovanje P2P (»Peer to Peer«), ki omogoĉa posameznikom
+medsebojne finanĉne transakcije brez prisotnosti banĉne institucije (The Economist, 2014) in
+Crowdfunding oziroma skupinsko zbiranje denarja kot alternativni vir financiranja na
+internetu v smeri skupnega projekta ali izdelka. Med najbolj znane spletne strani, ki podpirajo
+Crowdfunding štejemo gofundme, kickstarter, iniegogo, teespring, YouCaring.com in causes
+(European Commission, 2014). V povezavi s spletnimi omreţji kot je Facebook, so narejene
+aplikacije, ki ravno tako omogoĉajo Crowdfunding, vendar lahko prispevajo denar le
+obstojeĉi prijatelji in znanci, ki jih imamo na Facebook raĉunu. Ena izmed takih aplikacij je
+SmartPig, ki je namenjena tistim, ki varĉujejo za specifiĉne finanĉne cilje (SmartyPig, 2014).
+Zelo se razvijajo tudi banke na socialnih omreţjih, kjer povezujejo banĉni in Facebook raĉun.
+S Facebook raĉunom lahko tako dostopamo do naših banĉnih transakcij in vodimo naše
+banĉno poslovanje. Facebook raĉun je namreĉ postal naša digitalna identiteta in lahko v
+16
+
+prihodnosti postane eden izmed širše uporabljenih naĉinov identifikacije uporabnika. Banka
+ASB iz Nove Zelandije omogoĉa tako njihovim uporabnikom in kot tudi drugim neposreden
+klepet z njihovimi usluţbenci (ASB Bank, 2014), medtem ko je šla indijska najveĉja privatna
+banka ICICI še korak naprej in je omogoĉila svojim komitentom dostop do nekaterih banĉnih
+storitev, internetnega banĉništva in do posebnih ponudb banke. Z razvojem aplikacije Pockets
+pa si je banka ICICI omogoĉila neposredno banĉno poslovanje na Facebooku. Na voljo so
+storitve pošiljanja denarja prijateljem, hitrih plaĉil, polnjenje mobilnega raĉuna, nakup kino
+kart, spremljanje izvedenih transakcij in hkrati biti v stiku s socialnim omreţjem (ICICI Bank,
+2014).
+Plaĉevanje s kartico je v današnjem ĉasu še vedno najbolj razširjeno. Banke tako poizkušajo
+omogoĉiti nove storitve, kot je plaĉevanje na obroke preko interneta. To storitev ponuja
+aplikacija PayPal Credit, ki omogoĉa, da se plaĉa za nakup takoj ali v daljšem ĉasovnem
+obdobju (PayPal Credit, 2014). Drugi naĉin plaĉilnih kartic so predplaĉniške kartice, na katere
+lahko naloţimo denar in jo nato uporabljamo za plaĉevanje raĉunov in nakupov v trgovinah,
+po telefonu ali spletu. Dobroimetje na kartici ni vezano na banĉni raĉun, vsaka kartica ima
+svoj lastni spletni raĉun, kar uporabniku omogoĉa nadzor nad porabo in zmanjšano tveganje
+pri spletnih nakupih. Predplaĉniške kartice so na volji v elektronski obliki ter v obliki klasiĉne
+fiziĉne kartice (MasterCard, 2014).
+3.4.2 Varnejše bančništvo
+Zelo pomembno je, da se zavedamo, da so v banĉnem elektronskem poslovanju zlorabe
+moţne in da poznamo nevarnosti, ki preţijo na nas. Pri zašĉiti uporabljamo varnostne
+mehanizme, ki nam omogoĉajo varno uporabo elektronskega banĉništva. Med varnostne
+mehanizme, ki jih ţe uporabljamo, štejemo digitalno potrdilo in digitalni podpis, digitalne
+certifikate, kriptografijo, gesla in protivirusne programe. Varnost banĉnih transakcij in
+elektronskega poslovanja se nenehno izboljšuje in nadgrajuje. To podroĉje se bo v prihodnosti
+razvijalo predvsem v razvoju verifikacij posameznih transakcij. To bo omogoĉeno tako, da
+lahko uporabnik preveri in potrdi vsebino transakcije preko neodvisnega kanala, npr. SMS
+sporoĉila ali elektronske pošte, kjer najprej preveri vsebino transakcije in nato vtipka
+potrditveno kodo.
+Mobilno banĉništvo je zelo v porastu, hkrati pa raste tudi število napadov na mobilne naprave.
+Tako je potrebno zaradi vseh podatkov, ki jih hranimo na njih, poskrbeti tudi za varnost leteh. Dober primer inovativne rešitve je aplikacija V-Key, ki omogoĉa mobilno varnost z
+17
+
+zagotavljanjem varovanja posameznih aplikacij in ne celotne naprave. Tehnologija V-Key
+identificira napredne, trajne groţnje s spreminjanjem binarne kode, rešitvam proti obratnemu
+inţenirstvu, z mehanizmom za zaznavanje trojanskih konjev in pregledom celotne naprave
+(V-Key, 2014).
+V razvoju so tudi interaktivne kreditne kartice z ekranom in tipkovnico. To so kartice nove
+generacije, ki omogoĉajo prikaz edinstvene kode, ki jo uporabniki namenijo za potrditev
+svojega nakupa. V prihodnosti imajo namen vkljuĉiti dodatne funkcionalnosti, kot so na
+primer preverjanje porabe in stanja na kreditni kartici preko zaslona (BBC, 2012).
+Zagotavljanje varnosti elektronskega banĉnega poslovanja se razvija tudi v biometriji.
+Biometrija je proces zbiranja, prouĉevanja in shranjevanja podatkov o posameznikovih
+fiziĉnih lastnosti z namenom identifikacije in avtentifikacije. Uporaba biometrije narašĉa
+zaradi vse veĉ zahtev po avtomatiziranem, natanĉnem in hkrati hitrem ugotavljanju oz.
+potrjevanju identitete. Prednosti biometriĉnih znaĉilnosti so unikatne, neprenosljive na drugo
+osebo, ni jih mogoĉe pozabiti ali izgubiti, teţko jih je kopirati ali ponarediti, lahko se
+uporabijo z vednostjo ali brez vednosti posameznika in posamezniku jih je teţko spremeniti
+ali skriti (Informacijski pooblašĉenec, 2014). Oblike biometrije, ki jih nekatere banke ţe
+uporabljajo na podroĉju elektronskega poslovanja, so skeniranje oĉesne mreţnice in šarenice,
+prstni odtisi in prepoznava glasu. Biometriĉna tehnologija ponuja okrepljeno varovanje
+priroĉne uporabe. Uporaba te tehnologije omogoĉa overovitev uporabnika, zmanjšuje prevare
+in zmanjšuje stroške administratorskih gesel. Teţava uporabe te tehnologije je cena
+biometriĉnih senzorjev, ki bodo z razvojem in niţjimi cenami tehnologije postali nujna
+strategija varovanja informacij (Biometrics.gov, 2014). Egipĉanska banka Amman uporablja
+biometriĉno tehnologijo prepoznave šarenice na bankomatih in v njihovih poslovalnicah.
+Prednosti uporabe te tehnologije pripisujejo predvsem, da je enostavna, hkrati pa ne
+potrebujemo
+
+banĉne
+
+kartice
+
+in
+
+njene
+
+PIN-številke
+
+ter
+
+osebnega
+
+dokumenta
+
+(CairoAmmanBank, 2014).
+
+3.4.3
+
+Človeški stik v digitalni prihodnosti
+
+Potreba po osebnem obisku banke bo v prihodnosti zelo upadala. Informacijska tehnologija
+omogoĉa, da ĉloveški stik oblikujemo na drugaĉen, inovativen naĉin. Stik s strankami lahko
+banke oblikujejo z virtualnim banĉnim svetovalcem, ki lahko s pomoĉjo preprostih vprašanj
+pripelje do ustrezne banĉne rešitve. Virtualni banĉni svetovalec lahko na podlagi vsakodnevne
+finanĉne aktivnosti najde rešitve banĉnega poslovanja, pripravi ustrezne rešitve in spremlja
+18
+
+njihovo uresniĉevanje. Virtualnega banĉnega asistenta, ki ga lahko uporabljamo s pomoĉjo
+prepoznave glasu sta zaĉeli razvijati banki USAA in US. Virtualni mobilni asistent banke
+USAA omogoĉa navigacijo in popolni nadzor nad banĉnimi transakcijami. S skoraj 200 ukazi
+je virtualni mobilni asistent hiter in enostaven naĉin osnovnega obvladovanja banĉnih
+transakcij (Wisniewski, 2013). V aprilu 2013 je banka US zaĉela testirati mobilno aplikacijo
+FlexPerks, ki usluţbencem banke omogoĉa iskanje med transakcijami in izvajanje plaĉil z
+glasovnimi ukazi na svojem mobilnem aparatu. Sedaj ţelijo omogoĉiti tudi njihovim strankam
+uporabo te aplikacije za namen prijave s prepoznavanjem glasu namesto standardnega
+prijavnega postopka (FlexPerks, 2014).
+Drugaĉen stik s strankami si lahko banke zagotovijo s pomoĉjo interakcijskih »kioskov«, ki
+omogoĉajo dostop do banĉnih in drugih storitev na javno dostopnih mestih, omogoĉajo
+deskanje po internetu, pošiljanje in sprejemanje elektronske pošte, pošiljanje faksov in kratkih
+sporoĉil SMS, plaĉevanje poloţnic in druge denarne transakcije, govorno in video telefonijo,
+nakup vozovnic, vstopnic in podobno (Wincor Nixdorf, 2014). Razvoj interakcijskih
+bankomatov, ki bo omogoĉala polog gotovine s takojšnjim preverjanjem in poveĉanjem stanja
+na raĉunu, zmanjšanje stroškov oskrbe bankomata z zaprtim denarnim krogom,
+poenostavljeno ravnanje z gotovino, dodatne funkcije, ki bi omogoĉile klepet ali video klice,
+pa bi omogoĉile neposredni kontakt z usluţbencem v banki (Horvat, 2001). Ameriška banka
+Citibank eksperimentira z moţnostjo videokonferenc na svojih bankomatih. Govoreĉi asistent
+omogoĉa pregled raĉuna, dvig gotovine, pregled zgodovine depozitov, razdeliti depozit med
+veĉ raĉunov in plaĉevanje plaĉila s kreditno kartico (Burke, 2013).
+Do popolnega prehoda na brezosebni stik je še dolga pot, tako morajo banke danes ponuditi
+drugaĉen pristop, ki bo pritegnil mlade. Formalna okolja bank lahko prilagodijo v bolj
+sprošĉena okolja druţenja, v neformalne pisarne, s sprostitvenimi kotiĉki in moţnostjo
+osebnega finanĉnega svetovanja. Svetovne banke, kot so BNP Paribas v Parizu, Barclays v
+Londonu in Citybank v New Yorku eksperimentirajo z banĉnimi poslovalnicami, ki so jih
+zasnovali v elegantne salone s pametnimi bankomati in interaktivnimi kioski. Ena najveĉjih
+brazilskih bank Bradesco ponuja v svoji podruţnici interaktivne banĉne mize, dnevni prostor
+in ogromni banĉni zaslon na dotik, njihovi bankomati pa delujejo na biometriĉni prepoznavi
+prstnih odtisov (Gustke, 2014).
+
+19
+
+3.4.4
+
+Bančništvo in zabava
+
+V preteklosti je banĉno poslovanje pomenilo dolgoĉasno, zamudno opravilo, z malo zagona
+in idej. To mišljenje se bo v prihodnosti spremenilo, saj mladi ţelijo sodelovati in biti
+interaktivni.
+V rastoĉih in moĉno tekmovalnih trgih so lahko igre moĉan vpliv na spremembe. Na igre bi
+bilo potrebno gledati ne le kot zabavo, temveĉ priloţnost odgovora ali nagrade za
+konstruktivno obnašanje v banĉnem okolju. Španska banka BBVA je izdala igro Liga BBVA,
+ki omogoĉa ekonomsko virtualno polje. Igralci lahko ob zmagi zadenejo glasbo, filme ali
+nogometne vstopnice za špansko nogometno ligo. Leta 2013 je banka dobila nagrado za
+inovacijo te igre, saj je z veĉ kot 100,000 igralci moĉno presegla priĉakovanja takšnih
+aplikacij (BBVA game, 2014).
+Drugi primeri popularnih iger znotraj finanĉnih institucij so:
+ SaveUp, ki motivira stranke k varĉevanju, in ponuja visoke denarne nagrade (SaveUp,
+2014).
+ PayPerks so spletne vadnice in raziskave, ki pomagajo razumeti prednosti in slabosti
+predplaĉniške kartice tako, da se lahko izognemo plaĉilu pristojbine, prihranimo ĉas,
+ob novem znanju pa si zasluţimo toĉke, ki nam lahko prinesejo denarne nagrade
+(PayPerks, 2014).
+ D2D so priloţnostne igre namenjene finanĉnemu izobraţevanju (D2D Fund, 2014).
+Velika priloţnost, ki bi privabila nove stranke je tudi tehnologija, ki temelji na konceptu
+interakcije ĉlovek-raĉunalnik in se nanaša na vmesnik, ki omogoĉa uporabniku nadzor nad
+orodjem ali digitalno vsebino z naravnimi sredstvi komunikacije. To vkljuĉuje prepoznavo
+govora, premikov ali kretenj, izraz obraza, biometrija in podobno. Cilj je, da bi taka
+tehnologija postala enostavna za uporabo, kar omogoĉa tudi aplikacija Etronika.
+Etronika je litvanska banĉna aplikacija, ki uporablja naravni uporabniški vmesnik (NUI) ter
+omogoĉa uporabniku zaznavanje premikov teles, npr. zamah z roko za zakljuĉek elektronskih
+transakcij. Namesto gesel biometriĉna tehnologija uporabi prepoznavo glasu in obraza za
+vstopne podatke, zamah roke za navigacijo med svojimi dokumenti in izbiro banĉnih
+transakcij. Aplikacija preneha s svojim delovanjem takoj, ko uporabnik odide stran.
+Gotovinsko poslovanje je omogoĉeno, vendar je potrebno zaradi dodatne varnosti potrditi
+transakcije z vnosom PIN-številke kartice (Etronika, 2014).
+Veĉ bank po svetu sodelujejo v poizkusih razvoja nosljive tehnologije. Španska banka
+Sabadell razvija prototip banĉne aplikacije za uporabo Google oĉal. Google oĉala so nosljivi
+20
+
+raĉunalnik s spletno kamero in optiĉnim prikazovalnikom pred uporabnikovim oĉesom.
+Imajo vgrajen mikrofon in GPS. Uporabniki Google oĉal lahko z njimi govorijo, posnamejo
+sliko z glasovnim ukazom »Slikaj!« in podobno. Banĉna aplikacija na Google oĉalih bo
+omogoĉala uporabnikom povezavo z internetom in upravljanje vseh banĉnih poslov z
+glasovnimi ukazi (Sabadell, 2014).
+Prenosljivo tehnologijo, ki je lahko uporabljena v banĉnem sektorju predstavljajo tudi ure.
+Skupina Intelligent Environments je v Britaniji razvila aplikacijo za uporabo na pametnih
+urah Pebble. Aplikacija omogoĉa uporabniku, da preverjajo svoje stanje in nedavne
+transakcije, brez uporabe pametnih telefonov ali brskalnikov. Aplikacija omogoĉa tudi
+nastavitev opozorilnega vibriranje, ko se uporabnik pribliţuje svojemu limitu (Meyer D. ,
+2013).
+
+3.4.5 Oblikovanje lastne znamke
+Banke tradicionalno niso opaţene kot stilske organizacije, ki privabljajo mlade. Banke lahko
+prekinejo tako razmišljanje in dojemanje,zato morajo pritegniti in obdrţati zvestobo mladih.
+To lahko doseţejo z razumevanjem trendov in vedenja mladih, da jim lahko trţijo. Veliko
+ĉasa morajo banke tako posvetiti razvoju svoje lastne znamke namenjene mladim. Primer iz
+tujine je italijanska skupina bank Mediobanca, ki je ustvarila svojo znamo CheBanca!.
+Osnova CheBanca! je ponuditi strankam tisto, kar potrebujejo s pomoĉjo veĉkanalne
+distribucijske usmerjenosti spletnih strani in storitev za stranke. V Sloveniji so se ravno tako
+zaĉele razvijati blagovne znamke bank, namenjene mladim. Primer je banka Nova KBM in
+znamka Sveta vladar. Znamka ponuja raĉun za mlade z mobilno banko in aplikacijo, Moneto,
+predplaĉniško Viso, ugoden kredit in donosna varĉevanja. Hkrati spremljajo svetovne trende,
+z uporabo Google oĉal, v reklamnih oglasih ţe preverjajo zanimanje za ta trend pri nas (Nova
+KBM, 2014).
+
+3.4.6 Uporaba storitev v oblaku
+Poslovanje v oblaku pomeni, da podatke hrani in obdeluje ponudnik oblaĉne storitve na svojih
+streţnikih, ki so obiĉajno razkropljeni na razliĉnih lokacijah. V primeru uporabe storitev v
+oblaku ni potrebno vlagati v nakup tehnologije in opreme za komuniciranje, shranjevanje in
+analizo podatkov, najeme se infrastruktura in storitve zunanjega ponudnika (Informacijski
+pooblašĉenec, 2013).
+21
+
+Glavne prednosti uporabe oblaka za banke so, da se storitve obraĉunavajo po uporabi, banka
+se laţje in hitreje prilagaja potrebam strank, saj produkte in storitve hitreje ponudi, lahko se
+bolj posveĉa oblikovanju in ponudbi banĉnih storitev na raĉun zmanjšane osredotoĉenosti na
+informacijsko tehnologijo, tveganje izpadov se prenese na izvajalca, naroĉnik ni vezan na
+samo en oblak, ampak lahko najema storitve pri razliĉnih ponudnikih. Banke po svetu
+uporabljajo storitve v oblaku predvsem za katalog produktov in storitev, upravljanje
+premoţenja posameznikov, upravljanje kakovosti podatkov, ki zagotavlja, da so podatki o
+cenah, produktih in strankah razpoloţljivi, veljavni in niso podvojeni, programe procesov
+dela, repozitorije za zadnje verzije prodajnih in trţnih podatkov in trţne analize, ki omogoĉajo
+preuĉitev posledic kampanj in ugotovijo, katere kampanje sproţijo najveĉji odziv potrošnikov
+(Majcen Veleĉiĉ, 2012).
+Za banke pomeni uporaba storitev v oblaku moţnost za izvedbo pilotov in trţnih raziskav za
+nove produkte in storitve, zniţanje stroškov, hitrejši ĉas, prilagodljivost in hitro
+obraĉunavanje provizij. Za uporabnike pa so prednosti uporabe oblaka takojšnja posodobitev
+programske opreme, veĉje shranjevalne kapacitete, poveĉana zanesljivost podatkov in dostop
+do podatkov od kjerkoli (Bauerle, 2014).
+
+3.4.7
+
+Big Data
+
+Izraz Big Data je vseobsegajoĉ izraz za zbirke podatkov, ki jih obdelujemo z med seboj
+povezanimi nizi podatkov. Big Data so podatki, ki jih lahko opišemo kot ogromno koliĉino
+raznolikih, hitro spreminjajoĉih, variabilnih in kompleksnih podatkov (SAS, 2014). Big Data
+lahko pomagajo bankam pri ciljnem trţenju, s prej oblikovanimi splošnimi oglasi,
+optimizacijo ponudbe, navzkriţno prodajo, nasprotna upravljanja s kreditnimi tveganji in
+drugo. Potencial Big Data se kaţe tudi v ustvarjanju novih tokov prihodkov banke. Banke
+imajo namreĉ vpogled v to kako, kje, s kom in kdaj kupci porabijo denar (Forbes, 2014).
+Z analizo teh podatkov lahko banke gradijo vpogled v inteligenco kupca in njegovega
+vedenja. Primer te analize je avstralska banka, ki je v povezavi s trgovcem analizirala kupne
+navade strank, in sicer: kaj, koliko in za koliko denarja kupujejo, na podlagi katerih je
+prodajalec odprl nove podruţnice trgovine. Drugi primer je pošiljanje ponudbe svojim
+naroĉnikom. Tako je ameriško plaĉilno podjetje posredovalo vsem imenitnikom njihove
+kartice popuste za nakup v doloĉeni trgovini. Podoben naĉin trţenja je poskusilo tudi
+japonsko mobilno omreţje, ki je v sodelovanju z restavracijo hitre prehrane poslalo kupone s
+
+22
+
+popusti svojim naroĉnikom za naslednji obrok v njihovi restavraciji (Capgemini Consulting,
+2014).
+Banke vse bolj prepoznavajo sedanje in potencialne vrednosti njihovih poslovnih podatkov.
+Visoka uĉinkovita informacijska struktura omogoĉa iskanje in upravljanje velikih koliĉin
+podatkov, ki omogoĉa konkurenĉnost in uspeh bank v prihodnosti.
+
+3.5
+
+E-bančništvo in pravna ureditev
+
+Vsa veĉja uporaba IKT in z njo povezane elektronske izmenjave sporoĉil ter hranjenje
+pomembnih dokumentov v digitalni obliki dobiva vse moĉnejši zagon. Ob upoštevanju
+gospodarski potreb je bila v Evropski uniji sprejeta vrsta direktiv, ki se posredno ali
+neposredno dotikajo elektronskega poslovanja. Poleg Direktive o standardih in pravilih za
+storitve informacijske druţbe ter Direktive o elektronskih podpisih je najpomembnejša
+Direktiva o elektronskem poslovanju (Graham in Platten, 2000). Njena doloĉila so sprejele
+vse ĉlanice Evropske unije v svoje nacionalne zakonodaje. Pravna ureditev, ki ureja podroĉje
+informacijskih tehnologij, zajema prenos podatkov med raĉunalniki v dogovorjenem
+standardu, izmenjavo elektronskih sporoĉil z uporabo javnih ali zašĉitenih standardov preko
+javnih ali zasebnih omreţij oziroma prenašanje golega besedila v elektronski obliki. To
+podroĉje urejata predvsem Zakon o elektronskem poslovanju in elektronskem podpisu in
+Uredba o pogojih za elektronsko poslovanje in elektronsko podpisovanje. Zakonsko podlago
+za elektronsko banĉništvo pa predstavljata tudi Kazenski zakonik Republike Slovenije in
+Zakon o banĉništvu. Banka mora v svojem poslovanju upoštevati tudi slovenski standard
+PSIST BS 7799 Kodeks Varovanja informacij, ki ga izdaja Urad Republike Slovenije za
+standardizacijo in meroslovje pri Ministrstvu za znanost in tehnologijo.
+Zakonska podlaga pa še ne zagotavlja, da je problematika varnosti v e-poslovanju rešena.
+Podana so namreĉ minimalna doloĉila e-poslovanja, ki se glede na podroĉja delovanja
+dopolnjujejo še z drugimi zakoni in predpisi. Zakon o banĉništvu je krovni zakon na podroĉju
+banĉništva, ki v povezavi z drugimi zakoni na podroĉju finanĉnega poslovanja in
+elektronskega poslovanja, doloĉa pravno podlago za vzpostavitev e-banĉništva.
+
+3.5.1 Zakon o elektronskem poslovanju in elektronskem podpisu
+Zakon o elektronskem poslovanju in elektronskem podpisu (Ur. l. RS, št. 98/2004 ZEPEPUPB1) ureja elektronsko poslovanje, ki zajema poslovanje v elektronski obliki z uporabo
+23
+
+informacijske in komunikacijske tehnologije in uporabo elektronskega podpisa v pravnem
+prometu, kar vkljuĉuje tudi elektronsko poslovanje v sodnih, upravnih in drugih postopkih. V
+svojih ĉlenih opredeljuje osnovne pojme in naĉela, ki se uveljavljajo v e-poslovanju: esporoĉilo, delo s podatki v e-obliki, odgovornost ponudnikov storitev informacijske
+tehnologije, vlogo overiteljev, razmerje med elektronskim in lastnoroĉnim podpisom. S tem
+zakonom se uvaja enakovrednost elektronskega in lastnoroĉnega podpisa na dokumentih,
+kadar so izpolnjeni nekateri pogoji.
+14. ĉlen tega zakona navaja, da se elektronskemu podpisu ne sme odreĉi veljavnosti ali
+dokazne vrednosti samo zaradi elektronske oblike, ali ker ne temelji na kvalificiranem
+potrdilu ali potrdilu akreditiranega overitelja, ali ker ni oblikovan s sredstvom za varno
+elektronsko podpisovanje.
+15. ĉlen navaja, da je varen elektronski podpis overjen s kvalificiranim potrdilom in je glede
+podatkov v elektronski obliki enakovreden lastnoroĉnemu podpisu ter ima zato enako
+veljavnost in dokazno vrednost.
+
+3.5.2
+
+Uredba o pogojih za elektronsko poslovanje in elektronsko podpisovanje
+
+Uredba o pogojih za elektronsko poslovanje in elektronsko podpisovanje (Ur. l. RS, št.
+77/2000) doloĉa merila, ki se uporabljajo za presojanje izpolnjevanja zahtev za delovanje
+overiteljev, ki izdajajo kvalificirana potrdila, podrobnejšo vsebino notranjih pravil overiteljev,
+ki izdajajo kvalificirana potrdila, podrobnejše tehniĉne pogoje za elektronsko podpisovanje in
+preverjanje varnih elektronskih podpisov, ĉasovno veljavnost kvalificiranih potrdil,
+podrobnejše pogoje glede uporabe varnih ĉasovnih ţigov, vrsto in uporabo oznaĉbe
+akreditiranih overiteljev in pogoje za elektronsko poslovanje v javni upravi.
+
+3.5.3
+
+Kazenski zakonik Republike Slovenije
+
+Kazenski zakonik Republike Slovenije (Ur. l. RS, št. 63/1994) opredeljuje kazniva dejanja, ki
+se posredno ali neposredno nanašajo na vdore v raĉunalniški sistem ali na nepooblašĉeno
+spreminjanje podatkov.
+143. ĉlen opredeljuje kaznivo dejanje zlorabe osebnih podatkov, kdor brez podlage v zakonu
+ali osebne privolitve posameznika, na katerega se osebni podatki nanašajo, obdeluje,
+posreduje v javno objavo ali se jih javno objavi.
+
+24
+
+221. ĉlen zakona opredeljuje kazen za neupraviĉen vstop ali vdor v informacijski sistem ali
+neupraviĉeno prestreţen podatek o nejavnem prenosu v informacijski sistem ali iz njega. Prav
+tako so v tem ĉlenu opredeljene kazni, za tistega, ki podatke v informacijskem sistemu
+neupraviĉeno uporabi, spremeni, preslika, prenaša, uniĉi ali v informacijski sistem vnese
+kakšen podatek, ovira prenos podatkov ali delovanje informacijskega sistema.
+237. ĉlen pa opredeljuje vdor v informacijski sistem, ki zajema tako zajem podatkov na
+neupraviĉen naĉin kot tudi premoţenjsko korist oz. škodo.
+3.5.4 Zakon o bančništvu
+Zakon o banĉništvu (ZBan-1-UPB5, Ur. l. RS, št. 99/2010) doloĉa pravila o poslovanju bank
+in nadzoru nad njimi, ki zagotavljajo ustrezne pogoje za uĉinkovito in varno poslovanje bank
+in s tem za stabilnost finanĉnega sistema.
+
+3.5.5 Standard PSIST BS 7799
+Banka Slovenije na podlagi zakona o banĉništvu opredeljuje minimalne tehniĉne pogoje, ki
+morajo biti izpolnjeni za opravljanje banĉnih storitev. Banke morajo upoštevati pri izgradnji
+in varovanju informacijske infrastrukture slovenski standard PSIST BS 7799:1997 »Kodeks
+varovanja informacij«, ki predlaga procesni pristop za vzpostavitev, uvajanje, izvajanje,
+spremljanje, vzdrţevanje in izboljševanje sistema varovanja informacijske tehnologije.
+Model, ki je predstavljen v standardu, je razdeljen na naslednje korake: planiranje, uvajanje in
+izvajanje, nadzor in preverjanje ter vzdrţevanje in izboljšave (Bizjak, 2014). Prav tako
+standard vkljuĉuje ukrepe zagotavljanje in zmanjševanje nevarnosti, omejuje posledice v
+primeru uresniĉevanja varnostne groţnje in zagotavlja hitro vzpostavitev pomembnih
+dejavnosti (Rudel, 2005).
+
+3.6
+
+Trženje finančnih storitev generaciji Y
+
+Mladi so v splošnem zadovoljni s svojimi bankami, 26 odstotkov pa bi jih razmislilo o
+zamenjavi banke, ĉe bi jim druga banka ponudila veĉ. Banke bi lahko to priloţnost izkoristile
+tako, da pripravijo celovito ponudbo v skladu s potrebami generacije Y, ki ţeli avtomatizirano
+in strokovno pomoĉ pri upravljanju financ, dolgov in porabe. Banke lahko pri oblikovanju
+tega novega pristopa delujejo na treh kljuĉnih podroĉjih (CISCO, 2010):
+25
+
+
+
+Omogoĉanje storitev za upravljanje osebnih financ, ki jih nadzorujejo stranke same.
+
+
+
+Zagotavljanje bolj zasebnih storitev za stranke prek visoko loĉljivostnih video storitev.
+
+
+
+Razvoj spletne skupnosti uporabnikov finanĉne storitve.
+
+Banke lahko ponudijo komitentom nekoliko kompleksnejše oz. naprednejše storitve, kot so:
+sklepanje zavarovalnih polic, sklepanje razliĉnih vrst varĉevanj, posojil, ponudba esvetovanja, moţnosti investicij ipd. Kljuĉni dejavniki za uspešnost pri tem so enostavnost
+uporabe, funkcionalnost in dojemanje koristi na strani uporabnika. Pri tem se pojavi najveĉja
+teţava predvsem na uporabniškem vmesniku, ki predstavlja obraz banke v razmerju do
+obstojeĉega in potencialnega uporabnika. Bolj, ko bo podoba banke všeĉna in bo izkušnja z
+banko predstavljala uţitek ter vlivala obĉutek varnosti in koristnosti, veĉja je verjetnost, da se
+bo tudi nakljuĉni obiskovalec odloĉil za trajnejše razmerje s takšno banko. Dejstvo je, da sta
+enostavnost uporabe in (stroškovna) koristnost (pa ĉetudi uporabniku le navidezna) storitve
+zelo pomembna dejavnika pri sprejemanju novih tehnologij in storitev. Z vedno boljšim
+poznavanjem, predvsem pa z uporabo interneta s strani posameznikov, bodo banke dobile še
+veĉje moţnosti izkorišĉanja prednosti informacijske tehnologije. Banke morajo prilagoditi (ali
+nadgraditi) svoje strategije, svoje produkte in jih oblikovati v skladu z razvojem in predvsem s
+potrebami uporabnikov. Ĉe bodo ţelele banke izpolniti enega od osnovnih ciljev in prednosti
+uporabe elektronskega banĉništva, bodo morale uporabnikom ponuditi veĉ kot le preverjanje
+stanja raĉuna, plaĉevanja poloţnic in dvigovanje denarja. In to seveda po ugodnih cenah
+(Podlesek, 2008).
+Nasveti po meri lahko banke omogoĉijo razpoloţljivi tehnologiji in omogoĉijo upravljanje
+osebnih financ prek mobilnih naprav. Generacija Y priĉakuje, da so internetne strani
+interaktivne in fokusirane. Ta generacija nameni internetni strani le tri do sedem sekund svoje
+pozornosti. Prav tako kar 80 odstotkov generacije Y uporablja dve ali veĉ naprav ob gledanju
+televizije (Gibson, 2013), ki lahko predstavlja novo moţnost direktnega komuniciranja z
+banko. S to moţnostjo se lahko razširi tudi svetovanje z uporabo video storitev v domovih in
+mobilnih napravah strank. Spletna skupnost uporabnikov finanĉnih storitev, v katere so
+vkljuĉeni sorodniki, prijatelji in sodelavci stranke, pa bi omogoĉala, da lahko uporabniki
+generacije Y dobijo na enem mestu vse finanĉne nasvete od ljudi, ki jih cenijo in jim zaupajo
+(Farah in drugi, 2010).
+Predsednik svetovalnega podjetja Vivaldi Brand Leadership, predlaga ciljno naravnano
+trţenje za mladino. Predlaga blagovne znamke, oblikovane posebej za mlade ter premišljen
+marketing na naĉin, da bodo mladi imeli obĉutek, da so nekaj posebnega in da so drugaĉni od
+drugih (Law, 2006). Banke morajo ponuditi interaktiven stik, dostopnost koristne in lahko
+26
+
+dostopne informacije, hkrati pa tudi omogoĉiti osebni stik s strokovnjaki z ţelenega podroĉja.
+Potrebno je izobraziti mlade o pomembnosti zgodnjega finanĉnega naĉrtovanja. Ĉe ţelijo biti
+banke uspešne na trgu generacije Y, morajo prenehati s trţenjem segmentov in se osredotoĉiti
+na trţenje okoli ţivljenjskih dogodkov (Meyer, 2005).
+
+4. RAZISKAVA
+
+Uĉinkovito poslovanje v podjetju je potrebno planirati na naĉin, da potrošnike s podobnimi
+znaĉilnostmi podjetje razume in s svojimi storitvami zadovoljuje njihove potrebe (Data d.o.o.,
+2013). S pomoĉjo segmentov in izbire ciljnega trga je podjetju omogoĉeno, da svojo ponudbo
+opredeli in uĉinkovito pozicionira, naĉrtuje svoje trţenjske aktivnosti tako, da ĉim bolj
+zadovolji ţelje in potrebe svojih kupcev, ter cilja na razliĉne aktivnosti na njim najbolj
+primeren in zaţelen naĉin. V prejšnjem poglavju smo navedli, na kaj naj bo podjetje pozorno
+pri trţenju generaciji Y. Namen diplomske naloge je iz razliĉnih virov odgovoriti na
+vprašanje, kako lahko banke s pomoĉjo naprednih tehnologij mladim zagotovijo banĉne
+storitve.
+
+4.1
+
+Namen raziskave
+
+Namen raziskave izhaja iz postavljenega problema in pomeni iskanje odgovorov na osnovna
+raziskovalna vprašanja. Za oblikovanje strategije naĉina dostopa do mladih generacije Y je
+potrebno zelo dobro poznati in razumeti njihove potrebe in ţelje. Namen raziskave je preuĉiti
+odnos mladih do banĉnih storitev in naprednih tehnologij in z raziskavo odgovoriti na
+vprašanje, kako lahko banke s pomoĉjo naprednih tehnologij zagotovijo mladim banĉne
+storitve. V tem delu diplomske naloge bomo poskušali osvetliti odnos mladih generacije Y do
+naprednih tehnologij in banĉnih storitev.
+V okviru raziskave ţelimo odgovoriti na naslednja vprašanja:
+
+
+Kaj je mladim pomembno pri banĉnih storitvah?
+
+
+
+Kako se poĉutijo pri doloĉeni banki?
+
+
+
+Ali ostajajo zvesti banki?
+
+
+
+Ali obstajajo novi naĉini, s katerimi bi si lahko banke zagotovile nove stranke?
+27
+
+
+
+Kako mladi sprejemajo nove tehnologije?
+
+
+
+Ali mladi uporabljajo sodobne tehnologije soĉasno z banĉnimi storitvami?
+
+4.2
+
+Cilj raziskave
+
+Cilj diplomske naloge v teoretiĉnem delu je pregledati ţelje in potrebe generacije Y, v
+empiriĉni raziskavi pa ugotoviti, ali se obravnavanje generacije Y v svetu moĉno razlikuje kot
+pri nas in ugotoviti ali obstajajo statistiĉno pomembne razlike glede na ţelje po ustreznih
+banĉnih storitvah.
+Načrt raziskave
+
+4.3
+
+Raziskovalnega procesa se je potrebno lotiti sistematiĉno, da ne bi prezrli nobenega
+pomembnega koraka, kar bi nas pripeljalo do napaĉnega zakljuĉka. Raziskovanje pomeni
+poizvedovanje za natanĉno doloĉenimi cilji ali reševanje doloĉenega problema s
+sistematiĉnim procesom (Cenciĉ, 2009). Izvedba raziskave bo potekala po nekem smiselnem
+zaporedju korakov:
+
+
+iskanje literature,
+
+
+
+pisanje teoretiĉnega dela,
+
+
+
+zbiranje podatkov,
+
+
+
+obdelava podatkov in preverjanje hipotez.
+
+4.3.1
+
+Izhodišča raziskave
+
+Za raziskavo smo izhajali iz vprašanja »Ali se banke prilagajajo mladim in njihovim
+finanĉnim potrebam in ţeljam?« in »Ali bi se mladi bolj odloĉali za banĉne storitve, ĉe bi bile
+te bolj v povezavi z informacijsko-telekomunikacijskimi moţnostmi?«. Glede na izhodišĉni
+vprašanji smo naredili naĉrt raziskave, ki vkljuĉuje opis uporabljenih raziskovalnih metod.
+
+4.3.2
+
+Raziskovalne metode
+
+Raziskovalne metode analiziranja podatkov v grobem loĉimo na kvantitativne in kvalitativne.
+Kvantitativne metode raziskovanja razlagajo pojave z zbiranjem številĉnih podatkov, ki jih
+28
+
+statistiĉno analiziramo. Imamo velik in reprezentativen vzorec, na podlagi katerega podamo
+konĉne predloge za obravnavan problem. Kvalitativne raziskovalne metode pa uporabimo,
+kadar imamo premalo vpogleda in znanja o nekem problemu. S to metodo pridobimo
+podroben vpogled in razumevanje o motivih in razlogih, zbiranje podatkov je nestrukturirano,
+le-teh pa ne obdelujemo statistiĉno (Kumar, 2005).
+Za potrebe diplomskega dela bomo uporabili kvalitativno pridobljene podatke razliĉnih tujih
+raziskovalnih druţb in sekundarne podatke iz opravljene kvantitativne raziskave
+raziskovalnega podjetja RM Plus z naslovom Raziskava ugleda, kakovosti storitev in trţnega
+poloţaja slovenskih bank v letu 2013. Na podlagi tujih raziskovalnih skupin ţelimo dobiti
+okvir raziskovanja banĉnega poloţaja v tujini, s sekundarnimi podatki podjetja RM Plus pa
+ţelimo preveriti, kakšen je odnos mladih do banĉnih in finanĉnih storitev pri nas.
+Diplomsko delo bomo zakljuĉili s konkretnimi in uporabnimi predlogi za banke, kako naj
+ponudijo storitve mladim ter podali mnenje o stanju pri nas in v tujini.
+4.3.3 Izhodiščne hipoteze
+Hipoteze ali predpostavke so domnevne povedi odnosov med dvema ali veĉ spremenljivkami.
+Raziskovalne hipoteze dopolnjujejo raziskovalne cilje in predvidijo rezultate (Cenciĉ, 2009).
+V diplomskem delu bomo preverjali štiri hipoteze:
+
+
+H1: »Generacija Y ni zvesta svoji banki.«
+
+Hiter ţivljenjski slog, navade in razpoloţenje moĉno vplivajo na vedenje generacije Y. Ne
+ţelijo biti del mnoţice ampak izstopati kot individualni posamezniki, ki so sami odgovorni za
+svoje ţivljenje. Kritiĉno gledajo na vse projekte v ţivljenju, njihova mobilnost in hitrost
+sprejemanja sprememb pa jim omogoĉata, da se uĉinkovito prilagodijo novemu toku, ki jim je
+ponujen.
+
+
+H2: »Generacija Y bo v prihodnosti pogosteje uporabljala sodobne trţne poti.«
+
+Generacija Y je odrasla ob sodobni tehnologiji. Sodobne trţne poti so jim na voljo vsak dan,
+ne bojijo se njihove varnosti in zaupajo v njeno delovanje. Uporabljajo jih vsakodnevno.
+
+
+H3:»Generacija Y ima premalo dostopnih informacij o banĉnem poslovanju.«
+
+Kljub splošni poplavi informacij iz vseh strani si mladi še vedno ţelijo dobiti konkretne
+informacij, ki se tiĉejo predvsem toĉno doloĉenih dogodkov v ţivljenju. Ţelijo si informacij
+brez majhnega tiska, pogoji morajo biti toĉno doloĉeni. Najbolj zaupanja vreden nosilec
+informacije pa kljub dostopnosti informacij po sodobnih poteh, še vedno ostaja znanec,
+sorodnik ali prijatelj.
+29
+
+
+
+H4:»Generacija Y si ţeli bolj enostavnih in razumljivih postopkov.«
+
+Postopki, ki bi omogoĉili, da se upravljanje s finanĉnimi transakcijami poenostavijo bi mladi
+sprejeli z odprtimi rokami. Ţelijo si enostavnih in transparentnih postopkov, ki vodijo k
+takojšnjemu uĉinku.
+
+4.3.4
+
+Omejitve
+
+Omejitve, ki jih bomo v raziskavi upoštevali se nanašajo na vzorec. Anketiranci so izbrani
+nakljuĉno, vzorca ne moremo posplošiti na celotno populacijo, saj niso zajeti vsi segmenti.
+V raziskavi se bomo omejili predvsem na ţe obstojeĉo tehnologijo, ne bomo obravnavali
+informacijsko-tehniĉnih smeri in programske opreme v zvezi z novo tehnologijo, vendar
+bomo upoštevali ţe uporabljene sodobne tehnologije.
+
+4.4
+
+Kvalitativna raziskava
+
+Ob raziskovanju problema mladih in banĉne storitve smo zasledili nekaj tujih raziskav na to
+temo. V tujini se veliko ukvarjajo predvsem s trţenjem in naĉini, kako ponuditi novim
+uporabnikom storitve, ki jih potrebujejo in si jih ţelijo. Raziskave potreb in prilagajanja
+banĉnih storitev mladim generacije Y smo opisali in razdelili po ĉasovnem zaporedju od leta
+2007 do napovedi, kaj priĉakovati v bliţnji in daljni prihodnosti.
+
+4.4.1
+
+Deloitte spodbujevalci sprememb
+
+Skupina Deloitte je blagovna znamka, v okviru katere strokovnjaki in neodvisne druţbe
+sodelujejo pri opravljanju storitev revizije, poslovnega svetovanja, finanĉnega svetovanja,
+obvladovanja tveganj in davĉnih storitev. Njihova vizija je izbor tistih posameznikov, ki jim
+omogoĉa rast, obseg in globalno prisotnost. Generacija Y je tisti opazovan in raziskan
+posameznik skupine Deloitte, ki bo moĉno vplival na celotno delovanje banĉnih sistemov in
+generacij, ki pridejo za njimi (Deloitte, 2014).
+Skupina Deloitte je ţelela dobiti dejanske podatke o potrebah in ţeljah potrošnikov. V ta
+namen so leta 2007 izvedli spletno anketo, v katero so vkljuĉili 1008 odraslih iz ZDA.
+Skupina anketiranih je predstavljala vse štiri generacije: generacijo Y, generacijo X,
+generacijo otrok blaginje in generacijo veteranov, ki so ţe v kakršnemkoli banĉnem odnosu.
+Ob natanĉnem raziskovanju generacije Y je prišla skupina Deloitte do ugotovitev, da je
+30
+
+potrebno zaradi ţelja in potreb nove generacije bistveno spremeniti finanĉne institucije in
+omogoĉiti vnoviĉen zagon banĉništva. Strategija sprememb naj bi se razvijala predvsem na
+treh podroĉjih (Cox in drugi, 2008):
+
+
+Trţnih kanalih v katere je potrebno mlade generacije Y vkljuĉiti tako, da aktivno
+sodelujejo v procesih finanĉnega odloĉanja. Ob tem jim je potrebno omogoĉiti
+sodobne naĉine komunikacije.
+
+
+
+Marketing naj vsebuje predvsem izobraţevanje mladih in ne le informiranje. Mladi se
+bodo laţje odloĉili na podlagi praktiĉnih informacij s konkretnimi rešitvami.
+
+
+
+Produktih oziroma storitvah, ki jih je potrebno poenostaviti. Mladim je potrebno
+ponuditi enostavne in transparentne rešitve ob razumni ceni.
+
+Skupina Deloitte je v svoji raziskavi ugotovila, da je generacija Y zelo velik izziv za banke.
+Te se namreĉ borijo,kako ustvariti dolgoroĉne stranke in zgraditi z njimi odnose, ki bodo
+omogoĉali širjenje mreţe strank. Sprejemanje generacije Y v tem smislu pomeni obvezo, da
+se zaĉnejo hitre spremembe v bankah. Spreminjajoĉa tehnologija in velika skupina novih
+potrošnikov, ki priĉakujejo zadnje napredke in uporabne informacije,ustvarjajo katalizator za
+spremembe, ki jih banke ne morejo spregledati. Uĉinkovit naĉin pridobivanja strank iz
+generacije Y je ustvariti storitve ali produkte, ki se bodo nanašali direktno na njih. Storitve, ki
+jih ta generacija potrebuje, so namreĉ zelo dobro opredeljene. Potrebujejo sodobne kanale in
+omreţja, trţenje storitev, ki izobraţujejo, in izdelke, ki zagotavljajo vnaprej doloĉeno
+vrednost, ob dostopni in preprosti uporabi. Dobiĉkonosnost generacije Y bankam prinaša tudi
+priznavanje njihovih druţbenih obveznosti in interesov, s ĉimer bodo lahko zgradile trajne
+odnose, ki bodo s ĉasom zelo dobiĉkonosni. Banke se spremembam ne morejo izogniti, tako
+se morajo sreĉati z novimi oblikami trţenja in razvoja izdelkov ter z izzivi, da se je potrebno
+prilagoditi vsaki generaciji posebej (Cox in drugi, 2008).
+Realna vrednost potrošnikov generacije Y ni le v obsegu priloţnosti, ki jih zastopajo, ampak v
+njihovih sposobnostih, da spremenijo celoten proces finanĉnih transakcij in svetovanj. Te
+spremembe vplivajo tudi na vse prihodnje generacije in ustvarjajo dragocene franšize in
+kanale za tiste banke, ki se bodo pravoĉasno prilagodile potrebam in ţeljam generacije Y
+(Cox in drugi, 2008).
+4.4.2 Poročilo Intuit 2020
+Poroĉilo Intuit 2020 predstavlja pomembne demografske, ekonomske, socialne in tehnološke
+trende, ki vplivajo na razvoj sektorja finanĉnih storitev v tem desetletju. Poroĉilo predstavlja,
+31
+
+da je zdajšnje desetletje obdobje hitrih sprememb v industriji finanĉnih storitev. Poveĉani
+regulatorni pritiski in novi konkurenti so spremenili konkurenĉne pogoje. Tehnologija
+spodbuja inovacije in ustvarjanje novih naĉinov za interakcijo s strankami in poslovnih
+modelov. Demografski premiki in rast malih podjetij ustvarjajo moţnosti za finanĉne
+institucije, da razvijejo moĉen in oseben stik s strankami (Intuit, 2011).
+Medtem ko prihodnost prinaša tveganja in negotovosti, pa razkriva tudi veliko priloţnosti
+tistim bankam, ki so hitre in se znajo odzivati na spreminjajoĉe se potrebe potrošnikov. Kupci
+namreĉ zahtevajo tako virtualno kot osebno storitev, kakovost je zelo pomembna v vseh
+toĉkah. Predvsem predstavniki generacije Y, ki bodo do leta 2020 najstarejši v 40-letih,
+moĉno vplivajo na razvoj finanĉnih institucij. Moĉno vlogo imajo tudi visoko izobraţene
+ţenske, ki bodo do leta 2020 glavne finanĉne odloĉevalke in potrošnice. Tako se morajo
+finanĉne institucije zavedati velikega pomena generacije Y, ki še vedno ĉuti vpliv velike
+recesije. Ĉutijo negotovost sluţb, stagnacije plaĉ, upadanje koristi delodajalcev in so tako
+moĉno zaskrbljeni glede svoje finanĉne prihodnosti. V teh primerih se obraĉajo na banke, ki
+jim lahko zagotovijo orodja, informacije, vire, izdelke in storitve, ki jim pomagajo
+organizirati finanĉno ţivljenje (Intuit, 2011).
+Z zagotavljanjem storitev, ki bodo pomagala strankam upravljati svoje ţivljenje, imajo
+finanĉne institucije priloţnost za vzpostavitev zaupanja in razvoj trajnostnega in
+dobiĉkonosnega odnosa s svojimi strankami (Intuit, 2011).
+
+4.4.3
+
+Raziskava CISCO
+
+Razumevanja odnosa mladih do informacijsko-telekomunikacijskih tehnologij vkljuĉuje tudi
+njihov vpliv v sektorju banĉništva. To podroĉje je raziskoval tudi vodilni svetovni ponudnik
+omreţnih storitev CISCO. CISCO je ameriško multinacionalno podjetje, ki spremlja smernice
+na podroĉju komunikacij, povezovanja in sodelovanja (CISCO, 2014). V raziskavi o
+banĉništvu za prebivalstvo v letu 2009 ugotavlja, da se bo zaradi potreb generacije Y ta sektor
+banĉništva korenito spremenil. Ta sprememba pa je lahko tudi zelo pozitivna za banke, saj bi
+ob upoštevanju potreb generacije Y banke lahko ustvarile do 10 odstotkov veĉ prihodkov
+(Farah in drugi, 2010).
+Raziskavo odnosa mladih do informacijsko-telekomunikacijskih tehnologij je izvedla skupina
+svetovalcev Cisco Internet Business Solution Group (IBSG), v njej je sodelovalo 1055
+potrošnikov v ZDA, starejših od 18 let. Da bi si lahko ustvarili toĉno sliko o ţeljah in trendih
+v zvezi s finanĉnimi storitvami za prebivalstvo v razliĉnih generacijah so na 75 vprašanj
+32
+
+odgovarjali pripadniki razliĉnih generacij. Cilj raziskave je bil ugotoviti kakšne so prioritete
+na finanĉnem podroĉju, kakšne storitve priĉakujejo od bank, kaj menijo o uporabi video
+storitev in katere oblike banĉnega svetovanja so jim najljubše (Farah in drugi, 2010).
+Rezultati raziskave kaţejo, da je generacija Y v rezultatih raziskave izstopala od drugih
+generacij in bo tako moĉno vplivala na banĉništvo za prebivalstvo na splošno. Ob upoštevanju
+prioritet mladih kot so zniţevanje dolgov, upravljanje odhodkov in izobraţevanje o finanĉnih
+vprašanjih je priloţnosti za rast prihodkov v tem sektorju veliko (CISCO, 2010).
+Med ugotovitvami raziskave je bilo pomembno dejstvo, da mladi generacije Y hitro
+sprejemajo nove komunikacijske tehnologije, kot so video in spletne rešitve. Veĉ kot polovica
+pripadnikov generacije Y ima spletno kamero, medtem ko jo ima le manj kot tretjina
+pripadnikov srednje in starejše generacije. Skoraj 40 odstotkov potrošnikov iz generacije Y
+ţeli prejemati finanĉne nasvete tako prek video storitev kot tudi mobilnih telefonov, zadnje
+ima kar 97 odstotkov pripadnikov generacije Y. 20 odstotkov pripadnikov generacije Y
+veĉkrat dnevno obišĉe YouTube, kar je petkrat pogosteje kot pripadniki srednje in starejše
+generacije, kar ravno tako predstavlja zelo dober kanal za poslovanje z mladimi (Farah in
+drugi, 2010).
+Obširna raziskava je pokazala, da generacija Y zaupa svojim bankam in pri njih še vedno
+poišĉe nasvete, ko sprejemajo pomembne finanĉne odloĉitve. 85 odstotkov pripadnikov
+generacije Y je zadovoljnih ali zelo zadovoljnih s svojimi trenutnimi ponudniki finanĉnih
+storitev, vendar jih veĉ kot tretjina vprašanih iz generacije Y meni, da potrebujejo pomoĉ pri
+upravljanju svojih finanĉnih zadev. Generacija Y moĉno ceni finanĉne nasvete prijateljev in
+sorodnikov, kar trikrat bolj kot pripadniki srednje in starejše generacije, hkrati pa objavljajo
+vprašanja o finanĉnih zadevah v spletnem dnevniku in na spletnem forumu štirikrat pogosteje
+kot pripadniki srednje in starejše generacije. 40 odstotkov strank iz generacije Y uporablja
+spletna orodja za upravljanje osebnih financ, na ta naĉin upravljajo odhodke, zmanjšujejo
+dolgove in poveĉujejo dolgoroĉne prihranke (Farah in drugi, 2010).
+Medtem ko so pripadniki generacije Y v splošnem zadovoljni s svojimi bankami, bi jih 26
+odstotkov razmislilo o zamenjavi banke, ĉe bi jim druga banka ponudila veĉ. Skupina Cisco
+IBSG bankam priporoĉa, da to priloţnost izkoristijo tako, da pripravijo celovito ponudbo v
+skladu z navedenimi potrebami pripadnikov generacije Y, ki ţelijo avtomatizirano in
+strokovno pomoĉ pri upravljanju financ, dolgov in porabe. Banke morajo pri oblikovanju tega
+novega pristopa delovati na treh kljuĉnih podroĉjih (Farah in drugi, 2010):
+
+
+Omogoĉanje storitev za upravljanje osebnih financ, ki jih lahko nadzorujejo kar
+stranke same, ustvarijo naj priloţnosti za zagotavljanje nasvetov po meri na internetni
+33
+
+platformi in omogoĉijo upravljanje osebnih financ na mobilni platformi s sistemom
+takojšnjih opozoril, moţnostjo pregledovanja in sprejemanja odloĉitev.
+
+
+Zagotavljanje bolj zasebnih storitev za stranke prek visoko loĉljivostnih video
+storitev: ponudijo naj moţnost komuniciranja s strokovnjaki v osrednji finanĉni enoti
+prek videa v poslovalnicah, posvetijo dodatno pozornost poslovalnicam, v katerih
+poslujejo stranke in razširijo ponudbo svetovanja z uporabo video storitev v domove
+in mobilne naprave strank, ko se tehnologija bolj in hitreje razširi med uporabniki.
+
+
+
+Razvoj spletne skupnosti uporabnikov finanĉnih storitev, v to skupnost morajo biti
+vkljuĉeni sorodniki, prijatelji in sodelavci stranke, da lahko uporabnik iz generacije Y
+na enem mestu dobi finanĉne nasvete od ljudi, ki jih ceni in od zaupanja vrednih
+strokovnjakov v svoji banki.
+
+4.4.4
+
+Efma in Capgemini
+
+Capgemini je francosko multinacionalno podjetje, ki se ukvarja z IT storitvami in
+svetovanjem. Ukvarjajo se s preoblikovanjem organizacij in izboljšanjem uĉinkovitosti
+poslovanja. Njihov naĉin poslovanja zdruţujejo z razliĉnim sodelovanji strokovnjaki na
+razliĉnih trgih (Capgemini, 2014). Z zdruţenjem Efma, ki je bilo ustanovljeno leta 1971 na
+pobudo bank in zavarovalnic z namenom spodbujanja izmenjave izkušenj in inovativnosti
+(EFMA, 2014), sta objavila skupno poroĉilo o poslovanju bank v letu 2014 z naslovom –
+World Retail Banking 2014.
+Poroĉilo razlaga, kako generacija Y narekuje povpraševanje po digitalni funkcionalnosti
+poslovanja z bankami in kako lahko banke z zagotavljanjem pozitivne izkušnje strank
+izboljšajo svoje konkurenĉne prednosti ter zvišajo dobiĉek (Capgemini, 2014).
+Capgeminijev indeks uporabniške izkušnje (CEI) z analizo odgovorov veĉ kot 17.000
+uporabnikov iz 32 drţav predstavlja izsledke ene najobseţnejših raziskav o izkušnjah
+uporabnikov v banĉni industriji. Ugotovitve poroĉila dopolnjuje kar 132 poglobljenih
+intervjujev z izvršnimi delavci ter študije primerov v šestih regijah, in sicer: azijsko-pacifiške,
+srednje in zahodnoevropske, bliţnjevzhodne in afriške ter severno- in latinskoameriške regije
+(Capgemini, Efma, 2014).
+Poroĉilo World Retail Banking tudi opozarja, da ljudje postajajo ĉedalje bolj povezani s
+socialnimi mediji. V zadnjem desetletju je postal socialni medij vpleten v vsakodnevno
+ţivljenje milijonov ljudi na svetu. Sam Facebook je v desetih letih pridobil veĉ kot 1.28
+bilijona uporabnikov, ki se vsakodnevno prijavljajo na stran (Facebook, 2014). Generacije
+34
+
+mladih, ki odrašĉajo s socialnimi mediji, sprejemajo to kot bistveno komponento v ţivljenju.
+Tako se je potrebno zavedati, da ima socialni medij ţe danes moĉan vpliv na informacije o
+banĉnih storitvah, saj kar 10 odstotkov vprašanih uporablja socialna omreţja za stik z banko
+vsaj enkrat tedensko. Glede na dostopnost in uporabo socialnih medijev v vsakodnevnem
+ţivljenju morajo banke ustvariti strategijo, ki definira cilje uporabe socialnih medijev. Banke
+lahko tako zagotovijo ţelje strank, za katere same niso vedele, da jih imajo. Jasna socialna
+medijska strategija in model za celovito upravljanje sta bistvenega pomena za izkorišĉanje te
+priljubljene tehnologije. Raznolikost socialnih medijev omogoĉa lahko rešitev mnogih
+naĉinov pridobivanja novih strank, hkrati pa tudi omogoĉa, da obdrţijo obstojeĉe stranke.
+Tako kot so to prednosti za banke, pa prednosti uporabe socialnih medijev predstavljajo tudi
+uporabnikom. Banĉništvo postaja z uporabo socialnih medijev laţje dostopno in priroĉno.
+Stranke, ki imajo pozitivne izkušnje s svojo banko, so bolj lojalne in imajo kar trikrat veĉjo
+moţnost, da ostanejo pri dosedanji banki, kot tisti, ki so imeli pri banki negativno izkušnjo.
+Ob raziskovanju pozitivnih izkušenj so tako naleteli, da ima generacija Y v primerjavi z
+drugimi generacijami veĉ slabih izkušenj. Temu rezultatu raziskave bi morale banke posvetiti
+veliko pozornosti, saj so le zadovoljne stranke, stranke na dolgi rok. Ravno tako se je
+potrebno zavedati, da so mladi zelo zagreti za uporabo mobilnega banĉništva, visoki zagoni
+digitalnih inovacij pa še ne garantirajo njihovih pozitivnih izkušenj (Capgemini, Efma, 2014).
+V prihodnosti se bo rast širjenja socialnih omreţij banĉništva širila soĉasno z rastjo
+digitalnega in socialnega medija. Banke morajo poskrbeti za telekomunikacijsko informirane
+stranke, hkrati pa jim vedno zagotavljati storitve visoke neposredne kakovosti (Capgemini,
+Efma, 2014).
+
+4.5
+
+Kvantitativna raziskava
+
+4.5.1 Socio-demografske značilnosti uporabnikov e-bančništva v Sloveniji
+
+Konec leta 2013 je bilo med prebivalci Slovenije 349.773 ali 17% mladih starih med 15 in 29
+let. Uporaba informacijsko-komunikacijske tehnologije je med mladimi zelo razširjena, saj jih
+kar 89,7% uporablja raĉunalnik in internet vsak dan, kar 70,1% mladih uporablja internet prek
+mobilnega telefona, 32% mladih pa prek prenosnega ali tabliĉnega raĉunalnika (STAT, 2014).
+Raziskave na podroĉju elektronskega poslovanja kaţejo, da uporaba e-banĉništva v Sloveniji
+narašĉa. Najveĉ uporabnikov e-banĉništva je starih med 24 in 37 let. Med rednimi uporabniki
+interneta v sklopu raziskave spletne strani Raba interneta v Sloveniji uporablja e-banĉništvo
+35
+
+38% populacije (Vehovar in Kronegger, 2005). Napovedi RIS raziskave e-banĉništva 2004,
+da se bo v štirih letih število uporabnikov podvojilo, so se v celoti uresniĉile, saj je bilo po
+zadnjih ocenah RIS (2008) veĉ kot milijon uporabnikov interneta, od tega jih 312.000
+uporablja storitve e-banĉništva. Po podatkih EUROSTAT-a v razvitejših drţavah deleţ
+uporabnikov e-banĉništva v populaciji v zadnjih letih narašĉa za okoli 4 odstotne toĉke letno,
+v Sloveniji pa za 2 ali 3 odstotne toĉke. Ta zaostanek omogoĉa priloţnost za hitrejšo širitev ebanĉništva, ki lahko poteka v vsakem segmentu, a brez dodatnih aktivnosti in spodbud s strani
+bank samih ne bo višji od priĉakovanega. Na podroĉju e-banĉništva je tako potrebno vlaganje
+ne le v trţenje in razvoj neposrednih storitev e-banĉništva, temveĉ je potrebno tudi razviti
+ustrezne kanale za komuniciranje z uporabniki, dobiti stranke preko obstojeĉih komitentov,
+prodati obstojeĉim strankam ĉim veĉ storitev. Pomembni trendi na podroĉju spletnih storitev,
+ki bodo vplivali na e-banĉništvo, so (Vehovar in drugi, 2009):
+
+
+»custumization« oz. prilagajanje spletnih strani ţeljam uporabnikov (tako prilagajanje
+spletnih vmesnikov in spletnih strani, kot tudi prilagajanje glede na zahtevnost ţelene
+storitve)
+
+
+
+»security« oz. poudarek na varnem poslovanju,
+
+
+
+»social media« oz. trţenje preko dobrega glasu s pomoĉjo objav uporabnikov storitev,
+on-line skupnosti, forumov, prednost bodo imeli tisti, ki bodo v pravem trenutku znali
+izkoristiti prednosti, ki jih ponuja tehnologija Web 2.0.
+
+4.5.2
+
+Raziskava ugleda, kakovosti storitev in tržnega položaja slovenskih
+bank‒prebivalstvo 2013
+
+Podjetje RM PLUS je podjetje s podroĉja trţnih in javnomnenjskih raziskav ter marketinškim
+svetovanjem. V podjetju se ukvarjajo z zmanjševanjem poslovnih tveganj in doseganjem
+zastavljenih poslovnih ciljev s celovitimi, strokovnimi in zanesljivimi storitvami s podroĉja
+trţnih in javnomnenjskih raziskav ter marketinškim svetovanjem. Sodelujejo z razliĉnimi
+mednarodnimi raziskovalnimi institucijami. Podjetje je ĉlan ESOMAR ‒Evropsko zdruţenje
+trţnih in javnomnenjskih raziskovalcev in Društva za marketing Slovenije.
+Raziskava meri bistvene elemente ugleda, trţnega poloţaja, zadovoljstva in uporabe storitev
+bank v Sloveniji. Za potrebe diplomske naloge so nam posredovali podatke raziskave, iz
+katere so izloĉili vse spremenljivke, kjer so bila navedena imena bank. Samega poroĉila
+nismo dobili, saj vkljuĉuje podatke, ki prikazujejo trţne deleţe posameznih bank na
+slovenskem ozemlju. Ti podatki niso dovoljeni za zunanjo uporabo zaradi pogodb z naroĉniki,
+36
+
+zato so posredovali le splošne podatke o prebivalstvu (RM Plus, 2014). Za namen analiziranja
+odnosa mladih generacije Y do banĉnih storitev in ponudb smo iz raziskave izvzeli starostno
+skupino od 15 do 30 let in analizirali njihove potrebe in ţelje.
+Podatke za raziskavo ugleda, kakovosti storitev in trţnega poloţaja slovenskih bank so zbirali
+s terenskim anketiranjem po gospodinjstvih maja 2013. Nakljuĉen reprezentativen vzorec
+vsebuje 1000 anketiranih oseb, starih 15 let in veĉ. Vsebina raziskave zajema poznavanje
+bank in njenih oglasnih sporoĉil, ugled bank, trţni deleţ bank, uporabo in kakovost storitev,
+zadovoljstvo in lojalnost komitentov ter informiranje.
+Grafikon 4.1 predstavlja številĉnost starostnih skupin zajetih v raziskavi ugleda, kakovosti
+storitev in trţnega poloţaja slovenskih bank. Na podlagi tematike in ciljev diplomske naloge
+smo se osredotoĉili na analizo skupine mladih v starostnem razponu od 15 do 30 let. Ti
+zajemajo tretjo najveĉjo skupino anketirancev, ki smo jo v nadaljevanju bolj podrobno
+raziskali.
+
+Grafikon 4.1: Starostna struktura anketirancev.
+
+Starost anketirancev
+
+15-30 let
+31-40 let
+41-54 let
+55 in več let
+
+Vir: Cimermanĉiĉ, lastna raziskava (2014)
+
+V analizi smo obravnavali skupino anketirancev starih od 15 do 30 let, v kateri je 244 oseb,
+od tega 126 moških in 118 ţensk. Zakonski stan anketirancev predstavlja Grafikon 4.2. 63,9%
+anketiranih ţivi samsko ţivljenje, 26,5% ţivi v izven zakonski skupnosti, 9,2% je poroĉenih
+in 0,5% je loĉenih oziroma ovdovelih.
+
+37
+
+Grafikon 4.2: Zakonski stan anketirancev.
+
+Poročeni
+
+Živite v izvenzakonski skupnosti
+Zakonski stan
+Živite samsko
+Živite ločeno/ste
+razvezani/ovdoveli
+
+0%
+
+20%
+
+40%
+
+60%
+
+80%
+
+100%
+
+Vir: Cimermanĉiĉ, lastna raziskava (2014)
+Meseĉni prihodek vprašanih se giblje med 600 in 900 evri. Na vprašanje »Katere finanĉne
+storitve vi osebno trenutno uporabljate?« je odgovorilo 242 vprašanih. Grafikon 4.3
+ponazarja, da 11,7% vprašanih uporablja finanĉno storitev limit, 22,4% uporablja finanĉno
+storitev bankomat, 24,1% uporablja osebni raĉun za fiziĉne osebe ter 12,6% uporablja
+plaĉevanje s kartico osebnega raĉuna. Uporaba sodobnih tehnologij v banĉnem okolju v tej
+raziskavi ni toliko razširjena, saj uporablja telefonsko banĉništvo le 1,1% vprašanih, medtem
+ko elektronsko banĉništvo uporablja 9,4% vprašanih. Ostale finanĉne storitve se uporabljajo v
+manjših deleţih, posamezni odstotki so prikazani v Grafikon 4.3.
+
+38
+
+Grafikon 4.3:Finanĉne storitve, ki jih mladi trenutno uporabljajo.
+
+Finančne storitve
+Bančno-zavarovalniška vlaganja
+Varčevalni račun
+Potrošniški kredit
+Avtomobilski kredit
+Osebni račun za fizične osebe
+Plačevanje s kartico transakcijskega računa
+Borzno posredništvo
+Vlaganje v investicijske vzajemne sklade
+Stanovanjski nepremičninski kredit s hipoteke
+Dodatno pokojninsko varčevanje
+Varčevanje z mesečnimi pologi
+Elektronsko bančništvo
+Telefonsko bančništvo
+Mednarodno poslovanje
+Bankomat
+Stanovanjski nepremičninski kredit brez hipoteke
+Vezave denarnih sredstev-depoziti
+Limit
+Kreditne kartice (poravnava obveznosti 1X…
+Poslovni (transakcijski) račun
+Hranilna (varčevalna) knjižica v domači valuti …
+0
+
+5
+
+10
+
+15
+
+20
+
+25
+
+30
+
+Vir: Cimermanĉiĉ, lastna raziskava (2014)
+Na vprašanje »Katere finanĉne storitve boste priĉeli uporabljati v naslednjih 12 mesecih?« je
+odgovorilo le 21,9% vprašanih. Grafikon 4.4.4 ponazarja, da bosta v prihodnosti najbolj v
+uporabi elektronsko banĉništvo in bankomat.Za uporabo elektronskega banĉništva se bo
+namreĉ v prihodnjem letu odloĉilo 26% vprašanih, za bankomat 11%, poveĉala pa se bo tudi
+uporaba telefonskega banĉništva, za katerega se bo odloĉilo 6,7% vprašanih. Ostale finanĉne
+storitve, ki se bodo uporabljale v naslednjih mesecih, predstavlja Grafikon 4.4.4. V primerjavi
+s storitvami, ki jih vprašani ţe uporabljajo, pa se v bliţnji prihodnosti ne bodo odloĉili za
+uporabo in vlaganje v banĉno-zavarovalniška vlaganja, borzno posredništvo in mednarodno
+poslovanje.
+
+39
+
+Grafikon 4.4: Finanĉne storitve, ki jih bodo mladi uporabljali v naslednjih 12 mesecih.
+
+Finančne storitve v bližnji prihodnosti
+Potrošniški kredit
+Avtomobilski kredit
+Osebni račun za fizične osebe
+Plačevanje s kartico transakcijskega računa
+Vlaganje v investicijske vzajemne sklade
+Stanovanjski nepremičninski kredit s hipoteke
+Dodatno pokojninsko varčevanje
+Varčevanje z mesečnimi pologi
+Elektronsko bančništvo
+Telefonsko bančništvo
+Bankomat
+Stanovanjski nepremičninski kredit brez hipoteke
+Vezave denarnih sredstev-depoziti
+Limit
+Kreditne kartice (poravnava obveznosti 1X…
+Poslovni (transakcijski) račun
+Hranilna (varčevalna) knjižica v domači valuti …
+0
+
+5
+
+10
+
+15
+
+20
+
+25
+
+30
+
+Vir: Cimermanĉiĉ, lastna raziskava (2014)
+Na vprašanje »Ali ste zadovoljni s storitvami glavne banke?« je odgovorilo vseh 244
+vprašanih. Grafikon 4.5 prikazuje zadovoljstvo z glavno banko. Popolnoma zadovoljnih in
+zelo zadovoljnih anketirancev je skupno kar 68%, nezadovoljna sta le 2% vprašanih, manj
+zadovoljnih in zadovoljnih pa 35%.
+
+40
+
+Grafikon 4.5: Zadovoljstvo s storitvami glavne banke.
+
+Zadovoljstvo
+
+Nezadovoljni
+Manj zadovoljni
+Zadovoljni
+Zelo zadovoljni
+Popolnoma zadovoljni
+
+Vir: Cimermanĉiĉ, lastna raziskava (2014)
+Naslednje vprašanje, na katerega so anketiranci odgovarjali, je bilo »Kaj vas osebno najbolj
+moti pri vaši stalni banki?«. Na to vprašanje je odgovorilo slabih 56% vprašanih. Med najbolj
+moteĉe dejavnike, ki vplivajo na nezadovoljstvo, so anketiranci uvrstili delovni ĉas, cene
+storitev in slab ugled banke. Ostali dejavniki in njihov deleţ k prispevku slabega obĉutka pri
+bankah prikazuje Grafikon 4.6.
+
+41
+
+Grafikon 4.6: Osebne teţave anketiranih pri njihovi stalni banki.
+
+Težave v banki
+Varnost
+Slab ugled banke
+Težave z elektronskim bančništvom
+Nerazširjena mreža bančnih avtomatov…
+Nerazširjena mreža bančnih poslovalnic
+Pogoji pri storitvah
+Slabi pogoji za depozite, naložbe
+
+Težave pri odobritvi kredita
+Nefleksibilnost
+Slaba organiziranost dela
+Dolgotrajni postopki
+Cene storitev (obrestne mere, provizije, stroški, …
+Necelovita ponudba finančnih storitev
+Slaba kakovost izvedbe storitev, napake
+Nestrokovnost osebja
+Odnos osebja, neprijaznost
+Delovni čas
+Ponudba kreditov (nekonkurenčna, neugodna)
+Vrste, čakanje
+
+0
+
+2
+
+4
+
+6
+
+8
+
+10
+
+12
+
+14
+
+16
+
+Vir: Cimermanĉiĉ, lastna raziskava (2014)
+Na vprašanje »Kje dobite pomembne oziroma koristne informacije za vaše banĉno
+poslovanje?« je najveĉ anketirancev odgovorilo, da na banki osebno, kar 16,7%, ali preko
+spletnih strani bank 14,8%. Visok odstotek zaupanja o odloĉanju in iskanju koristnih
+informacij o banĉnem poslovanju ima tudi rubrika sodelavci, prijatelji, znanci sorodniki, ki
+predstavlja 13,8% odloĉitev in je tako na tretjem mestu v iskanju odgovorov. Ostale moţnosti
+pridobivanja informacij in njihov vpliv na anketirance predstavlja spodnji Grafikon 4.7.
+
+42
+
+Grafikon 4.7: Vir koristnih informacij o banĉnem poslovanju anketiranih.
+
+Vir koristnih informacij
+Preko drugih spletnih strani
+Preko elektronske pošte banke
+Preko obvestila banke na mobilni telefon
+Sejmi
+Jumbo plakati (obcestni plakati)
+Časopis banke
+Preko spletne strani bank
+Informacije dodane k rednim bančnim izpiskom
+Pošta s ponudbo bank, poslana k vam na dom
+Obisk bančnega uslužbenca na domu
+V banki (po telefonu)
+V banki (tiskano gradivo)
+V banki (osebno)
+Objave na socialnih družbenih omrežjih
+Sodelavci, prijatelji, znanci, sorodniki
+TV
+Radio
+Tisk (dnevniki, tedniki, mesečniki, revije)
+Drugje
+0
+
+2
+
+4
+
+6
+
+8
+
+10
+
+12
+
+14
+
+16
+
+18
+
+Vir: Cimermanĉiĉ, lastna raziskava (2014)
+Na vprašanje »Ali ste kdaj obiskali spletne strani katere banke oziroma bank?« je pozitivno
+odgovorilo le 52% vprašanih.
+Na vprašanje »Kako verjetno je, da bi vašo glavno banko priporoĉili prijatelju, sorodniku,
+znancu?« na lestvici od 0 do 10, pri ĉemer 0 pomeni, da je zagotovo ne bi priporoĉili in 10
+pomeni zagotovo priporoĉilo,se je kar 70% odloĉilo, da bi svojo banko priporoĉilo prijatelju,
+sorodniku, znancu z visoko stopnjo gotovosti (na lestvici od 0 do 10) veĉ kot 4.7. Razlogi za
+tako visoko oceno glavne banke anketiranih predstavlja spodnji Grafikon 4.8, v katerem so še
+posebej pomembni razlogi, ki vplivajo na pozitivno mnenje vprašanih in na njihova nadaljnja
+priporoĉila. Med temi razlogi najbolj izstopajo pogoji poslovanja, cene, provizije, ugled
+banke, zaupanje v banko, poslovni rezultat, zadovoljstvo z banko, storitvami in odnos ter
+usposobljenost osebja.
+
+43
+
+Grafikon 4.8: Razlogi za pozitivno mnenje o glavni banki.
+
+Razlogi zadovoljstva v glavni banki
+Delovni čas
+
+Navezanost na banko, dolgoletno poslovanje
+Bankomati (delovanje, mreža, provizije)
+Celovita ponudba
+Lokacija banke
+Pogoji kreditiranja
+Pogoji poslovanja, cene, provizije
+Ugled banke, zaupanje v banko, poslovni rezultat
+Zadovoljstvo z banko, storitvami
+
+Osebje (odnos, usposobljenost)
+0
+
+5
+
+10
+
+15
+
+20
+
+25
+
+30
+
+35
+
+Vir: Cimermanĉiĉ, lastna raziskava (2014)
+Na vprašanje »Ali boste ostali zvesti svoji banki?« odgovarja pozitivno kar 56,5% vprašanih,
+a le v primeru, da bo ponudba ostala na tem nivoju. 28,9% vprašanih ostaja zvestih banki v
+vsakem primeru, tudi ĉe njena ponudba ne bo najboljša, 6% jih meni, da bodo glede na
+trenuten nivo zamenjali banko in postali komitent druge slovenske banke, 8,6% vprašanih se
+je opredelilo, da bodo postali komitenti tuje banke. Kar 92,8% anketiranih svoje glavne
+banke ni zamenjalo v zadnjih dveh letih. 12,9 % tistih, ki so zamenjali svojo banko v zadnjih
+dveh letih navaja, da jih je privabila sedanja banka z boljšo ponudbo, saj je kar 14,8%
+ponudila ugodnejše obresti, provizije, niţje stroške in tarife. Med pomembnimi povzroĉitelji
+menjave banke so tudi slabi pogoji splošnih navedb brez dodatnih pojasnil in neoseben,
+neprijazen in neustreţljiv odnos osebja.
+Na vprašanje »Ali imate v svoji banki osebnega banĉnika oziroma stalno kontaktno osebo, ki
+za vas ureja veĉino poslov?« je kar 83,5 odstotkov anketiranih odgovorilo negativno. 72 %
+tistih, ki so pozitivno odgovorili na vprašanje, tudi pozna ime oziroma priimek banĉnega
+usluţbenca.
+Anketiranci pri plaĉevanju blaga in storitev najpogosteje uporabljajo banĉno kartico Maestro,
+teh je kar 87,7%, manj kot 5% jih uporablja Mastercard, Visa in Diners Club card. 7%
+vprašanih pa niti ne ve, katero kartico uporablja pri plaĉevanju.
+
+44
+
+5. ZAKLJUČEK
+
+Generacija Y je odrasla v hitro spreminjajoĉem se tempu razvoja novih tehnologij. Odrasli so
+v samozavestne in raznolike posameznike, ki ţelijo v mnoţici izstopati kot individualni
+posamezniki. Ob tako raznoliki generaciji se je potrebno vprašati, katere so njihove skupne
+znaĉilnosti, na kak naĉin jim lahko trţimo, da ustvarimo trajne stranke svojih storitev.
+Namen diplomske naloge je ponuditi oziroma osvetliti tiste moţnosti in storitve, ki jih banke s
+pomoĉjo sodobnih tehnologij lahko ponudijo mladim. Banĉne storitve, ki jih mladi
+potrebujejo, so zelo raziskane, vendar jih ne potrebujejo vse naenkrat. V nakup banĉnih
+storitev postanejo vpleteni predvsem takrat, ko pridejo do toĉke v ţivljenju, ko potrebujejo
+doloĉeno finanĉno storitev. Na podlagi pridobljenih sekundarnih statistiĉnih podatkov, ki so
+bili na razpolago, smo preverili svoje zaĉetne domneve.
+Prvo hipotezo »Generacija Y ni zvesta svoji banki.« zavraĉamo, saj slabih 85% mladih kljub
+hitremu ţivljenjskemu slogu, v primeru, da se storitve in ponudba bank ne spremenijo
+oziroma jim ne predstavljajo novih denarnih stroškov, ne namerava zamenjati banke.
+Drugo hipotezo diplomske naloge»Generacija Y bo v prihodnosti pogosteje uporabljala
+sodobne trţne poti.« sprejmemo, kljub temu, da uporaba sodobnih tehnologij glede na
+rezultate raziskave pri nas še ni tako razširjena. Najveĉ vprašanih namreĉ še vedno uporablja
+storitve bankomata in osebnega raĉuna, vendar se kaţe trend zanimanja za sodobne trţne poti,
+predvsem na raĉun elektronskega in mobilnega banĉništva.
+Tretjo hipotezo »Generacija Y ima premalo dostopnih informacij o banĉnem poslovanju.«
+sprejmemo, saj mladi še vedno najveĉ informacij dobijo kar osebno na banki, kljub temu, da
+bi jim lahko te informacije predstavili po drugih kanalih.
+Ĉetrto hipotezo»Generacija Y si ţeli bolj enostavnih in razumljivih postopkov.« sprejmemo,
+saj mladi spoštujejo delovanje svojih bank, informacije so jim pomembne predvsem, ĉe so
+podane toĉno in korektno.
+Na podlagi raziskave, ki je dala podroben vpogled na mlade generacije Y, menimo, da za
+banko ni smiselno uvesti popolnega individualnega trţenja posamezni stranki, saj bi bil tak
+projekt preveĉ obširen tako v ĉasu, energiji in potrebnem denarnemu vloţku. Za banke bi bilo
+zelo priporoĉljivo in smiselno, da bi v svojo ponudbo vpeljale tiste elemente, ki mladim
+dajejo obĉutek, da so nekaj posebnega, ter jim ponuditi ob tem tiste storitve, ki si jih ţelijo in
+potrebujejo na tak naĉin, da jim bo zanimiv in inovativen.
+
+45
+
+Ponudbo in informacije v obliki finanĉnih svetovanj bi lahko ponudili v obliki blagovne
+znamke, kot je npr. blagovna znamka banke Nova KBM Sveta vladar. Ob ponudbi
+prilagojenih paketov morajo banke razmišljati tudi o vpeljavi novih finanĉnih transakcijah,
+kot so poslovanje P2P in Crowdfunding. Pri ustvarjanju blagovne znamke se morajo banke
+namreĉ zavedati, da mladi ne ţelijo biti del mnoţice, ampak individualni posamezniki, ki
+sami odloĉajo nad potekom svojega ţivljenja, hkrati pa jim zelo veliko pomeni mnenje
+bliţnjih. Banke po svetu ţe povezujejo svojo banĉno ponudbo s socialnimi omreţji, ponujajo
+izmenjavo denarja med prijatelji, nakup kino vstopnic in spremljanje izvedenih transakcij.
+Nova digitalna identiteta je postal Facebook raĉun, ki lahko postane v bliţnji prihodnosti
+pomemben identifikacijski sistem tudi za dostop do finanĉnih storitev.
+Mladim ponujajo banke predplaĉniške kartice, na katere naloţijo denar in jih nato uporabljajo
+za plaĉevanje raĉunov in nakupe v trgovini, hkrati pa bi morale razvijati napredne plaĉilne
+tehnologije za podporo plaĉevanju brez gotovine ali kartic, kot sta NFC-tehnologija in QRkode. Pomemben je tudi razvoj tehnologije zajema slik z mobilno napravo, ki lahko zelo
+poenostavi izvedbe plaĉil poloţnic ter povezavo z navigacijskimi storitvami, ki lahko banki
+ponudi vpogled v to kako, kje, s kom in kdaj kupci porabijo denar (seveda v skladu z
+zakonodajo). Na podlagi teh podatkov lahko banke izboljšajo svojo konkurenĉnost in njihov
+uspeh v prihodnosti.
+Banke se morajo zavedati, da so mladi zelo kritiĉni in znajo izbrati ponudnika, ki bo na dolgi
+rok najbolj sluţil njihovim potrebam. Mladi so zadovoljni s storitvami, ki jih banke ponujajo,
+vendar ne ĉutijo globoke navezanosti. V primeru, da bo nivo ponudbe padel, bodo zamenjali
+ponudnika banĉnih storitev. Med potencialnimi tekmeci bank najdemo podjetja, ki niso
+banke, a take storitve ponujajo. Ta podjetja se ukvarjajo z razliĉnimi finanĉnimi, trgovskimi
+ali informacijskimi storitvami in ţe stopajo tudi na podroĉje banĉništva. Med ta podjetja
+štejemo Amazon, Apple, eBay, Google, PayPal in druge telekomunikacijske ponudnike, ki
+imajo zelo širok spekter naroĉnikov.
+Pri uporabi elektronskega poslovanja banke zagotavljajo ustrezne varnostne ukrepe, ki jih
+morajo poleg ţe uporabljenih (npr.:digitalno potrdilo in digitalni podpis, digitalne certifikate,
+kriptografijo, gesla in protivirusne programe) nadgraditi z aplikacijami, ki šĉitijo same
+transakcije preko neodvisnega kanala (npr. SMS sporoĉilo) skupaj s ponudnikom tega kanala,
+vpeljati interaktivne kreditne kartice z ekranom in tipkovnico, ki omogoĉajo enkratna
+varnostna gesla. Po svetu je v uporabi tudi proces biometrije, ki omogoĉa natanĉno in hkrati
+hitro ugotavljanje oz. potrjevanje identitete s skeniranjem oĉesne mreţnice in šarenice, prstnih
+odtisov ter prepoznavo glasu.
+46
+
+Kljub temu, da se poveĉuje elektronska povezava bank z mladimi, je oseben stik še vedno
+zelo pomemben. Glede na to, da mladi ne poznajo usluţbencev bankin jim poslediĉno tudi ne
+morejo zaupati, bi morale banke nameniti temu podroĉju veliko pozornosti. Banke bi morale
+organizirati dneve odprtih vrat, ki bi omogoĉale laţji in predvsem neformalen stik s svojimi
+strankami. Formalna okolja bank lahko spremenijo v sprostitvene kotiĉke z moţnostjo
+osebnega finanĉnega svetovanja, predstavijo interaktivne bankomate in interakcijske kioske.
+Prav tako lahko oblikujejo virtualne banĉne svetovalce, ki s pomoĉjo preprostih vprašanj
+pripeljejo do ustrezne banĉne rešitve. Mladim lahko ponudijo NUI-tehnologijo, ki temelji na
+konceptu interakcije ĉlovek-raĉunalnik, in poveţejo banĉništvo s prepoznavo govora,
+premikov ali kretenj. Uporabnikom tako omogoĉijo nadzor nad vsebino z obstojeĉim naĉinom
+komunikacije. Ponudijo jim lahko tudi tehnologijo, ki se v svetu ţe uporablja, kot so npr.
+Google oĉala in ure, namenjene pregledu banĉnega stanja in z moţnostjo nastavitve
+opozorilnega vibriranja ob doloĉenih dogodkih, ki jih je uporabnik sam nastavil.
+Banke se morajo zavedati, da je njihova prednost pred svojimi novimi konkurenti ta, da imajo
+mladi ob nastopu redne sluţbe ţe odprt mladinski raĉun, ki ga ponavadi navedejo v kadrovski
+sluţbi kot raĉun, na katerega ţelijo dobivati plaĉo. Tako banka pridobi ţe pred priĉetkom
+finanĉnega osamosvajanja stranko, ki jo mora obdrţati in ji ponuditi veĉ storitev, kot ji
+ponujajo njeni novi sodobni konkurenti. Zavedati se je namreĉ potrebno, da bodo mladi hitro
+zaĉeli uporabljati finanĉne storitve in je le vprašanje je, katerega ponudnika bodo sprejeli.
+
+47
+
+6. LITERATURA IN VIRI
+
+1.
+
+AD AGE. Dostopno prek:http://adage.com/ (26. 8. 2014).
+
+2.
+
+ASB BANK (2014) ASB bank Profile. [Facebook] 9. oktober. Dostopno prek:
+https://www.facebook.com/ASBBank. (9. 10. 2014).
+
+3.
+
+AWWWARDS TEAM (2014) 18 Online Payment Services and Systems. Dostopno prek:
+http://www.awwwards.com/18-online-payment-services-and-systems.html (23. 9.
+2014).
+
+4.
+
+BAUERLE, FRANK (2014) The pros and cons of cloud computing. Dostopno prek:
+http://thoughtsoncloud.com/2014/05/pros-cons-cloud-computing/ (10. 9. 2014).
+
+5.
+
+BBC NEWS MAGAZINE (2014) The original Generation X. Dostopno prek:
+http://www.bbc.com/news/magazine-26339959 (26. 8. 2014).
+
+6.
+
+BBC NEWS TECHNOLOGY (2012) New Mastercard has LCD screen and keyboard.
+Dostopno prek: http://www.bbc.com/news/technology-20250441 (9. 10. 2014).
+
+7.
+
+BBVA GAME. Dostopno prek: https://www.bbva.es/eng/particulares/subhome/bbvagame/index.jsp (9. 10. 2014).
+
+8.
+
+BIOMETRICS.GOV. Dostopno prek: http://www.biometrics.gov/ (9. 10. 2014).
+
+9.
+
+BITCOIN. Dostopno prek:https://bitcoin.org/sl/ (24. 9. 2014).
+
+10. BIZJAK, MIRAN (2014) Varovanje v telekomunikacijah-upravljalski proces. Dostopno
+prek: http://www.ltfe.org/wp-content/pdf/Varovanje%20v%20telekomunikacijah.pdf
+(31. 8. 2014).
+11. BRAĈUN, FRANC (2007) Banke in tveganja. Zbornik 3. strokovnega posvetovanja o
+banĉništvu. Praktične izkušnje pri uvajanju elektronskega bančništva. Portoroţ: Zveza
+ekonomistov Slovenije, str. 149−154.
+12. BREĈKO, DANIELA (2005) Generacijske razlike na delovnem mestu: Rezultati
+raziskave s komentarjem.HRM , november 2005, str. 48−55.
+13. BREĈKO, DANIELA (2008) Medgeneracijsko komuniciranje: v iskanju
+medgeneracijskega sožitja.HRM, junij 2008, str. 48−56.
+14. BURKE, TARA (2013) Bank of America Adds Human Touch to New ATMs. Dostopno
+prek: http://newsroom.bankofamerica.com/press-release/consumer-banking/bankamerica-adds-human-touch-new-atms (9. 10. 2014).
+
+49
+
+15. CAIROAMMANBANK (2014) Iris Recognition. Dostopno prek:
+http://www.cab.jo/services/IRIS%20Recognition (9. 10. 2014).
+16. CAMHI, JONATHAN (2013) City Bank Texas Launches Mobile Photo Bill Pay
+Solution. Dostopno prek:http://www.banktech.com/channels/city-bank-texas-launchesmobile-photo-bill-pay-solution/d/d-id/1296302? (9. 10. 2014).
+17. CAPGEMINI. Dostopno prek: http://www.capgemini.com/ (7. 9. 2014).
+18. CAPGEMINI CONSULTING (2014) Big Data Alchemy: How can banks Maximize the
+Value of their Customer Data? Dostopno prek: http://www.capgeminiconsulting.com/resource-file-access/resource/pdf/bigdatainbanking_2705_v5_0.pdf (9.
+10. 2014).
+19. CAPGEMINI, EFMA (2014) 2014 World Retail Banking Report. Dostopno prek:
+http://www.madridfinancialcentre.org/sites/default/files/wrbr_2014_full_report_capgem
+ini.pdf (9. 10. 2014).
+20. CENCIĈ, MAJDA (2009) Kako poteka pedagoško raziskovanje, Primer kvantitativne
+empirične neeksperimentalne raziskave. Ljubljana: Zavod RS za šolstvo.
+21. CHANDLER, NATHAN (2014) What is Google Wallet? Dostopno prek:
+http://electronics.howstuffworks.com/google-wallet1.htm/printable (24. 9. 2014).
+22. CISCO. Dostopno prek: http://www.cisco.com/ (7. 9. 2014).
+23. CISCO (2010) How Banks Can Capture Gen Y Mindshare and Increase Revenues.
+Dostopno prek:
+https://www.cisco.com/web/about/ac79/docs/fs/bankscapturemindshare.pdf (24. 9.
+2014).
+24. COX, DAVID, KILGORE, THOMAS, PURDY, TIFFANY in SAMPATH, REKHA
+(2008) Catalysts for Change: The Implications of Gen Y Consumers for Banks.
+Dostopno prek: http://www.deloitte.com/assets/DcomPortugal/Local%20Assets/Documents/pt(pt)_fsi_catalystsforchange_15072008.pdf (24.
+9. 2014).
+25. D2D FUND. Dostopno prek: http://www.d2dfund.org/financial_entertainment (9. 10.
+2014).
+26. DATA d.o.o. (2013)Začetniški koraki za učinkovito poslovno povezovanje.
+Webblog[Online] 4. februar. Dostopno prek: http://data.si/blog/2013/02/04/zacetniskikoraki-za-ucinkovito-poslovno-povezovanje/ (7. 9. 2014).
+27. DELOITTE. Dostopno prek: https://www.deloitte.com/view/sl_SI/si/index.htm (7. 9.
+2014).
+51
+
+28. EFMA.Dostopno prek:http://www.efma.com/index.php/init/home/index/EN/0/0 (7. 9.
+2014).
+29. ETRONIKA.Dostopno prek:http://www.etronika.lt/en/electronic-banking/etronika-nuibanking/ (9. 10. 2014).
+30. EUROPEAN COMMISSION (2014) The EU Single Market.Crowdfunding. Dostopno
+prek: http://ec.europa.eu/internal_market/finances/crowdfunding/index_en.htm (9. 10.
+2014).
+31. E-UTRIP (2012) Generacija Y in razlike med generacijami. Dostopno prek:
+http://www.e-utrip.si/zdravje/2608-generacija-y-in-razlike-med-generacijami (27. 8.
+2014).
+32. FACEBOOK (2014) Facebook Reports Fourth Quarter and Full Year 2013 Results.
+Dostopno prek: http://www.prnewswire.com/news-releases/facebook-reports-fourthquarter-and-full-year-2013-results-242637731.html (27. 8. 2014).
+33. FARAH, PHILIP, MACAULAY, JAMES in ERICSSON,JORGEN (2010) The Next
+Growth Opportunity for Banks.How the Post-Crisis Financial Needs of Younger
+Consumers Will Transform Retail Banking Services. Dostopno prek:
+https://www.cisco.com/web/about/ac79/docs/fs/nextgrowthopportunityforbanks.pdf (27.
+8. 2014).
+34. FLEXPERKS. Dostopno prek: http://www.usbankgomobile.com/ (9. 10. 2014).
+35. FORBES (2014) How Big Data Helps Banks Personalize Customer Service. Dostopno
+prek: http://www.forbes.com/sites/ibm/2014/06/16/how-big-data-helps-bankspersonalize-customer-service/ (9. 10. 2014).
+36. FRIEDRICH, ROMAN, BUSSMANN, JOHANNES, ACKER, OLAF in
+DIETERICH,NIKLAS (2005) Making Mobile Payment Work for Everyone.Dostopno
+prek: http://www.strategy-business.com/article/rr00023?pg=1
+
+(23. 9. 2014).
+
+37. GALLIPPI, TONY (2014) BitPayWebblog[Online] 23. september. Dostopno prek:
+http://blog.bitpay.com/2014/09/23/bitpay-and-paypal-an-unbeatable-paymentpartnership.html (23. 9. 2014).
+38. GIBSON, RYAN (2013) Generation Y. Dostopno prek: http://www.generationy.com/
+(27. 8. 2014).
+39. GOOGLE WALLET. Dostopno prek: http://www.google.com/wallet/faq.html#tab=faqfees (23. 9. 2014).
+
+53
+
+40. GRAHAM, PEARCE in PLATTEN,NICHOLAS (2000)Promoting the Information
+Society: The EU Directive on Electronic Commerce.European Law Journal.Blackwell
+Publishers Ltd 2000, str. 363−378.
+41. GUSTKE, CONSTANCE (2014) The bank of the future. Dostopno prek:
+http://www.cnbc.com/id/101573047#. (9. 10. 2014).
+42. HERNAUS, MITJA (1997) Elektronsko bančništvo v Hipotekarni banki, d.d.
+Brežice.Banke in tveganja.Portoroţ: Zveza ekonomistov Slovenije, str. 143−148.
+43. HORVAT, ANJA (2001) V prihodnje na bankomatih tudi videokonference. Dostopno
+prek: http://www.finance.si/2850/V-prihodnje-na-bankomatih-tudi-videokonference (9.
+10. 2014).
+44. ICICI BANK.Dostopno prek: http://www.icicibank.com/ (9. 10. 2014).
+45. INFORMACIJSKI POOBLAŠĈENEC (2013) Računalništvo v oblaku. Dostopno prek:
+https://www.iprs.si/fileadmin/user_upload/Pdf/smernice/Racunalnistvo_v_oblaku__povzetek_za_mala_podjetja.pdf (9. 10. 2014).
+46. INFORMACIJSKI POOBLAŠĈENEC (2014) Varstvo osebnih podatkov. Dostopno
+prek: https://www.ip-rs.si/varstvo-osebnih-podatkov/informacijske-tehnologije-inosebni-podatki/biometrija/ (9. 10. 2014).
+47. INTUIT (2011) The Future of Financial Services: A Redefined Banking Experience Will
+Help Customers and Financial Institutions Thrive in a Connected World. Dostopno
+prek: http://httpdownload.intuit.com/http.intuit/CMO/intuit/futureofsmallbusiness/intuit_corp_banking.
+pdf (23.9.2014).
+48. ISAKOVIĆ, ALJA (2013) Tehnologija NFC - z dotikom do plačevanja in zabave.
+Dostopno prek: http://tehnik.telekom.si/aplikacije/kaj-je-nfc-mobitel (9. 10. 2014).
+49. JERMAN BLAŢIĈ, BORKA, PERŠE, ZORAN, KLOBUĈAR, TOMAŢ in DRAGAN
+NEDELJKOVIĈ (2001) Elektronsko poslovanje na internetu. Ljubljana: GV Zaloţba.
+50. KARPE, PRIMOŢ (2001) Bančništvo in nova tehnologija.Banĉni vestnik, str. 41−44.
+51. Kazenski zakonik Republike Slovenije.Uradni list Republike Slovenije 63/1994.
+Dostopno prek: http://www.uradni-list.si/1/content?id=70219#!/Kazenski-zakonikRepublike-Slovenije (24. 8. 2014).
+52. KEITT, TJ (2011) What Gen Y Really Thinks About Your IT Department? Dostopno
+prek:
+https://www.forrester.com/What+Does+Gen+Y+Really+Think+About+Your+IT+Depa
+rtment/-/E-WEB7372 (9.10.2014).
+55
+
+53. KORDIŠ, RONI (2014) Mobilno plačevanje. Dostopno prek:
+http://tehnik.telekom.si/kolumne/mobilno-placevanje (23. 9. 2014).
+54. KOSEC, JERNEJ (2014) Z mobilnim plačevanjem lovite mlade kupce. Dostopno prek:
+http://www.finance.si/8358013/Z-mobilnim-pla%C4%8Devanjem-lovite-mladekupce?metered=yes&sid=376451022 (23. 9. 2014).
+55. KUMAR, RANJIT (2005) Research Methodology. London: SAGE Publications.
+56. LANDON, JONES (2008) Great Expectations: America & the Baby Boom Generation.
+BookSurge Publishing.
+57. LAVRIĈ, MIRAN, FLERE, SERGEJ, TAVĈAR KRAJNC, MARINA, KLANJŠEK,
+RUDI, MUSIL, BOJAN, NATERER, ANDREJ, KIRBIŠ, ANDREJ, DIVJAK,
+MARKO in LEŠEK, PETRA(2011) Mladina 2010: Družbeni profil mladih v Sloveniji.
+Dostopno prek: http://www.mlad.si/files/knjiznica/mladina2010-2(1).pdf (23. 9. 2014).
+58. LAW, SALLY (2006) Finding Neverland: Banks Woo the `Twixster`. Dostopno prek:
+http://www.americanbanker.com/magazine/116_1/-267250-1.html (23. 9. 2014).
+59. MAJCEN VELEĈIĈ, TANJA (2012) Bančništvo na sončni strani oblaka. Dostopno
+prek: http://infosrc.wordpress.com/2012/03/08/bancnistvo-na-soncni-strani-oblaka/ (9.
+10. 2014).
+60. MARCONI, JOE (2000) Future marketing: targeting seniors, Boomers, and Generation
+X and Y. Lincolnwood: NTC Business Books.
+61. MASTERCARD (2014) Predplačniška kartica MasterCard. Dostopno prek:
+http://www.mastercard.com/si/consumer/prepaid-card.html (9. 10. 2014).
+62. MCDEVITT, DAN (2013) What makes a brand appeal to Generation Y? Dostopno prek:
+http://www.marketingmagazine.co.uk/article/1211416/makes-brand-appeal-generationy (27. 8. 2014).
+63. MEDNICK, BARBARA K. (2006) Selling To Different Generations. Dostopno prek:
+http://www.startribune.com/jobs/11398171.html (26. 8. 2014).
+64. MERIAC, JOHN P., WOEHR, DAVID J. in BANISTER, CHRISTINA (2010)
+Generational Differences in Work Ethic: An Examination of Measurement Equivalence
+Across Three Cohorts.Dostopno prek:
+http://link.springer.com/article/10.1007%2Fs10869-010-9164-7#page-1 (9. 10. 2014).
+
+57
+
+65. MEYER, DAVID (2013) UK`s Intelligent Environments makes banking app for Pebble
+smartwatches. Dostopno prek: https://gigaom.com/2013/11/18/uks-intelligentenvironments-makes-banking-app-for-pebble-smartwatches/ (9. 10. 2014).
+66. MEYER, MARK (2005) Say Hi to Y. Dostopno prek: http://filene.org/assets/pdfreports/1752-P1050COOL_Solutions.PDF (24. 9. 2014).
+67. MINISTRSTVO ZA FINANCE (2014) Bitcoin naj postane uradno tuja valuta.Dostopno
+prek: http://predlagam.vladi.si/webroot/idea/view/5344 (24. 9. 2014).
+68. MOJEDELO.COM (2012) Samo dolgočasja ne za generacijo Y. Dostopno prek:
+http://delodajalci.mojedelo.com/novica/samo-dolgocasja-ne-za-generacijo-y/d-2651 (27.
+8. 2014).
+69. MOJMIKRO (2014) Mobilna Urbana. Dostopno prek:
+http://www.mojmikro.si/news/mobilna_urbana (24. 9. 2014).
+70. MOTL, ANDREJ (2013) Večina še ne uporablja mobilnega bančništva. Dostopno prek:
+http://www.delo.si/gospodarstvo/posel/vecina-se-ne-uporablja-mobilnegabancnistva.html (23. 9. 2014).
+71. NAGODE, MATEJA, SMOLEJ,SIMONA in BOLJKA, URBAN (2009) Socialni in
+ekonomski poloţaj mladih. V: RAKAR, TATJANA in BOLJKA, URBAN (ur.) Med
+otroštvom in odraslostjo, analiza položaja mladih v Sloveniji 2009. Dostopno prek:
+http://www.mlad.si/files/knjiznica/med-otrostvom-inodraslostjo_analiza_polo%C5%BEaja_mladih_v_sloveniji_2009.pdf (23. 9. 2014).
+72. NAHTIGAL, FRANCI (2010) Elektronsko poslovanje. Ljubljana: Zavod IRC.
+73. NOVA KBM (2014) Sveta vladar. Dostopno prek: http://www.svetavladar.si/ (9. 10.
+2014).
+74. NOVAK, MARJETA (2005) Kako sodelovati z generacijo y. Webblog[Online] 17.
+avgust. Dostopno prek: http://www.finance.si/128647/Kako-sodelovati-z-generacijo-y
+(24. 9. 2014).
+75. PAYPAL CREDIT. Dostopno prek: https://www.paypalcredit.com/index.html (9. 10.
+2014).
+76. PAYPAL. Dostopno prek: https://www.paypal.com/si/webapps/mpp/home (24. 9. 2014).
+77. PAYPERKS. Dostopno prek: https://www.payperks.com/ (9. 10. 2014).
+78. PEARSE CALLAHAN & ASSOCIATES. Dostopno prek:
+http://www.pearcecallahan.com.au/ (27. 8. 2014).
+
+59
+
+79. PEW RESEARCH CENTER (2010) Millennials a portrait of generation next.Dostopno
+prek: http://www.pewsocialtrends.org/files/2010/10/millennials-confident-connectedopen-to-change.pdf (25. 8. 2014).
+80. PODLESEK, SAŠA (2008) Elektronsko bančništvo-konkurenčna prednost ali nuja?
+Dostopno prek: http://www.gfkorange.si/?option=com_gfkorange&Itemid=57&id=124
+(25. 8. 2014).
+81. RM PLUS (2014) Raziskava ugleda, kakovosti storitev in tržnega položaja slovenskih
+bank- prebivalstvo 2013. Maribor.
+82. RUDEL, DRAGO (2005) Upravljanje z varnostjo informacij v zdravstvenih
+organizacijah. Dostopno prek: http://ims.mf.uni-lj.si/archive/10(1)/01.pdf (25. 8. 2014).
+83. SABADELL (2014) Banco Sabadell app for Google Glass. Dostopno prek:
+http://www.bancsabadell.tv/en/app-for-google-banco-sabadell-glass/ (9. 10. 2014).
+84. SAS (2014) Big Data: What it is and why it matters. Dostopno prek:
+http://www.sas.com/en_us/insights/big-data/what-is-big-data.html (9. 10. 2014).
+85. SAVEUP. Dostopno prek: https://www.saveup.com/ (9. 10. 2014).
+86. SHEAHAN, PETER (2005) Generation Y. Australia: Hardie Grant Publishing.
+87. SJEKLOĈA, MARKO (1998) Elektronsko bančništvo.Dostopno prek:
+http://www.markosj.net/elektronsko.htm (24. 9. 2014).
+88. SMARTYPIG. Dostopno prek: https://www.smartypig.com/ (9. 10. 2014).
+89. SMITH, KATHERINE TAKEN (2012) Longitudinal Study of Digital Marketing
+Strategies Targeting Millennials. Dostopno prek:
+http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2218695 (24. 9. 2014).
+90. STAT (2013) Uporaba interneta v gospodinjstvih in pri posameznikih, Slovenija, 2013 končni podatki.Dostopno prek: http://www.stat.si/novica_prikazi.aspx?id=5795 (6. 9.
+2014).
+91. STAT (2014) Mednarodni dan mladih 2014. Dostopno prek:
+http://www.stat.si/novica_prikazi.aspx?id=6427 (6. 9. 2014).
+92. ŠUBIC, PETRA (2006) Osem porabniških trendov generacije 20+. Dostopno prek:
+http://manager.finance.si/149795/Osem-porabni%C5%A1kih-trendov-generacije20%2B (6. 9. 2014).
+93. THE ECONOMIST (2014) Peer-to-peer lending. Dostopno prek:
+http://www.economist.com/news/finance-and-economics/21597932-offering-bothborrowers-and-lenders-better-deal-websites-put-two (9. 10. 2014).
+
+61
+
+94. TWENGE, JEAN M. (2007) Generation Me: Why Today`s Young Americans Are More
+Confident, Assertive, Entitled and More Miserable Than Ever Before . San diego: Atria
+Books.
+95. Uredba o pogojih za elektronsko poslovanje in elektronsko podpisovanje.Uradni list
+Republike Slovenije 77/2000. Dostopno prek: http://www.uradnilist.si/1/content?id=27295#!/Uredba-o-pogojih-za-elektronsko-poslovanje-inelektronsko-podpisovanje (24. 8. 2014).
+96. VEHOVAR, VASJA in KRONEGGER, LUKA (2005) E-bančništvo 2004/2. Dostopno
+prek: http://uploadi.www.ris.org/editor/1133950458e_bancnistvo_2004.pdf (6. 9. 2014).
+97. VEHOVAR, VASJA, KOZIC, TINA, PREVODNIK, KATJA in KOGOVŠEK,LUKA
+(2009) E-bančništvo 2009/1(#82). Dostopno prek:
+http://uploadi.www.ris.org/editor/1270625823E-bancnistvo2009-1.pdf (7.9.2014).
+98. V-KEY. Dostopno prek: http://www.v-key.com/ (9. 10. 2014).
+99. WINCOR NIXDORF.Dostopno prek: http://www.wincornixdorf.com/internet/site_AIS/AIE/Products/Hardware/Banking/Terminals/Terminals_n
+ode.html (9. 10. 2014).
+100. WISNIEWSKI, MARY (2013) USAA Readies Voice Recognition for Its iPhone App.
+Dostopno prek: http://www.americanbanker.com/issues/178_37/usaa-readies-voicerecognition-for-its-iphone-app-1056980-1.html (9. 10. 2014).
+101. Zakon o banĉništvu(ZBan-1-UPB5).Uradni list Republike Slovenije 99/2010. Dostopno
+prek: http://www.uradni-list.si/1/content?id=101047 (24. 8. 2014).
+102. Zakon o elektronskem poslovanju in elektronskem podpisu(ZEPEP-UPB1). Uradni list
+Republike Slovenije 98/2004. Dostopno prek: http://www.uradnilist.si/1/objava.jsp?urlid=200498&stevilka=4284 (24. 8. 2014).
+103. ZEMKE, RON, RAINES, CLAIRE in FILIPCZAK,BOB (2000) Generation at Work:
+Managing the Clash of Veterans, Boomers, Xers. and Nexters in Your Workspace. New
+York: Amacom.
+104. ZORKO, SAMO R. (2010) Od veteranov do generacije Z. Dostopno prek:
+http://www.mojmikro.si/geekfest/pogled_naprej/generacija_y (26. 8. 2014).
+105. ŢAGAR, LUKA (2009) Intervju: Kako obvladovati razlike med pripadniki generacij X
+in Y. Dostopno prek: http://www.finance-akademija.si/236618/Intervju-Kakoobvladovati-razlike-med-pripadniki-generacij-X-in-Y?cookietime=1409075180 (26. 8.
+2014).
+
+63
+
+

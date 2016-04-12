@@ -147,6 +147,13 @@ class Document(models.Model):
 		key = bucket.new_key(self.get_local_pdf2txt_file_name())
 		logger.info("Uploading to s3: %s" % file_name)	
 		key.set_contents_from_filename(file_name)
+
+	def upload_cleantxt(self):
+		bucket = awslib.get_s3_bucket()
+		file_name = self.get_local_cleantxt_file_name()
+		key = bucket.new_key(self.get_local_cleantxt_file_name())
+		logger.info("Uploading to s3: %s" % file_name)	
+		key.set_contents_from_filename(file_name)
 		
 
 	def download_to_local_pdf(self):
@@ -166,9 +173,23 @@ class Document(models.Model):
 		# returns file name
 		self.make_local_dir()
 		local_file_name = self.get_local_pdf2txt_file_name()
+#		print local_file_name, self.get_s3_pdf2txt_file_name()
 		if not os.path.exists(local_file_name):
 			logger.debug("Downloading to local cache %s" % local_file_name)	
 			awslib.s3_to_local_file(self.get_s3_pdf2txt_file_name(), local_file_name)
+		else:
+			logger.debug("File already cached locally %s" % local_file_name)	
+		return local_file_name
+
+	def download_to_local_cleantxt(self):
+		# downloads the file and makes it locally reachable, if the cached version already exists, so much better
+		# returns file name
+		self.make_local_dir()
+		local_file_name = self.get_local_cleantxt_file_name()
+#		print local_file_name, self.get_s3_pdf2txt_file_name()
+		if not os.path.exists(local_file_name):
+			logger.debug("Downloading to local cache %s" % local_file_name)	
+			awslib.s3_to_local_file(self.get_s3_cleantxt_file_name(), local_file_name)
 		else:
 			logger.debug("File already cached locally %s" % local_file_name)	
 		return local_file_name
