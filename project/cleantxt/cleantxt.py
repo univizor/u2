@@ -23,8 +23,8 @@ import cleaner
 
 CLEANTXT_VERSION = 8
 def extract_all():
-	docs1 = Document.objects.filter(agent_state = STATE_OK, cleantxt_state__in = [STATE_WAITING, STATE_IN_PROGRESS])
-	docs2 = Document.objects.filter(agent_state = STATE_OK, cleantxt_state__in = [STATE_OK], cleantxt_version__lt = CLEANTXT_VERSION)
+	docs1 = Document.objects.filter(pdf2txt_state = STATE_OK, cleantxt_state__in = [STATE_WAITING, STATE_IN_PROGRESS])
+	docs2 = Document.objects.filter(pdf2txt_state = STATE_OK, cleantxt_state__in = [STATE_OK], cleantxt_version__lt = CLEANTXT_VERSION)
 	docs = list(docs1) + list(docs2)
 	logger.info("Running cleantxt on %i documents" % len(docs))
 	for doc in docs:

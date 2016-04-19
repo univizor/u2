@@ -157,8 +157,8 @@ def get_cleaned(content):
 	[content, removed] = fix_sumniki(content)
 	[content, removed] = lower(content)
 	[content, removed] = clean_ng(content)
-	print content[:200]
-	print "XXXXXXXX"
+#	print content[:200]
+#	print "XXXXXXXX"
 	[content, removed] = remove_repeated_lines(content)
 	[content, removed] = remove_intro(content)
 	[content, removed] = remove_lit(content)	
