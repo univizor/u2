@@ -11,10 +11,22 @@ from slugify import slugify
 DL_DIR = '/tmp/'
 from document.states import *
 
+def requests_get_retry(url, **kwargs):
+	r = None
+	for retry in xrange(5):
+		try:
+			r = requests.get(url, **kwargs)
+			break
+		except:
+			pass
+	return r
+
 def download_file(url):
 	if url.endswith(".mpg"):
 		return (STATE_PERM_FAIL, None)
-	r = requests.get(url, stream=True)
+	r = requests_get_retry(url, stream=True)
+	if not r:
+		return (STATE_TEMP_FAIL, None)
 	try:
 		#print r.headers
 		ext = re.findall(r'filename=.*',
@@ -23,13 +35,15 @@ def download_file(url):
 		print('Failed url:', url)
 		return (STATE_TEMP_FAIL, None)
 	local_file = tempfile.NamedTemporaryFile()
-	local_file.write(r.content)
+ 	local_file.write(r.content)
 	return (STATE_OK, local_file)
 
 def get_url_list(y, url_base):
 	url_list = set()
 	url = '{}view/year/{}.html'.format(url_base, y)
-	response = requests.get(url)
+	response = requests_get_retry(url)
+	if not response:
+		raise Exception("Couldn't download index page for year : %s" % y)
 	content = response.content.decode('utf-8')
 	soup = bs4.BeautifulSoup(content, "html.parser")
 	for item in soup.select('.ep_view_page_view_year p'):
@@ -43,7 +57,9 @@ def get_url_list(y, url_base):
 
 def download_page(thesis_url, d):
 	pdfurl = None
-	response = requests.get(thesis_url)
+	response = requests_get_retry(thesis_url)
+	if not response:
+		return (STATE_TEMP_FAIL, None)
 	soup = bs4.BeautifulSoup(response.content.decode('utf-8'), "html.parser")
 
 

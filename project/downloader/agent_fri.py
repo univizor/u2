@@ -47,9 +47,9 @@ def extract_all():
 			d.save()
 			d.json = copy.copy(JSON_TEMPLATE)
 			(status, file) = eprints.download_page(thesis_url, d.json)
-			if status == STATE_PERM_FAIL:
-				d.status = STATE_PERM_FAIL
-				logger.info("Permanent fail %s" % thesis_url)
+			if status in (STATE_PERM_FAIL, STATE_TEMP_FAIL):
+				d.status = status
+				logger.info("Permanent or temporary fail %s" % thesis_url)
 				d.save()
 				continue
                         d.agent_json_data = json.dumps(d.json)
