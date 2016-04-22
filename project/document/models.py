@@ -10,7 +10,7 @@ from django.conf import settings
 from django.forms.models import model_to_dict
 
 import logging
-logger = logging.getLogger('u2.agent_fri')
+logger = logging.getLogger('u2.document.model')
 
 from aws import awslib
 

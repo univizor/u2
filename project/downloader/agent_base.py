@@ -19,8 +19,8 @@ class Agent(object):
     def agent_get_existing(self, agent_name, agent_version, agent_repository_url):
             # check if this specific download exists already
             results = Document.objects.filter(agent_name = agent_name,
-                                            agent_version = agent_version,
-                                            agent_repository_url = agent_repository_url).exclude(agent_state = STATE_IN_PROGRESS)	
+                                            #agent_version = agent_version,
+                                            agent_repository_url = agent_repository_url) #.exclude(agent_state = STATE_IN_PROGRESS)	
                                             # we exclude in progress, as that might be an indicator of previous runs where things went wrong
             if len(results)>0:
                     logger.info("Found existing entry %s %s %s" % (agent_name, agent_version, agent_repository_url))
@@ -50,3 +50,8 @@ class Agent(object):
         pass
     def import_doc(self, doc):
         pass
+        
+    def __repr__(self):
+        return self.AGENT_NAME + "-" + str(self.AGENT_VERSION)
+    
+        

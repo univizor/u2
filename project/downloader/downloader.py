@@ -17,13 +17,16 @@ from document.models import Document
 from document.states import *
 
 import agent_base
+
 import agent_fri
 import agent_fgg
+import agent_pef
+import agent_ffa
 
 def print_usage():
     print "Usage:"
-    print "manager.py catalog [agent_name]\t Imports all known catalogs"
-    print "manager.py workers [agent_name]       \t Imports all known catalogs"
+    print "downloader.py catalog [agent_name]\t Imports all known catalogs"
+    print "downloader.py docs [agent_name]       \t Imports all known catalogs"
 
 
 def get_agents(agent_name):
@@ -32,6 +35,7 @@ def get_agents(agent_name):
         print agent_name, agent.AGENT_NAME
         if not agent_name or agent_name == agent.AGENT_NAME:
             agents.append(agent)
+    logger.info("Working on agents: %s" % (agents))
     return agents
 
 def get_arg_or_empty(n):
