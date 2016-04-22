@@ -18,16 +18,18 @@ from document.states import *
 
 import agent_base
 import agent_fri
+import agent_fgg
 
 def print_usage():
     print "Usage:"
-    print "manager.py import_catalog [agent_name]\t Imports all known catalogs"
+    print "manager.py catalog [agent_name]\t Imports all known catalogs"
     print "manager.py workers [agent_name]       \t Imports all known catalogs"
 
 
 def get_agents(agent_name):
     agents = []
     for agent in agent_base.agents:
+        print agent_name, agent.AGENT_NAME
         if not agent_name or agent_name == agent.AGENT_NAME:
             agents.append(agent)
     return agents
@@ -40,8 +42,8 @@ def get_arg_or_empty(n):
         
         
 def run_workers(agent):
-    docs1 = Document.objects.filter(agent_state__in = [STATE_WAITING, STATE_IN_PROGRESS]).order_by("id")
-    docs2 = Document.objects.filter(agent_state__in = [STATE_OK], agent_version__lt = agent.AGENT_VERSION).order_by("id")
+    docs1 = Document.objects.filter(agent_name = agent.AGENT_NAME, agent_state__in = [STATE_WAITING, STATE_IN_PROGRESS]).order_by("id")
+    docs2 = Document.objects.filter(agent_name = agent.AGENT_NAME, agent_state__in = [STATE_OK], agent_version__lt = agent.AGENT_VERSION).order_by("id")
     docs = list(docs1) + list(docs2)
     for doc in docs:
         doc.state = STATE_IN_PROGRESS
@@ -64,11 +66,11 @@ def run_workers(agent):
 if __name__ == "__main__":
     if len(sys.argv) == 1:
         print_usage()
-    elif sys.argv[1] == "import_catalog":
+    elif sys.argv[1] == "catalog":
         agents = get_agents(get_arg_or_empty(2))
         for agent in agents:
             agent.import_catalog()
-    elif sys.argv[1] == "workers":
+    elif sys.argv[1] == "docs":
         agents = get_agents(get_arg_or_empty(2))
         for agent in agents:
             run_workers(agent)
