@@ -10,7 +10,7 @@ import eprints
 JSON_TEMPLATE = {"school": "Pedagoska fakulteta"}
 
 import agent_base
-class AgentPef(agent_base.Agent):
+class Agent(agent_base.Agent):
 	AGENT_NAME = "PEF"
 	AGENT_VERSION = 1
 
@@ -25,7 +25,7 @@ class AgentPef(agent_base.Agent):
 		(status, file) = eprints.download_page(doc.agent_repository_url, doc.json)
 		return (status, file)
 
-agent_base.add_agent(AgentPef())
+agent_base.add_agent(Agent())
 
 
 	

@@ -22,6 +22,7 @@ import agent_fri
 import agent_fgg
 import agent_pef
 import agent_ffa
+import agent_bio
 
 def print_usage():
     print "Usage:"

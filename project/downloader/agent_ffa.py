@@ -17,7 +17,7 @@ import common
 
 import agent_base
 
-class AgentFfa(agent_base.Agent):
+class Agent(agent_base.Agent):
 	AGENT_NAME = "FFA"
 	AGENT_VERSION = 1
 
@@ -67,6 +67,6 @@ class AgentFfa(agent_base.Agent):
 			logger.error("Couldn't find the pdf url in %s" % doc.agent_repository_url)
 			return (STATE_TEMP_FAIL, None)
 
-agent_base.add_agent(AgentFfa())
+agent_base.add_agent(Agent())
 
 	

@@ -1,4 +1,3 @@
-
 from document.models import Document
 from document.states import *
 from django.utils import timezone
@@ -26,7 +25,7 @@ class Agent(object):
                     logger.info("Found existing entry %s %s %s" % (agent_name, agent_version, agent_repository_url))
             return results
 
-    def create_new_document(self, repository_url):
+    def create_new_document(self, repository_url, jdata = {}):
         d = Document()
         dups = self.agent_get_existing(self.AGENT_NAME, self.AGENT_VERSION, repository_url)
         if dups:
@@ -42,6 +41,7 @@ class Agent(object):
         d.agent_repository_url = repository_url
         d.agent_date = timezone.now()
         d.status = STATE_WAITING
+#        d.agent_json_data = json.dumps(jdata)
         d.save()
         return d
             
