@@ -22,12 +22,12 @@ class Agent(agent_base.Agent):
 	AGENT_VERSION = 1
 
 	def import_catalog(self):
-		page_url = URL_START
-		while page_url:
-			logger.info('Scraping %s' % page_url)
-			response = common.requests_get_retry(page_url)
+		url_next = URL_START
+		while url_next:
+			logger.info('Scraping %s' % url_next)
+			response = common.requests_get_retry(url_next)
 			url_list = set()
-			soup = bs4.BeautifulSoup(response_html.content.decode("utf-8"), "html.parser")
+			soup = bs4.BeautifulSoup(response.content.decode("utf-8"), "html.parser")
 			for item in soup.select('.tx_sevenpack-title a'):
 				try:
 					url_list.add(URL_BASE + item['href'])
@@ -38,6 +38,7 @@ class Agent(agent_base.Agent):
 			for item in soup.select('.tx_sevenpack-navi_page_selection a'):
 				if item['title'] == 'Naslednja stran':
 					url_next = URL_BASE + item['href']
+					print "XXXX", url_next
 			for url in url_list:
 				doc = self.create_new_document(url)
 	
