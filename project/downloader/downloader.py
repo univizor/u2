@@ -23,7 +23,7 @@ import agent_fgg
 import agent_pef
 import agent_ffa
 import agent_bio
-import agent_up
+import agent_up_ung
 
 def print_usage():
     print "Usage:"

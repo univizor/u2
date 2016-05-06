@@ -1,12 +1,17 @@
 import urlparse
 import tempfile
 import requests
+import requests_ftp
+# we do ftp downloads too!
+requests_ftp.monkeypatch_session()
+
 from document.states import *
 def requests_get_retry(url, **kwargs):
 	r = None
 	for retry in xrange(5):
+		s = requests.Session()
 		try:
-			r = requests.get(url, **kwargs)
+			r = s.get(url, **kwargs)
 			break
 		except:
 			pass
