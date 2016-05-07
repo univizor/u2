@@ -25,6 +25,7 @@ import agent_ffa
 import agent_bio
 import agent_up_ung
 import agent_doba
+import agent_rul
 
 def print_usage():
     print "Usage:"
