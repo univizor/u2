@@ -28,6 +28,7 @@ import agent_doba
 import agent_rul
 import agent_gea
 import agent_fis
+import agent_doba
 
 def print_usage():
     print "Usage:"

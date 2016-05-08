@@ -1,59 +1,58 @@
-import json
 import logging
+import requests
+
+import bs4
 import copy
 import datetime
-import requests
-import bs4
-
-logger = logging.getLogger('u2.agent_bio')
-
-URL_BASE = 'http://www.doba.si/si/iskanje/results'
-
-QUERIES = ['diplomsko', 'magistrsko']
-
-from document.states import *
-import eprints
-JSON_TEMPLATE = {"school": "DOBA"}
 import common
+from document.states import *
+logger = logging.getLogger('u2.agent_up')
+
+
+
+from httplib import HTTPConnection
+#HTTPConnection.debuglevel = 1
 
 
 import agent_base
-
-def stripall(s):
-	s = s.replace("\t", "")
-	s = s.replace("\n", "")
-	s = s.replace("\r", "")
-	s = s.replace(" ", "")
-	return s
-
-class Agent(agent_base.Agent):
-	AGENT_NAME = "DOBA"
+class AgentGeneral(agent_base.Agent):
 	AGENT_VERSION = 1
-
 	def import_catalog(self):
-		for query in QUERIES:
-			logger.info('Scraping %s' % query)
-			i = 1
-			while True:
-				url = URL_BASE + "?q=" + query + "&p=" + str(i)
-				response = common.requests_get_retry(url)
-				if "Ni rezultatov." in response.content:
-					break
-					
-				soup = bs4.BeautifulSoup(response.content, "html.parser")
-				for result in soup.select("h3"):
-					#print result
-					jdata = copy.copy(JSON_TEMPLATE)
-#					print result
-					agent_repository_url = result.select("a")[0].get('href')
-					if not agent_repository_url.endswith("pdf"):
-						continue
-					doc = self.create_new_document(agent_repository_url, jdata)
-				i += 1
-	def import_doc(self, doc):
-		(state, file) = common.download_file(doc.agent_repository_url)
-		return (state, file)
+		TOP_URLS = [
+			"http://www.doba.si/si/iskanje/results?q=diplomska",
+			"http://www.doba.si/si/iskanje/results?q=diplomsko",
+			"http://www.doba.si/si/iskanje/results?q=magistrska",
+			"http://www.doba.si/si/iskanje/results?q=magistrsko",
+			]
+		for topurl in TOP_URLS:
+			for page in xrange (1, 10000):
+				url = topurl + "&p=" + str(page)
 
-agent_base.add_agent(Agent())
+				r = common.requests_get_retry(url)
+				soup = bs4.BeautifulSoup(r.content.decode('utf-8'), "html.parser")
+				items = soup.select("li p a")
+				if not items:
+					break
+				for item in items:
+					agent_repository_url = item['href']
+					if not agent_repository_url.lower().endswith(".pdf"):
+						continue
+					doc = self.create_new_document(agent_repository_url)
+#					print agent_repository_url
+
+
+	def import_doc(self, doc):
+		(download_status, file) = common.download_file(doc.agent_repository_url)
+		if download_status == STATE_OK:
+			return (STATE_OK, file)
+		else:
+			return (download_status, file)
+
+class AgentDoba(AgentGeneral):
+	AGENT_NAME = "DOBA"
+	BASE_URL = "http://www.doba.si/"
+	JSON_TEMPLATE = {"school": "DOBA Maribor"}
+
+agent_base.add_agent(AgentDoba())
 
 	
