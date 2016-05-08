@@ -6,22 +6,25 @@ import requests_ftp
 requests_ftp.monkeypatch_session()
 
 from document.states import *
-def requests_get_retry(url, **kwargs):
+def requests_get_retry(url, postdict = None, **kwargs):
 	r = None
 	for retry in xrange(5):
 		s = requests.Session()
 		try:
-			r = s.get(url, **kwargs)
+			if postdict is None:
+				r = s.get(url, **kwargs)
+			else:
+				r = s.post(url, data = postdict, **kwargs)
 			break
 		except:
 			pass
 	return r
 
 
-def download_file(url):
+def download_file(url, postdict = None):
 	if url.endswith(".mpg"):
 		return (STATE_PERM_FAIL, None)
-	r = requests_get_retry(url, stream=True)
+	r = requests_get_retry(url, postdict=postdict, stream=True)
 	if not r:
 		return (STATE_TEMP_FAIL, None)
 #	try:
@@ -31,6 +34,7 @@ def download_file(url):
 #	except:
 #		print('Failed url:', url)
 #		return (STATE_TEMP_FAIL, None)
+
 	local_file = tempfile.NamedTemporaryFile()
  	local_file.write(r.content)
 	return (STATE_OK, local_file)

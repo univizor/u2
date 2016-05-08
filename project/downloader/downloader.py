@@ -26,6 +26,8 @@ import agent_bio
 import agent_up_ung
 import agent_doba
 import agent_rul
+import agent_gea
+import agent_fis
 
 def print_usage():
     print "Usage:"
@@ -36,7 +38,6 @@ def print_usage():
 def get_agents(agent_name):
     agents = []
     for agent in agent_base.agents:
-        print agent_name, agent.AGENT_NAME
         if not agent_name or agent_name == agent.AGENT_NAME:
             agents.append(agent)
     logger.info("Working on agents: %s" % (agents))
