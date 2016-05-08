@@ -36,8 +36,8 @@ class AgentGeneral(agent_base.Agent):
 					break
 				for item in soup.select(".Besedilo"):
 					agent_repository_url = self.BASE_URL + item.select("a")[0]['href']
+					logger.debug("URL:" + agent_repository_url)
 					doc = self.create_new_document(agent_repository_url)
-#					print agent_repository_url
 	def import_doc(self, doc):
 		# example url: http://repozitorij.upr.si/IzpisGradiva.php?id=976&lang=slv
 		# three steps are needed:
@@ -105,8 +105,14 @@ class AgentUNG(AgentGeneral):
 	BASE_URL = "http://repozitorij.ung.si/"
 	JSON_TEMPLATE = {"school": "Univerza v Novi Gorici"}
 
+class AgentUMB(AgentGeneral):
+	AGENT_NAME = "UMB"
+	BASE_URL = "http://dk.um.si/"
+	JSON_TEMPLATE = {"school": "Univerza v Mariboru"}
+
 
 agent_base.add_agent(AgentUP())
 agent_base.add_agent(AgentUNG())
+agent_base.add_agent(AgentUMB())
 
 	

@@ -23,12 +23,13 @@ import agent_fgg
 import agent_pef
 import agent_ffa
 import agent_bio
-import agent_up_ung
+import agent_up_ung_umb
 import agent_doba
 import agent_rul
 import agent_gea
 import agent_fis
 import agent_doba
+import agent_vsvo
 
 def print_usage():
     print "Usage:"
